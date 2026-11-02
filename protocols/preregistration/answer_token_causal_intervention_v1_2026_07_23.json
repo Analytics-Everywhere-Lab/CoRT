@@ -1,0 +1,169 @@
+{
+  "analysis_visibility": {
+    "canary": "Technical and evaluator-unjoined. It may exercise every patch path and compare two mathematically equivalent answer-token scoring implementations, but it may not parse or join hidden evaluator rows or emit answer-conditioned effects, rankings, p-values, confidence intervals, or causal calls.",
+    "full": "GPU workers receive only public rows and emit evaluator-unjoined A-minus-B margins. The coordinator joins the sealed evaluator only after complete model, data, code, token, patch, row, and copyback gates pass.",
+    "prior_results": "The successful answer-token confirmation and observational Job B result are known before this freeze. No Job C-R activation-patching outcome exists. The old Job C canary is engineering evidence only and is not reused as a statistical observation or runtime profile."
+  },
+  "behavioral_eligibility": {
+    "analysis_manifest": "runs/tamia/reanchored-jobAR-token-full/380145/analysis/analysis_manifest.json",
+    "analysis_manifest_sha256": "cb0d5b8d6f1871758b5c90469b1c8198e812ce170d970f61ac971c643c26a482",
+    "analysis_summary": "runs/tamia/reanchored-jobAR-token-full/380145/analysis/analysis_summary.json",
+    "analysis_summary_sha256": "8ebee5db19e8d123789cfb73bd6d6f5a7cd55a0f9473af8d01dfd6e3ef23a9c2",
+    "eligible_models": [
+      "qwen35_27b_hf_bf16",
+      "gemma4_31b_hf_bf16"
+    ],
+    "job_id": 380145,
+    "required_frame_count": 320,
+    "required_model_promotion_status": "pass",
+    "source_preregistration_sha256": "920f441efc5faf4de0070a61cbf64132de7b1ebe2828bea9781e3b8cfa9715ba",
+    "technical_verify_sha256": "534dd6809415b1a22b85e3c7b178d2b844377fb8af55d2bb730866e96db1a820"
+  },
+  "candidate_completions": {
+    "A": "A",
+    "B": "B"
+  },
+  "candidate_shared_prefix": "{\"answer\":\"",
+  "claim_boundary": "A passing primary configuration identifies an intervention-specific bidirectional causal bottleneck: replacing the frozen full-frame pathway state with the matched clean state rescues a corrupted execution, the reverse replacement damages the clean execution, and both effects exceed frozen controls. It does not identify the exact computational origin, a unique layer, a neuron, durable memory, universal architecture behavior, or scene-target binding. Final-question-token patches are downstream diagnostics and cannot support the primary bottleneck claim.",
+  "created_at": "2026-07-23",
+  "data": {
+    "battery_hash_manifest_sha256": "f7d81eaa927925181201c3e77b68c96623c123769fbecbbd55d21c57332f9432",
+    "battery_manifest_sha256": "b63a52cb36ecb2c0d7cf449060256fa5390b308e6857ff096a9e379218d49240",
+    "battery_root": "runs/research/lifecycle_memory/phase_2/reanchored_answer_token_battery_v3_2026_07_22",
+    "mechanism_subset": {
+      "frame_count": 80,
+      "hidden_evaluator_sha256": "7a764586ac27a05fbe0d02151a632e91674d4b6c5721f4adba6bdae79a9725f1",
+      "manifest_sha256": "c219a8f6746382edbb3e6a304fe85e750755e719874cf5775a2a6ef48a3fca88",
+      "participant_cluster_count": 80,
+      "public_requests_sha256": "a6b9d166597efae8a26a65e2c654367da99fddef7ccaab6698a1646930083ced",
+      "selection": "outcome_blind_participant_first_hash_order_one_frame_per_participant_before_fill",
+      "selection_already_frozen": true,
+      "trial_count": 160
+    },
+    "statistical_unit": "The two counterbalanced orders are first averaged within their source frame. Frames are then averaged within ego4d_participant_id, and participant clusters receive equal weight.",
+    "target_component_rule": "within the chosen class mask, select the largest 8-connected component with area at least 64 pixels; break exact area ties by lexicographically smallest top,left,bottom,right bounding box; render only that component and record its hidden fingerprint"
+  },
+  "generation": {
+    "decoding": "teacher_forced_answer_token_likelihood",
+    "max_new_tokens": 1,
+    "prompt_text": "Input 1 is a full frame. Inputs 2 and 3 are unmarked target-only reference crops A and B. Which referenced target is the first-order interacting object, meaning the object directly manipulated by a visible hand rather than a second-order object interacting through it? Return exactly one JSON object with answer A or B plus the frozen abstention and confidence keys.",
+    "temperature": 0.0
+  },
+  "job_c": {
+    "baseline_deficit_gate": "For each model and corruption, the participant-cluster one-sided 95 percent lower bound for real-minus-corrupt correct-answer margin bits on the 80-participant mechanism subset must exceed zero.",
+    "coarse_decoder_layer_fractions": [
+      0.0,
+      0.125,
+      0.25,
+      0.375,
+      0.5,
+      0.625,
+      0.75,
+      0.875,
+      1.0
+    ],
+    "controls": {
+      "direction_matched_norm_random": "Apply a deterministic BF16-representable random perturbation whose realized post-quantization norm matches the matched source-recipient delta.",
+      "direction_matched_unrelated": "Workers evaluate both orders from one deterministic unrelated frame. After the technical gate, the analyzer retains exactly the donor order with the same hidden A/B label as the recipient.",
+      "identity": [
+        "real_to_real_self_patch",
+        "corrupt_to_corrupt_self_patch"
+      ]
+    },
+    "corruptions": [
+      "blank_full",
+      "wrong_time"
+    ],
+    "descriptive_refinement": "At most two previously untested decoder blocks on either side of the strongest coarse block may be added after the coarse technical gate. These rows are descriptive only because selection is not replayed inside every inferential resample.",
+    "directions": {
+      "damage": "matched corrupt state patched into the corresponding clean execution; effect is clean baseline correct-answer margin minus patched correct-answer margin",
+      "rescue": "matched clean state patched into the corresponding corrupt execution; effect is patched correct-answer margin minus corrupt baseline correct-answer margin"
+    },
+    "models": [
+      "qwen35_27b_hf_bf16",
+      "gemma4_31b_hf_bf16"
+    ],
+    "primary_patch_families": [
+      "vision_tower_final",
+      "projector_or_merger_output",
+      "decoder_visual_token_residual"
+    ],
+    "primary_statistical_call": {
+      "components_at_one_jointly_selected_site": [
+        "rescue_positive",
+        "damage_positive",
+        "rescue_specificity_vs_unrelated",
+        "rescue_specificity_vs_random",
+        "damage_specificity_vs_unrelated",
+        "damage_specificity_vs_random"
+      ],
+      "decoder_selection": "Choose one coarse block per decoder family by maximizing the minimum participant-equal mean across all six components, tie to the lower block. Apply simultaneous confidence intervals and Bonferroni correction over the complete frozen nine-site grid before the global family.",
+      "fixed_stage_selection": "Vision-final and projector/merger each contain one frozen site.",
+      "global_family": "2 models x 2 corruptions x 3 primary stage families = 12 intersection-union configuration tests",
+      "global_multiplicity": "Holm correction over all 12 configuration-level conjunctive p-values",
+      "required_gates": [
+        "all six component one-sided 95 percent lower bounds above zero",
+        "configuration-level Holm-adjusted p below 0.05",
+        "zero self-patch failures",
+        "positive baseline deficit gate",
+        "exact answer-token behavioral promotion gate"
+      ]
+    },
+    "secondary_patch_family": {
+      "family": "decoder_final_question_token_residual",
+      "inferential_scope": "downstream_diagnostic_only",
+      "reason": "The final question-token state already integrates the multimodal context and is not a slot-specific visual representation. Patching it may transfer a near-output decision state and cannot localize the full-frame causal pathway."
+    },
+    "site_claim": "The jointly selected coarse decoder block is a multiplicity-corrected strongest tested bottleneck within that frozen family, not an earliest or unique failure-origin layer.",
+    "slot_contract": {
+      "decoder_visual_token_residual": "Patch only the full-frame image-token run and prove both crop-token runs and every other position are bitwise unchanged.",
+      "predecoder": "Patch only the full-frame image slice at final vision and projector/merger outputs.",
+      "question_token": "Patch only the exact final token of the literal user question; report only as a downstream diagnostic."
+    }
+  },
+  "kind": "phase2_reanchored_answer_token_causal_intervention_prespec",
+  "models": [
+    {
+      "model_id": "Qwen/Qwen3.5-27B",
+      "model_key": "qwen35_27b_hf_bf16",
+      "revision": "fc05daec18b0a78c049392ed2e771dde82bdf654"
+    },
+    {
+      "model_id": "google/gemma-4-31B-it",
+      "model_key": "gemma4_31b_hf_bf16",
+      "revision": "3548789868c5356dbf307c98e6f609007b82b3eb"
+    }
+  ],
+  "prior_evidence_boundary": {
+    "job_b": "Observed signed full-frame-selective divergence begins at the earliest captured vision endpoint and propagates through the decoder. This motivates testing the complete frozen pathway but does not select a winning patch layer.",
+    "old_job_c": "Canary 377835 established engineering feasibility only. No old Job C hidden-label analysis, effect, p-value, selected layer, or runtime profile may enter Job C-R."
+  },
+  "scoring": {
+    "answer_token_contract": "Append the exact shared prefix once at the generation boundary. A and B must each be one distinct token and concatenate exactly with the prefix tokenization.",
+    "canary_equivalence_gate": "For both answer choices and both model architectures, next-token log probabilities extracted from one shared-prefix forward must agree within 1e-3 bits with exact candidate-suffix scoring from separately appended one-token continuations.",
+    "primary_outcome": "correct-answer A-versus-B log-likelihood margin in bits",
+    "worker_forward_rule": "One shared-prefix forward yields both A and B next-token scores for each baseline or intervention.",
+    "worker_visible_outcome": "evaluator-unjoined A-minus-B margin bits"
+  },
+  "status": "prospectively_frozen_after_answer_token_confirmation_and_before_any_job_c_r_activation_patching_outcome",
+  "tamia": {
+    "account": "__DEPLOYMENT_ACCOUNT__",
+    "cpus_per_task": 12,
+    "gpus": "h100:4",
+    "host_memory": "480G",
+    "ntasks_per_node": 4,
+    "partition": null,
+    "runtime": "HF_PyTorch_bf16_offline_Apptainer",
+    "sif": "__CONTAINER_IMAGE_PATH__",
+    "walltime_rule": "A full submission requires a fresh evaluator-unjoined C-R canary profile bound to the exact release, battery, container, model revisions, answer-token promotion result, and observed forward rate. Request 25 percent headroom and use resumable chunks if the measured projection exceeds the scheduler-safe chunk.",
+    "worker_topology": "four static ranks; two counterbalance-aligned shards per anchor model"
+  },
+  "technical_kill_rules": [
+    "Abort before inference for any preregistration, release, battery, mechanism-manifest, public-row, model-revision, container, prompt, image, or answer-token hash mismatch.",
+    "Withhold the affected model for any candidate token-boundary failure, one-pass versus suffix-scorer equivalence failure, nonfinite score, missing or duplicate row, ambiguous image-token boundary, or processor shape drift.",
+    "An applicable non-self intervention that is an exact no-op, shape mismatch, non-representable BF16 random control, hook leak, or change outside the frozen patch positions fails the run; it is never imputed as zero.",
+    "Any self patch that changes the recipient margin by more than 1e-5 bits fails the site.",
+    "No full run may reuse the old Job C canary profile, old worker state, or any result not bound to this preregistration and release."
+  ],
+  "version": 1
+}

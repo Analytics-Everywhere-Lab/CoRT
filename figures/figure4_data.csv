@@ -1,0 +1,13 @@
+model,operator,estimate,ci_low,ci_high,interval_status
+gemma,early_A,1.0,1.0,1.0,historical_finite_draw_replay_252_reference_values
+gemma,early_F,0.8267561116129838,0.7928125746549913,0.8550838859414239,historical_finite_draw_replay_252_reference_values
+gemma,early_K,0.04754366642765284,0.025363361261290827,0.07063685360867657,historical_finite_draw_replay_252_reference_values
+gemma,late_A,1.0,1.0,1.0,historical_finite_draw_replay_252_reference_values
+gemma,late_F,0.018658304169906104,0.0053105070252675675,0.03084220873229905,historical_finite_draw_replay_252_reference_values
+gemma,late_K,0.9328882185974421,0.9186888977228893,0.944152199860607,historical_finite_draw_replay_252_reference_values
+qwen,early_A,1.0,1.0,1.0,historical_finite_draw_replay_252_reference_values
+qwen,early_F,0.7871287101247055,0.7495229790598645,0.8193644138782568,historical_finite_draw_replay_252_reference_values
+qwen,early_K,0.10875119123476629,0.08442936030780855,0.1354274014252322,historical_finite_draw_replay_252_reference_values
+qwen,late_A,1.0,1.0,1.0,historical_finite_draw_replay_252_reference_values
+qwen,late_F,0.1849249417972143,0.15309435554527945,0.2164364822407795,historical_finite_draw_replay_252_reference_values
+qwen,late_K,0.7285212382636274,0.6938894449185098,0.7597989997911044,historical_finite_draw_replay_252_reference_values

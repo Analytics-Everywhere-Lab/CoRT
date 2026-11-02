@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "model_key": "gemma4_31b_hf_bf16",
+  "repo": "google/gemma-4-31B-it",
+  "revision": "3548789868c5356dbf307c98e6f609007b82b3eb",
+  "layers": 60,
+  "files": [
+    {
+      "bytes": 182,
+      "path": ".eval_results/mmmu_pro.yaml",
+      "sha256": "e673fe773afc0807cf25534cefac2e9c4c81673fc450fb1fe501624fb807532c"
+    },
+    {
+      "bytes": 1708,
+      "path": ".gitattributes",
+      "sha256": "aa4fc74fe06acc698271341dee76eca26c6672a1f4b2840dedbf37f1b4fe27a4"
+    },
+    {
+      "bytes": 26751,
+      "path": "README.md",
+      "sha256": "b08a9d144bd455cf968b3466d98eaa704a765a3aff255fe6a5304da1fc426d5c"
+    },
+    {
+      "bytes": 17466,
+      "path": "chat_template.jinja",
+      "sha256": "36e3a42e5cf14cd0020e72d92e1fdd9970f59b82170e421f0cbe1bb42bead3f0"
+    },
+    {
+      "bytes": 4621,
+      "path": "config.json",
+      "sha256": "e967dd38bc5cfd38bd09a995a7bf4a754075df2b46aba68f7fbb5a791e6d8dd1"
+    },
+    {
+      "bytes": 208,
+      "path": "generation_config.json",
+      "sha256": "d4226bbe3117d2d253ba4609720ba82c6c4ce4627a9a6ae05387c78983ac03de"
+    },
+    {
+      "bytes": 49784788364,
+      "path": "model-00001-of-00002.safetensors",
+      "sha256": "eeef8791537bc04f110967c513149e037d2a9ae97d49add7291ebfa62806bbfa"
+    },
+    {
+      "bytes": 12761549884,
+      "path": "model-00002-of-00002.safetensors",
+      "sha256": "018912220f559f7025d60333e0996183cd538aa77ad6f4988a89ce47be681f10"
+    },
+    {
+      "bytes": 120246,
+      "path": "model.safetensors.index.json",
+      "sha256": "d4aff3b976d69c123a29d1c085d7ba4de1ac3f4ca1726a7f81e1b11462a64ea2"
+    },
+    {
+      "bytes": 1689,
+      "path": "processor_config.json",
+      "sha256": "32bdf45d2ad4cc29a0822ddd157a182de76644f0419a6228d151495256e9813c"
+    },
+    {
+      "bytes": 32169626,
+      "path": "tokenizer.json",
+      "sha256": "cc8d3a0ce36466ccc1278bf987df5f71db1719b9ca6b4118264f45cb627bfe0f"
+    },
+    {
+      "bytes": 2095,
+      "path": "tokenizer_config.json",
+      "sha256": "90c3a3ba5bf53818383a58e1a776cbcacd2a038d4812eaa373e1522f2d06f3df"
+    }
+  ],
+  "inventory_sha256": "b4ed66cb662d951ec8055802d3840d253f06464da0699eeb1d11c0452fedc7fb"
+}

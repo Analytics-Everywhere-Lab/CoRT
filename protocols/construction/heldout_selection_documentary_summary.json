@@ -1,0 +1,85 @@
+{
+  "kind": "documentary_construction_extract",
+  "limitations": "Recorded local chronology and content consistency only; not proof of independent blinding or externally registered freeze timing. Execution requires an independently obtained private execution manifest and its real hash-bound inputs; this extract cannot replace them.",
+  "not_an_execution_manifest": true,
+  "note": "All other values retained. Digests of identity sets are original evidence, not per-person pseudonyms. Original bytes are not distributed.",
+  "omitted_fields": [
+    "selected.frame_unit_ids",
+    "selected.request_ids"
+  ],
+  "original_record": {
+    "exclusion": {
+      "frame_count": 80,
+      "hidden_sha256": "7a764586ac27a05fbe0d02151a632e91674d4b6c5721f4adba6bdae79a9725f1",
+      "mechanism_manifest_sha256": "c219a8f6746382edbb3e6a304fe85e750755e719874cf5775a2a6ef48a3fca88",
+      "public_sha256": "a6b9d166597efae8a26a65e2c654367da99fddef7ccaab6698a1646930083ced",
+      "request_count": 160,
+      "role": "complete Job D cohort"
+    },
+    "kind": "patchaudit_jobE_heldout_selection",
+    "overlap_audit": {
+      "donor_id": {
+        "exclusion_count": 80,
+        "exclusion_values_sha256": "0e58da827408bf880bf699d77f8f238217b68b6026f7f8fcf75f0c1f4ebd4d5a",
+        "overlap_count": 0,
+        "selected_count": 46,
+        "selected_values_sha256": "ba4922332e1d0183ff7c841e1d0bbf1feb8ba9fc0e02ee42e707eab4c05edd1d"
+      },
+      "frame_id": {
+        "exclusion_count": 80,
+        "exclusion_values_sha256": "69b56d85561a489539ee1abbf4a562d7e75a334c5328e7a307e983d298d5ed00",
+        "overlap_count": 0,
+        "selected_count": 46,
+        "selected_values_sha256": "95339dc3a66799cabaedca969e76c6d8c6bf44caa954fb0723016bda3261b1b1"
+      },
+      "participant_cluster_id": {
+        "exclusion_count": 80,
+        "exclusion_values_sha256": "bfa2b9e307d450b188bec3f13716b1eafc19205db8b84f63aaf1217969bd2d0d",
+        "overlap_count": 0,
+        "selected_count": 46,
+        "selected_values_sha256": "7345965e8d3f822735d2ddccd4a1ffdaddd6859b339d9ada8dc9a3afe6d0b252"
+      },
+      "source_video_id": {
+        "exclusion_count": 80,
+        "exclusion_values_sha256": "3203d28534d3604170e729cd1cbb8166372f881c54099396e601b56abdf6194a",
+        "overlap_count": 0,
+        "selected_count": 46,
+        "selected_values_sha256": "52693bbf5aba91f37899b73cb6d0fc17b297c6928c0a0a8c64797d7e00c12b64"
+      }
+    },
+    "rejected_source_frame_counts_by_overlap_field": {
+      "participant_cluster_id": 50,
+      "source_video_id": 24
+    },
+    "selected": {
+      "frame_count": 46,
+      "frame_unit_ids_sha256": "b01dcef999457a6f290e8659972b221ee1cdadded03d524f0f700371bb67df2e",
+      "hidden_jsonl_sha256": "40ad815b8114416c29e088f0eb54ac22b7c34db13ddc50ee46e016b94759f6d8",
+      "participant_cluster_count": 46,
+      "public_jsonl_sha256": "2b0e31236a0ea531a4a9849b00356e2fabfa153084dd12487511b2523d50635f",
+      "public_rows_sha256": "4e6512feb15d515ef564f340fa443f7f7bcb986775ceab88d3ea80b14e7dfdcf",
+      "request_count": 92,
+      "request_ids_sha256": "c1b0dc1df8efde6aae226ea4e17a28be9391e04588be0060f2e91383d7253f4d",
+      "source_video_count": 46
+    },
+    "selection_rule": "retain every source frame pair whose participant cluster, source video, source frame, and donor identities are all absent from the Job D cohort; sort only for deterministic execution",
+    "selection_status": "frozen_before_any_jobE_model_outcome",
+    "selection_uses_correct_choice": false,
+    "selection_uses_model_outputs": false,
+    "source": {
+      "frame_count": 96,
+      "hidden_sha256": "7ca499317bf2eb6b7e88a2b851fe467d72c603abd2ddee4c825b8443228f3011",
+      "mechanism_manifest_sha256": "a87aa16daa4d944882b0ba1a3891b639c71a83ec090aa29b0f5ac6c3f26586be",
+      "public_sha256": "d8c92857c0f2bbb11de41b1b92853bf208b816d4640d21fadbfb9e6cf9be6d97",
+      "request_count": 192
+    },
+    "status": "pass",
+    "version": 1
+  },
+  "original_sha256": "73ee030a8369f05ba11f439fa8b83ecfb5e694ff3eecb1d47c032c9807cef2de",
+  "provenance": {
+    "archive_label": "scientific_supp_v2",
+    "archive_member_sha256": "4b28e737a0e5d0b328802a9ecca34dff6890d1afbfd42cebd5a81a9a8a8187a4",
+    "archive_sha256": "4c630bed2046e8591dfa8ef9761996a5777d42817bcadb4d7627c6049cd2abfd"
+  }
+}

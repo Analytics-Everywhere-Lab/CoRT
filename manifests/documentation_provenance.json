@@ -1,0 +1,97 @@
+{
+  "current_paper": {
+    "authority": "Reviewed CoRT manuscript: experiment scope and claim status.",
+    "logical_name": "cort_manuscript_text_2026_11_01",
+    "sha256": "28a345c310b6650e857ba75f9d18aa34933f4705cfafe3186fe86a5bc559879c"
+  },
+  "frozen_config_sources": "manifests/source_to_export.json",
+  "reviewed_source_archive": {
+    "review_date": "2026-11-02",
+    "archive_sha256": "841837a21872eb0242044a8ce94f9f64bb2fb2fd27cf186bf1e90ccae14136b8",
+    "main_path": "Loc-polish/main.tex",
+    "main_sha256": "0f463ba0d613adc77e2ce16741de6cdc2f551ad1d1277289d3b2acc021459c1c",
+    "supplement_path": "Loc-polish/supplement_v47.tex",
+    "supplement_sha256": "7f778f868de0ecdbad5f46189dc48bd48f41c3617ff5e562358542c068620603",
+    "scope": "Documentation and paper-to-release mapping checked against this source archive; historical numerical-source bindings above are retained. Manuscript sources and media are not redistributed here."
+  },
+  "interpretation": [
+    "Author validation was reported after first recognition results; original labels and frozen protocol bytes were not retrospectively rewritten.",
+    "The supplement supports methods and chronology; the reviewed manuscript defines the included experiments.",
+    "Dataset providers govern access and terms.",
+    "Source paths are repository-relative provenance; private absolute source paths are not published."
+  ],
+  "numerical_inventory_sources": "manifests/experiment_inventory.json",
+  "release_date": "2026-11-01",
+  "schema_version": 1,
+  "scope": [
+    "docs/data_access.md",
+    "docs/experiments.md",
+    "docs/environment.md"
+  ],
+  "supporting_sources": [
+    {
+      "source_path": "papers/scene_to_task_roles_revision_cycle_2026_10_18/supplement_v47.tex",
+      "source_sha256": "44eb56935c67a13c3faaadb8c62ccff4c87a55a645f9b4f19388c794f4c4e807"
+    },
+    {
+      "source_path": "research/lifecycle_memory/build_phase2_reanchored_egohos_battery.py",
+      "source_sha256": "f2a00a6ad63c3bb827a83ce7cdd5768ffb8a4c791a0c9360c21c57e3469f1d8d"
+    },
+    {
+      "source_path": "research/lifecycle_memory/run_phase2_reanchored_behavior.py",
+      "source_sha256": "fe96eb91f98e99715b109f4fab365b1233dd79eba10fbffde9063225bfce4e63"
+    },
+    {
+      "source_path": "research/lifecycle_memory/run_phase2_reanchored_answer_token_causal_patch.py",
+      "source_sha256": "c942b5d6d8bfe9a5b7cde96c43d0bd907641fb4a337fd110ee7df08847b6ebfa"
+    },
+    {
+      "source_path": "research/lifecycle_memory/decoder_cached_validation.py",
+      "source_sha256": "2e755df4afcd6dd24a9d2e2b4a7b0aa79740e1f4e96499cd7c0d45eb039d967c"
+    },
+    {
+      "source_path": "research/lifecycle_memory/temporal_forecasting/runtime.py",
+      "source_sha256": "9bf9927b4d50da716ad684012fc1940f84e3332d1bffd010f806b371486e91c8"
+    },
+    {
+      "source_path": "research/lifecycle_memory/temporal_forecasting/recognition_data.py",
+      "source_sha256": "23db68e21c868e6c1bf36b5a2de00cc32e75a8b42d9a20f7cf043341a7fc8488"
+    },
+    {
+      "source_path": "research/lifecycle_memory/temporal_forecasting/followup_protocol.py",
+      "source_sha256": "5ed381696a0552fb050d8a73777cf7e25f67bfa3ad0ee784ef45dc3d4fe4209f"
+    },
+    {
+      "source_path": "docs/research/lifecycle_memory/phase 2 research/jobs/temporal_current/STATUS_2026_10_25.md",
+      "source_sha256": "7916475c60878d96a05d25e969d1454d8bf8e5eee2a2047c2190077bf9f10f66"
+    },
+    {
+      "source_path": "docs/research/lifecycle_memory/phase 2 research/jobs/temporal_recognition/HUMAN_VALIDATION_2026_10_25.md",
+      "source_sha256": "32609e6c317f2fa8ac171f3c7a46c11f3ce54b3a05eb058dbd2484adb843c472"
+    },
+    {
+      "source_path": "docs/research/lifecycle_memory/phase 2 research/jobs/temporal_recognition/RESULTS_FIR_2026_10_25.md",
+      "source_sha256": "35d42ee88d272a2187515107f461fcd6dd0e8c191fbd003c1ec68494921ed1f1"
+    },
+    {
+      "source_path": "docs/research/lifecycle_memory/phase 2 research/jobs/temporal_recognition/FOLLOWUP_STATUS_2026_10_25.md",
+      "source_sha256": "7231eb11ea3706eedf4720854a23d2c18b2981fc2caccd26f79e944baee7cadf"
+    },
+    {
+      "source_path": "docs/research/lifecycle_memory/phase 2 research/jobs/temporal_recognition/FOLLOWUP_RESULTS_2026_10_25.json",
+      "source_sha256": "1110ee0308dc3762d36a9bd30b058c21da553aa4937c23edd636f855d7dce08e"
+    },
+    {
+      "source_path": "docs/research/lifecycle_memory/phase 2 research/job3_stage_a_rights_and_provenance_ledger_2026_07_14.md",
+      "source_sha256": "65c1c3ae08ea6e2d1df3cc4ebe175c8740fb18d2bae9c8436639136d1fb5d541"
+    },
+    {
+      "source_path": "runs/killarney/role-aware-combined/full/6469516/analysis_summary.json",
+      "source_sha256": "1f61e6b58120df3588a904ba84fc907d0d41658aa31799154c694b97a844d541"
+    },
+    {
+      "source_path": "runs/killarney/role-aware-transfer/full/6478505/analysis_summary.json",
+      "source_sha256": "cd85793f1f9724c2cecd41f370b9f66ab5e57d4fc76d65adfbc3d731a7e40075"
+    }
+  ]
+}

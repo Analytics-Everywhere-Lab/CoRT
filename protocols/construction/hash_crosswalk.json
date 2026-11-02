@@ -1,0 +1,41 @@
+{
+  "construction_source": [
+    {
+      "byte_identical_archived_release": true,
+      "bytes": 117557,
+      "module": "build_phase2_reanchored_egohos_battery",
+      "sha256": "6910aaafc7e113e7cec8608c68b043ff9932ec16cc5a6e964307b692ce1e2781"
+    },
+    {
+      "byte_identical_archived_release": true,
+      "bytes": 104388,
+      "module": "phase2_job3_egohos_burned_items",
+      "sha256": "bca1580ae017d319bc3ffdd48d1bd15184e75c0201f4bc5b30704b7f77c3a54f"
+    },
+    {
+      "byte_identical_archived_release": true,
+      "bytes": 37121,
+      "module": "phase2_job3_egohos_census",
+      "sha256": "76de73910283ef368493e6a0020b3b1326e8253528083e117870026ed3a07de7"
+    }
+  ],
+  "kind": "documentary_construction_extract",
+  "limitations": "Recorded local chronology and content consistency only; not proof of independent blinding or externally registered freeze timing. Execution requires an independently obtained private execution manifest and its real hash-bound inputs; this extract cannot replace them.",
+  "not_an_execution_manifest": true,
+  "original_pre_anonymization_bindings": {
+    "contract_sha256": "dbae7054c5873aee3e248dea42d998c8c9bc5ef7e5b65f5c7b2c83bb2e66224a",
+    "model_plan_sha256": "a891d950a3ffedcf33de54ee474b08e36ff8de040783d306d4bc9c8bf60bcd53",
+    "prespec_sha256": "9ba19acaf8f50a19c1526c07ac9bbefc7fa4064a9a01079129fdccb22fc6c5a1",
+    "public_manifest_sha256": "2b0e31236a0ea531a4a9849b00356e2fabfa153084dd12487511b2523d50635f",
+    "selection_manifest_sha256": "73ee030a8369f05ba11f439fa8b83ecfb5e694ff3eecb1d47c032c9807cef2de"
+  },
+  "provenance": {
+    "archive_label": "scientific_supp_v2",
+    "archive_member_sha256": "45e9a237f59081edfb3a4f21902b39be87cc1d611808b2a09257fa23b5e35037",
+    "archive_sha256": "4c630bed2046e8591dfa8ef9761996a5777d42817bcadb4d7627c6049cd2abfd"
+  },
+  "retained_anonymized_specification": {
+    "sha256": "38f4e8d69dc28d401a784c78c224583aea5dd694ec0b40b36699b636007c430e"
+  },
+  "scope": "Original hashes identify original records, not these documentary extracts. Archived construction source hashes are not hashes of the current source export."
+}

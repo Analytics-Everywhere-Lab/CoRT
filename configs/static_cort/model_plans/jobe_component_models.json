@@ -1,0 +1,22 @@
+[
+  {
+    "model_id": "Qwen/Qwen3.5-27B",
+    "model_key": "qwen35_27b_hf_bf16",
+    "ranks": [
+      0
+    ],
+    "revision": "fc05daec18b0a78c049392ed2e771dde82bdf654",
+    "shards": 1
+  },
+  {
+    "model_id": "google/gemma-4-31B-it",
+    "model_key": "gemma4_31b_hf_bf16",
+    "ranks": [
+      1,
+      2,
+      3
+    ],
+    "revision": "3548789868c5356dbf307c98e6f609007b82b3eb",
+    "shards": 3
+  }
+]

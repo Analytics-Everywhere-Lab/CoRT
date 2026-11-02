@@ -1,0 +1,269 @@
+{
+  "amendment_history": [
+    {
+      "date": "2026-07-21",
+      "reason": "Outcome-blind construction and pre-inference review clarified evaluator-unjoined canaries, replaced inference on a nonsmooth minimum with a componentwise intersection-union test, and made counterbalanced target binding a confirmatory promotion gate. No model outputs from the new cohort existed at amendment time.",
+      "supersedes_version": 1
+    },
+    {
+      "date": "2026-07-21",
+      "reason": "A second independent pre-inference audit removed invalid significance claims from unsigned activation distances, narrowed counterbalanced correctness and causal-patching language, added signed full-frame-selective localization, and required bidirectional rescue/damage, behavioral eligibility, and global multiplicity control. No model outputs from the new cohort existed at amendment time.",
+      "supersedes_version": 2
+    }
+  ],
+  "analysis_visibility": {
+    "canary": "Technical and evaluator-unjoined. A coordinator may verify the sealed evaluator file's byte hash, but no canary process may parse or join evaluator rows or emit accuracy, effect directions, margins conditioned on the true answer, p-values, confidence intervals, or layer rankings.",
+    "full": "Join hidden labels only after all data, model, prompt, image, row-completeness, and token-boundary gates pass.",
+    "mechanism": "Job B is representational and noncausal. Job C supports only component- or stage-level causal implication when every matched-donor and control gate passes."
+  },
+  "behavioral_analysis": {
+    "anchor_contrast": "qwen35_27b_hf_bf16_minus_gemma4_31b_hf_bf16_delta_evidence",
+    "anchor_contrast_scope": "secondary_descriptive_unless_a_separate_prespecified_interaction_test_is_reported",
+    "bootstrap": {
+      "cluster_key": "ego4d_participant_id",
+      "confidence_interval": "percentile_95_with_one_sided_95_lower_bound_for_each_smooth_component",
+      "draws": 10000,
+      "seed": 20260721,
+      "statistic": "participant_equal_mean_of_within_question_paired_differences"
+    },
+    "counterbalanced_pair_correctness": {
+      "claim_boundary": "This defeats a fixed A/B position shortcut but does not by itself establish scene-target binding because crop appearance may reveal first-versus-second-order role.",
+      "confirmatory_gate": "participant_cluster_bootstrap_one_sided_lower_95_bound_above_0.25_and_one_sided_centered_cluster_bootstrap_p_value_in_the_per_model_conjunction",
+      "primary": "same_frame_both_counterbalanced_crop_orders_correct_rate_on_real_with_paired_chance_null_0.25",
+      "secondary": "crop_order_consistency_prediction_flip_compliance_and_paired_correct_answer_margin_separation"
+    },
+    "descriptive": [
+      "greedy_accuracy_by_arm_and_role",
+      "teacher_forced_correct_answer_margin_bits_by_arm_and_role",
+      "prediction_flip_rate",
+      "parse_failure_rate",
+      "clean_capability_versus_evidence_sensitivity"
+    ],
+    "multiplicity": {
+      "family": "four_model_conjunctive_configuration_tests_each_defined_as_max_of_real_minus_blank_real_minus_wrong_time_and_counterbalanced_pair_correctness_one_sided_p_values",
+      "method": "holm",
+      "secondary_family": "real_minus_wrong_time_per_model_holm"
+    },
+    "primary_effect_summary": "minimum_of_the_two_observed_smooth_component_effects_reported_descriptively_without_a_direct_nonsmooth_minimum_confidence_interval",
+    "primary_estimand": "intersection_union_test_requiring_positive_participant_equal_real_minus_blank_full_and_real_minus_wrong_time_effects; each component is estimated and bootstrapped separately",
+    "primary_outcome": "strict_greedy_canonical_A_or_B_accuracy",
+    "supporting_test": "one_sided_centered_participant_cluster_bootstrap_against_each_frozen_null_value"
+  },
+  "candidate_completions": {
+    "A": "{\"answer\":\"A\",\"abstain\":false,\"abstention_reason\":null,\"confidence\":1.0}",
+    "B": "{\"answer\":\"B\",\"abstain\":false,\"abstention_reason\":null,\"confidence\":1.0}"
+  },
+  "claim_boundary": "The primary claim is configuration-level behavioral dependence on the correct visual evidence and robust counterbalanced pair correctness. The mechanism jobs can identify selective propagation and an earliest bidirectional causal bottleneck under frozen interventions, not the exact computational origin of failure. The study does not establish scene-target binding, durable memory, universal architecture defects, neuron-level localization, or absence of information from a null probe or patch.",
+  "created_at": "2026-07-21",
+  "data": {
+    "arms": [
+      "real",
+      "blank_full",
+      "wrong_time"
+    ],
+    "burned_exclusion": {
+      "evaluator_index": "runs/research/lifecycle_memory/phase_2/job3_burned_egohos_prompt_repair_round1_final_2026_07_21/hidden/evaluator_index.json",
+      "evaluator_index_sha256": "58ac9787a84af6f54cc8608fe13fbd3f783cf1815385db6780b69a036f64a3aa",
+      "rule": "Exclude every burned source frame, participant/video when identifiable, and any selected wrong-time donor that overlaps a burned source frame."
+    },
+    "candidate_sidecar": "data/external/egohos/derived/job3_stage_a2_census_mapped_subset_v2_2026_07_17/hidden/egohos_candidate_sidecar.jsonl",
+    "candidate_sidecar_sha256": "89ff17f0d788f337c659c7a4cec086abcb4fa0ea9a1a7b48d30221eef5c848bd",
+    "fixed_geometry": {
+      "full_frame": "all real, blank_full, and wrong_time assets have one identical pixel width and height",
+      "reference_crop": "all first-order and second-order target crops are centered on one identical canvas width and height",
+      "require_processor_token_shape_identity_for_patching": true
+    },
+    "frame_count": 800,
+    "frame_level_statistical_units": 800,
+    "mechanism_subset": {
+      "frame_count": 96,
+      "participant_clusters": 96,
+      "selection": "outcome_blind_participant_first_hash_order_one_frame_per_participant",
+      "trial_count": 192
+    },
+    "minimum_participant_clusters": 100,
+    "selection": {
+      "exact_targets_per_frame": 2,
+      "first_order_classes": [
+        3,
+        4,
+        5
+      ],
+      "max_frames_per_participant": 10,
+      "one_target_per_role": true,
+      "outcome_blind_hash_order": true,
+      "second_order_classes": [
+        6,
+        7,
+        8
+      ],
+      "target_component_rule": "within the chosen class mask, select the largest 8-connected component with area at least 64 pixels; break exact area ties by lexicographically smallest top,left,bottom,right bounding box; render only that component and record its hidden fingerprint",
+      "wrong_time_minimum_source_frame_gap": 900,
+      "wrong_time_same_video": true
+    },
+    "statistical_unit": "participant cluster; counterbalanced crop orders are paired repeated trials within each of 800 distinct frames, not independent observations",
+    "target_roles": [
+      "first_order_interacting_object",
+      "second_order_interacting_object"
+    ]
+  },
+  "generation": {
+    "do_sample": false,
+    "max_new_tokens": 96,
+    "prompt_source": "reanchored_egohos_first_vs_second_order_2afc_v1",
+    "prompt_source_prespec": "docs/research/lifecycle_memory/phase 2 research/jobs/mech_job3_heldout_confirmation/scoring_prespec_prompt_repair_round1_final.json",
+    "prompt_source_prespec_sha256": "19cbe5775b122dba9a02ced1f62b2c29c12e35d07e4f646cc6af7fdf20c42dc8",
+    "prompt_text": "Input 1 is a full frame. Inputs 2 and 3 are unmarked target-only reference crops A and B. Which referenced target is the first-order interacting object, meaning the object directly manipulated by a visible hand rather than a second-order object interacting through it? Return exactly one JSON object with answer A or B plus the frozen abstention and confidence keys."
+  },
+  "job_a": {
+    "expected_decisions": 19200,
+    "models": 4,
+    "promotion_rule": "Per model, require the clean capability gate, positive one-sided lower bounds for both evidence contrasts, the counterbalanced pair-correctness lower bound above 0.25, and Holm-adjusted p below 0.05 for the maximum of the three component p values.",
+    "questions_per_model": 1600,
+    "required_outputs": [
+      "strict_greedy_json",
+      "A_and_B_candidate_token_log_probabilities",
+      "correct_answer_margin_bits"
+    ],
+    "tamia_walltime_initial": "03:00:00"
+  },
+  "job_b": {
+    "arms": [
+      "real",
+      "blank_full",
+      "wrong_time"
+    ],
+    "diagnostic_frame_count": 96,
+    "diagnostic_trial_count": 192,
+    "frozen_capture_sites": [
+      "vision_tower_final",
+      "projector_or_merger_output",
+      "decoder_visual_token_residual_every_layer",
+      "decoder_final_question_token_residual_every_layer",
+      "output_correct_answer_margin_bits"
+    ],
+    "inference": {
+      "cluster_bootstrap_draws": 10000,
+      "cross_validation_group": "participant_or_video",
+      "layerwise_simultaneous_inference": "centered_participant_cluster_bootstrap_with_simultaneous_layer_control_on_the_signed_full_frame_selective_contrast",
+      "probe_null": "full_refit_grouped_counterbalance_pair_permutation",
+      "probe_scope": "exploratory_with_complete_family_holm_correction_and_incremental_grouped_cv_performance_over_frozen_class_and_component_geometry_nuisance_baselines",
+      "raw_activation_distances": "descriptive_only_because_rms_and_cosine_distance_are_unsigned_and_nonnegative",
+      "signed_primary_localization_contrast": "full_frame_slot_real_to_corrupt_distance_minus_mean_of_crop_A_and_crop_B_real_to_corrupt_distances_collapsed_within_frame_then_participant_equal"
+    },
+    "layer_crosswalk": "lm_entry_is_not_a_decoder_block; Job_B_hidden_state_i_plus_1_is_post_block_i_and_corresponds_to_Job_C_decoder_block_i",
+    "localization_claim": "within_model_selective_propagation_depth_only_not_failure_origin_or_cross_model_activation_magnitude",
+    "subset_selection": "outcome_blind_participant_first_hash_order_one_frame_per_participant_before_fill",
+    "tamia_walltime_initial": "02:00:00"
+  },
+  "job_c": {
+    "behavioral_eligibility": "A model must pass the frozen 800-frame Job A promotion gate. For each corruption, the 96-frame mechanism subset must also have a positive participant-cluster one-sided lower bound for clean-minus-corrupt correct-answer margin. Otherwise all patch rows are descriptive and no causal call is allowed.",
+    "causal_call_rule": "At the same frozen coarse site, matched clean-to-corrupt patching must rescue correct-answer margin and matched corrupt-to-clean patching must damage correct-answer margin; the conjunctive result must exceed unrelated/random controls, pass self-patch invariance, and survive one global Holm family across all 16 model-by-corruption-by-stage configurations.",
+    "causal_claim": "The earliest frozen site passing the bidirectional conjunction is an operational causal bottleneck under these interventions. It is not claimed to be the exact computational origin of the failure.",
+    "coarse_decoder_layer_fractions": [
+      0.0,
+      0.125,
+      0.25,
+      0.375,
+      0.5,
+      0.625,
+      0.75,
+      0.875,
+      1.0
+    ],
+    "controls": [
+      "clean_to_clean_self_patch",
+      "unrelated_same_label_donor",
+      "norm_matched_random_or_random_position_when_exact"
+    ],
+    "corrupt_recipients": [
+      "blank_full",
+      "wrong_time"
+    ],
+    "intervention_directions": [
+      "matched_clean_to_corrupt_rescue",
+      "matched_corrupt_to_clean_damage"
+    ],
+    "layer_crosswalk": "lm_entry_is_not_patchable_as_a_decoder_block; Job_C_block_i_matches_Job_B_post_block_i_or_hidden_state_i_plus_1",
+    "models": [
+      "qwen35_27b_hf_bf16",
+      "gemma4_31b_hf_bf16"
+    ],
+    "patch_families": [
+      "vision_tower_final",
+      "projector_or_merger_output",
+      "decoder_visual_token_residual",
+      "decoder_final_question_token_residual"
+    ],
+    "primary_metric": "matched_real_source_patch_increase_in_correct_answer_margin_bits",
+    "primary_multiplicity": "one_conjunctive_p_value_per_2_models_x_2_corruptions_x_4_stage_families_then_global_holm_across_16",
+    "refinement": "map frozen normalized fractions to nearest unique block indexes; after the coarse sweep add at most two block indexes on either side of the strongest coarse site; refined points are descriptive unless the complete peak-selection operation is replayed inside every inferential resample",
+    "required_fail_closed_checks": [
+      "model_revision_identity",
+      "prompt_and_image_hash_identity",
+      "processor_token_shape_identity",
+      "patched_tensor_shape_identity",
+      "only_intended_positions_change",
+      "hook_removed_after_forward",
+      "finite_outputs"
+    ],
+    "runtime_profile_rule": "full_submission_requires_a_passing_hash_bound_canary_profile_and_a_measured_projection_with_20_to_30_percent_headroom_inside_the_requested_resumable_chunk",
+    "tamia_walltime_initial": "03:00:00",
+    "worker_topology": "two_gpu_shards_per_model_one_process_per_gpu"
+  },
+  "kill_rules": [
+    "Do not promote a model's new-cohort evidence effect unless its real-arm A/B accuracy is at least 0.65 and its participant-cluster bootstrap lower bound is above 0.50.",
+    "Do not promote a model's evidence-use result unless both counterbalanced real-arm orders are correct above the paired chance null: the participant-cluster one-sided lower bound must exceed 0.25 and the pair-correctness p value must pass inside the model-level conjunction and four-model Holm family.",
+    "Do not run if the exact 800-frame and 100-participant minimum cohort cannot be built without relaxing a frozen rule.",
+    "Withhold affected configuration results for any prompt/image/model hash mismatch, missing or duplicate row, token-boundary failure, nonfinite score, or unaccounted parse failure.",
+    "Report a patch site as unsupported if exact token and tensor alignment cannot be proven; never approximate it silently.",
+    "Never use unsigned raw activation distance significance as localization evidence; raw distance trajectories are descriptive, and only the frozen signed full-frame-selective contrast receives layerwise inference.",
+    "Never issue a causal bottleneck call without Job A eligibility, a positive mechanism-subset clean-minus-corrupt deficit, bidirectional rescue and damage, control specificity, and global multiplicity correction.",
+    "Null or inconsistent Job C results force a behavioral-plus-representation paper and no causal localization headline."
+  ],
+  "kind": "phase2_reanchored_evidence_failure_localization_prespec",
+  "models": [
+    {
+      "model_id": "Qwen/Qwen3.5-4B",
+      "model_key": "qwen35_4b_hf_bf16",
+      "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a"
+    },
+    {
+      "model_id": "Qwen/Qwen3.5-27B",
+      "model_key": "qwen35_27b_hf_bf16",
+      "revision": "fc05daec18b0a78c049392ed2e771dde82bdf654"
+    },
+    {
+      "model_id": "google/gemma-4-12B-it",
+      "model_key": "gemma4_12b_hf_bf16",
+      "revision": "5926caa4ec0cac5cbfadaf4077420520de1d5205"
+    },
+    {
+      "model_id": "google/gemma-4-31B-it",
+      "model_key": "gemma4_31b_hf_bf16",
+      "revision": "3548789868c5356dbf307c98e6f609007b82b3eb"
+    }
+  ],
+  "status": "amended_after_outcome_blind_construction_audit_and_independent_pre_inference_review_then_frozen_before_any_new_cohort_model_inference",
+  "tamia": {
+    "account": "__DEPLOYMENT_ACCOUNT__",
+    "cpus_per_task": 12,
+    "gpus": "h100:4",
+    "host_memory": "480G",
+    "ntasks_per_node": 4,
+    "partition": null,
+    "runtime": "HF_PyTorch_bf16_offline_Apptainer",
+    "sif": "__CONTAINER_IMAGE_PATH__"
+  },
+  "task_capability_gate": {
+    "arm": "real_full_frame_plus_two_counterbalanced_reference_crops",
+    "bootstrap_cluster": "ego4d_participant_id",
+    "confidence": 0.95,
+    "minimum_cluster_bootstrap_lower_bound": 0.5,
+    "minimum_greedy_accuracy": 0.65,
+    "per_model": true,
+    "source_cohort": "new_frozen_800_frame_cohort",
+    "strict_lower_bound_operator": ">"
+  },
+  "version": 3
+}

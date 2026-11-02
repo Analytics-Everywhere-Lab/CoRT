@@ -1,0 +1,170 @@
+{
+  "job_fields": {
+    "canary_aggregate_sha256": "225f0b67e8a01370fad89ed42cdf6c03346fa1a4a0bdc663d3e04b298c1d7ece",
+    "canary_profile_sha256": "eb33b8dafd39ee38574577bad8745623bb174aeeeb6be7d2510b8d5ac0ddb623",
+    "code_snapshot_sha256": "7cadd19767eb0ba7218785fbd7bf2a058f5819a8bcc62e969a47d0f08345a101",
+    "completed_at": "2026-07-26T22:21:13.833094+00:00",
+    "contract_sha256": "dbae7054c5873aee3e248dea42d998c8c9bc5ef7e5b65f5c7b2c83bb2e66224a",
+    "exclusion_data_manifest_sha256": "b63a52cb36ecb2c0d7cf449060256fa5390b308e6857ff096a9e379218d49240",
+    "exclusion_hash_manifest_sha256": "f7d81eaa927925181201c3e77b68c96623c123769fbecbbd55d21c57332f9432",
+    "exclusion_mechanism_manifest_sha256": "c219a8f6746382edbb3e6a304fe85e750755e719874cf5775a2a6ef48a3fca88",
+    "exclusion_public_manifest_sha256": "a6b9d166597efae8a26a65e2c654367da99fddef7ccaab6698a1646930083ced",
+    "hidden_index_outside_worker_data_dir": true,
+    "hidden_index_sha256": "40ad815b8114416c29e088f0eb54ac22b7c34db13ddc50ee46e016b94759f6d8",
+    "hidden_index_staged_after_technical_gate": true,
+    "hidden_index_staged_at": "2026-07-26T22:21:10.604108+00:00",
+    "hidden_index_staged_before_technical_gate": false,
+    "mechanism_manifest_sha256": "a87aa16daa4d944882b0ba1a3891b639c71a83ec090aa29b0f5ac6c3f26586be",
+    "mode": "full",
+    "model_plan_sha256": "a891d950a3ffedcf33de54ee474b08e36ff8de040783d306d4bc9c8bf60bcd53",
+    "prespec_sha256": "9ba19acaf8f50a19c1526c07ac9bbefc7fa4064a9a01079129fdccb22fc6c5a1",
+    "public_manifest_sha256": "2b0e31236a0ea531a4a9849b00356e2fabfa153084dd12487511b2523d50635f",
+    "release_manifest_sha256": "404b3c9c0278c5e89853fa0b16e9f72e4054b6e778f6f5ef805968d6f0181967",
+    "selection_manifest_sha256": "73ee030a8369f05ba11f439fa8b83ecfb5e694ff3eecb1d47c032c9807cef2de",
+    "sif_sha256": "6ee3e881a0fd3feaa6a5b19a5e0f3c104cf2250c3468f8d6254a04164adfb905",
+    "source_data_manifest_sha256": "e9e8687077af199cfb24329f6670dced527ce584115579cd6f97ca4bc4d7f2ad",
+    "source_hash_manifest_sha256": "0871329a41ec4f5532539228b4ae324c0f93d3d07abc8f0807bb04c6934e03b8",
+    "source_mechanism_manifest_sha256": "a87aa16daa4d944882b0ba1a3891b639c71a83ec090aa29b0f5ac6c3f26586be",
+    "source_public_manifest_sha256": "d8c92857c0f2bbb11de41b1b92853bf208b816d4640d21fadbfb9e6cf9be6d97",
+    "status": "pass",
+    "technical_aggregate_sha256": "6eb90bced1d23721d58541950aec3a7d6b7015ea6d5b65db71ab85252d5bfb46",
+    "technical_gate_completed_at": "2026-07-26T22:21:10.515753+00:00",
+    "technical_gate_passed_before_hidden_stage": true,
+    "worker_hidden_bind": false,
+    "worker_visible_hidden_scan_status": "pass"
+  },
+  "kind": "documentary_construction_extract",
+  "limitations": "Recorded local chronology and content consistency only; not proof of independent blinding or externally registered freeze timing. Execution requires an independently obtained private execution manifest and its real hash-bound inputs; this extract cannot replace them.",
+  "not_an_execution_manifest": true,
+  "original_job_manifest_sha256": "ab37f13714b0eb3109717f32c37a7c1150234777c8cb344d5982de1092650a82",
+  "provenance": {
+    "archive_label": "scientific_supp_v2",
+    "archive_member_sha256": "1d458f98a27cb969fe67d0e0218b6cde2191b32edaf4caf2e980fb24468c9a16",
+    "archive_sha256": "4c630bed2046e8591dfa8ef9761996a5777d42817bcadb4d7627c6049cd2abfd"
+  },
+  "releases": [
+    {
+      "content_sha256": "98f567595cc8ab013d1fac757ee74b8079e0a98e993a7af7dab5eabea6671494",
+      "original_manifest_sha256": "d7060f4954aeb6b776e78bcc5a9a12a0f86bc0bca78e59695eddba98aa5e11ae",
+      "selected_entries": [
+        {
+          "artifact_role": "prespecification",
+          "bytes": 10826,
+          "sha256": "9ba19acaf8f50a19c1526c07ac9bbefc7fa4064a9a01079129fdccb22fc6c5a1"
+        },
+        {
+          "artifact_role": "private_execution_selection",
+          "bytes": 10178,
+          "sha256": "73ee030a8369f05ba11f439fa8b83ecfb5e694ff3eecb1d47c032c9807cef2de"
+        },
+        {
+          "artifact_role": "private_execution_requests",
+          "bytes": 281520,
+          "sha256": "2b0e31236a0ea531a4a9849b00356e2fabfa153084dd12487511b2523d50635f"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "content_sha256": "7cadd19767eb0ba7218785fbd7bf2a058f5819a8bcc62e969a47d0f08345a101",
+      "original_manifest_sha256": "404b3c9c0278c5e89853fa0b16e9f72e4054b6e778f6f5ef805968d6f0181967",
+      "selected_entries": [
+        {
+          "artifact_role": "prespecification",
+          "bytes": 10826,
+          "sha256": "9ba19acaf8f50a19c1526c07ac9bbefc7fa4064a9a01079129fdccb22fc6c5a1"
+        },
+        {
+          "artifact_role": "private_execution_selection",
+          "bytes": 10178,
+          "sha256": "73ee030a8369f05ba11f439fa8b83ecfb5e694ff3eecb1d47c032c9807cef2de"
+        },
+        {
+          "artifact_role": "private_execution_requests",
+          "bytes": 281520,
+          "sha256": "2b0e31236a0ea531a4a9849b00356e2fabfa153084dd12487511b2523d50635f"
+        }
+      ],
+      "version": 2
+    }
+  ],
+  "scope": "Selected hashes and timestamps only; source paths, row identities and infrastructure account fields excluded. Bindings establish content consistency, not independently certified deposit times or author access history.",
+  "workers": [
+    {
+      "completed_at": "2026-07-26T22:16:29+00:00",
+      "created_at": "2026-07-26T22:01:22+00:00",
+      "hidden_index_opened": false,
+      "immutable_hashes": {
+        "code_snapshot_sha256": "7cadd19767eb0ba7218785fbd7bf2a058f5819a8bcc62e969a47d0f08345a101",
+        "contract_sha256": "dbae7054c5873aee3e248dea42d998c8c9bc5ef7e5b65f5c7b2c83bb2e66224a",
+        "mechanism_manifest_sha256": "a87aa16daa4d944882b0ba1a3891b639c71a83ec090aa29b0f5ac6c3f26586be",
+        "model_plan_sha256": "a891d950a3ffedcf33de54ee474b08e36ff8de040783d306d4bc9c8bf60bcd53",
+        "prespec_sha256": "9ba19acaf8f50a19c1526c07ac9bbefc7fa4064a9a01079129fdccb22fc6c5a1",
+        "public_manifest_sha256": "2b0e31236a0ea531a4a9849b00356e2fabfa153084dd12487511b2523d50635f",
+        "release_manifest_sha256": "404b3c9c0278c5e89853fa0b16e9f72e4054b6e778f6f5ef805968d6f0181967",
+        "selection_manifest_sha256": "73ee030a8369f05ba11f439fa8b83ecfb5e694ff3eecb1d47c032c9807cef2de",
+        "sif_sha256": "6ee3e881a0fd3feaa6a5b19a5e0f3c104cf2250c3468f8d6254a04164adfb905"
+      },
+      "model_key": "qwen35_27b_hf_bf16",
+      "original_sha256": "0bf636a553d90f6020ad3a8c829921a2c7cbf9355a23e29ca6e295cb4efb9b31",
+      "rank": 0
+    },
+    {
+      "completed_at": "2026-07-26T22:21:04+00:00",
+      "created_at": "2026-07-26T22:01:23+00:00",
+      "hidden_index_opened": false,
+      "immutable_hashes": {
+        "code_snapshot_sha256": "7cadd19767eb0ba7218785fbd7bf2a058f5819a8bcc62e969a47d0f08345a101",
+        "contract_sha256": "dbae7054c5873aee3e248dea42d998c8c9bc5ef7e5b65f5c7b2c83bb2e66224a",
+        "mechanism_manifest_sha256": "a87aa16daa4d944882b0ba1a3891b639c71a83ec090aa29b0f5ac6c3f26586be",
+        "model_plan_sha256": "a891d950a3ffedcf33de54ee474b08e36ff8de040783d306d4bc9c8bf60bcd53",
+        "prespec_sha256": "9ba19acaf8f50a19c1526c07ac9bbefc7fa4064a9a01079129fdccb22fc6c5a1",
+        "public_manifest_sha256": "2b0e31236a0ea531a4a9849b00356e2fabfa153084dd12487511b2523d50635f",
+        "release_manifest_sha256": "404b3c9c0278c5e89853fa0b16e9f72e4054b6e778f6f5ef805968d6f0181967",
+        "selection_manifest_sha256": "73ee030a8369f05ba11f439fa8b83ecfb5e694ff3eecb1d47c032c9807cef2de",
+        "sif_sha256": "6ee3e881a0fd3feaa6a5b19a5e0f3c104cf2250c3468f8d6254a04164adfb905"
+      },
+      "model_key": "gemma4_31b_hf_bf16",
+      "original_sha256": "c2355b825fe89071c91e3065dcab3d4f2390e66da87ef9e596a89efe9a87acbc",
+      "rank": 1
+    },
+    {
+      "completed_at": "2026-07-26T22:19:59+00:00",
+      "created_at": "2026-07-26T22:01:22+00:00",
+      "hidden_index_opened": false,
+      "immutable_hashes": {
+        "code_snapshot_sha256": "7cadd19767eb0ba7218785fbd7bf2a058f5819a8bcc62e969a47d0f08345a101",
+        "contract_sha256": "dbae7054c5873aee3e248dea42d998c8c9bc5ef7e5b65f5c7b2c83bb2e66224a",
+        "mechanism_manifest_sha256": "a87aa16daa4d944882b0ba1a3891b639c71a83ec090aa29b0f5ac6c3f26586be",
+        "model_plan_sha256": "a891d950a3ffedcf33de54ee474b08e36ff8de040783d306d4bc9c8bf60bcd53",
+        "prespec_sha256": "9ba19acaf8f50a19c1526c07ac9bbefc7fa4064a9a01079129fdccb22fc6c5a1",
+        "public_manifest_sha256": "2b0e31236a0ea531a4a9849b00356e2fabfa153084dd12487511b2523d50635f",
+        "release_manifest_sha256": "404b3c9c0278c5e89853fa0b16e9f72e4054b6e778f6f5ef805968d6f0181967",
+        "selection_manifest_sha256": "73ee030a8369f05ba11f439fa8b83ecfb5e694ff3eecb1d47c032c9807cef2de",
+        "sif_sha256": "6ee3e881a0fd3feaa6a5b19a5e0f3c104cf2250c3468f8d6254a04164adfb905"
+      },
+      "model_key": "gemma4_31b_hf_bf16",
+      "original_sha256": "0af849d059a53e9163fff7571f7b6d7677497dafca78ef9eb44b96ba553353a6",
+      "rank": 2
+    },
+    {
+      "completed_at": "2026-07-26T22:19:52+00:00",
+      "created_at": "2026-07-26T22:01:23+00:00",
+      "hidden_index_opened": false,
+      "immutable_hashes": {
+        "code_snapshot_sha256": "7cadd19767eb0ba7218785fbd7bf2a058f5819a8bcc62e969a47d0f08345a101",
+        "contract_sha256": "dbae7054c5873aee3e248dea42d998c8c9bc5ef7e5b65f5c7b2c83bb2e66224a",
+        "mechanism_manifest_sha256": "a87aa16daa4d944882b0ba1a3891b639c71a83ec090aa29b0f5ac6c3f26586be",
+        "model_plan_sha256": "a891d950a3ffedcf33de54ee474b08e36ff8de040783d306d4bc9c8bf60bcd53",
+        "prespec_sha256": "9ba19acaf8f50a19c1526c07ac9bbefc7fa4064a9a01079129fdccb22fc6c5a1",
+        "public_manifest_sha256": "2b0e31236a0ea531a4a9849b00356e2fabfa153084dd12487511b2523d50635f",
+        "release_manifest_sha256": "404b3c9c0278c5e89853fa0b16e9f72e4054b6e778f6f5ef805968d6f0181967",
+        "selection_manifest_sha256": "73ee030a8369f05ba11f439fa8b83ecfb5e694ff3eecb1d47c032c9807cef2de",
+        "sif_sha256": "6ee3e881a0fd3feaa6a5b19a5e0f3c104cf2250c3468f8d6254a04164adfb905"
+      },
+      "model_key": "gemma4_31b_hf_bf16",
+      "original_sha256": "267cb0f6efeee51c1b205c0cbe67b9123a2ff15a803e16123fa1417885d7d027",
+      "rank": 3
+    }
+  ]
+}

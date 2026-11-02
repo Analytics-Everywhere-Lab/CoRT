@@ -1,0 +1,479 @@
+{
+  "base_model": "google/gemma-4-31B-it",
+  "base_revision": "3548789868c5356dbf307c98e6f609007b82b3eb",
+  "checkpoint_count": 16,
+  "checkpoints": [
+    {
+      "bytes": 172440,
+      "compression": "C379_L22_merge",
+      "cut": 34,
+      "filename": "C379_L22_merge__correct_L34_FQ.seed17.final.safetensors",
+      "parameters": 43008,
+      "positions": "FQ",
+      "rank": 4,
+      "seed": 17,
+      "selection": "fixed_final_step",
+      "sha256": "b06379b530b91887e547f2cbee0fca7526fdaa189cd0b778ac834a15236e7373",
+      "tensors": {
+        "down.weight": {
+          "dtype": "F32",
+          "shape": [
+            4,
+            5376
+          ]
+        },
+        "up.weight": {
+          "dtype": "F32",
+          "shape": [
+            5376,
+            4
+          ]
+        }
+      },
+      "training_steps": 256
+    },
+    {
+      "bytes": 172440,
+      "compression": "C379_L22_merge",
+      "cut": 34,
+      "filename": "C379_L22_merge__correct_L34_FQ.seed29.final.safetensors",
+      "parameters": 43008,
+      "positions": "FQ",
+      "rank": 4,
+      "seed": 29,
+      "selection": "fixed_final_step",
+      "sha256": "e5d2e5af15f064ce45ce4524503a3d3fa884859de86991c436fe09f8af08df58",
+      "tensors": {
+        "down.weight": {
+          "dtype": "F32",
+          "shape": [
+            4,
+            5376
+          ]
+        },
+        "up.weight": {
+          "dtype": "F32",
+          "shape": [
+            5376,
+            4
+          ]
+        }
+      },
+      "training_steps": 256
+    },
+    {
+      "bytes": 172432,
+      "compression": "F0_L30_prune",
+      "cut": 34,
+      "filename": "F0_L30_prune__correct_L34_CQ.seed17.final.safetensors",
+      "parameters": 43008,
+      "positions": "CQ",
+      "rank": 4,
+      "seed": 17,
+      "selection": "fixed_final_step",
+      "sha256": "dec1601754e0e5207be2156fcf9e4f77c4a3b49a2454c9579fb20d80ff363a59",
+      "tensors": {
+        "down.weight": {
+          "dtype": "F32",
+          "shape": [
+            4,
+            5376
+          ]
+        },
+        "up.weight": {
+          "dtype": "F32",
+          "shape": [
+            5376,
+            4
+          ]
+        }
+      },
+      "training_steps": 256
+    },
+    {
+      "bytes": 172432,
+      "compression": "F0_L30_prune",
+      "cut": 34,
+      "filename": "F0_L30_prune__correct_L34_CQ.seed29.final.safetensors",
+      "parameters": 43008,
+      "positions": "CQ",
+      "rank": 4,
+      "seed": 29,
+      "selection": "fixed_final_step",
+      "sha256": "059a13de8673286f602b71a76c7ed1efbb8dbfd2fb1fac3f7b703b02c53da2e7",
+      "tensors": {
+        "down.weight": {
+          "dtype": "F32",
+          "shape": [
+            4,
+            5376
+          ]
+        },
+        "up.weight": {
+          "dtype": "F32",
+          "shape": [
+            5376,
+            4
+          ]
+        }
+      },
+      "training_steps": 256
+    },
+    {
+      "bytes": 172448,
+      "compression": "F0_L30_prune",
+      "cut": 34,
+      "filename": "F0_L30_prune__correct_L34_readout.seed17.final.safetensors",
+      "parameters": 43008,
+      "positions": "readout",
+      "rank": 4,
+      "seed": 17,
+      "selection": "fixed_final_step",
+      "sha256": "7441821da62ca6607353f652b261d39769f9e7af97c5506f25546f992b00c247",
+      "tensors": {
+        "down.weight": {
+          "dtype": "F32",
+          "shape": [
+            4,
+            5376
+          ]
+        },
+        "up.weight": {
+          "dtype": "F32",
+          "shape": [
+            5376,
+            4
+          ]
+        }
+      },
+      "training_steps": 256
+    },
+    {
+      "bytes": 172448,
+      "compression": "F0_L30_prune",
+      "cut": 34,
+      "filename": "F0_L30_prune__correct_L34_readout.seed29.final.safetensors",
+      "parameters": 43008,
+      "positions": "readout",
+      "rank": 4,
+      "seed": 29,
+      "selection": "fixed_final_step",
+      "sha256": "3dbba849f6ca901dcc04db06d8fde71594a0af84ffe1a97e3cb63ddfdcdca58d",
+      "tensors": {
+        "down.weight": {
+          "dtype": "F32",
+          "shape": [
+            4,
+            5376
+          ]
+        },
+        "up.weight": {
+          "dtype": "F32",
+          "shape": [
+            5376,
+            4
+          ]
+        }
+      },
+      "training_steps": 256
+    },
+    {
+      "bytes": 172448,
+      "compression": "F67_L34_merge",
+      "cut": 34,
+      "filename": "F67_L34_merge__correct_L34_readout.seed17.final.safetensors",
+      "parameters": 43008,
+      "positions": "readout",
+      "rank": 4,
+      "seed": 17,
+      "selection": "fixed_final_step",
+      "sha256": "5f2b3dab545ce55501f35858435dd92b39ef154eaef5ba5558120e79ece0c0f9",
+      "tensors": {
+        "down.weight": {
+          "dtype": "F32",
+          "shape": [
+            4,
+            5376
+          ]
+        },
+        "up.weight": {
+          "dtype": "F32",
+          "shape": [
+            5376,
+            4
+          ]
+        }
+      },
+      "training_steps": 256
+    },
+    {
+      "bytes": 172448,
+      "compression": "F67_L34_merge",
+      "cut": 34,
+      "filename": "F67_L34_merge__correct_L34_readout.seed29.final.safetensors",
+      "parameters": 43008,
+      "positions": "readout",
+      "rank": 4,
+      "seed": 29,
+      "selection": "fixed_final_step",
+      "sha256": "69757bc95eb98520e861f334a8fe864035c54f9bcbf66bb983c8f096d3f5cfad",
+      "tensors": {
+        "down.weight": {
+          "dtype": "F32",
+          "shape": [
+            4,
+            5376
+          ]
+        },
+        "up.weight": {
+          "dtype": "F32",
+          "shape": [
+            5376,
+            4
+          ]
+        }
+      },
+      "training_steps": 256
+    },
+    {
+      "bytes": 172464,
+      "compression": "Fhalf_Chalf_L34_prune",
+      "cut": 34,
+      "filename": "Fhalf_Chalf_L34_prune__correct_L34_readout.seed17.final.safetensors",
+      "parameters": 43008,
+      "positions": "readout",
+      "rank": 4,
+      "seed": 17,
+      "selection": "fixed_final_step",
+      "sha256": "4cfda3db85b0f519c22665e1d7831262eed77da90e73df2b3ad368e0cde0bbec",
+      "tensors": {
+        "down.weight": {
+          "dtype": "F32",
+          "shape": [
+            4,
+            5376
+          ]
+        },
+        "up.weight": {
+          "dtype": "F32",
+          "shape": [
+            5376,
+            4
+          ]
+        }
+      },
+      "training_steps": 256
+    },
+    {
+      "bytes": 172464,
+      "compression": "Fhalf_Chalf_L34_prune",
+      "cut": 34,
+      "filename": "Fhalf_Chalf_L34_prune__correct_L34_readout.seed29.final.safetensors",
+      "parameters": 43008,
+      "positions": "readout",
+      "rank": 4,
+      "seed": 29,
+      "selection": "fixed_final_step",
+      "sha256": "c81608ae5619d340973bb83dfffea4bb570270f702cb488fe3c27e20cb99d4c3",
+      "tensors": {
+        "down.weight": {
+          "dtype": "F32",
+          "shape": [
+            4,
+            5376
+          ]
+        },
+        "up.weight": {
+          "dtype": "F32",
+          "shape": [
+            5376,
+            4
+          ]
+        }
+      },
+      "training_steps": 256
+    },
+    {
+      "bytes": 172424,
+      "compression": "native",
+      "cut": 34,
+      "filename": "native__correct_L34_CQ.seed17.final.safetensors",
+      "parameters": 43008,
+      "positions": "CQ",
+      "rank": 4,
+      "seed": 17,
+      "selection": "fixed_final_step",
+      "sha256": "8956583e220f60393d2319c2dc4ab9ca64333c01b42378a4da8f56e0bf52209f",
+      "tensors": {
+        "down.weight": {
+          "dtype": "F32",
+          "shape": [
+            4,
+            5376
+          ]
+        },
+        "up.weight": {
+          "dtype": "F32",
+          "shape": [
+            5376,
+            4
+          ]
+        }
+      },
+      "training_steps": 256
+    },
+    {
+      "bytes": 172424,
+      "compression": "native",
+      "cut": 34,
+      "filename": "native__correct_L34_CQ.seed29.final.safetensors",
+      "parameters": 43008,
+      "positions": "CQ",
+      "rank": 4,
+      "seed": 29,
+      "selection": "fixed_final_step",
+      "sha256": "665905ad218c358f5d3c2ce4f1bfa4437d5f490335d6525f9c754e8b39a4e0cb",
+      "tensors": {
+        "down.weight": {
+          "dtype": "F32",
+          "shape": [
+            4,
+            5376
+          ]
+        },
+        "up.weight": {
+          "dtype": "F32",
+          "shape": [
+            5376,
+            4
+          ]
+        }
+      },
+      "training_steps": 256
+    },
+    {
+      "bytes": 172424,
+      "compression": "native",
+      "cut": 34,
+      "filename": "native__correct_L34_FQ.seed17.final.safetensors",
+      "parameters": 43008,
+      "positions": "FQ",
+      "rank": 4,
+      "seed": 17,
+      "selection": "fixed_final_step",
+      "sha256": "2ef93b2b77d856f908dd05c3c5c79b6750fddebb1385357d726a504fba848eb4",
+      "tensors": {
+        "down.weight": {
+          "dtype": "F32",
+          "shape": [
+            4,
+            5376
+          ]
+        },
+        "up.weight": {
+          "dtype": "F32",
+          "shape": [
+            5376,
+            4
+          ]
+        }
+      },
+      "training_steps": 256
+    },
+    {
+      "bytes": 172424,
+      "compression": "native",
+      "cut": 34,
+      "filename": "native__correct_L34_FQ.seed29.final.safetensors",
+      "parameters": 43008,
+      "positions": "FQ",
+      "rank": 4,
+      "seed": 29,
+      "selection": "fixed_final_step",
+      "sha256": "38092b5550c49c3772978654d059b7d20f1126e34838210bae2d09c7beeb1047",
+      "tensors": {
+        "down.weight": {
+          "dtype": "F32",
+          "shape": [
+            4,
+            5376
+          ]
+        },
+        "up.weight": {
+          "dtype": "F32",
+          "shape": [
+            5376,
+            4
+          ]
+        }
+      },
+      "training_steps": 256
+    },
+    {
+      "bytes": 172432,
+      "compression": "native",
+      "cut": 34,
+      "filename": "native__correct_L34_readout.seed17.final.safetensors",
+      "parameters": 43008,
+      "positions": "readout",
+      "rank": 4,
+      "seed": 17,
+      "selection": "fixed_final_step",
+      "sha256": "11ece5ca5ded81021ae05af569db2b95b825a12cbd7389a67287896bce73c39b",
+      "tensors": {
+        "down.weight": {
+          "dtype": "F32",
+          "shape": [
+            4,
+            5376
+          ]
+        },
+        "up.weight": {
+          "dtype": "F32",
+          "shape": [
+            5376,
+            4
+          ]
+        }
+      },
+      "training_steps": 256
+    },
+    {
+      "bytes": 172432,
+      "compression": "native",
+      "cut": 34,
+      "filename": "native__correct_L34_readout.seed29.final.safetensors",
+      "parameters": 43008,
+      "positions": "readout",
+      "rank": 4,
+      "seed": 29,
+      "selection": "fixed_final_step",
+      "sha256": "124b3698defbd884212c9a7ca53d30b959d2ae8a186af5d6a0950a01d2899db3",
+      "tensors": {
+        "down.weight": {
+          "dtype": "F32",
+          "shape": [
+            4,
+            5376
+          ]
+        },
+        "up.weight": {
+          "dtype": "F32",
+          "shape": [
+            5376,
+            4
+          ]
+        }
+      },
+      "training_steps": 256
+    }
+  ],
+  "kind": "adapter_provenance_inventory",
+  "schema_version": 1,
+  "total_checkpoint_bytes": 2759024,
+  "training_clusters": 88,
+  "training_frames": 505,
+  "training_requests": 1010,
+  "weights_directory": "weights",
+  "weights_distributed": true
+}

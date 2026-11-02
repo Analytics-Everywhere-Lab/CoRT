@@ -1,0 +1,84 @@
+{
+  "bootstrap": {
+    "draws": 10000,
+    "seed": 20261019
+  },
+  "compression_id": "F133_L34_prune",
+  "cut": 34,
+  "decision": {
+    "accuracy_floor": 0,
+    "bounds": 4,
+    "co_primaries": {
+      "seed17": "F133_L34_readout_seed17",
+      "seed29": "F133_L34_readout_seed29"
+    },
+    "family_alpha": 0.05,
+    "speedup_floor": 1
+  },
+  "deployment_seed": 17,
+  "evaluation_manifest_sha256": "e8807ff5f26a65191cb6714866ca1338825c01a60df9d3ea0ade9be87bd7343f",
+  "experiment_id": "role-aware-transfer-2026-10-20-v1",
+  "measurement": {
+    "batch_size": 1,
+    "benchmark_requests": 128,
+    "canary_frames": 16,
+    "canary_timing_repeats": 2,
+    "timing_repeats": 5,
+    "warmups": 2
+  },
+  "model": {
+    "id": "google/gemma-4-31B-it",
+    "key": "gemma4_31b_hf_bf16",
+    "revision": "3548789868c5356dbf307c98e6f609007b82b3eb",
+    "torch": "2.12.1+cu126",
+    "transformers": "5.13.0"
+  },
+  "reference_config_sha256": "272267e90364808ca9efd487c8691824ca3421e90e8ef4145cb3afa3dca53b29",
+  "schema_version": 1,
+  "scope": "Prospective development on REUSED 447-frame data (job 621156), NOT fresh confirmation. Individual frozen adapters, source-equal unit weighting, warm batch-one next-answer timing. No training, seed selection, ensemble, generation, KV-cache or generalization claim.",
+  "seeds": [
+    17,
+    29
+  ],
+  "status": "adapters_frozen",
+  "training_allowed": false,
+  "variants": [
+    {
+      "compression_id": "native",
+      "id": "native",
+      "path": "native"
+    },
+    {
+      "case_id": "native__correct_L34_readout",
+      "compression_id": "native",
+      "id": "native_readout_seed17",
+      "path": "fused",
+      "seed": 17,
+      "target": "readout"
+    },
+    {
+      "case_id": "native__correct_L34_readout",
+      "compression_id": "native",
+      "id": "native_readout_seed29",
+      "path": "fused",
+      "seed": 29,
+      "target": "readout"
+    },
+    {
+      "case_id": "native__correct_L34_readout",
+      "compression_id": "F133_L34_prune",
+      "id": "F133_L34_readout_seed17",
+      "path": "fused",
+      "seed": 17,
+      "target": "readout"
+    },
+    {
+      "case_id": "native__correct_L34_readout",
+      "compression_id": "F133_L34_prune",
+      "id": "F133_L34_readout_seed29",
+      "path": "fused",
+      "seed": 29,
+      "target": "readout"
+    }
+  ]
+}

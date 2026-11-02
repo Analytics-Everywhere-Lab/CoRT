@@ -1,0 +1,45 @@
+{
+  "alpha": null,
+  "attention_backend": "sdpa",
+  "bootstrap_draws": 19999,
+  "canary_limit": 4,
+  "candidate_policy": "two visually audited annotated event objects; crops fixed across conditions",
+  "conditions": [
+    "B0",
+    "B1",
+    "B4",
+    "B2"
+  ],
+  "cut_selection": "fixed cuts 22,34; no outcome-based selection",
+  "dtype": "bfloat16",
+  "episode_limit": 37,
+  "exposure_policy": {
+    "historical_static_sha256": "6c7bba92d04f5dfdf22365585242881d7062034023c908dd3cbd3b32a455ee4c",
+    "kind": "matched_static_reuse",
+    "temporal_exposure_sha256": "e2a1032b97ed1f28ea361b8910d35e4726780d47b7a7795069ba19b82dfe51c9",
+    "version": 1
+  },
+  "fixed_cuts": [
+    22,
+    34
+  ],
+  "max_episodes_per_cluster": 3,
+  "minimum_clusters": 20,
+  "models": {
+    "gemma4_31b_hf_bf16": {
+      "layers": 60,
+      "repo": "google/gemma-4-31B-it",
+      "revision": "3548789868c5356dbf307c98e6f609007b82b3eb"
+    }
+  },
+  "patching": "recognition_history_v1",
+  "primary_family": "descriptive_only",
+  "primary_models": [],
+  "prompt": "The final two images are candidate objects A and B, respectively. Any preceding images are observed scene frames in chronological order. The task concerns only the shown sequence, not a future interaction. Which candidate object does a visible hand begin directly manipulating during the shown sequence? Choose the object whose manipulation starts within the sequence, rather than an object already being manipulated at its beginning. Answer with only A or B.",
+  "pruning_enabled": false,
+  "scene_count": 17,
+  "schema_version": 4,
+  "seed": 20261025,
+  "study": "temporal-recognition-v1",
+  "task": "new_interaction_recognition"
+}

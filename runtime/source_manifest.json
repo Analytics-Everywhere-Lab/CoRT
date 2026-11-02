@@ -1,0 +1,1997 @@
+{
+  "algorithm_policy": "Executable scientific statements preserved; public paths/accounts and comment/docstring edits are recorded separately; legacy helper statements AST-equal before editorial edits.",
+  "builder_selection": {
+    "qwen_role_factorial_release": {
+      "candidate_count": 30,
+      "excluded_paths": [
+        "docs/research/lifecycle_memory/phase 2 research/jobs/patchaudit_jobE_heldout_component_closure/heldout_public_requests.jsonl",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/patchaudit_jobE_heldout_component_closure/heldout_selection.json",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/qwen_role_factorial/README.md",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/qwen_role_factorial/RUNBOOK.md",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/qwen_role_factorial/job_tamia_qwen_role_factorial_h100.sh",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/qwen_role_factorial/submit_tamia.sh",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/qwen_role_factorial/worker.sh"
+      ],
+      "selected_count": 23
+    },
+    "role_aware_transfer_release": {
+      "candidate_count": 96,
+      "excluded_paths": [
+        "docs/research/lifecycle_memory/phase 2 research/jobs/decoder_cached_validation/artifacts/adapters/C379_L22_merge__correct_L34_FQ.seed17.final.safetensors",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/decoder_cached_validation/artifacts/adapters/C379_L22_merge__correct_L34_FQ.seed29.final.safetensors",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/decoder_cached_validation/artifacts/adapters/F67_L34_merge__correct_L34_readout.seed17.final.safetensors",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/decoder_cached_validation/artifacts/adapters/F67_L34_merge__correct_L34_readout.seed29.final.safetensors",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/decoder_cached_validation/artifacts/adapters/native__correct_L34_CQ.seed17.final.safetensors",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/decoder_cached_validation/artifacts/adapters/native__correct_L34_CQ.seed29.final.safetensors",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/decoder_cached_validation/artifacts/adapters/native__correct_L34_FQ.seed17.final.safetensors",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/decoder_cached_validation/artifacts/adapters/native__correct_L34_FQ.seed29.final.safetensors",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/decoder_cached_validation/artifacts/adapters/native__correct_L34_readout.seed17.final.safetensors",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/decoder_cached_validation/artifacts/adapters/native__correct_L34_readout.seed29.final.safetensors",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/decoder_cached_validation/artifacts/exposure_registry.json",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/decoder_cached_validation/job_tamia_decoder_cached_validation_h100.sh",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/decoder_cached_validation/launch_tamia.sh",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/decoder_cached_validation/submit_tamia.sh",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/decoder_cached_validation/worker.sh",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/decoder_token_matrix/README.md",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/decoder_token_matrix/RUNBOOK.md",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/decoder_token_matrix/VERIFICATION.md",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/decoder_token_matrix/job_tamia_decoder_token_matrix_h100.sh",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/decoder_token_matrix/submit_tamia.sh",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/decoder_token_matrix/worker.sh",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/role_aware_combined/README.md",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/role_aware_combined/VERIFICATION.md",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/role_aware_killarney/README.md",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/role_aware_killarney/VERIFICATION.md",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/role_aware_killarney/job_killarney.sh",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/role_aware_killarney/submit.sh",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/role_aware_killarney/worker.sh",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/role_aware_policy/README.md",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/role_aware_policy/RUNBOOK.md",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/role_aware_policy/VERIFICATION.md",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/role_aware_policy/job_tamia_role_aware.sh",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/role_aware_policy/submit.sh",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/role_aware_policy/worker.sh",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/role_aware_transfer/README.md",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/role_aware_transfer/job_killarney.sh",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/role_aware_transfer/submit.sh",
+        "docs/research/lifecycle_memory/phase 2 research/jobs/role_aware_transfer/worker.sh",
+        "docs/research/lifecycle_memory/role_aware_followup_protocol_2026_10_20.md",
+        "research/lifecycle_memory/role_aware_killarney_transfer.py",
+        "research/lifecycle_memory/run_decoder_cached_validation.py",
+        "research/lifecycle_memory/run_phase2_job2c_behavioral_companion.py",
+        "research/lifecycle_memory/tests/test_role_aware_killarney.py",
+        "research/lifecycle_memory/tests/test_role_aware_transfer_deploy.py",
+        "research/lifecycle_memory/tests/test_role_aware_transfer_release.py",
+        "scripts/deploy_role_aware_policy_tamia.sh",
+        "scripts/fetch_role_aware_policy_tamia.sh",
+        "scripts/run_role_aware_combined_tamia.sh",
+        "scripts/run_role_aware_killarney.sh",
+        "scripts/run_role_aware_transfer_killarney.py",
+        "skills/killarney-slurm/scripts/discover.py"
+      ],
+      "selected_count": 45
+    },
+    "temporal_forecasting.release": {
+      "candidate_count": 319,
+      "excluded_paths": [
+        "research/__init__.py",
+        "research/lifecycle_memory/adt_twin_geometry_visibility_audit.py",
+        "research/lifecycle_memory/analyze_epic_visor_refresh.py",
+        "research/lifecycle_memory/analyze_epic_visor_tier1_scores.py",
+        "research/lifecycle_memory/analyze_fable_job1_dose_routing.py",
+        "research/lifecycle_memory/analyze_phase2_job3_burned_pilot.py",
+        "research/lifecycle_memory/analyze_reanchored_jobA_output_envelopes.py",
+        "research/lifecycle_memory/analyze_reports.py",
+        "research/lifecycle_memory/anchor_gate_frontier.py",
+        "research/lifecycle_memory/answerability_cost_audit.py",
+        "research/lifecycle_memory/aria_digital_twin.py",
+        "research/lifecycle_memory/aria_digital_twin_association_diagnostic.py",
+        "research/lifecycle_memory/aria_digital_twin_crop_targets.py",
+        "research/lifecycle_memory/aria_digital_twin_crop_vlm.py",
+        "research/lifecycle_memory/aria_digital_twin_crop_vlm_clean_split.py",
+        "research/lifecycle_memory/aria_digital_twin_end_to_end.py",
+        "research/lifecycle_memory/aria_digital_twin_eval_smoke.py",
+        "research/lifecycle_memory/aria_digital_twin_evidence_packet.py",
+        "research/lifecycle_memory/aria_digital_twin_evidence_packet_plan.py",
+        "research/lifecycle_memory/aria_digital_twin_failure_table.py",
+        "research/lifecycle_memory/aria_digital_twin_fixture_matrix.py",
+        "research/lifecycle_memory/aria_digital_twin_infer_tracks.py",
+        "research/lifecycle_memory/aria_digital_twin_matched_coverage.py",
+        "research/lifecycle_memory/aria_digital_twin_preflight.py",
+        "research/lifecycle_memory/aria_digital_twin_readiness_audit.py",
+        "research/lifecycle_memory/aria_digital_twin_relink_pseudo.py",
+        "research/lifecycle_memory/aria_digital_twin_remote_gemma_vlm.py",
+        "research/lifecycle_memory/aria_digital_twin_sample_diagnostic.py",
+        "research/lifecycle_memory/aria_digital_twin_sample_episode.py",
+        "research/lifecycle_memory/aria_digital_twin_sample_heldout.py",
+        "research/lifecycle_memory/aria_digital_twin_smoke_fixture.py",
+        "research/lifecycle_memory/artifact_manifest.py",
+        "research/lifecycle_memory/benchmark_credibility_matrix.py",
+        "research/lifecycle_memory/bounded_command.py",
+        "research/lifecycle_memory/build_3rscan_3dssg_bundle.py",
+        "research/lifecycle_memory/build_3rscan_audit_viewer.py",
+        "research/lifecycle_memory/build_3rscan_visibility_audit_queue.py",
+        "research/lifecycle_memory/build_3rscan_visibility_certificates.py",
+        "research/lifecycle_memory/build_3rscan_visual_certified_request_pack.py",
+        "research/lifecycle_memory/build_3rscan_visual_frame_controls.py",
+        "research/lifecycle_memory/build_3rscan_visual_frame_manifest.py",
+        "research/lifecycle_memory/build_3rscan_visual_method_split.py",
+        "research/lifecycle_memory/build_adt_scaled_diagnostic_split.py",
+        "research/lifecycle_memory/build_decoder_cross_source_validation.py",
+        "research/lifecycle_memory/build_epic_visor_claims_evidence_table.py",
+        "research/lifecycle_memory/build_epic_visor_combined_battery_summary.py",
+        "research/lifecycle_memory/build_epic_visor_completed_battery_summary.py",
+        "research/lifecycle_memory/build_epic_visor_control_battery_report.py",
+        "research/lifecycle_memory/build_epic_visor_diagnostic_cards.py",
+        "research/lifecycle_memory/build_epic_visor_g1_diagnostic_cards.py",
+        "research/lifecycle_memory/build_epic_visor_g3_scale_plan.py",
+        "research/lifecycle_memory/build_epic_visor_gate_status_report.py",
+        "research/lifecycle_memory/build_epic_visor_human_audit_queue.py",
+        "research/lifecycle_memory/build_epic_visor_main_track_status.py",
+        "research/lifecycle_memory/build_epic_visor_negative_control_report.py",
+        "research/lifecycle_memory/build_epic_visor_paired_control_contrasts.py",
+        "research/lifecycle_memory/build_epic_visor_paper_tables.py",
+        "research/lifecycle_memory/build_epic_visor_refresh_pack.py",
+        "research/lifecycle_memory/build_epic_visor_remote_candidate_manifest.py",
+        "research/lifecycle_memory/build_epic_visor_repro_manifest.py",
+        "research/lifecycle_memory/build_epic_visor_tier1_pack.py",
+        "research/lifecycle_memory/build_epic_visor_visibility_certificates.py",
+        "research/lifecycle_memory/build_full_gemma_grounding_report.py",
+        "research/lifecycle_memory/build_phase2_g0_bf16_behavioral_report.py",
+        "research/lifecycle_memory/build_phase2_job2b_plain_contact_sheet_pack.py",
+        "research/lifecycle_memory/build_phase2_job2c_marked_plain_prompt_pack.py",
+        "research/lifecycle_memory/build_phase2_w0_geometry_sidecar.py",
+        "research/lifecycle_memory/build_stream_control_battery_report.py",
+        "research/lifecycle_memory/build_temporal_pilot_review.py",
+        "research/lifecycle_memory/coco_real.py",
+        "research/lifecycle_memory/copyback_manifest.py",
+        "research/lifecycle_memory/download_epic_visor_sparse_subset.py",
+        "research/lifecycle_memory/download_jetson_vlm_models.py",
+        "research/lifecycle_memory/evaluate.py",
+        "research/lifecycle_memory/evaluate_identity_perception.py",
+        "research/lifecycle_memory/evaluate_perception.py",
+        "research/lifecycle_memory/experiment_readiness_plan.py",
+        "research/lifecycle_memory/fable_job1_attention_knockout.py",
+        "research/lifecycle_memory/fable_job1_degradations.py",
+        "research/lifecycle_memory/failure_taxonomy.py",
+        "research/lifecycle_memory/fir_discovery.py",
+        "research/lifecycle_memory/fresh_practical_batch.py",
+        "research/lifecycle_memory/fresh_practical_review.py",
+        "research/lifecycle_memory/fresh_practical_source_audit.py",
+        "research/lifecycle_memory/fresh_practical_validation.py",
+        "research/lifecycle_memory/functional_claim_audit.py",
+        "research/lifecycle_memory/functional_probe.py",
+        "research/lifecycle_memory/functional_relations.py",
+        "research/lifecycle_memory/functional_visual_target_dataset.py",
+        "research/lifecycle_memory/functionalize_visual_stream.py",
+        "research/lifecycle_memory/generator.py",
+        "research/lifecycle_memory/inventory_epic_visor_tier1_candidates.py",
+        "research/lifecycle_memory/literature_lineage.py",
+        "research/lifecycle_memory/lock_epic_visor_v2_gold.py",
+        "research/lifecycle_memory/mani_adapter.py",
+        "research/lifecycle_memory/memory.py",
+        "research/lifecycle_memory/method_literature_credit_register.py",
+        "research/lifecycle_memory/method_literature_synthesis_matrix.py",
+        "research/lifecycle_memory/method_novelty_boundary_registry.py",
+        "research/lifecycle_memory/method_provenance_ledger.py",
+        "research/lifecycle_memory/method_reference_pack.py",
+        "research/lifecycle_memory/official_baseline_manifest_audit.py",
+        "research/lifecycle_memory/paper_draft_claim_audit.py",
+        "research/lifecycle_memory/paper_numeric_claim_audit.py",
+        "research/lifecycle_memory/paper_tables.py",
+        "research/lifecycle_memory/perception_evidence_claim_boundary.py",
+        "research/lifecycle_memory/perception_grounded_evidence_status.py",
+        "research/lifecycle_memory/perception_grounded_tier_plan.py",
+        "research/lifecycle_memory/phase2_job2_refit_permutation.py",
+        "research/lifecycle_memory/phase2_job2_supplemental_analysis.py",
+        "research/lifecycle_memory/phase2_job2c_component_analysis.py",
+        "research/lifecycle_memory/phase2_job3_duplicate_audit.py",
+        "research/lifecycle_memory/phase2_job3_ego4d_mapped_subset.py",
+        "research/lifecycle_memory/phase2_job3_ego4d_metadata_preflight.py",
+        "research/lifecycle_memory/phase2_job3_egohos_sidecar_reindex.py",
+        "research/lifecycle_memory/phase2_job3_negative_replacement_review_tool.py",
+        "research/lifecycle_memory/phase2_job3_negative_review_tool.py",
+        "research/lifecycle_memory/phase2_job3_prompt_repair_round1.py",
+        "research/lifecycle_memory/phase2_job3_statistical_parallel_executor.py",
+        "research/lifecycle_memory/phase2_job3_statistical_simulation.py",
+        "research/lifecycle_memory/phase2_job3_visor_census.py",
+        "research/lifecycle_memory/plot_phase2_job2b_paired_analysis.py",
+        "research/lifecycle_memory/prepare_decoder_validation_sources.py",
+        "research/lifecycle_memory/procthor_dynamic.py",
+        "research/lifecycle_memory/procthor_rgb.py",
+        "research/lifecycle_memory/procthor_rgb_public.py",
+        "research/lifecycle_memory/procthor_rgb_v2_perception_aggregate.py",
+        "research/lifecycle_memory/procthor_visual.py",
+        "research/lifecycle_memory/protocol_v3_3rscan_failure_localization.py",
+        "research/lifecycle_memory/protocol_v3_3rscan_visual_grounding_audit.py",
+        "research/lifecycle_memory/protocol_v3_calibration_ece_audit.py",
+        "research/lifecycle_memory/protocol_v3_claim_boundary_review.py",
+        "research/lifecycle_memory/protocol_v3_cold_start_release_bundle.py",
+        "research/lifecycle_memory/protocol_v3_external_llm_harness.py",
+        "research/lifecycle_memory/protocol_v3_external_runner_attestation.py",
+        "research/lifecycle_memory/protocol_v3_family_power_audit.py",
+        "research/lifecycle_memory/protocol_v3_final_acceptance_audit.py",
+        "research/lifecycle_memory/protocol_v3_g14_gemma_suggestions.py",
+        "research/lifecycle_memory/protocol_v3_g14_rgb_human_status.py",
+        "research/lifecycle_memory/protocol_v3_g19_official_baseline_status.py",
+        "research/lifecycle_memory/protocol_v3_g19_second_official_smoke_preflight.py",
+        "research/lifecycle_memory/protocol_v3_no_label_paper_reanalysis.py",
+        "research/lifecycle_memory/protocol_v3_oracle_component_ladder.py",
+        "research/lifecycle_memory/protocol_v3_pilot_table.py",
+        "research/lifecycle_memory/protocol_v3_real_cross_dataset_robustness.py",
+        "research/lifecycle_memory/protocol_v3_related_work_audit.py",
+        "research/lifecycle_memory/protocol_v3_release_readiness.py",
+        "research/lifecycle_memory/protocol_v3_rgb_human_annotation_queue.py",
+        "research/lifecycle_memory/protocol_v3_scaled_seed_stability.py",
+        "research/lifecycle_memory/protocol_v3_seed_stability.py",
+        "research/lifecycle_memory/protocol_v3_table_iii_external_validation.py",
+        "research/lifecycle_memory/raw_rgb_adt_v1.py",
+        "research/lifecycle_memory/raw_rgb_adt_v1_scoring_audit.py",
+        "research/lifecycle_memory/real_mini.py",
+        "research/lifecycle_memory/real_rgb_vlm_functional_protocol.py",
+        "research/lifecycle_memory/realmini_collection_audit.py",
+        "research/lifecycle_memory/realmini_collection_plan.py",
+        "research/lifecycle_memory/realmini_field_packet.py",
+        "research/lifecycle_memory/realmini_field_packet_audit.py",
+        "research/lifecycle_memory/reference_query_audit.py",
+        "research/lifecycle_memory/render_protocol_v3_figures.py",
+        "research/lifecycle_memory/replay_procthor_visual_crop_vlm_report.py",
+        "research/lifecycle_memory/replay_procthor_visual_vlm_report.py",
+        "research/lifecycle_memory/replay_vlm_report.py",
+        "research/lifecycle_memory/reproduction_metadata_audit.py",
+        "research/lifecycle_memory/rgb_human_v1.py",
+        "research/lifecycle_memory/rio_3rscan_adapter.py",
+        "research/lifecycle_memory/robustness_sweep.py",
+        "research/lifecycle_memory/run_3rscan_visibility_threshold_sensitivity.py",
+        "research/lifecycle_memory/run_decoder_cached_validation.py",
+        "research/lifecycle_memory/run_epic_visor_dynamic_llamacpp_server.py",
+        "research/lifecycle_memory/run_epic_visor_dynamic_mlx_vlm.py",
+        "research/lifecycle_memory/run_epic_visor_dynamic_ollama_smoke.py",
+        "research/lifecycle_memory/run_epic_visor_g1_freeze_pipeline.py",
+        "research/lifecycle_memory/run_epic_visor_llamacpp_control_battery.py",
+        "research/lifecycle_memory/run_epic_visor_llamacpp_server_control_battery.py",
+        "research/lifecycle_memory/run_epic_visor_mlx_control_battery.py",
+        "research/lifecycle_memory/run_epic_visor_ollama_control_battery.py",
+        "research/lifecycle_memory/run_epic_visor_phase1_refresh_hf.py",
+        "research/lifecycle_memory/run_fable_job1_dose_routing.py",
+        "research/lifecycle_memory/run_functional_benchmark_report.py",
+        "research/lifecycle_memory/run_functional_calibration_protocol.py",
+        "research/lifecycle_memory/run_functional_calibration_sweep.py",
+        "research/lifecycle_memory/run_functional_claim_ledger.py",
+        "research/lifecycle_memory/run_functional_component_ablation.py",
+        "research/lifecycle_memory/run_functional_probe.py",
+        "research/lifecycle_memory/run_functional_seed_stability.py",
+        "research/lifecycle_memory/run_method_contribution_map.py",
+        "research/lifecycle_memory/run_phase2_job2_refit_permutation.py",
+        "research/lifecycle_memory/run_phase2_job2_representation_probes.py",
+        "research/lifecycle_memory/run_phase2_job2_supplemental_analysis.py",
+        "research/lifecycle_memory/run_phase2_job2b_paired_analysis.py",
+        "research/lifecycle_memory/run_phase2_job2c_behavioral_companion.py",
+        "research/lifecycle_memory/run_phase2_job2c_component_analysis.py",
+        "research/lifecycle_memory/run_phase2_job3_heldout_confirmation.py",
+        "research/lifecycle_memory/run_procthor_rgb_grounded_vlm.py",
+        "research/lifecycle_memory/run_procthor_visual_crop_vlm.py",
+        "research/lifecycle_memory/run_procthor_visual_vlm.py",
+        "research/lifecycle_memory/run_real_vlm.py",
+        "research/lifecycle_memory/schemas.py",
+        "research/lifecycle_memory/serve_3rscan_visibility_audit.py",
+        "research/lifecycle_memory/serve_epic_visor_visibility_audit.py",
+        "research/lifecycle_memory/serve_epic_visor_visibility_audit_v2.py",
+        "research/lifecycle_memory/summarize_epic_visor_control_battery_progress.py",
+        "research/lifecycle_memory/summarize_epic_visor_human_audit.py",
+        "research/lifecycle_memory/summarize_epic_visor_visibility_audit_v2.py",
+        "research/lifecycle_memory/sweep_validation.py",
+        "research/lifecycle_memory/temporal_dense_download.py",
+        "research/lifecycle_memory/temporal_event_candidates.py",
+        "research/lifecycle_memory/temporal_event_preview.py",
+        "research/lifecycle_memory/temporal_event_publish.py",
+        "research/lifecycle_memory/temporal_fir_asset_stage.py",
+        "research/lifecycle_memory/temporal_fir_download_stage.py",
+        "research/lifecycle_memory/temporal_fir_download_worker.py",
+        "research/lifecycle_memory/temporal_fir_media_canary.py",
+        "research/lifecycle_memory/temporal_forecasting_exposure.py",
+        "research/lifecycle_memory/temporal_forecasting_sources.py",
+        "research/lifecycle_memory/temporal_pilot_audit_diagnostics.py",
+        "research/lifecycle_memory/temporal_pilot_random_audit.py",
+        "research/lifecycle_memory/verify_epic_visor_claims_evidence_table.py",
+        "research/lifecycle_memory/verify_epic_visor_combined_control_battery.py",
+        "research/lifecycle_memory/verify_epic_visor_control_report.py",
+        "research/lifecycle_memory/verify_epic_visor_diagnostic_cards.py",
+        "research/lifecycle_memory/verify_epic_visor_finalizer_guardrails.py",
+        "research/lifecycle_memory/verify_epic_visor_g3_extra_lanes.py",
+        "research/lifecycle_memory/verify_epic_visor_llamacpp_third_lane.py",
+        "research/lifecycle_memory/verify_epic_visor_mlx_control_battery.py",
+        "research/lifecycle_memory/verify_epic_visor_refresh_pack.py",
+        "research/lifecycle_memory/verify_epic_visor_repro_manifest.py",
+        "research/lifecycle_memory/verify_epic_visor_tier1_pack.py",
+        "research/lifecycle_memory/verify_phase2_job2c_canary.py",
+        "research/lifecycle_memory/verify_phase2_job3_statistical_v2_result.py",
+        "research/lifecycle_memory/verify_phase2_reanchored_release.py",
+        "research/lifecycle_memory/verify_stream_control_battery.py"
+      ],
+      "selected_count": 85
+    }
+  },
+  "files": [
+    {
+      "bytes": 5467,
+      "changes": [],
+      "export_sha256": "272267e90364808ca9efd487c8691824ca3421e90e8ef4145cb3afa3dca53b29",
+      "original_path": "docs/research/lifecycle_memory/phase 2 research/jobs/decoder_cached_validation/config.json",
+      "original_sha256": "272267e90364808ca9efd487c8691824ca3421e90e8ef4145cb3afa3dca53b29",
+      "path": "docs/research/lifecycle_memory/phase 2 research/jobs/decoder_cached_validation/config.json",
+      "selection": "compatibility_config"
+    },
+    {
+      "bytes": 1690,
+      "changes": [],
+      "export_sha256": "32b5efd4b6f188e13a123949e6b4f179c75f005f215082903c59252b54d2d3d1",
+      "original_path": "docs/research/lifecycle_memory/phase 2 research/jobs/decoder_token_matrix/config.json",
+      "original_sha256": "32b5efd4b6f188e13a123949e6b4f179c75f005f215082903c59252b54d2d3d1",
+      "path": "docs/research/lifecycle_memory/phase 2 research/jobs/decoder_token_matrix/config.json",
+      "selection": "compatibility_config"
+    },
+    {
+      "bytes": 37761,
+      "changes": [],
+      "export_sha256": "269524c4d949a35bb827bb62cd4dce999f2b4f65636a55864e166097d6c3a27d",
+      "original_path": "docs/research/lifecycle_memory/phase 2 research/jobs/job0/run_phase1_qwen27b_hf.py",
+      "original_sha256": "269524c4d949a35bb827bb62cd4dce999f2b4f65636a55864e166097d6c3a27d",
+      "path": "docs/research/lifecycle_memory/phase 2 research/jobs/job0/run_phase1_qwen27b_hf.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 1565,
+      "changes": [],
+      "export_sha256": "3185e817bfb163bbe10bf7f6705222ac9da186e854010568bc386c0166efb2db",
+      "original_path": "docs/research/lifecycle_memory/phase 2 research/jobs/qwen_role_factorial/config.json",
+      "original_sha256": "3185e817bfb163bbe10bf7f6705222ac9da186e854010568bc386c0166efb2db",
+      "path": "docs/research/lifecycle_memory/phase 2 research/jobs/qwen_role_factorial/config.json",
+      "selection": "compatibility_config"
+    },
+    {
+      "bytes": 7522,
+      "changes": [],
+      "export_sha256": "39c626caf0dc50f2174c3e76e9dc32793b7bc1d1bc23c5033b3f58aa8bd15148",
+      "original_path": "docs/research/lifecycle_memory/phase 2 research/jobs/role_aware_policy/config.json",
+      "original_sha256": "39c626caf0dc50f2174c3e76e9dc32793b7bc1d1bc23c5033b3f58aa8bd15148",
+      "path": "docs/research/lifecycle_memory/phase 2 research/jobs/role_aware_policy/config.json",
+      "selection": "compatibility_config"
+    },
+    {
+      "bytes": 2124,
+      "changes": [],
+      "export_sha256": "fbadb27f0a945271593db605cb12036068388868d9175760aebf08573adb4bd8",
+      "original_path": "docs/research/lifecycle_memory/phase 2 research/jobs/role_aware_transfer/config.json",
+      "original_sha256": "fbadb27f0a945271593db605cb12036068388868d9175760aebf08573adb4bd8",
+      "path": "docs/research/lifecycle_memory/phase 2 research/jobs/role_aware_transfer/config.json",
+      "selection": "compatibility_config"
+    },
+    {
+      "bytes": 1029,
+      "changes": [],
+      "export_sha256": "90bef3b54ce4723eb5a6a5d98d6b3750aa13b9ec146ae3edcca9b73adacd8952",
+      "original_path": "docs/research/lifecycle_memory/phase 2 research/jobs/temporal_forecasting/profiles/fir.json",
+      "original_sha256": "90bef3b54ce4723eb5a6a5d98d6b3750aa13b9ec146ae3edcca9b73adacd8952",
+      "path": "docs/research/lifecycle_memory/phase 2 research/jobs/temporal_forecasting/profiles/fir.json",
+      "selection": "compatibility_config"
+    },
+    {
+      "bytes": 478,
+      "changes": [],
+      "export_sha256": "e442477138261f98511ebe2e6586f0a9e89cc22fe03d105cbd0cdd9631fb3f0d",
+      "original_path": "docs/research/lifecycle_memory/phase 2 research/jobs/temporal_forecasting/profiles/generic-slurm.json",
+      "original_sha256": "e442477138261f98511ebe2e6586f0a9e89cc22fe03d105cbd0cdd9631fb3f0d",
+      "path": "docs/research/lifecycle_memory/phase 2 research/jobs/temporal_forecasting/profiles/generic-slurm.json",
+      "selection": "compatibility_config"
+    },
+    {
+      "bytes": 567,
+      "changes": [],
+      "export_sha256": "c5d1a2bee8fd49695f7852ffff067cd53fdc71cfce3d78820e3fbb6529dd20f6",
+      "original_path": "docs/research/lifecycle_memory/phase 2 research/jobs/temporal_forecasting/profiles/killarney.json",
+      "original_sha256": "c5d1a2bee8fd49695f7852ffff067cd53fdc71cfce3d78820e3fbb6529dd20f6",
+      "path": "docs/research/lifecycle_memory/phase 2 research/jobs/temporal_forecasting/profiles/killarney.json",
+      "selection": "compatibility_config"
+    },
+    {
+      "bytes": 422,
+      "changes": [],
+      "export_sha256": "432f2b62f95ce6e380c71811eb7f8ce4914f3cb0dc5c7a8b8df026c6a873b7e0",
+      "original_path": "docs/research/lifecycle_memory/phase 2 research/jobs/temporal_forecasting/profiles/local-cloud.json",
+      "original_sha256": "432f2b62f95ce6e380c71811eb7f8ce4914f3cb0dc5c7a8b8df026c6a873b7e0",
+      "path": "docs/research/lifecycle_memory/phase 2 research/jobs/temporal_forecasting/profiles/local-cloud.json",
+      "selection": "compatibility_config"
+    },
+    {
+      "bytes": 562,
+      "changes": [],
+      "export_sha256": "61bfc6f4c03db37efc24dfebd8ed49126f708130267ac3c0865da74aa69e9d75",
+      "original_path": "docs/research/lifecycle_memory/phase 2 research/jobs/temporal_forecasting/profiles/tamia.json",
+      "original_sha256": "61bfc6f4c03db37efc24dfebd8ed49126f708130267ac3c0865da74aa69e9d75",
+      "path": "docs/research/lifecycle_memory/phase 2 research/jobs/temporal_forecasting/profiles/tamia.json",
+      "selection": "compatibility_config"
+    },
+    {
+      "bytes": 62,
+      "changes": [],
+      "export_sha256": "5331c88da025deecd220bca06b2402420d74da35c3a43f1eef41baaa07927b7f",
+      "original_path": "research/lifecycle_memory/__init__.py",
+      "original_sha256": "5331c88da025deecd220bca06b2402420d74da35c3a43f1eef41baaa07927b7f",
+      "path": "research/lifecycle_memory/__init__.py",
+      "selection": "transitive_import"
+    },
+    {
+      "bytes": 77584,
+      "changes": [
+        {
+          "after": "\"\"\"Analyze the frozen PatchAudit held-out component-closure experiment.\n\nThe analyzer is deliberately independent of model code. It opens evaluator\nlabels only after the complete worker inventory and every technical receipt\nhave passed, then performs the preregistered participant-cluster analysis.\n\"\"\"",
+          "before": "\"\"\"Analyze the frozen PatchAudit Job E component-closure experiment.\n\nThe analyzer is deliberately independent of model code. It opens evaluator\nlabels only after the complete worker inventory and every technical receipt\nhave passed, then performs the preregistered participant-cluster analysis.\n\"\"\"",
+          "kind": "public_comment_edit"
+        }
+      ],
+      "export_sha256": "fe4f7b1ec7cc14e319db9b1d929aa709e89ef9e5a99d740d90ee554660e77cf7",
+      "original_path": "research/lifecycle_memory/analyze_patchaudit_heldout_component_closure.py",
+      "original_sha256": "5c9c86a114a89cef226261fa5c77b8ac648bf564a7bb198dc657bdd171c6603f",
+      "path": "research/lifecycle_memory/analyze_patchaudit_heldout_component_closure.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 36250,
+      "changes": [],
+      "export_sha256": "9a59fd750b3bb7766feb17d87cee70c35c6e9fd81c5a6bddf9727ded0b299e36",
+      "original_path": "research/lifecycle_memory/analyze_patchaudit_transport_decomposition.py",
+      "original_sha256": "9a59fd750b3bb7766feb17d87cee70c35c6e9fd81c5a6bddf9727ded0b299e36",
+      "path": "research/lifecycle_memory/analyze_patchaudit_transport_decomposition.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 3088,
+      "changes": [
+        {
+          "after": "\"\"\"Analyze the separately frozen answer-token causal intervention.\"\"\"",
+          "before": "\"\"\"Analyze the separately frozen Job C-R answer-token intervention.\"\"\"",
+          "kind": "public_comment_edit"
+        }
+      ],
+      "export_sha256": "ae53f0993a10727b3cbabf8b9f058939b53f284adf112703b28c133196132e7b",
+      "original_path": "research/lifecycle_memory/analyze_phase2_reanchored_answer_token_causal_patch.py",
+      "original_sha256": "f2f2084ad951697bd124b7ea89634535d243e10e2055cd528a93079673b1d974",
+      "path": "research/lifecycle_memory/analyze_phase2_reanchored_answer_token_causal_patch.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 45827,
+      "changes": [],
+      "export_sha256": "1ae2ee316cfe0a1013019802c29a6eea18834cc1f5bc1003dd5f4fac451c9b53",
+      "original_path": "research/lifecycle_memory/analyze_phase2_reanchored_answer_token_confirmation.py",
+      "original_sha256": "1ae2ee316cfe0a1013019802c29a6eea18834cc1f5bc1003dd5f4fac451c9b53",
+      "path": "research/lifecycle_memory/analyze_phase2_reanchored_answer_token_confirmation.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 43227,
+      "changes": [],
+      "export_sha256": "0d37f9557f0acc6803b4f3634e13fa69f57cb5626dd8b83822e28b351bd4d304",
+      "original_path": "research/lifecycle_memory/analyze_phase2_reanchored_behavior.py",
+      "original_sha256": "0d37f9557f0acc6803b4f3634e13fa69f57cb5626dd8b83822e28b351bd4d304",
+      "path": "research/lifecycle_memory/analyze_phase2_reanchored_behavior.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 91360,
+      "changes": [
+        {
+          "after": "\"\"\"Analyze bidirectional causal-patch rescue/damage sweeps and descriptive refinements.\n\nAll statistics first average the two counterbalanced crop orders within frame,\nthen frames within participant, and finally give participant clusters equal\nweight.  Confirmatory inference uses only frozen coarse sites.  The automatic\nplus/minus-two refinement is descriptive because peak selection is not replayed\ninside every inferential resample.\n\"\"\"",
+          "before": "\"\"\"Analyze bidirectional Job C rescue/damage sweeps and descriptive refinements.\n\nAll statistics first average the two counterbalanced crop orders within frame,\nthen frames within participant, and finally give participant clusters equal\nweight.  Confirmatory inference uses only frozen coarse sites.  The automatic\nplus/minus-two refinement is descriptive because peak selection is not replayed\ninside every inferential resample.\n\"\"\"",
+          "kind": "public_comment_edit"
+        }
+      ],
+      "export_sha256": "a2f786ecd6479783978077acb146e11ac468890f636c206041ce5a40a3335ce7",
+      "original_path": "research/lifecycle_memory/analyze_phase2_reanchored_causal_patch.py",
+      "original_sha256": "055f393b38f7425d166a2c1aad2e960b11e80c83bc9a4ad32363b70c42d26cd3",
+      "path": "research/lifecycle_memory/analyze_phase2_reanchored_causal_patch.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 106126,
+      "changes": [
+        {
+          "after": "\"\"\"Analyze the four-model three-image 2AFC layer capture.\n\nCanary analysis is strictly technical and evaluator-unjoined. Full analysis\njoins the hidden A/B evaluator only after capture completeness, provenance,\ntensor, and three-slot gates pass.\n\"\"\"",
+          "before": "\"\"\"Analyze the four-model Job B three-image 2AFC layer capture.\n\nCanary analysis is strictly technical and evaluator-unjoined. Full analysis\njoins the hidden A/B evaluator only after capture completeness, provenance,\ntensor, and three-slot gates pass.\n\"\"\"",
+          "kind": "public_comment_edit"
+        }
+      ],
+      "export_sha256": "71aecfa365729eb4827e3ccf5e2837851285a9a1bdaf133e15a8c6994d0999bc",
+      "original_path": "research/lifecycle_memory/analyze_phase2_reanchored_layer_capture.py",
+      "original_sha256": "b9bb502d3fdb45ea56bd5d9a52c80594086523fd0f4f4c606e16c4306e941d35",
+      "path": "research/lifecycle_memory/analyze_phase2_reanchored_layer_capture.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 48041,
+      "changes": [],
+      "export_sha256": "62a0218a7e40ad678f62e34f48a2ac6ea0d79d748ac29526bcdb51b62f9097c2",
+      "original_path": "research/lifecycle_memory/application_pilot_analysis.py",
+      "original_sha256": "62a0218a7e40ad678f62e34f48a2ac6ea0d79d748ac29526bcdb51b62f9097c2",
+      "path": "research/lifecycle_memory/application_pilot_analysis.py",
+      "selection": "transitive_import"
+    },
+    {
+      "bytes": 11250,
+      "changes": [],
+      "export_sha256": "5a18b85f86af6a076209dfabaf00c56e18138ca1455dd4a424995d0d69c4732f",
+      "original_path": "research/lifecycle_memory/application_pilot_compression.py",
+      "original_sha256": "5a18b85f86af6a076209dfabaf00c56e18138ca1455dd4a424995d0d69c4732f",
+      "path": "research/lifecycle_memory/application_pilot_compression.py",
+      "selection": "transitive_import"
+    },
+    {
+      "bytes": 19730,
+      "changes": [
+        {
+          "after": "\"\"\"Join behavioral-request schemas and split connected identities, never outcomes.\n\n    Whole connected components are allocated toward 60/20/20 PARTICIPANT counts.\n    Components combine participant/cluster, source video/frame/image, candidate,\n    selected-component fingerprint, and real/crop asset path/hash identities.\n    Donors and the globally shared blank image are intentionally absent because\n    they are not used. Fewer than three independent components is a hard failure.\n    \"\"\"",
+          "before": "\"\"\"Join actual Job A schemas and split connected identities, never outcomes.\n\n    Whole connected components are allocated toward 60/20/20 PARTICIPANT counts.\n    Components combine participant/cluster, source video/frame/image, candidate,\n    selected-component fingerprint, and real/crop asset path/hash identities.\n    Donors and the globally shared blank image are intentionally absent because\n    they are not used. Fewer than three independent components is a hard failure.\n    \"\"\"",
+          "kind": "public_comment_edit"
+        }
+      ],
+      "export_sha256": "9996d4023782ed16a44685f593b5e5a44482d19f7d790d35d42786a98c805db7",
+      "original_path": "research/lifecycle_memory/application_pilot_data.py",
+      "original_sha256": "daecc9331b940ce2de777cf9f55e2a2f3cceedb56fe9777b4137ba4696b295d5",
+      "path": "research/lifecycle_memory/application_pilot_data.py",
+      "selection": "transitive_import"
+    },
+    {
+      "bytes": 46509,
+      "changes": [],
+      "export_sha256": "42822ef485c4c17e457431fb7d665116893fbacd8ba1bf2634de81c2c77672fa",
+      "original_path": "research/lifecycle_memory/application_pilot_release.py",
+      "original_sha256": "42822ef485c4c17e457431fb7d665116893fbacd8ba1bf2634de81c2c77672fa",
+      "path": "research/lifecycle_memory/application_pilot_release.py",
+      "selection": "transitive_import"
+    },
+    {
+      "bytes": 22003,
+      "changes": [],
+      "export_sha256": "b8f51472d59eb63f0ab5ba52be2960487bf73ee24acb6360bd45a3aad424cd35",
+      "original_path": "research/lifecycle_memory/application_pilot_steering.py",
+      "original_sha256": "b8f51472d59eb63f0ab5ba52be2960487bf73ee24acb6360bd45a3aad424cd35",
+      "path": "research/lifecycle_memory/application_pilot_steering.py",
+      "selection": "transitive_import"
+    },
+    {
+      "bytes": 3994,
+      "changes": [
+        {
+          "kind": "ast_helper_subset",
+          "requested_symbols": [
+            "score_visor_predictions"
+          ],
+          "retained_ast_equal": true,
+          "retained_symbols": [
+            "Any",
+            "Counter",
+            "_normalize_answer",
+            "annotations",
+            "defaultdict",
+            "score_visor_predictions"
+          ]
+        }
+      ],
+      "export_sha256": "5cd084e25770e7e1eb72592df9f66eef93ca1bf1ed07800f974bf596308c6e94",
+      "original_path": "research/lifecycle_memory/build_epic_visor_dynamic_smoke.py",
+      "original_sha256": "20154933bd87bde0774166d3db90b993ff3a4644301496b2d07bc2ed3e0492ed",
+      "path": "research/lifecycle_memory/build_epic_visor_dynamic_smoke.py",
+      "selection": "transitive_import"
+    },
+    {
+      "bytes": 13697,
+      "changes": [
+        {
+          "after": "\"\"\"Freeze the evaluator-blind, identity-disjoint held-out request cohort.\"\"\"",
+          "before": "\"\"\"Freeze the evaluator-blind, identity-disjoint Job E request cohort.\"\"\"",
+          "kind": "public_comment_edit"
+        }
+      ],
+      "export_sha256": "0a7b5872a3f6c95757fe76d90f6989a9c49af8ee8a3bd120eb07b12c907c5c5e",
+      "original_path": "research/lifecycle_memory/build_patchaudit_jobE_heldout_selection.py",
+      "original_sha256": "0f2f9c851801499865cc535e8e77d87a12e059dcb6544dab136416509b2299e0",
+      "path": "research/lifecycle_memory/build_patchaudit_jobE_heldout_selection.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 126233,
+      "changes": [
+        {
+          "after": "\"\"\"Build the outcome-blind re-anchored EgoHOS 2AFC battery.\n\nEach selected frame emits both counterbalanced A/B orders for one first-order\nand one second-order interacting-object crop. Roles, classes, A/B answers,\nprovenance, frame-level IDs, and wrong-time donor identity remain evaluator-only.\n\"\"\"",
+          "before": "\"\"\"Build the outcome-blind Phase 2 re-anchored EgoHOS Job A 2AFC battery.\n\nEach selected frame emits both counterbalanced A/B orders for one first-order\nand one second-order interacting-object crop. Roles, classes, A/B answers,\nprovenance, frame-level IDs, and wrong-time donor identity remain evaluator-only.\n\"\"\"",
+          "kind": "public_comment_edit"
+        }
+      ],
+      "export_sha256": "9cf552c79d431fe32142c0df14ff8d0b934deacad40571e8ccd5a2601ddf0e1f",
+      "original_path": "research/lifecycle_memory/build_phase2_reanchored_egohos_battery.py",
+      "original_sha256": "f2a00a6ad63c3bb827a83ce7cdd5768ffb8a4c791a0c9360c21c57e3469f1d8d",
+      "path": "research/lifecycle_memory/build_phase2_reanchored_egohos_battery.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 12152,
+      "changes": [],
+      "export_sha256": "f29d7d625be095952572166fae22de2738fe5dcd62734eb34ae91bc576dcdffd",
+      "original_path": "research/lifecycle_memory/decoder_cached_benchmark.py",
+      "original_sha256": "f29d7d625be095952572166fae22de2738fe5dcd62734eb34ae91bc576dcdffd",
+      "path": "research/lifecycle_memory/decoder_cached_benchmark.py",
+      "selection": "transitive_import"
+    },
+    {
+      "bytes": 38953,
+      "changes": [],
+      "export_sha256": "2e755df4afcd6dd24a9d2e2b4a7b0aa79740e1f4e96499cd7c0d45eb039d967c",
+      "original_path": "research/lifecycle_memory/decoder_cached_validation.py",
+      "original_sha256": "2e755df4afcd6dd24a9d2e2b4a7b0aa79740e1f4e96499cd7c0d45eb039d967c",
+      "path": "research/lifecycle_memory/decoder_cached_validation.py",
+      "selection": "transitive_import"
+    },
+    {
+      "bytes": 31444,
+      "changes": [],
+      "export_sha256": "88f2e53d45032c2d5cc658bbd98af259f73a0068057b0e08001cc515274de955",
+      "original_path": "research/lifecycle_memory/decoder_cached_validation_release.py",
+      "original_sha256": "88f2e53d45032c2d5cc658bbd98af259f73a0068057b0e08001cc515274de955",
+      "path": "research/lifecycle_memory/decoder_cached_validation_release.py",
+      "selection": "transitive_import"
+    },
+    {
+      "bytes": 27248,
+      "changes": [],
+      "export_sha256": "6ecbca8d327b86742143b0271614bb717d7d8ac3d22d33e09fe6085bde943b70",
+      "original_path": "research/lifecycle_memory/decoder_token_matrix.py",
+      "original_sha256": "6ecbca8d327b86742143b0271614bb717d7d8ac3d22d33e09fe6085bde943b70",
+      "path": "research/lifecycle_memory/decoder_token_matrix.py",
+      "selection": "transitive_import"
+    },
+    {
+      "bytes": 16895,
+      "changes": [],
+      "export_sha256": "e8e5976e630766dd37cb0c0fadfc0b69e63584c130352ec0c1c9d0efa742d1a6",
+      "original_path": "research/lifecycle_memory/decoder_token_matrix_analysis.py",
+      "original_sha256": "e8e5976e630766dd37cb0c0fadfc0b69e63584c130352ec0c1c9d0efa742d1a6",
+      "path": "research/lifecycle_memory/decoder_token_matrix_analysis.py",
+      "selection": "transitive_import"
+    },
+    {
+      "bytes": 56496,
+      "changes": [],
+      "export_sha256": "006a23d96d51bdf47e0257fd4e52fef03572d7cbb6380c126243edba7518fecb",
+      "original_path": "research/lifecycle_memory/decoder_token_matrix_release.py",
+      "original_sha256": "006a23d96d51bdf47e0257fd4e52fef03572d7cbb6380c126243edba7518fecb",
+      "path": "research/lifecycle_memory/decoder_token_matrix_release.py",
+      "selection": "transitive_import"
+    },
+    {
+      "bytes": 38117,
+      "changes": [],
+      "export_sha256": "72af8b3e85a5f1f11007fbe26044b409973010ab53fd9042c70b64c4943a1850",
+      "original_path": "research/lifecycle_memory/decoder_token_matrix_steering.py",
+      "original_sha256": "72af8b3e85a5f1f11007fbe26044b409973010ab53fd9042c70b64c4943a1850",
+      "path": "research/lifecycle_memory/decoder_token_matrix_steering.py",
+      "selection": "transitive_import"
+    },
+    {
+      "bytes": 20050,
+      "changes": [
+        {
+          "after": "\"\"\"Audited token-component partitions for PatchAudit.\n\nThe module is intentionally standard-library-only.  It turns processor-proved\ntoken boundaries into an immutable partition receipt, factorial component\nunions, and deterministic candidate-crop cardinality controls.\n\"\"\"",
+          "before": "\"\"\"Audited token-component partitions for PatchAudit Job E.\n\nThe module is intentionally standard-library-only.  It turns processor-proved\ntoken boundaries into an immutable partition receipt, factorial component\nunions, and deterministic candidate-crop cardinality controls.\n\"\"\"",
+          "kind": "public_comment_edit"
+        },
+        {
+          "after": "\"\"\"Build and prove the token-position component partition.\n\n    ``image_slot_positions`` must contain exactly three processor-proved sets:\n    the full-frame slot followed by the two candidate-crop slots.  The answer\n    prefix is the contiguous final ``answer_prefix_token_count`` active tokens,\n    matching the existing append-only answer-scoring contract.\n    \"\"\"",
+          "before": "\"\"\"Build and prove the Job E token-component partition.\n\n    ``image_slot_positions`` must contain exactly three processor-proved sets:\n    the full-frame slot followed by the two candidate-crop slots.  The answer\n    prefix is the contiguous final ``answer_prefix_token_count`` active tokens,\n    matching the existing append-only answer-scoring contract.\n    \"\"\"",
+          "kind": "public_comment_edit"
+        },
+        {
+          "after": "# A concise alias for callers using the token-position ``position_partition`` style.",
+          "before": "# A concise alias for callers that follow the Job D ``position_partition`` style.",
+          "kind": "public_comment_edit"
+        }
+      ],
+      "export_sha256": "905cc9de19671296c8af06ace182c7b269a6046fc07bcb34c8880874e7173f24",
+      "original_path": "research/lifecycle_memory/patchaudit_component_partition.py",
+      "original_sha256": "e6a59fa7ac3c92288d6a0f7d30ac5d0997a239f5a63a87856b96fffc3c378191",
+      "path": "research/lifecycle_memory/patchaudit_component_partition.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 21202,
+      "changes": [
+        {
+          "after": "\"\"\"Audited decoder transport operators for PatchAudit.\n\nThis module deliberately does not modify the frozen answer-token causal-patch\nengine. It reuses its tensor extraction and module-resolution contracts while\nadding explicit position-indexed capture, one-shot patches, and multi-layer\npersistent clamps.\n\"\"\"",
+          "before": "\"\"\"Audited decoder transport operators for the PatchAudit follow-up.\n\nThis module deliberately does not modify the frozen Job C-R engine. It reuses\nits tensor extraction and module-resolution contracts while adding explicit\nposition-indexed capture, one-shot patches, and multi-layer persistent clamps.\n\"\"\"",
+          "kind": "public_comment_edit"
+        }
+      ],
+      "export_sha256": "a522f15998e84eb19c28e40517d7bd50d1157d809b0fb367f9e9bf11bc76cfe2",
+      "original_path": "research/lifecycle_memory/patchaudit_transport_operators.py",
+      "original_sha256": "73bfbbc64ff08f1c62590649f0ec45f1b52e9ec3adbecbd415598daf52f717e5",
+      "path": "research/lifecycle_memory/patchaudit_transport_operators.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 92278,
+      "changes": [
+        {
+          "after": "\"\"\"Offline representation-probe analysis for compact activation capture.\n\nThis module is the CPU-only, streaming analysis library behind\n``run_phase2_job2_representation_probes.py``. It never mutates raw captures and it\nnever materializes a persistent fp32/fp16 feature cache. Tensors are read on\ndemand directly from the safetensors chunk files via an mmap-backed reader, and\nat most one (model, pool)-across-layers stack or one layer matrix is held in RAM\nat a time.\n\nScientific contract (enforced in code, restated in the report):\n\n- The analyzer establishes *linear decodability of hand-target contact from\n  pooled residual summaries* only. A null probe never means \"information is\n  absent\"; a positive probe never proves use, routing, binding, or causality.\n- The compact capture recorded forward passes only. There is no behavior, no\n  decision-position state, and the last-prompt-position logits are JSON-format\n  logits, so the readout side is structurally absent from this capture. This is\n  stated explicitly.\n- The primary query type is ``contact_state_current``. ``contact_order_before``\n  is a separate secondary track and is never pooled into a headline probe.\n- Every split is grouped by participant (one participant == one video here). No\n  random row split is ever used. Fold assignments are frozen once and reused for\n  all models, arms, features, and layers.\n\nThe heavy lifting (probes, nested selection, transfer, permutation, bootstrap)\nis exposed as small, individually testable functions.\n\"\"\"",
+          "before": "\"\"\"Offline representation-probe analysis for TamIA Phase 2 mech Job2 (run 364962).\n\nThis module is the CPU-only, streaming analysis library behind\n``run_phase2_job2_representation_probes.py``. It never mutates raw captures and it\nnever materializes a persistent fp32/fp16 feature cache. Tensors are read on\ndemand directly from the safetensors chunk files via an mmap-backed reader, and\nat most one (model, pool)-across-layers stack or one layer matrix is held in RAM\nat a time.\n\nScientific contract (enforced in code, restated in the report):\n\n- The analyzer establishes *linear decodability of hand-target contact from\n  pooled residual summaries* only. A null probe never means \"information is\n  absent\"; a positive probe never proves use, routing, binding, or causality.\n- Job2 captured forward passes only. There is no behavior, no decision-position\n  state, and the last-prompt-position logits are JSON-format logits, so the\n  readout side is structurally absent from this run. This is stated explicitly.\n- The primary query type is ``contact_state_current``. ``contact_order_before``\n  is a separate secondary track and is never pooled into a headline probe.\n- Every split is grouped by participant (one participant == one video here). No\n  random row split is ever used. Fold assignments are frozen once and reused for\n  all models, arms, features, and layers.\n\nThe heavy lifting (probes, nested selection, transfer, permutation, bootstrap)\nis exposed as small, individually testable functions.\n\"\"\"",
+          "kind": "public_comment_edit"
+        }
+      ],
+      "export_sha256": "02e70f2278b4a354ac9bf10671fcb1c3af4807cf9ee4f1b376903504838f1acb",
+      "original_path": "research/lifecycle_memory/phase2_job2_probe_analysis.py",
+      "original_sha256": "c3579c6d8736ce839f65dd6733446eb6783e4a0e9ca867d0e8155fe5ebc73e3a",
+      "path": "research/lifecycle_memory/phase2_job2_probe_analysis.py",
+      "selection": "transitive_import"
+    },
+    {
+      "bytes": 108743,
+      "changes": [
+        {
+          "after": "\"\"\"Paired representation analysis: visual-prompt versus plain-contact-sheet arms.\n\nThis module builds one explicit arm-to-source canonical table, reuses the\nrepresentation-probe primitives, and reports paired contrasts aligned by source\nquery.\n\"\"\"",
+          "before": "\"\"\"Paired representation analysis: Job2 visual_prompt vs Job2b plain_contact_sheet.\n\nThis module builds one explicit arm-to-source canonical table, reuses Job2 probe\nprimitives, and reports paired contrasts aligned by source query.\n\"\"\"",
+          "kind": "public_comment_edit"
+        }
+      ],
+      "export_sha256": "d9e4a0f902194a7dcb56348c2f83b651d1d2620589cdcf1675e67fe63c09d7b3",
+      "original_path": "research/lifecycle_memory/phase2_job2b_paired_analysis.py",
+      "original_sha256": "e9ff3fd01cc1597d90f78f1fc115b6496434c1f8c5c505a17446ca047c773992",
+      "path": "research/lifecycle_memory/phase2_job2b_paired_analysis.py",
+      "selection": "transitive_import"
+    },
+    {
+      "bytes": 156995,
+      "changes": [
+        {
+          "after": "\"\"\"Behavioral companion runtime and aggregation core.\n\nThis module is intentionally fail-closed:\n- Worker-side code only reads method-facing request packs + ID-only selection.\n- Evaluator-side preflight/aggregate may read hidden indices for gating/scoring.\n- Teacher-forced scoring fails if template/token boundaries are ambiguous.\n\"\"\"",
+          "before": "\"\"\"Phase 2 Job2c behavioral companion runtime and aggregation core.\n\nThis module is intentionally fail-closed:\n- Worker-side code only reads method-facing request packs + ID-only selection.\n- Evaluator-side preflight/aggregate may read hidden indices for gating/scoring.\n- Teacher-forced scoring fails if template/token boundaries are ambiguous.\n\"\"\"",
+          "kind": "public_comment_edit"
+        }
+      ],
+      "export_sha256": "eb7305ae5740f727c5a5e0eedd235cfe113c9fffd31e36358e1239b6daf6932e",
+      "original_path": "research/lifecycle_memory/phase2_job2c_behavioral_companion.py",
+      "original_sha256": "0e204667efdbb698ac578d09e1180440bb4676933a3971b6ddd5d48c946b9f83",
+      "path": "research/lifecycle_memory/phase2_job2c_behavioral_companion.py",
+      "selection": "transitive_import"
+    },
+    {
+      "bytes": 104367,
+      "changes": [
+        {
+          "after": "\"\"\"Burned-data EgoHOS construction pilot item builder.\n\nCPU-only construction tool. It emits method-facing public request packs/assets,\nhidden evaluator records, pending-negative review queue artifacts, and strict\nmachine-readable audits for burned-data construction.\n\"\"\"",
+          "before": "\"\"\"Phase 2 Job3 burned-data EgoHOS construction pilot item builder.\n\nCPU-only construction tool. It emits method-facing public request packs/assets,\nhidden evaluator records, pending-negative review queue artifacts, and strict\nmachine-readable audits for Stage D burned-data construction.\n\"\"\"",
+          "kind": "public_comment_edit"
+        }
+      ],
+      "export_sha256": "a3d17c0185b11b5b18d24182f42af5e63e9a38dad2442a8b1f6e3ceb00e88ed6",
+      "original_path": "research/lifecycle_memory/phase2_job3_egohos_burned_items.py",
+      "original_sha256": "bca1580ae017d319bc3ffdd48d1bd15184e75c0201f4bc5b30704b7f77c3a54f",
+      "path": "research/lifecycle_memory/phase2_job3_egohos_burned_items.py",
+      "selection": "transitive_import"
+    },
+    {
+      "bytes": 37126,
+      "changes": [
+        {
+          "after": "\"\"\"EgoHOS provenance and mask-capacity census for burned-data construction.\n\nAnnotation-only census over local EgoHOS frame inventory and segmentation masks.\nDoes not freeze usable model rows or emit method-facing packs.\n\nConnected-component geometry uses an absolute minimum pixel area threshold\n(default ``min_component_area=64``). Components below that threshold are retained\nas satellites but do not qualify for single-target geometry.\n\nCLI::\n\n    python -m research.lifecycle_memory.phase2_job3_egohos_census \\\\\n        --data-root data/external/egohos \\\\\n        --out-dir data/external/egohos/derived/job3_stage_a2_census \\\\\n        --ego4d-metadata /path/to/ego4d.json\n\"\"\"",
+          "before": "\"\"\"Stage A2 EgoHOS provenance + mask-capacity census for Phase 2 Job3.\n\nAnnotation-only census over local EgoHOS frame inventory and segmentation masks.\nDoes not freeze usable model rows or emit method-facing packs.\n\nConnected-component geometry uses an absolute minimum pixel area threshold\n(default ``min_component_area=64``). Components below that threshold are retained\nas satellites but do not qualify for single-target geometry.\n\nCLI::\n\n    python -m research.lifecycle_memory.phase2_job3_egohos_census \\\\\n        --data-root data/external/egohos \\\\\n        --out-dir data/external/egohos/derived/job3_stage_a2_census \\\\\n        --ego4d-metadata /path/to/ego4d.json\n\"\"\"",
+          "kind": "public_comment_edit"
+        }
+      ],
+      "export_sha256": "f252d143285b445bc506f78ff1977a8cc3c14ee2ddadace14b979ea1e3b83c93",
+      "original_path": "research/lifecycle_memory/phase2_job3_egohos_census.py",
+      "original_sha256": "76de73910283ef368493e6a0020b3b1326e8253528083e117870026ed3a07de7",
+      "path": "research/lifecycle_memory/phase2_job3_egohos_census.py",
+      "selection": "transitive_import"
+    },
+    {
+      "bytes": 98090,
+      "changes": [
+        {
+          "after": "\"\"\"Fail-closed runtime for the burned-data scoring pilot.\n\nWorkers consume only public scoring packs and a label-free selection manifest.\nThe evaluator index is opened only by successful pilot aggregation; canary and\ngeneric full-mode aggregation remain label-free.\n\"\"\"",
+          "before": "\"\"\"Fail-closed runtime for the Phase 2 Job3 burned scoring pilot.\n\nWorkers consume only public scoring packs and a label-free selection manifest.\nThe evaluator index is opened only by successful pilot aggregation; canary and\ngeneric full-mode aggregation remain label-free.\n\"\"\"",
+          "kind": "public_comment_edit"
+        }
+      ],
+      "export_sha256": "9d736aeff7ccd35be412d819e985f3b19c1419449d79e58d98028c2248e818ad",
+      "original_path": "research/lifecycle_memory/phase2_job3_heldout_confirmation.py",
+      "original_sha256": "e567294679986897b56971ac23836591acc11e7f971598fe6ce30e4e9e899ae2",
+      "path": "research/lifecycle_memory/phase2_job3_heldout_confirmation.py",
+      "selection": "transitive_import"
+    },
+    {
+      "bytes": 6896,
+      "changes": [
+        {
+          "after": "\"\"\"EgoHOS marker renderer with intended-pixel tracking.\"\"\"",
+          "before": "\"\"\"Phase 2 Job3 EgoHOS marker renderer with intended-pixel tracking.\"\"\"",
+          "kind": "public_comment_edit"
+        }
+      ],
+      "export_sha256": "a5535a440b0b7134f6637e4bb6449a1da319235170225902cebd007c227759dd",
+      "original_path": "research/lifecycle_memory/phase2_job3_marker_renderer.py",
+      "original_sha256": "d1b22e817b9421cf6fd654de99a3c0a835339bb95a71c0544faa8f60c0ba8ff1",
+      "path": "research/lifecycle_memory/phase2_job3_marker_renderer.py",
+      "selection": "transitive_import"
+    },
+    {
+      "bytes": 64351,
+      "changes": [
+        {
+          "after": "\"\"\"Validate a burned-data replacement review and issue a cumulative audit receipt.\"\"\"",
+          "before": "\"\"\"Validate a Job3 replacement review and issue a cumulative audit receipt.\"\"\"",
+          "kind": "public_comment_edit"
+        }
+      ],
+      "export_sha256": "fb677603994c1c8ab6e5a3b7e0d580df54f323ded91ccf4b1bc350af91007155",
+      "original_path": "research/lifecycle_memory/phase2_job3_negative_replacement_review_export.py",
+      "original_sha256": "e18afedde581e4be27115f99a08fe8d91a04dd5e8a99d1bf7e9222c173a1c10d",
+      "path": "research/lifecycle_memory/phase2_job3_negative_replacement_review_export.py",
+      "selection": "transitive_import"
+    },
+    {
+      "bytes": 25336,
+      "changes": [
+        {
+          "after": "\"\"\"Validate the frozen burned-data pending-negative browser export.\"\"\"",
+          "before": "\"\"\"Validate the frozen Job3 pending-negative browser export.\"\"\"",
+          "kind": "public_comment_edit"
+        }
+      ],
+      "export_sha256": "f2464c28b07432270bcf0b7287c564fd25e58aad3b6e663c418ae4035d68d865",
+      "original_path": "research/lifecycle_memory/phase2_job3_negative_review_export.py",
+      "original_sha256": "a4b8b919a83032af415ad29fed46a87932b4c559ed70c586a49f5bdad980e7a1",
+      "path": "research/lifecycle_memory/phase2_job3_negative_review_export.py",
+      "selection": "transitive_import"
+    },
+    {
+      "bytes": 2449,
+      "changes": [
+        {
+          "kind": "ast_helper_subset",
+          "requested_symbols": [
+            "build_contact_sheet_image"
+          ],
+          "retained_ast_equal": true,
+          "retained_symbols": [
+            "Any",
+            "Callable",
+            "Path",
+            "annotations",
+            "build_contact_sheet_image",
+            "math"
+          ]
+        }
+      ],
+      "export_sha256": "ba618e31dba87384b4767073799b3cd6647d51181e6d59a65801506e2cb97e43",
+      "original_path": "research/lifecycle_memory/protocol_v3_3rscan_visual_vlm.py",
+      "original_sha256": "e683b35238ac469b80b2932173c9f6b6f4f7f12d85350d58afcd16367e93ff43",
+      "path": "research/lifecycle_memory/protocol_v3_3rscan_visual_vlm.py",
+      "selection": "transitive_import"
+    },
+    {
+      "bytes": 8230,
+      "changes": [],
+      "export_sha256": "620d7621dac1e71aba224bfc98ac5bda8ae441a5095b5c9dc8ffc5c83dcec427",
+      "original_path": "research/lifecycle_memory/quarantine_appledouble_sidecars.py",
+      "original_sha256": "620d7621dac1e71aba224bfc98ac5bda8ae441a5095b5c9dc8ffc5c83dcec427",
+      "path": "research/lifecycle_memory/quarantine_appledouble_sidecars.py",
+      "selection": "transitive_import"
+    },
+    {
+      "bytes": 39574,
+      "changes": [
+        {
+          "after": "\"\"\"Prospective new-operator followup on the reused held-out Qwen cohort.\n\nWorkers never open evaluator labels. Runtime operations and statistical games\nreuse the held-out component experiment; this module owns only the followup\ndesign, receipts and inference.\n\"\"\"",
+          "before": "\"\"\"Prospective new-operator followup on the reused Job E Qwen cohort.\n\nWorkers never open evaluator labels. Runtime operations and statistical games\nreuse Job E; this module owns only the followup design, receipts and inference.\n\"\"\"",
+          "kind": "public_comment_edit"
+        },
+        {
+          "after": "# Reused component-cohort absolute-error estimand; labels define clusters, not row ratios.",
+          "before": "# Job E's absolute-error estimand; labels define clusters, not row ratios.",
+          "kind": "public_comment_edit"
+        }
+      ],
+      "export_sha256": "eecf94a0812ce00550427b039c078bf2f5f145c8f1577cd1fd56f61f5810fbed",
+      "original_path": "research/lifecycle_memory/qwen_role_factorial.py",
+      "original_sha256": "e551150a6c54b95574497a702474182d40b76729926f73d6c6acaa2ccb19dc4c",
+      "path": "research/lifecycle_memory/qwen_role_factorial.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 35242,
+      "changes": [],
+      "export_sha256": "50fc58eef4c002fdbb70e7cb443cf6a5cb2af9a6a3cf66a3d7b30057079103df",
+      "original_path": "research/lifecycle_memory/qwen_role_factorial_release.py",
+      "original_sha256": "50fc58eef4c002fdbb70e7cb443cf6a5cb2af9a6a3cf66a3d7b30057079103df",
+      "path": "research/lifecycle_memory/qwen_role_factorial_release.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 8820,
+      "changes": [],
+      "export_sha256": "4d7553693db6a6c7b927541f366616ae0122276e32424c37c84c26cb7aa217cf",
+      "original_path": "research/lifecycle_memory/reanchored_release.py",
+      "original_sha256": "4d7553693db6a6c7b927541f366616ae0122276e32424c37c84c26cb7aa217cf",
+      "path": "research/lifecycle_memory/reanchored_release.py",
+      "selection": "transitive_import"
+    },
+    {
+      "bytes": 1828,
+      "changes": [],
+      "export_sha256": "4195691a7f64233f812b20a4bc1a65a0b8b03998bb5a945f28bc35b1bd0700a0",
+      "original_path": "research/lifecycle_memory/reanchored_token_positions.py",
+      "original_sha256": "4195691a7f64233f812b20a4bc1a65a0b8b03998bb5a945f28bc35b1bd0700a0",
+      "path": "research/lifecycle_memory/reanchored_token_positions.py",
+      "selection": "transitive_import"
+    },
+    {
+      "bytes": 22478,
+      "changes": [],
+      "export_sha256": "32650228259041700e5edc9c2f5fdcd5b49efeb7f6f7d13ba4de677a27e8c1c2",
+      "original_path": "research/lifecycle_memory/role_aware_killarney_release.py",
+      "original_sha256": "32650228259041700e5edc9c2f5fdcd5b49efeb7f6f7d13ba4de677a27e8c1c2",
+      "path": "research/lifecycle_memory/role_aware_killarney_release.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 10476,
+      "changes": [],
+      "export_sha256": "8f5e0b10b692a49ea924ab28b7c6755f8142ec0aafb0e1380475b1a8a00dd1f6",
+      "original_path": "research/lifecycle_memory/role_aware_killarney_runtime.py",
+      "original_sha256": "8f5e0b10b692a49ea924ab28b7c6755f8142ec0aafb0e1380475b1a8a00dd1f6",
+      "path": "research/lifecycle_memory/role_aware_killarney_runtime.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 30120,
+      "changes": [],
+      "export_sha256": "0940425016db8db691c5d91f4b02d676a7df8a8dea6c41f3d4493e29c7d2b563",
+      "original_path": "research/lifecycle_memory/role_aware_policy.py",
+      "original_sha256": "0940425016db8db691c5d91f4b02d676a7df8a8dea6c41f3d4493e29c7d2b563",
+      "path": "research/lifecycle_memory/role_aware_policy.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 25401,
+      "changes": [],
+      "export_sha256": "802c15c52ce74778cd7e8dd8cd6aa01607208fe1672ed33d17fc9faf53da2c27",
+      "original_path": "research/lifecycle_memory/role_aware_policy_release.py",
+      "original_sha256": "802c15c52ce74778cd7e8dd8cd6aa01607208fe1672ed33d17fc9faf53da2c27",
+      "path": "research/lifecycle_memory/role_aware_policy_release.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 8301,
+      "changes": [],
+      "export_sha256": "bf775c0eedf9f3338140da9a93a320e7f4002e70d6e54869f8fe748f8089850c",
+      "original_path": "research/lifecycle_memory/role_aware_transfer.py",
+      "original_sha256": "bf775c0eedf9f3338140da9a93a320e7f4002e70d6e54869f8fe748f8089850c",
+      "path": "research/lifecycle_memory/role_aware_transfer.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 28032,
+      "changes": [],
+      "export_sha256": "6485ccb72deb57f5e9a394384993d714b674ee6ebc2f4f57726403fd9ed2ec4d",
+      "original_path": "research/lifecycle_memory/role_aware_transfer_release.py",
+      "original_sha256": "6485ccb72deb57f5e9a394384993d714b674ee6ebc2f4f57726403fd9ed2ec4d",
+      "path": "research/lifecycle_memory/role_aware_transfer_release.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 39520,
+      "changes": [],
+      "export_sha256": "c44fee32f37967afc53b0ab8d118314d5576d347ec70f3f9780d0c116cfc22f9",
+      "original_path": "research/lifecycle_memory/run_decoder_application_pilots.py",
+      "original_sha256": "c44fee32f37967afc53b0ab8d118314d5576d347ec70f3f9780d0c116cfc22f9",
+      "path": "research/lifecycle_memory/run_decoder_application_pilots.py",
+      "selection": "transitive_import"
+    },
+    {
+      "bytes": 46511,
+      "changes": [],
+      "export_sha256": "3b563040dfe10317de7002adefac00c1794ba8a63eb6131dfde385b12b4bba3a",
+      "original_path": "research/lifecycle_memory/run_decoder_token_matrix.py",
+      "original_sha256": "3b563040dfe10317de7002adefac00c1794ba8a63eb6131dfde385b12b4bba3a",
+      "path": "research/lifecycle_memory/run_decoder_token_matrix.py",
+      "selection": "transitive_import"
+    },
+    {
+      "bytes": 10301,
+      "changes": [
+        {
+          "kind": "ast_helper_subset",
+          "requested_symbols": [
+            "_blank_image_same_size",
+            "_llamacpp_yes_no_prompt",
+            "_parse_visor_answer",
+            "_prompt_echo_detected",
+            "_safe_request_id",
+            "build_gate_report"
+          ],
+          "retained_ast_equal": true,
+          "retained_symbols": [
+            "Any",
+            "PROMPT_ECHO_MIN_CHARS",
+            "Path",
+            "_answers_by_request_id",
+            "_blank_image_same_size",
+            "_llamacpp_yes_no_prompt",
+            "_parse_json_object",
+            "_parse_visor_answer",
+            "_prompt_echo_detected",
+            "_read_json",
+            "_resolve_path",
+            "_safe_request_id",
+            "_show_frame_labels",
+            "annotations",
+            "build_gate_report",
+            "json",
+            "re"
+          ]
+        }
+      ],
+      "export_sha256": "9d3a8895cdbef0624482d642f4551a982debac14ee91e9dda9771ff83b9d803b",
+      "original_path": "research/lifecycle_memory/run_epic_visor_dynamic_llamacpp_metal.py",
+      "original_sha256": "6d5fb6818377492342247c197a385414d58cdf0972a937685aaefb0754c5492f",
+      "path": "research/lifecycle_memory/run_epic_visor_dynamic_llamacpp_metal.py",
+      "selection": "transitive_import"
+    },
+    {
+      "bytes": 1677,
+      "changes": [
+        {
+          "kind": "ast_helper_subset",
+          "requested_symbols": [
+            "_parse_json_object",
+            "_read_json",
+            "_resolve_path",
+            "_show_frame_labels"
+          ],
+          "retained_ast_equal": true,
+          "retained_symbols": [
+            "Any",
+            "Path",
+            "_parse_json_object",
+            "_read_json",
+            "_resolve_path",
+            "_show_frame_labels",
+            "annotations",
+            "json",
+            "re"
+          ]
+        }
+      ],
+      "export_sha256": "522e798a55be9689cc8b093397d2309d654ee4f99dcc708efd84ddca584affad",
+      "original_path": "research/lifecycle_memory/run_epic_visor_dynamic_vlm_smoke.py",
+      "original_sha256": "9473ba2f2f4d708491c595210ad50746e63acebf884421d1b3fd1ec40133f709",
+      "path": "research/lifecycle_memory/run_epic_visor_dynamic_vlm_smoke.py",
+      "selection": "transitive_import"
+    },
+    {
+      "bytes": 95927,
+      "changes": [
+        {
+          "after": "# changing the held-out experiment's frozen default inventory.",
+          "before": "# changing Job E's frozen default inventory.",
+          "kind": "public_comment_edit"
+        }
+      ],
+      "export_sha256": "e5122ad30369ef06b82b1a8f323dd699d210b03caaa37d28c6e56278b636ba48",
+      "original_path": "research/lifecycle_memory/run_patchaudit_heldout_component_closure.py",
+      "original_sha256": "1de2fcde7dbe7db70b5855b6f8006dc8cfff1e1640aba519c5bc6416d414077f",
+      "path": "research/lifecycle_memory/run_patchaudit_heldout_component_closure.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 73861,
+      "changes": [],
+      "export_sha256": "c88c80177d9b995b373ec94354185be37116e06597f0a1e52cd5af372349a2c5",
+      "original_path": "research/lifecycle_memory/run_patchaudit_transport_decomposition.py",
+      "original_sha256": "c88c80177d9b995b373ec94354185be37116e06597f0a1e52cd5af372349a2c5",
+      "path": "research/lifecycle_memory/run_patchaudit_transport_decomposition.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 89353,
+      "changes": [
+        {
+          "after": "\"\"\"Run mechanism-study instrument gates on TamIA.\n\nThis gate is deliberately small. It loads one VLM per GPU worker, prepares two\nW0 method-facing image samples, verifies visual-token evidence, hidden-state\nshape availability, per-role hook firing, and hook parity, then writes compact\nmodule/input summaries. It does not score model behavior and does not expose\nhidden answers to prompts.\n\"\"\"",
+          "before": "\"\"\"Run Phase 2 mechanism-study instrument gates on TamIA.\n\nThis gate is deliberately small. It loads one VLM per GPU worker, prepares two\nW0 method-facing image samples, verifies visual-token evidence, hidden-state\nshape availability, per-role hook firing, and hook parity, then writes compact\nmodule/input summaries. It does not score model behavior and does not expose\nhidden answers to prompts.\n\"\"\"",
+          "kind": "public_comment_edit"
+        }
+      ],
+      "export_sha256": "a0ac3659f4b12fd190b79f4c79956df184708a0582a92ebdbf51b44a6896f860",
+      "original_path": "research/lifecycle_memory/run_phase2_mech_job1_instrument_gates.py",
+      "original_sha256": "449240a2a7f84dc04313e10fa40d168b4a66d3a839046e555d0bfa643bd7c6d6",
+      "path": "research/lifecycle_memory/run_phase2_mech_job1_instrument_gates.py",
+      "selection": "transitive_import"
+    },
+    {
+      "bytes": 65217,
+      "changes": [
+        {
+          "after": "\"\"\"Run W0 compact activation capture on TamIA.\n\nThis is the first real mechanism-study capture job after the instrument gates.\nIt loads one VLM per GPU worker, runs W0 method-facing arms, and stores compact\nselected vectors rather than full hidden-state tensors. Hidden answers and VISOR\ngeometry are never inserted into model prompts; they are saved only as\nevaluator-side metadata for offline probes and analysis.\n\"\"\"",
+          "before": "\"\"\"Run Phase 2 W0 compact activation capture on TamIA.\n\nThis is the first real mechanism-study capture job after the instrument gates.\nIt loads one VLM per GPU worker, runs W0 method-facing arms, and stores compact\nselected vectors rather than full hidden-state tensors. Hidden answers and VISOR\ngeometry are never inserted into model prompts; they are saved only as\nevaluator-side metadata for offline probes and analysis.\n\"\"\"",
+          "kind": "public_comment_edit"
+        }
+      ],
+      "export_sha256": "9bc57df036edd62a5759863410023c5ca5fa303961039d96141295946d1a4724",
+      "original_path": "research/lifecycle_memory/run_phase2_mech_job2_battery_capture.py",
+      "original_sha256": "bd9c3ce07c9dff6d33b93a90871d11831771804423d38f95d039f37c8a6eec8a",
+      "path": "research/lifecycle_memory/run_phase2_mech_job2_battery_capture.py",
+      "selection": "transitive_import"
+    },
+    {
+      "bytes": 24188,
+      "changes": [
+        {
+          "after": "\"\"\"Answer-token causal-patch adapter for the validated re-anchored patch engine.\n\nThe legacy engine remains the implementation source for architecture discovery,\nslot-exact patching, controls, resume state, telemetry, and aggregation. This\nmodule binds that engine to the separately frozen answer-token confirmation and\nreplaces two candidate-continuation forwards with one shared-prefix forward.\n\"\"\"",
+          "before": "\"\"\"Answer-token Job C-R adapter for the validated re-anchored patch engine.\n\nThe legacy engine remains the implementation source for architecture discovery,\nslot-exact patching, controls, resume state, telemetry, and aggregation. This\nmodule binds that engine to the separately frozen answer-token confirmation and\nreplaces two candidate-continuation forwards with one shared-prefix forward.\n\"\"\"",
+          "kind": "public_comment_edit"
+        }
+      ],
+      "export_sha256": "3df5c923659a88d64d200f8b301f2cf8733d24a240333431ca6ae5a7d8c59d17",
+      "original_path": "research/lifecycle_memory/run_phase2_reanchored_answer_token_causal_patch.py",
+      "original_sha256": "c942b5d6d8bfe9a5b7cde96c43d0bd907641fb4a337fd110ee7df08847b6ebfa",
+      "path": "research/lifecycle_memory/run_phase2_reanchored_answer_token_causal_patch.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 137275,
+      "changes": [
+        {
+          "after": "\"\"\"Hash-bound behavioral inference for the re-anchored EgoHOS 2AFC battery.\n\nWorkers see only public request packs. Full analysis uses the contract-bound\nanalyzer, the only component that opens the hidden evaluator index. Canary\nworkers consume only public rows; the coordinator may hash the sealed evaluator\nfile for integrity but never parses, joins, or emits outcome metrics.\n\"\"\"",
+          "before": "\"\"\"Hash-bound Job A inference for the re-anchored EgoHOS 2AFC battery.\n\nWorkers see only public request packs. Full analysis is delegated to the\ncontract-bound analyzer, the only component that opens the hidden evaluator\nindex. Canary workers consume only public rows; the coordinator may hash the\nsealed evaluator file for integrity but never parses, joins, or emits outcome\nmetrics.\n\"\"\"",
+          "kind": "public_comment_edit"
+        }
+      ],
+      "export_sha256": "ec40eeb5a97e433107a88698a1fbaba83fea38de1a49e6f07f412758a7f576c5",
+      "original_path": "research/lifecycle_memory/run_phase2_reanchored_behavior.py",
+      "original_sha256": "fe96eb91f98e99715b109f4fab365b1233dd79eba10fbffde9063225bfce4e63",
+      "path": "research/lifecycle_memory/run_phase2_reanchored_behavior.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 199850,
+      "changes": [
+        {
+          "after": "\"\"\"Return architecture-neutral decoder-state names for capture/patch crosswalks.\"\"\"",
+          "before": "\"\"\"Return architecture-neutral state semantics for Job B/Job C crosswalks.\"\"\"",
+          "kind": "public_comment_edit"
+        }
+      ],
+      "export_sha256": "fb0eb7b93ce4ddd07762a4b03d82c16846014a13f91031394985fe2b9f00fdc6",
+      "original_path": "research/lifecycle_memory/run_phase2_reanchored_causal_patch.py",
+      "original_sha256": "9e140e6fce0bec0fe376d43bb0062cb1a5a4e769663ad52ec7ed1a2fa03eff68",
+      "path": "research/lifecycle_memory/run_phase2_reanchored_causal_patch.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 148699,
+      "changes": [
+        {
+          "after": "\"\"\"Run the prespecified four-model layerwise 2AFC capture.\n\nWorkers consume public three-image packs only. Hidden A/B answers are joined\nlater by the full-analysis command. Every saved activation is a pooled float16\nvector; full token tensors are never persisted.\n\"\"\"",
+          "before": "\"\"\"Run the prespecified four-model Job B layerwise 2AFC capture.\n\nWorkers consume public three-image packs only. Hidden A/B answers are joined\nlater by the full-analysis command. Every saved activation is a pooled float16\nvector; full token tensors are never persisted.\n\"\"\"",
+          "kind": "public_comment_edit"
+        },
+        {
+          "after": "\"\"\"Compatibility wrapper around the shared capture/patch token contract.\"\"\"",
+          "before": "\"\"\"Compatibility wrapper around the shared Job B/Job C token contract.\"\"\"",
+          "kind": "public_comment_edit"
+        }
+      ],
+      "export_sha256": "890977c6d03d8057f51646e8f19789112b94995883a75c293b3cc8b0fba6c84b",
+      "original_path": "research/lifecycle_memory/run_phase2_reanchored_layer_capture.py",
+      "original_sha256": "42e6aab0ad1cc45f72e281a7d8a1296331aefd76f1325e0fefae0fb4dae0b890",
+      "path": "research/lifecycle_memory/run_phase2_reanchored_layer_capture.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 44548,
+      "changes": [],
+      "export_sha256": "9b1495418df3a2a5501d5cca99cd3cda5d8b66be87aa2e5e75f797ef8aebbdd0",
+      "original_path": "research/lifecycle_memory/run_role_aware_policy.py",
+      "original_sha256": "9b1495418df3a2a5501d5cca99cd3cda5d8b66be87aa2e5e75f797ef8aebbdd0",
+      "path": "research/lifecycle_memory/run_role_aware_policy.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 37820,
+      "changes": [],
+      "export_sha256": "a5d9489538f02cce52a965bfb534f1ab8c7a6c0a1dbd202dc106d7633df15124",
+      "original_path": "research/lifecycle_memory/run_role_aware_transfer.py",
+      "original_sha256": "a5d9489538f02cce52a965bfb534f1ab8c7a6c0a1dbd202dc106d7633df15124",
+      "path": "research/lifecycle_memory/run_role_aware_transfer.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 44641,
+      "changes": [
+        {
+          "after": "\"\"\"Bounded offline dense CURRENT preparation, never automatic scientific approval.\n\nRun ``python -m research.lifecycle_memory.temporal_dense_current_data --help``.\nInputs are the v4 plan directory and one or more exact-URI local media maps.\nThe full selection screens metadata for exported two-second windows, then\nfreezes 96 distinct allocated wearers before opening labels or checking the\ncache. The technical canary selects at most four cached wearers.\nBoth preserve the original temporal_cohort; neither reassigns confirmation rows.\n\nNine decoded scenes are private QA assets. Only the eight past scenes enter the\ntask: CURRENT and candidate0/1 are byte-for-byte copies of the original static\nindex real_full/crop_a/crop_b, including the original answer and crop order.\nNo label is inferred from the decoded current. Scene PTS are integer timestamps\nin the probed rational time base, selected at or before each target.\n\nWithout explicit review proofs the output contains only QA, attrition, and\nreadiness, not audited observations or a release. A proof JSON has exactly\n``{\"version\":1,\"items\":[{\"proposal_id\":...,\"evidence_binding_sha256\":...,\n\"reviewer\":...,\"evidence_sha256\":...,\"gates\":{...}}]}``. The binding comes from\neach item's metadata.json and pins the source/queue, all presented image bytes,\nPTS provenance, and the original private static record. Every REVIEW_GATES\nentry must be true. Receipt validation checks consistency, not the accuracy of\nthe review. Review the exact output before supplying its receipt.\n\nPublication additionally requires a schema-3 protocol and its pinned temporal\nand historical exposure registries. Full current publication requires all 96\nfrozen rows. A canary release is technical-only; full is descriptive-only.\nSuccessful publication authorizes the declared descriptive scope, never confirmation.\nAll outputs must be new private directories outside Git or ignored by Git.\nThere is no downloading, scheduler submission, GPU work, or forecast support.\n\"\"\"",
+          "before": "\"\"\"Bounded offline dense CURRENT preparation, never automatic scientific approval.\n\nRun ``python -m research.lifecycle_memory.temporal_dense_current_data --help``.\nInputs are the v4 plan directory and one or more exact-URI local media maps.\nThe full selection screens metadata for exported two-second windows, then\nfreezes 96 distinct allocated wearers before opening labels or checking the\ncache. The technical canary selects at most four cached wearers.\nBoth preserve the original temporal_cohort; neither reassigns confirmation rows.\n\nNine decoded scenes are private QA assets. Only the eight past scenes enter the\ntask: CURRENT and candidate0/1 are byte-for-byte copies of the original static\nindex real_full/crop_a/crop_b, including the original answer and crop order.\nNo label is inferred from the decoded current. Scene PTS are integer timestamps\nin the probed rational time base, selected at or before each target.\n\nWithout explicit review proofs the output contains only QA, attrition, and\nreadiness, not audited observations or a release. A proof JSON has exactly\n``{\"version\":1,\"items\":[{\"proposal_id\":...,\"evidence_binding_sha256\":...,\n\"reviewer\":...,\"evidence_sha256\":...,\"gates\":{...}}]}``. The binding comes from\neach item's metadata.json and pins the source/queue, all presented image bytes,\nPTS provenance, and the original private static record. Every REVIEW_GATES\nentry must be true. A receipt is a caller attestation, not machine-certified\nscientific truth. Review the exact output before supplying its receipt.\n\nPublication additionally requires a schema-3 protocol and its pinned temporal\nand historical exposure registries. Full current publication requires all 96\nfrozen rows. A canary release is technical-only; full is descriptive-only.\nAn assistant may supply a genuine evidence-bound review receipt. Successful\npublication authorizes the declared descriptive scope, never confirmation.\nAll outputs must be new private directories outside Git or ignored by Git.\nThere is no downloading, scheduler submission, GPU work, or forecast support.\n\"\"\"",
+          "kind": "public_comment_edit"
+        }
+      ],
+      "export_sha256": "d028bce6dc4fa4d30201c09788a3d2c9b1f8ed008578d34bd2dd46754d42e5b2",
+      "original_path": "research/lifecycle_memory/temporal_dense_current_data.py",
+      "original_sha256": "384ec42e941e14d2b5d2fbd68f969fc7ebd000d3ce1a03f05038cf55fef2992b",
+      "path": "research/lifecycle_memory/temporal_dense_current_data.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 84,
+      "changes": [],
+      "export_sha256": "2a40fb388ec5581117badbce94d24fa10f78f2e66f7321debce98dfbd0c4dfa2",
+      "original_path": "research/lifecycle_memory/temporal_forecasting/__init__.py",
+      "original_sha256": "2a40fb388ec5581117badbce94d24fa10f78f2e66f7321debce98dfbd0c4dfa2",
+      "path": "research/lifecycle_memory/temporal_forecasting/__init__.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 31574,
+      "changes": [],
+      "export_sha256": "f449389676f31014f7b47e54085638123d68d8a25e8142d96ba26d1327f8f213",
+      "original_path": "research/lifecycle_memory/temporal_forecasting/analysis.py",
+      "original_sha256": "f449389676f31014f7b47e54085638123d68d8a25e8142d96ba26d1327f8f213",
+      "path": "research/lifecycle_memory/temporal_forecasting/analysis.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 18274,
+      "changes": [],
+      "export_sha256": "297a5a2fb6da0705977595b5cf5958c071f38bc75954f16a05234a0417ed2f59",
+      "original_path": "research/lifecycle_memory/temporal_forecasting/cli.py",
+      "original_sha256": "297a5a2fb6da0705977595b5cf5958c071f38bc75954f16a05234a0417ed2f59",
+      "path": "research/lifecycle_memory/temporal_forecasting/cli.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 2099,
+      "changes": [],
+      "export_sha256": "fffa037747a964bc0900e74bee91db4fcf07ac5bd225769985faa02f2c1ff2e1",
+      "original_path": "research/lifecycle_memory/temporal_forecasting/common.py",
+      "original_sha256": "fffa037747a964bc0900e74bee91db4fcf07ac5bd225769985faa02f2c1ff2e1",
+      "path": "research/lifecycle_memory/temporal_forecasting/common.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 36089,
+      "changes": [],
+      "export_sha256": "1a9cf0646ad7d5a622977ab7e78fc243747891d816d42d66d6dabb4b0fed2256",
+      "original_path": "research/lifecycle_memory/temporal_forecasting/data.py",
+      "original_sha256": "1a9cf0646ad7d5a622977ab7e78fc243747891d816d42d66d6dabb4b0fed2256",
+      "path": "research/lifecycle_memory/temporal_forecasting/data.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 28541,
+      "changes": [],
+      "export_sha256": "4bc7cbc846e23ca84d067dec0ccdac6b1a980d80c38802a80e0c95b351a4a110",
+      "original_path": "research/lifecycle_memory/temporal_forecasting/dense_analysis.py",
+      "original_sha256": "4bc7cbc846e23ca84d067dec0ccdac6b1a980d80c38802a80e0c95b351a4a110",
+      "path": "research/lifecycle_memory/temporal_forecasting/dense_analysis.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 5829,
+      "changes": [],
+      "export_sha256": "856e2f1938ec32e16cb13c16786add6231271267ca7d4dc59f1c307262001633",
+      "original_path": "research/lifecycle_memory/temporal_forecasting/dense_launch.py",
+      "original_sha256": "856e2f1938ec32e16cb13c16786add6231271267ca7d4dc59f1c307262001633",
+      "path": "research/lifecycle_memory/temporal_forecasting/dense_launch.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 40677,
+      "changes": [],
+      "export_sha256": "336bb58bb919652341bc98b4c400f289fcba79f19f92b5e16db57a803b261fee",
+      "original_path": "research/lifecycle_memory/temporal_forecasting/execution.py",
+      "original_sha256": "336bb58bb919652341bc98b4c400f289fcba79f19f92b5e16db57a803b261fee",
+      "path": "research/lifecycle_memory/temporal_forecasting/execution.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 33183,
+      "changes": [],
+      "export_sha256": "17b030b78601ae8ba439ce874879447c1f6450d0d813285490a72a3557c98399",
+      "original_path": "research/lifecycle_memory/temporal_forecasting/followup_analysis.py",
+      "original_sha256": "17b030b78601ae8ba439ce874879447c1f6450d0d813285490a72a3557c98399",
+      "path": "research/lifecycle_memory/temporal_forecasting/followup_analysis.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 6067,
+      "changes": [],
+      "export_sha256": "99ad10884e5e5fc590e13d2fa884737f5c500576f2ebaa9b192cc16c213a488a",
+      "original_path": "research/lifecycle_memory/temporal_forecasting/followup_compare.py",
+      "original_sha256": "99ad10884e5e5fc590e13d2fa884737f5c500576f2ebaa9b192cc16c213a488a",
+      "path": "research/lifecycle_memory/temporal_forecasting/followup_compare.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 5672,
+      "changes": [],
+      "export_sha256": "23c6fd3132ba6f5bbcc2f4becc770335e083b4ad166dda5c1877efec4ade1ddc",
+      "original_path": "research/lifecycle_memory/temporal_forecasting/followup_prepare.py",
+      "original_sha256": "23c6fd3132ba6f5bbcc2f4becc770335e083b4ad166dda5c1877efec4ade1ddc",
+      "path": "research/lifecycle_memory/temporal_forecasting/followup_prepare.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 6579,
+      "changes": [],
+      "export_sha256": "5ed381696a0552fb050d8a73777cf7e25f67bfa3ad0ee784ef45dc3d4fe4209f",
+      "original_path": "research/lifecycle_memory/temporal_forecasting/followup_protocol.py",
+      "original_sha256": "5ed381696a0552fb050d8a73777cf7e25f67bfa3ad0ee784ef45dc3d4fe4209f",
+      "path": "research/lifecycle_memory/temporal_forecasting/followup_protocol.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 11966,
+      "changes": [],
+      "export_sha256": "bb2ca8d20a6b80873a96b233e7df19eb025a7e3f7232b035aeeb16935d6d6de4",
+      "original_path": "research/lifecycle_memory/temporal_forecasting/followup_runtime.py",
+      "original_sha256": "bb2ca8d20a6b80873a96b233e7df19eb025a7e3f7232b035aeeb16935d6d6de4",
+      "path": "research/lifecycle_memory/temporal_forecasting/followup_runtime.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 26191,
+      "changes": [],
+      "export_sha256": "af69c97bb316f147a7fe5a9595fc4f42004365d2748b0c56d898aecb8c865d14",
+      "original_path": "research/lifecycle_memory/temporal_forecasting/hpc.py",
+      "original_sha256": "af69c97bb316f147a7fe5a9595fc4f42004365d2748b0c56d898aecb8c865d14",
+      "path": "research/lifecycle_memory/temporal_forecasting/hpc.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 19706,
+      "changes": [],
+      "export_sha256": "9ecf07efb32d0cd6651995569bfda7c2255b162dd8aba67b97e1aec95acc3f73",
+      "original_path": "research/lifecycle_memory/temporal_forecasting/protocol.py",
+      "original_sha256": "9ecf07efb32d0cd6651995569bfda7c2255b162dd8aba67b97e1aec95acc3f73",
+      "path": "research/lifecycle_memory/temporal_forecasting/protocol.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 15270,
+      "changes": [],
+      "export_sha256": "b3cad98faa09020ac56578fbbf7d63a8ef938a89169c3d62fa546d917142d011",
+      "original_path": "research/lifecycle_memory/temporal_forecasting/recognition_analysis.py",
+      "original_sha256": "b3cad98faa09020ac56578fbbf7d63a8ef938a89169c3d62fa546d917142d011",
+      "path": "research/lifecycle_memory/temporal_forecasting/recognition_analysis.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 30359,
+      "changes": [],
+      "export_sha256": "23db68e21c868e6c1bf36b5a2de00cc32e75a8b42d9a20f7cf043341a7fc8488",
+      "original_path": "research/lifecycle_memory/temporal_forecasting/recognition_data.py",
+      "original_sha256": "23db68e21c868e6c1bf36b5a2de00cc32e75a8b42d9a20f7cf043341a7fc8488",
+      "path": "research/lifecycle_memory/temporal_forecasting/recognition_data.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 6237,
+      "changes": [],
+      "export_sha256": "4110736dbb6c1e303ae51942c127b6a7b243a9661a3c18b85bdc0c759276af97",
+      "original_path": "research/lifecycle_memory/temporal_forecasting/recognition_launch.py",
+      "original_sha256": "4110736dbb6c1e303ae51942c127b6a7b243a9661a3c18b85bdc0c759276af97",
+      "path": "research/lifecycle_memory/temporal_forecasting/recognition_launch.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 10746,
+      "changes": [],
+      "export_sha256": "f4593688ccd4a859fa152eb132306dc2615f2cfbfd0937ed8746bf62267a2e93",
+      "original_path": "research/lifecycle_memory/temporal_forecasting/recognition_protocol.py",
+      "original_sha256": "f4593688ccd4a859fa152eb132306dc2615f2cfbfd0937ed8746bf62267a2e93",
+      "path": "research/lifecycle_memory/temporal_forecasting/recognition_protocol.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 12723,
+      "changes": [],
+      "export_sha256": "9f16fba4e2668440d336cfbcc13e583d0d9c32d8cc8d865e42cde65cfe967f67",
+      "original_path": "research/lifecycle_memory/temporal_forecasting/release.py",
+      "original_sha256": "9f16fba4e2668440d336cfbcc13e583d0d9c32d8cc8d865e42cde65cfe967f67",
+      "path": "research/lifecycle_memory/temporal_forecasting/release.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 40285,
+      "changes": [],
+      "export_sha256": "9bf9927b4d50da716ad684012fc1940f84e3332d1bffd010f806b371486e91c8",
+      "original_path": "research/lifecycle_memory/temporal_forecasting/runtime.py",
+      "original_sha256": "9bf9927b4d50da716ad684012fc1940f84e3332d1bffd010f806b371486e91c8",
+      "path": "research/lifecycle_memory/temporal_forecasting/runtime.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 14765,
+      "changes": [],
+      "export_sha256": "6c4b7a0a95e01da464722fc0165a0563b4cc0e6ccfd1ba0507d5d974e119cca4",
+      "original_path": "research/lifecycle_memory/temporal_forecasting_census.py",
+      "original_sha256": "6c4b7a0a95e01da464722fc0165a0563b4cc0e6ccfd1ba0507d5d974e119cca4",
+      "path": "research/lifecycle_memory/temporal_forecasting_census.py",
+      "selection": "transitive_import"
+    },
+    {
+      "bytes": 20396,
+      "changes": [
+        {
+          "after": "\"\"\"Bounded offline source-identity overlap; never episode or dataset validation.\n\nNo media, network, labels, exposure registry, selection, or model execution.\nAll frame equality, offsets, and action containment are conditional on unverified\nEgoHOS frame numbering in the STA video clock. Shared video or participant identity\ndoes not establish event correspondence.\nRun with python -B -m research.lifecycle_memory.temporal_forecasting_static_overlap.\n\"\"\"",
+          "before": "\"\"\"Bounded offline source-identity overlap; never episode or dataset validation.\n\nNo media, network, labels, exposure registry, selection, or model execution.\nAll frame equality, offsets, and action containment are conditional on unverified\nEgoHOS frame numbering in the STA video clock. Same video/person is not a situation.\nRun with python -B -m research.lifecycle_memory.temporal_forecasting_static_overlap.\n\"\"\"",
+          "kind": "public_comment_edit"
+        }
+      ],
+      "export_sha256": "e3498ad37cbfbeeae686e4b3df3b9fdc0a59d71ecef8c9f635350ce1559de241",
+      "original_path": "research/lifecycle_memory/temporal_forecasting_static_overlap.py",
+      "original_sha256": "c405b110f0ca820821312ccb0e74601dffc5c27cfae5cafcfdf82dd0f3318540",
+      "path": "research/lifecycle_memory/temporal_forecasting_static_overlap.py",
+      "selection": "transitive_import"
+    },
+    {
+      "bytes": 18454,
+      "changes": [],
+      "export_sha256": "94aaeaf0aa1de7e6c8da2b960cec15a4347f1cf32806fe282d20f939c5dc401b",
+      "original_path": "research/lifecycle_memory/temporal_matched_media.py",
+      "original_sha256": "94aaeaf0aa1de7e6c8da2b960cec15a4347f1cf32806fe282d20f939c5dc401b",
+      "path": "research/lifecycle_memory/temporal_matched_media.py",
+      "selection": "transitive_import"
+    },
+    {
+      "bytes": 36021,
+      "changes": [],
+      "export_sha256": "45430231e039f3a82ab6dbdc929230349b774f963a75ef6fe1520826857541e4",
+      "original_path": "research/lifecycle_memory/temporal_matched_preparation.py",
+      "original_sha256": "45430231e039f3a82ab6dbdc929230349b774f963a75ef6fe1520826857541e4",
+      "path": "research/lifecycle_memory/temporal_matched_preparation.py",
+      "selection": "transitive_import"
+    },
+    {
+      "bytes": 7490,
+      "changes": [],
+      "export_sha256": "53910702124ccb3065376e23a5ee60eb8f0f2b4daaae26854b1278ff1cebf060",
+      "original_path": "research/lifecycle_memory/tests/test_application_pilot_data.py",
+      "original_sha256": "53910702124ccb3065376e23a5ee60eb8f0f2b4daaae26854b1278ff1cebf060",
+      "path": "research/lifecycle_memory/tests/test_application_pilot_data.py",
+      "selection": "transitive_import"
+    },
+    {
+      "bytes": 27941,
+      "changes": [],
+      "export_sha256": "31086df117930b9c0d803e019292b7d597a5b4f20656971622a462f2bd3dfb74",
+      "original_path": "research/lifecycle_memory/tests/test_decoder_token_matrix.py",
+      "original_sha256": "31086df117930b9c0d803e019292b7d597a5b4f20656971622a462f2bd3dfb74",
+      "path": "research/lifecycle_memory/tests/test_decoder_token_matrix.py",
+      "selection": "transitive_import"
+    },
+    {
+      "bytes": 30827,
+      "changes": [],
+      "export_sha256": "ed3706188e8d5cfdcf078f5d02a4f7ccc6ad56874ada3e817e315b1dfe4c1fc2",
+      "original_path": "research/lifecycle_memory/tests/test_decoder_token_matrix_steering.py",
+      "original_sha256": "ed3706188e8d5cfdcf078f5d02a4f7ccc6ad56874ada3e817e315b1dfe4c1fc2",
+      "path": "research/lifecycle_memory/tests/test_decoder_token_matrix_steering.py",
+      "selection": "transitive_import"
+    },
+    {
+      "bytes": 8949,
+      "changes": [],
+      "export_sha256": "7d096e39b81ffe6382882b6b5c165a94df1e7d714135f64cc775f2de4f39a881",
+      "original_path": "research/lifecycle_memory/tests/test_patchaudit_component_partition.py",
+      "original_sha256": "7d096e39b81ffe6382882b6b5c165a94df1e7d714135f64cc775f2de4f39a881",
+      "path": "research/lifecycle_memory/tests/test_patchaudit_component_partition.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 6887,
+      "changes": [],
+      "export_sha256": "0e47aac5762a3a2efb6cfc26fa1048146912198dbd954a906a510a4724fa99eb",
+      "original_path": "research/lifecycle_memory/tests/test_patchaudit_heldout_component_closure.py",
+      "original_sha256": "0e47aac5762a3a2efb6cfc26fa1048146912198dbd954a906a510a4724fa99eb",
+      "path": "research/lifecycle_memory/tests/test_patchaudit_heldout_component_closure.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 38272,
+      "changes": [
+        {
+          "kind": "public_path_or_account",
+          "occurrences": 1,
+          "replacement": "REPLACE_WITH_ACCOUNT"
+        }
+      ],
+      "export_sha256": "cf2b6920331b44abc7a9a0430cb8eac512eb5cc6aa347afdcdea1674f175e94d",
+      "original_path": "research/lifecycle_memory/tests/test_patchaudit_transport_decomposition.py",
+      "original_sha256": "b0a665a43a6339127626aead1f56d6cacc8a6e18e5e07a4b7fec9b95f8d96017",
+      "path": "research/lifecycle_memory/tests/test_patchaudit_transport_decomposition.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 8428,
+      "changes": [],
+      "export_sha256": "fed042ebbff854c7ad9a176dc507e634ff807e51778c1774a01118976e9bba72",
+      "original_path": "research/lifecycle_memory/tests/test_patchaudit_transport_operators.py",
+      "original_sha256": "fed042ebbff854c7ad9a176dc507e634ff807e51778c1774a01118976e9bba72",
+      "path": "research/lifecycle_memory/tests/test_patchaudit_transport_operators.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 7449,
+      "changes": [],
+      "export_sha256": "673ff363f2a2dea3c16548e3dd03b814083224328db193a15024429d06be8eaf",
+      "original_path": "research/lifecycle_memory/tests/test_phase2_reanchored_answer_token_causal_patch.py",
+      "original_sha256": "673ff363f2a2dea3c16548e3dd03b814083224328db193a15024429d06be8eaf",
+      "path": "research/lifecycle_memory/tests/test_phase2_reanchored_answer_token_causal_patch.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 82357,
+      "changes": [],
+      "export_sha256": "b63ecbc40e23f6e969b56679766d21099025b5f1e2328b37c3d62e557a696dca",
+      "original_path": "research/lifecycle_memory/tests/test_phase2_reanchored_causal_patch.py",
+      "original_sha256": "b63ecbc40e23f6e969b56679766d21099025b5f1e2328b37c3d62e557a696dca",
+      "path": "research/lifecycle_memory/tests/test_phase2_reanchored_causal_patch.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 21599,
+      "changes": [],
+      "export_sha256": "8366a71804182bc1d61c0636c52d463b3558e782163b79f81a3210080f481c76",
+      "original_path": "research/lifecycle_memory/tests/test_qwen_role_factorial.py",
+      "original_sha256": "8366a71804182bc1d61c0636c52d463b3558e782163b79f81a3210080f481c76",
+      "path": "research/lifecycle_memory/tests/test_qwen_role_factorial.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 8778,
+      "changes": [],
+      "export_sha256": "367f69c17847776ebfa2f303c268bba44069666b33991639f611ee0efd22993d",
+      "original_path": "research/lifecycle_memory/tests/test_reanchored_answer_token_confirmation.py",
+      "original_sha256": "367f69c17847776ebfa2f303c268bba44069666b33991639f611ee0efd22993d",
+      "path": "research/lifecycle_memory/tests/test_reanchored_answer_token_confirmation.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 9973,
+      "changes": [],
+      "export_sha256": "7d17481a6fd8226c65af7adf451583e49d63d1eb0db84cca944fef5326d72663",
+      "original_path": "research/lifecycle_memory/tests/test_role_aware_killarney_runtime.py",
+      "original_sha256": "7d17481a6fd8226c65af7adf451583e49d63d1eb0db84cca944fef5326d72663",
+      "path": "research/lifecycle_memory/tests/test_role_aware_killarney_runtime.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 16971,
+      "changes": [],
+      "export_sha256": "d43eb0d89f84cf398a7e6f9e44427cb7327eea4f227e30d0d325ddf743dbb781",
+      "original_path": "research/lifecycle_memory/tests/test_role_aware_policy.py",
+      "original_sha256": "d43eb0d89f84cf398a7e6f9e44427cb7327eea4f227e30d0d325ddf743dbb781",
+      "path": "research/lifecycle_memory/tests/test_role_aware_policy.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 21130,
+      "changes": [],
+      "export_sha256": "0952c07fe5aac5b845107ac0e157badd2f4a1b9495aa1ca1a7bc5a554572e151",
+      "original_path": "research/lifecycle_memory/tests/test_role_aware_transfer.py",
+      "original_sha256": "0952c07fe5aac5b845107ac0e157badd2f4a1b9495aa1ca1a7bc5a554572e151",
+      "path": "research/lifecycle_memory/tests/test_role_aware_transfer.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 47245,
+      "changes": [
+        {
+          "after": "\"\"\"Bind logic tests to the current preregistration for the isolated unit-test scope.\"\"\"",
+          "before": "\"\"\"The parent task owns the final repository-wide preregistration hash cascade.\"\"\"",
+          "kind": "public_comment_edit"
+        }
+      ],
+      "export_sha256": "4873e9988655d6e8d28334896137995ff655d6a5be8a0e33f524995be6cd4a7f",
+      "original_path": "research/lifecycle_memory/tests/test_run_phase2_reanchored_behavior.py",
+      "original_sha256": "47d99da7e6e37496105ecc274ed105b1851aad0cdec98ad2266fbef7630e84cd",
+      "path": "research/lifecycle_memory/tests/test_run_phase2_reanchored_behavior.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 27350,
+      "changes": [],
+      "export_sha256": "70ed6f5b91bee7fc5f15f1a75970145d4e62e2ed8ed2409fffeea01b21120c8f",
+      "original_path": "research/lifecycle_memory/tests/test_temporal_dense_analysis.py",
+      "original_sha256": "70ed6f5b91bee7fc5f15f1a75970145d4e62e2ed8ed2409fffeea01b21120c8f",
+      "path": "research/lifecycle_memory/tests/test_temporal_dense_analysis.py",
+      "selection": "transitive_import"
+    },
+    {
+      "bytes": 5793,
+      "changes": [],
+      "export_sha256": "a4745573a5797fd35ef098d4cbd2ca4e1d9f1467d5446fb011cdd13c30e19079",
+      "original_path": "research/lifecycle_memory/tests/test_temporal_dense_execution.py",
+      "original_sha256": "a4745573a5797fd35ef098d4cbd2ca4e1d9f1467d5446fb011cdd13c30e19079",
+      "path": "research/lifecycle_memory/tests/test_temporal_dense_execution.py",
+      "selection": "transitive_import"
+    },
+    {
+      "bytes": 31284,
+      "changes": [],
+      "export_sha256": "b53272b36cef98b37d7b2bd3dad7cc1ec67d0821c8d63301463cae5e1c787c29",
+      "original_path": "research/lifecycle_memory/tests/test_temporal_followup_analysis.py",
+      "original_sha256": "b53272b36cef98b37d7b2bd3dad7cc1ec67d0821c8d63301463cae5e1c787c29",
+      "path": "research/lifecycle_memory/tests/test_temporal_followup_analysis.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 5053,
+      "changes": [],
+      "export_sha256": "5e58800f9a258fd944dd4b0d49bf2752feb019e7c7b83e86fdd045fd04397492",
+      "original_path": "research/lifecycle_memory/tests/test_temporal_followup_protocol.py",
+      "original_sha256": "5e58800f9a258fd944dd4b0d49bf2752feb019e7c7b83e86fdd045fd04397492",
+      "path": "research/lifecycle_memory/tests/test_temporal_followup_protocol.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 22374,
+      "changes": [],
+      "export_sha256": "724f62fd26b6cb34765b689af68d09712beffd9e5ab14601f894c1ff6781968b",
+      "original_path": "research/lifecycle_memory/tests/test_temporal_forecasting_data.py",
+      "original_sha256": "724f62fd26b6cb34765b689af68d09712beffd9e5ab14601f894c1ff6781968b",
+      "path": "research/lifecycle_memory/tests/test_temporal_forecasting_data.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 3533,
+      "changes": [],
+      "export_sha256": "777476c3898d137068ad69b2ca21bcb2840e0298ada7beebeee315039bf018d1",
+      "original_path": "research/lifecycle_memory/tests/test_temporal_forecasting_protocol.py",
+      "original_sha256": "777476c3898d137068ad69b2ca21bcb2840e0298ada7beebeee315039bf018d1",
+      "path": "research/lifecycle_memory/tests/test_temporal_forecasting_protocol.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 28772,
+      "changes": [],
+      "export_sha256": "6de4c24845b5247f4bc45d17ac05e70d8689abf417eecb2db19daa9f22181e4a",
+      "original_path": "research/lifecycle_memory/tests/test_temporal_forecasting_runtime.py",
+      "original_sha256": "6de4c24845b5247f4bc45d17ac05e70d8689abf417eecb2db19daa9f22181e4a",
+      "path": "research/lifecycle_memory/tests/test_temporal_forecasting_runtime.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 12947,
+      "changes": [],
+      "export_sha256": "9c2a94543ebbb0273093d0e29cb20eff361b960efa357fd3533f250c2417e9d4",
+      "original_path": "research/lifecycle_memory/tests/test_temporal_recognition_analysis.py",
+      "original_sha256": "9c2a94543ebbb0273093d0e29cb20eff361b960efa357fd3533f250c2417e9d4",
+      "path": "research/lifecycle_memory/tests/test_temporal_recognition_analysis.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 30518,
+      "changes": [
+        {
+          "kind": "public_path_or_account",
+          "occurrences": 1,
+          "replacement": "REPLACE_WITH_ACCOUNT"
+        }
+      ],
+      "export_sha256": "fb3eb546c63409a2ed79d9c0d1ab84e2ad3dc077c8f89d915c830bbf041d7b3f",
+      "original_path": "research/lifecycle_memory/tests/test_temporal_recognition_launch.py",
+      "original_sha256": "cafd22943eba43205d5e44ef94e5332358ed9177f180129bf659df6929c5d9df",
+      "path": "research/lifecycle_memory/tests/test_temporal_recognition_launch.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 11625,
+      "changes": [],
+      "export_sha256": "cd96e76b761e7d31ad25ea4f88f7c75e0b35f5bfb7ecc63d0e1d32666719ac96",
+      "original_path": "research/lifecycle_memory/tests/test_temporal_recognition_protocol.py",
+      "original_sha256": "cd96e76b761e7d31ad25ea4f88f7c75e0b35f5bfb7ecc63d0e1d32666719ac96",
+      "path": "research/lifecycle_memory/tests/test_temporal_recognition_protocol.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 12790,
+      "changes": [],
+      "export_sha256": "a78adc1c961584bfd5d1fb910230be977f79d8a9b6de516a18c294f269230eb1",
+      "original_path": "research/lifecycle_memory/tests/test_temporal_recognition_runtime.py",
+      "original_sha256": "a78adc1c961584bfd5d1fb910230be977f79d8a9b6de516a18c294f269230eb1",
+      "path": "research/lifecycle_memory/tests/test_temporal_recognition_runtime.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 16931,
+      "changes": [
+        {
+          "kind": "public_path_or_account",
+          "occurrences": 1,
+          "replacement": "REPLACE_WITH_ACCOUNT"
+        },
+        {
+          "after": "\"\"\"Dependency-free login-node metadata gate for PatchAudit held-out closure.\n\nThe login node checks only immutable JSON/JSONL metadata and file existence.\nImage decoding, recursive asset hashing, model imports, token geometry, and\nhooks are reserved for the compute-node canary.\n\"\"\"",
+          "before": "\"\"\"Dependency-free login-node metadata gate for PatchAudit Job E.\n\nThe login node checks only immutable JSON/JSONL metadata and file existence.\nImage decoding, recursive asset hashing, model imports, token geometry, and\nhooks are reserved for the compute-node canary.\n\"\"\"",
+          "kind": "public_comment_edit"
+        }
+      ],
+      "export_sha256": "88e4d0551e1a7c86dd87352864c11d7d151ec8e68a86d2eb78351a0f7b181e7b",
+      "original_path": "research/lifecycle_memory/verify_patchaudit_heldout_component_metadata.py",
+      "original_sha256": "0c1ff3ce4af8cf06cfe9574e9b9d582f4b7491afac1c63d858b2ed1ea35f6690",
+      "path": "research/lifecycle_memory/verify_patchaudit_heldout_component_metadata.py",
+      "selection": "root"
+    },
+    {
+      "bytes": 19688,
+      "changes": [
+        {
+          "kind": "public_path_or_account",
+          "occurrences": 1,
+          "replacement": "REPLACE_WITH_ACCOUNT"
+        },
+        {
+          "after": "\"\"\"Dependency-free login-node preflight for PatchAudit transport decomposition.\n\nThis verifier intentionally uses only the Python standard library. Image\ndecoding, recursive asset hashing, model imports, and runtime hook checks belong\ninside the Apptainer canary on the compute node.\n\"\"\"",
+          "before": "\"\"\"Dependency-free login-node preflight for PatchAudit transport Job D.\n\nThis verifier intentionally uses only the Python standard library. Image\ndecoding, recursive asset hashing, model imports, and runtime hook checks belong\ninside the Apptainer canary on the compute node.\n\"\"\"",
+          "kind": "public_comment_edit"
+        }
+      ],
+      "export_sha256": "38c1e9c39299e1ac64d10d31e8e2491f198be4342b5add81e8a6a3e55f28c77d",
+      "original_path": "research/lifecycle_memory/verify_patchaudit_transport_metadata.py",
+      "original_sha256": "ac41ca6c0cf491a305d75f94a4d9fae2960febd433803ffa15ecc9296e0b3990",
+      "path": "research/lifecycle_memory/verify_patchaudit_transport_metadata.py",
+      "selection": "root"
+    }
+  ],
+  "generated_files": [
+    {
+      "bytes": 4284,
+      "changes": [
+        {
+          "kind": "sanitized_archived_construction_documentary_projection"
+        }
+      ],
+      "export_sha256": "9da37c06766bb5b50846eee8e2e383d6a36948ebb170db073238920b838e5599",
+      "original_path": null,
+      "original_sha256": null,
+      "path": "protocols/construction/heldout_selection_documentary_summary.json"
+    },
+    {
+      "bytes": 2125,
+      "changes": [
+        {
+          "kind": "sanitized_archived_construction_documentary_projection"
+        }
+      ],
+      "export_sha256": "2c1742afc0d7be00aac457d81e90dfa0593f2f8fef5d6396b433bdc48008e29d",
+      "original_path": null,
+      "original_sha256": null,
+      "path": "protocols/construction/hash_crosswalk.json"
+    },
+    {
+      "bytes": 3174,
+      "changes": [
+        {
+          "kind": "sanitized_archived_construction_documentary_projection"
+        }
+      ],
+      "export_sha256": "a4f7f2a456998ad1ab2988d40c3101fca3745b73f1e82d9c62a65b62436cc545",
+      "original_path": null,
+      "original_sha256": null,
+      "path": "protocols/construction/contract_extract.json"
+    },
+    {
+      "bytes": 10209,
+      "changes": [
+        {
+          "kind": "sanitized_archived_construction_documentary_projection"
+        }
+      ],
+      "export_sha256": "ac4885426d366356bd06cd116841d053367119e1e77e3b2ac277212c486c9392",
+      "original_path": null,
+      "original_sha256": null,
+      "path": "protocols/construction/execution_binding_extract.json"
+    },
+    {
+      "bytes": 20795,
+      "changes": [
+        {
+          "kind": "new_public_validation_or_documentation"
+        }
+      ],
+      "export_sha256": "beb3a135f928111c4a44f3a0f47a5cfe58c12ace43d8796722b9e3cb52dcf502",
+      "original_path": null,
+      "original_sha256": null,
+      "path": "runtime/export_source.py"
+    },
+    {
+      "bytes": 8452,
+      "changes": [
+        {
+          "kind": "new_public_validation_or_documentation"
+        }
+      ],
+      "export_sha256": "820e2c280c79d5910ede979089eafc7e3991685bff0eeb5b5de196956ef2894d",
+      "original_path": null,
+      "original_sha256": null,
+      "path": "runtime/verify_source.py"
+    },
+    {
+      "bytes": 3387,
+      "changes": [
+        {
+          "kind": "new_public_validation_or_documentation"
+        }
+      ],
+      "export_sha256": "9cf227c45ccccd86ffc8e50131578c6e291c3fa0d4fbc9b5728d2b00c59c2e4c",
+      "original_path": null,
+      "original_sha256": null,
+      "path": "runtime/cpu_checks.py"
+    },
+    {
+      "bytes": 99,
+      "changes": [
+        {
+          "kind": "new_public_validation_or_documentation"
+        }
+      ],
+      "export_sha256": "0970a915c06583ec3cfd277a0fadae0be080123e506203af5dc36b0e91c1044c",
+      "original_path": null,
+      "original_sha256": null,
+      "path": "runtime/requirements-cpu.txt"
+    },
+    {
+      "bytes": 265,
+      "changes": [
+        {
+          "kind": "new_public_validation_or_documentation"
+        }
+      ],
+      "export_sha256": "d4e2e17fc79b4141571a26e0418f1f8765092efa94d6605f1b9a515a1ea684e4",
+      "original_path": null,
+      "original_sha256": null,
+      "path": "runtime/requirements-gpu-reference.txt"
+    },
+    {
+      "bytes": 17255,
+      "changes": [
+        {
+          "kind": "new_public_validation_or_documentation"
+        }
+      ],
+      "export_sha256": "df25f8f076df608e57d83e9d33b6ce5eab82b0944e6698fc8a531ce3e7f29492",
+      "original_path": null,
+      "original_sha256": null,
+      "path": "tests/test_source.py"
+    },
+    {
+      "bytes": 12510,
+      "changes": [
+        {
+          "kind": "new_public_validation_or_documentation"
+        }
+      ],
+      "export_sha256": "2e659f305ea37db8918b93980115510e55821c98410f6228da3c832c596eddad",
+      "original_path": null,
+      "original_sha256": null,
+      "path": "docs/source_layout.md"
+    },
+    {
+      "bytes": 7105,
+      "changes": [
+        {
+          "kind": "new_public_validation_or_documentation"
+        }
+      ],
+      "export_sha256": "89813db175520c35cbf5aabfcdd84cff5d1d73cc65d162b16d33bafdaec6eb6f",
+      "original_path": null,
+      "original_sha256": null,
+      "path": "docs/preparation.md"
+    },
+    {
+      "bytes": 2283,
+      "changes": [
+        {
+          "kind": "new_public_validation_or_documentation"
+        }
+      ],
+      "export_sha256": "20424a23e11d9c28b2938304ee580e1f151e7481f7dc17b8dd9f8a83a400b8b3",
+      "original_path": null,
+      "original_sha256": null,
+      "path": "protocols/construction/README.md"
+    }
+  ],
+  "kind": "public_source_reference",
+  "network_used": false,
+  "not_a_prepared_release": true,
+  "python_files": 115,
+  "removed_stale_source_paths": [],
+  "roots": [
+    "docs/research/lifecycle_memory/phase 2 research/jobs/job0/run_phase1_qwen27b_hf.py",
+    "research/lifecycle_memory/analyze_patchaudit_heldout_component_closure.py",
+    "research/lifecycle_memory/analyze_patchaudit_transport_decomposition.py",
+    "research/lifecycle_memory/analyze_phase2_reanchored_answer_token_causal_patch.py",
+    "research/lifecycle_memory/analyze_phase2_reanchored_answer_token_confirmation.py",
+    "research/lifecycle_memory/analyze_phase2_reanchored_behavior.py",
+    "research/lifecycle_memory/analyze_phase2_reanchored_causal_patch.py",
+    "research/lifecycle_memory/analyze_phase2_reanchored_layer_capture.py",
+    "research/lifecycle_memory/build_patchaudit_jobE_heldout_selection.py",
+    "research/lifecycle_memory/build_phase2_reanchored_egohos_battery.py",
+    "research/lifecycle_memory/patchaudit_component_partition.py",
+    "research/lifecycle_memory/patchaudit_transport_operators.py",
+    "research/lifecycle_memory/qwen_role_factorial.py",
+    "research/lifecycle_memory/qwen_role_factorial_release.py",
+    "research/lifecycle_memory/role_aware_killarney_release.py",
+    "research/lifecycle_memory/role_aware_killarney_runtime.py",
+    "research/lifecycle_memory/role_aware_policy.py",
+    "research/lifecycle_memory/role_aware_policy_release.py",
+    "research/lifecycle_memory/role_aware_transfer.py",
+    "research/lifecycle_memory/role_aware_transfer_release.py",
+    "research/lifecycle_memory/run_patchaudit_heldout_component_closure.py",
+    "research/lifecycle_memory/run_patchaudit_transport_decomposition.py",
+    "research/lifecycle_memory/run_phase2_reanchored_answer_token_causal_patch.py",
+    "research/lifecycle_memory/run_phase2_reanchored_behavior.py",
+    "research/lifecycle_memory/run_phase2_reanchored_causal_patch.py",
+    "research/lifecycle_memory/run_phase2_reanchored_layer_capture.py",
+    "research/lifecycle_memory/run_role_aware_policy.py",
+    "research/lifecycle_memory/run_role_aware_transfer.py",
+    "research/lifecycle_memory/temporal_dense_current_data.py",
+    "research/lifecycle_memory/temporal_forecasting/__init__.py",
+    "research/lifecycle_memory/temporal_forecasting/analysis.py",
+    "research/lifecycle_memory/temporal_forecasting/cli.py",
+    "research/lifecycle_memory/temporal_forecasting/common.py",
+    "research/lifecycle_memory/temporal_forecasting/data.py",
+    "research/lifecycle_memory/temporal_forecasting/dense_analysis.py",
+    "research/lifecycle_memory/temporal_forecasting/dense_launch.py",
+    "research/lifecycle_memory/temporal_forecasting/execution.py",
+    "research/lifecycle_memory/temporal_forecasting/followup_analysis.py",
+    "research/lifecycle_memory/temporal_forecasting/followup_compare.py",
+    "research/lifecycle_memory/temporal_forecasting/followup_prepare.py",
+    "research/lifecycle_memory/temporal_forecasting/followup_protocol.py",
+    "research/lifecycle_memory/temporal_forecasting/followup_runtime.py",
+    "research/lifecycle_memory/temporal_forecasting/hpc.py",
+    "research/lifecycle_memory/temporal_forecasting/protocol.py",
+    "research/lifecycle_memory/temporal_forecasting/recognition_analysis.py",
+    "research/lifecycle_memory/temporal_forecasting/recognition_data.py",
+    "research/lifecycle_memory/temporal_forecasting/recognition_launch.py",
+    "research/lifecycle_memory/temporal_forecasting/recognition_protocol.py",
+    "research/lifecycle_memory/temporal_forecasting/release.py",
+    "research/lifecycle_memory/temporal_forecasting/runtime.py",
+    "research/lifecycle_memory/tests/test_patchaudit_component_partition.py",
+    "research/lifecycle_memory/tests/test_patchaudit_heldout_component_closure.py",
+    "research/lifecycle_memory/tests/test_patchaudit_transport_decomposition.py",
+    "research/lifecycle_memory/tests/test_patchaudit_transport_operators.py",
+    "research/lifecycle_memory/tests/test_phase2_reanchored_answer_token_causal_patch.py",
+    "research/lifecycle_memory/tests/test_phase2_reanchored_causal_patch.py",
+    "research/lifecycle_memory/tests/test_qwen_role_factorial.py",
+    "research/lifecycle_memory/tests/test_reanchored_answer_token_confirmation.py",
+    "research/lifecycle_memory/tests/test_role_aware_killarney_runtime.py",
+    "research/lifecycle_memory/tests/test_role_aware_policy.py",
+    "research/lifecycle_memory/tests/test_role_aware_transfer.py",
+    "research/lifecycle_memory/tests/test_run_phase2_reanchored_behavior.py",
+    "research/lifecycle_memory/tests/test_temporal_followup_analysis.py",
+    "research/lifecycle_memory/tests/test_temporal_followup_protocol.py",
+    "research/lifecycle_memory/tests/test_temporal_forecasting_data.py",
+    "research/lifecycle_memory/tests/test_temporal_forecasting_protocol.py",
+    "research/lifecycle_memory/tests/test_temporal_forecasting_runtime.py",
+    "research/lifecycle_memory/tests/test_temporal_recognition_analysis.py",
+    "research/lifecycle_memory/tests/test_temporal_recognition_launch.py",
+    "research/lifecycle_memory/tests/test_temporal_recognition_protocol.py",
+    "research/lifecycle_memory/tests/test_temporal_recognition_runtime.py",
+    "research/lifecycle_memory/verify_patchaudit_heldout_component_metadata.py",
+    "research/lifecycle_memory/verify_patchaudit_transport_metadata.py"
+  ],
+  "schema_version": 1,
+  "total_bytes": 4041987,
+  "validation_scope": "CPU source/import/synthetic checks only; no dataset, model, GPU, scheduler or new experiment execution."
+}

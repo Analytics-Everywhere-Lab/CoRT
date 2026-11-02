@@ -1,0 +1,4820 @@
+{
+  "date": "2026-10-25",
+  "sample_overlap": {
+    "basis": "private census and frozen publication selections; task-specific windows; anonymized task IDs are not cross-task join keys",
+    "source_event_proposals": 20,
+    "source_wearers": 13
+  },
+  "scope": "descriptive; AI-assisted visual labels; existing wearer reuse; both tasks retained",
+  "tasks": {
+    "interaction_order": {
+      "behavior": [
+        {
+          "condition": "B0",
+          "metrics": {
+            "accuracy": {
+              "ci95": [
+                0.5357142857142857,
+                0.8452380952380951
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 0.6964285714285714,
+              "leave_one_wearer_out_range": [
+                0.6730769230769231,
+                0.75
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "gold_margin_bits": {
+              "ci95": [
+                2.4972631769041747,
+                13.01092991935065
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 7.940458075011658,
+              "leave_one_wearer_out_range": [
+                6.949905782054362,
+                9.72923231997121
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "loss_nats": {
+              "ci95": [
+                1.5200518757476509,
+                5.1751255729271675
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 3.265815130140787,
+              "leave_one_wearer_out_range": [
+                2.7004063761348567,
+                3.517029588388065
+              ],
+              "n_clusters": 14,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16"
+        },
+        {
+          "condition": "B1",
+          "metrics": {
+            "accuracy": {
+              "ci95": [
+                0.19047619047619047,
+                0.5892857142857143
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 0.38095238095238093,
+              "leave_one_wearer_out_range": [
+                0.3333333333333333,
+                0.41025641025641024
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "gold_margin_bits": {
+              "ci95": [
+                -18.129028963430667,
+                -1.196013234585219
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -9.740204120738298,
+              "leave_one_wearer_out_range": [
+                -11.783020885393459,
+                -8.104321951248421
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "loss_nats": {
+              "ci95": [
+                6.905965782232155,
+                14.92594014790099
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 10.966825694766724,
+              "leave_one_wearer_out_range": [
+                10.157182478912612,
+                11.810263902525078
+              ],
+              "n_clusters": 14,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16"
+        },
+        {
+          "condition": "B4",
+          "metrics": {
+            "accuracy": {
+              "ci95": [
+                0.19642857142857142,
+                0.5833333333333334
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 0.3869047619047619,
+              "leave_one_wearer_out_range": [
+                0.33974358974358976,
+                0.4166666666666667
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "gold_margin_bits": {
+              "ci95": [
+                -16.65810277635226,
+                0.49985771812188057
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -8.122807902760934,
+              "leave_one_wearer_out_range": [
+                -9.797581364652938,
+                -6.368579655970182
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "loss_nats": {
+              "ci95": [
+                6.3676677695437105,
+                14.010795352290044
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 10.208039834340529,
+              "leave_one_wearer_out_range": [
+                9.344235196992095,
+                10.993178197525149
+              ],
+              "n_clusters": 14,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16"
+        },
+        {
+          "condition": "B2",
+          "metrics": {
+            "accuracy": {
+              "ci95": [
+                0.44642857142857134,
+                0.7440476190476192
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 0.5952380952380952,
+              "leave_one_wearer_out_range": [
+                0.5641025641025641,
+                0.6410256410256411
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "gold_margin_bits": {
+              "ci95": [
+                -2.8070562061809836,
+                10.772995019923075
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 4.135672062379242,
+              "leave_one_wearer_out_range": [
+                2.343512443071999,
+                6.031748333281471
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "loss_nats": {
+              "ci95": [
+                2.6737700523135417,
+                7.558052768785427
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 5.0100387032772185,
+              "leave_one_wearer_out_range": [
+                4.301666283510892,
+                5.395426294701517
+              ],
+              "n_clusters": 14,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16"
+        }
+      ],
+      "bootstrap": {
+        "aggregation": [
+          "candidate_orders",
+          "episodes",
+          "participant"
+        ],
+        "confidence_level": 0.95,
+        "draws": 19999,
+        "episodes_equal_within_participant": true,
+        "method": "paired_cluster_percentile",
+        "orders_paired": true,
+        "participants_equal": true,
+        "seed": 20261025,
+        "unit": "participant"
+      },
+      "cells": 1188,
+      "claim_boundary": "Retrospective interaction recognition and directional output control under substitution only; no forecasting, native necessity, information routing, or universal depth-reversal claim.",
+      "dataset_manifest_sha256": "2a9eeefaf638f3e3e425397e41aeed1072d812b6fdc2a8ba051bd7ce5a3a3402",
+      "design": {
+        "conditions": {
+          "B0": "17 chronological scene frames",
+          "B1": "last scene only",
+          "B2": "first scene only",
+          "B4": "last scene repeated 17 times"
+        },
+        "position_sets": {
+          "A": "all active positions",
+          "H": "first 16 scene frames",
+          "K": "all non-scene positions",
+          "V": "last scene frame"
+        },
+        "scene_count": 17
+      },
+      "episodes": 27,
+      "history_contrasts": [
+        {
+          "control": "B4",
+          "descriptive_only": true,
+          "metrics": {
+            "accuracy_improvement": {
+              "ci95": [
+                0.11904761904761904,
+                0.5119047619047619
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 0.3095238095238095,
+              "leave_one_wearer_out_range": [
+                0.2564102564102564,
+                0.35256410256410253
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "gold_margin_improvement_bits": {
+              "ci95": [
+                8.626248253625473,
+                23.986998828078747
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 16.06326597777259,
+              "leave_one_wearer_out_range": [
+                13.751120486496195,
+                17.56247107897616
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "loss_improvement_nats": {
+              "ci95": [
+                3.423581064830821,
+                10.688703046946443
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 6.942224704199741,
+              "leave_one_wearer_out_range": [
+                5.827311407254671,
+                7.694926725233059
+              ],
+              "n_clusters": 14,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16",
+          "positive_favors": "B0",
+          "reference": "B0"
+        },
+        {
+          "control": "B1",
+          "descriptive_only": true,
+          "metrics": {
+            "accuracy_improvement": {
+              "ci95": [
+                0.11904761904761904,
+                0.5178571428571428
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 0.3154761904761905,
+              "leave_one_wearer_out_range": [
+                0.26282051282051283,
+                0.358974358974359
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "gold_margin_improvement_bits": {
+              "ci95": [
+                10.220498359629492,
+                25.509375913460914
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 17.680662195749957,
+              "leave_one_wearer_out_range": [
+                15.40016235331737,
+                19.383179820889048
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "loss_improvement_nats": {
+              "ci95": [
+                4.036063872337894,
+                11.532504213218438
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 7.701010564625937,
+              "leave_one_wearer_out_range": [
+                6.640152890524547,
+                8.462793017575496
+              ],
+              "n_clusters": 14,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16",
+          "positive_favors": "B0",
+          "reference": "B0"
+        },
+        {
+          "control": "B2",
+          "descriptive_only": true,
+          "metrics": {
+            "accuracy_improvement": {
+              "ci95": [
+                -0.05952380952380953,
+                0.2857142857142857
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 0.10119047619047619,
+              "leave_one_wearer_out_range": [
+                0.03205128205128205,
+                0.14743589743589744
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "gold_margin_improvement_bits": {
+              "ci95": [
+                -2.2150575682123077,
+                10.706750507043102
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 3.804786012632416,
+              "leave_one_wearer_out_range": [
+                1.2640920687874788,
+                5.260403595160586
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "loss_improvement_nats": {
+              "ci95": [
+                -0.31208571689262626,
+                4.198664019187065
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 1.744223573136431,
+              "leave_one_wearer_out_range": [
+                0.7846366951228279,
+                2.2270549358626734
+              ],
+              "n_clusters": 14,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16",
+          "positive_favors": "B0",
+          "reference": "B0"
+        }
+      ],
+      "local_recomputation": {
+        "absolute_tolerance": 1e-12,
+        "analysis_sha256": "72a9643ab3b30c7fdd57d3e96a3354272aa1677e46bf4a1db590ec1fa689a934",
+        "bootstrap_draws": 19999,
+        "bootstrap_seed": 20261025,
+        "exact": true,
+        "ignored_keys": [
+          "provenance"
+        ],
+        "max_numeric_difference": 0,
+        "numeric_difference_count": 0,
+        "private_evaluator_opened": true,
+        "recomputed": true
+      },
+      "memory": [
+        {
+          "gpu_total_memory_bytes": 85017493504,
+          "peak_memory_allocated_bytes": 64659431936,
+          "peak_memory_reserved_bytes": 66374860800,
+          "rank": 0
+        },
+        {
+          "gpu_total_memory_bytes": 85017493504,
+          "peak_memory_allocated_bytes": 64659431936,
+          "peak_memory_reserved_bytes": 66374860800,
+          "rank": 1
+        },
+        {
+          "gpu_total_memory_bytes": 85017493504,
+          "peak_memory_allocated_bytes": 64659431936,
+          "peak_memory_reserved_bytes": 66374860800,
+          "rank": 2
+        },
+        {
+          "gpu_total_memory_bytes": 85017493504,
+          "peak_memory_allocated_bytes": 64659431936,
+          "peak_memory_reserved_bytes": 66376957952,
+          "rank": 3
+        }
+      ],
+      "metric_definitions": {
+        "accuracy": "forced A/B choice; ties count as 0.5",
+        "gold_margin_bits": "correct-minus-incorrect candidate margin in bits",
+        "loss_nats": "negative log probability conditional on A or B",
+        "recovery": "ratio of participant means, not mean row-wise recovery; not clipped"
+      },
+      "patch_profiles": [
+        {
+          "cut": 22,
+          "descriptive_only": true,
+          "direction": "B0->B4",
+          "metrics": {
+            "absolute_donor_discrepancy_bits": {
+              "ci95": [
+                14.46372182700913,
+                27.58952306262606
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 20.849170633948894,
+              "leave_one_wearer_out_range": [
+                18.905171654686058,
+                22.144299533705578
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "absolute_residual_reduction_bits": {
+              "ci95": [
+                10.449911636427725,
+                23.27154860967419
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 16.607094465286796,
+              "leave_one_wearer_out_range": [
+                14.728667868179665,
+                17.915775468804018
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "gold_signed_donor_discrepancy_bits": {
+              "ci95": [
+                8.626248253625473,
+                23.986998828078747
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 16.06326597777259,
+              "leave_one_wearer_out_range": [
+                13.751120486496195,
+                17.56247107897616
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "gold_signed_margin_movement_bits": {
+              "ci95": [
+                7.7529695379774175,
+                22.303311058399657
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 14.729658669986822,
+              "leave_one_wearer_out_range": [
+                12.380820396907321,
+                16.192170948337335
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "signed_donor_discrepancy_bits": {
+              "ci95": [
+                2.985125280847519,
+                7.559114043987759
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 5.311484475366551,
+              "leave_one_wearer_out_range": [
+                4.653644979820271,
+                6.023511715893933
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "signed_margin_movement_bits": {
+              "ci95": [
+                2.5600186230806394,
+                7.670959084641185
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 5.1310133974097685,
+              "leave_one_wearer_out_range": [
+                4.436749438053343,
+                5.723383733309
+              ],
+              "n_clusters": 14,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16",
+          "position_set": "H",
+          "recovery": {
+            "bootstrap_draws": 19999,
+            "ci95": [
+              0.7005512353873591,
+              0.8630603159529122
+            ],
+            "ci_method": "paired_cluster_percentile_ratio_of_means",
+            "denominator_ci95": [
+              14.46372182700913,
+              27.58952306262606
+            ],
+            "denominator_mean_bits": 20.849170633948894,
+            "estimand": "mean_cluster_absolute_residual_reduction / mean_cluster_absolute_donor_discrepancy",
+            "estimate": 0.7965350160377753,
+            "excluded_bootstrap_draws": 0,
+            "excluded_clusters": 0,
+            "excluded_rows": 0,
+            "guard_bits": 0.01,
+            "n_clusters": 14,
+            "n_rows": 54,
+            "numerator_mean_bits": 16.607094465286796,
+            "small_denominator_clusters": 0,
+            "small_denominator_rows": 0,
+            "stable": true,
+            "valid_bootstrap_draws": 19999,
+            "zero_denominator_clusters": 0,
+            "zero_denominator_rows": 0
+          },
+          "technical_controls_pass": true
+        },
+        {
+          "cut": 22,
+          "descriptive_only": true,
+          "direction": "B0->B4",
+          "metrics": {
+            "absolute_donor_discrepancy_bits": {
+              "ci95": [
+                14.46372182700913,
+                27.58952306262606
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 20.849170633948894,
+              "leave_one_wearer_out_range": [
+                18.905171654686058,
+                22.144299533705578
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "absolute_residual_reduction_bits": {
+              "ci95": [
+                -0.055818422401256965,
+                0.527874714768767
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 0.2358871586371149,
+              "leave_one_wearer_out_range": [
+                0.1465237425673607,
+                0.3205026538097667
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "gold_signed_donor_discrepancy_bits": {
+              "ci95": [
+                8.626248253625473,
+                23.986998828078747
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 16.06326597777259,
+              "leave_one_wearer_out_range": [
+                13.751120486496195,
+                17.56247107897616
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "gold_signed_margin_movement_bits": {
+              "ci95": [
+                -0.4331438254999048,
+                0.2922424858432254
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -0.04588919712059574,
+              "leave_one_wearer_out_range": [
+                -0.1208025013772327,
+                0.09276953663357622
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "signed_donor_discrepancy_bits": {
+              "ci95": [
+                2.985125280847519,
+                7.559114043987759
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 5.311484475366551,
+              "leave_one_wearer_out_range": [
+                4.653644979820271,
+                6.023511715893933
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "signed_margin_movement_bits": {
+              "ci95": [
+                0.2071593051962157,
+                0.6577468230195519
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 0.4248114949622542,
+              "leave_one_wearer_out_range": [
+                0.34998072014827986,
+                0.47136138823825924
+              ],
+              "n_clusters": 14,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16",
+          "position_set": "V",
+          "recovery": {
+            "bootstrap_draws": 19999,
+            "ci95": [
+              -0.0024019909130982096,
+              0.03068795481070773
+            ],
+            "ci_method": "paired_cluster_percentile_ratio_of_means",
+            "denominator_ci95": [
+              14.46372182700913,
+              27.58952306262606
+            ],
+            "denominator_mean_bits": 20.849170633948894,
+            "estimand": "mean_cluster_absolute_residual_reduction / mean_cluster_absolute_donor_discrepancy",
+            "estimate": 0.011313982833111726,
+            "excluded_bootstrap_draws": 0,
+            "excluded_clusters": 0,
+            "excluded_rows": 0,
+            "guard_bits": 0.01,
+            "n_clusters": 14,
+            "n_rows": 54,
+            "numerator_mean_bits": 0.2358871586371149,
+            "small_denominator_clusters": 0,
+            "small_denominator_rows": 0,
+            "stable": true,
+            "valid_bootstrap_draws": 19999,
+            "zero_denominator_clusters": 0,
+            "zero_denominator_rows": 0
+          },
+          "technical_controls_pass": true
+        },
+        {
+          "cut": 22,
+          "descriptive_only": true,
+          "direction": "B0->B4",
+          "metrics": {
+            "absolute_donor_discrepancy_bits": {
+              "ci95": [
+                14.46372182700913,
+                27.58952306262606
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 20.849170633948894,
+              "leave_one_wearer_out_range": [
+                18.905171654686058,
+                22.144299533705578
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "absolute_residual_reduction_bits": {
+              "ci95": [
+                -0.3378700580352368,
+                1.0229825951008766
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 0.35195219999891386,
+              "leave_one_wearer_out_range": [
+                0.18828450655290335,
+                0.5480913010086591
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "gold_signed_donor_discrepancy_bits": {
+              "ci95": [
+                8.626248253625473,
+                23.986998828078747
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 16.06326597777259,
+              "leave_one_wearer_out_range": [
+                13.751120486496195,
+                17.56247107897616
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "gold_signed_margin_movement_bits": {
+              "ci95": [
+                -1.1979655398192983,
+                1.007303654389553
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -0.10747750230578622,
+              "leave_one_wearer_out_range": [
+                -0.4651477302529226,
+                0.22065259652489777
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "signed_donor_discrepancy_bits": {
+              "ci95": [
+                2.985125280847519,
+                7.559114043987759
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 5.311484475366551,
+              "leave_one_wearer_out_range": [
+                4.653644979820271,
+                6.023511715893933
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "signed_margin_movement_bits": {
+              "ci95": [
+                -0.33962773382122363,
+                1.3938739295864122
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 0.5218229966940775,
+              "leave_one_wearer_out_range": [
+                0.3203580215724353,
+                0.7180239822289477
+              ],
+              "n_clusters": 14,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16",
+          "position_set": "K",
+          "recovery": {
+            "bootstrap_draws": 19999,
+            "ci95": [
+              -0.014833127333178334,
+              0.058709711272958494
+            ],
+            "ci_method": "paired_cluster_percentile_ratio_of_means",
+            "denominator_ci95": [
+              14.46372182700913,
+              27.58952306262606
+            ],
+            "denominator_mean_bits": 20.849170633948894,
+            "estimand": "mean_cluster_absolute_residual_reduction / mean_cluster_absolute_donor_discrepancy",
+            "estimate": 0.01688087292191023,
+            "excluded_bootstrap_draws": 0,
+            "excluded_clusters": 0,
+            "excluded_rows": 0,
+            "guard_bits": 0.01,
+            "n_clusters": 14,
+            "n_rows": 54,
+            "numerator_mean_bits": 0.35195219999891386,
+            "small_denominator_clusters": 0,
+            "small_denominator_rows": 0,
+            "stable": true,
+            "valid_bootstrap_draws": 19999,
+            "zero_denominator_clusters": 0,
+            "zero_denominator_rows": 0
+          },
+          "technical_controls_pass": true
+        },
+        {
+          "cut": 22,
+          "descriptive_only": true,
+          "direction": "B0->B4",
+          "metrics": {
+            "absolute_donor_discrepancy_bits": {
+              "ci95": [
+                14.46372182700913,
+                27.58952306262606
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 20.849170633948894,
+              "leave_one_wearer_out_range": [
+                18.905171654686058,
+                22.144299533705578
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "absolute_residual_reduction_bits": {
+              "ci95": [
+                14.46372182700913,
+                27.58952306262606
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 20.849170633948894,
+              "leave_one_wearer_out_range": [
+                18.905171654686058,
+                22.144299533705578
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "gold_signed_donor_discrepancy_bits": {
+              "ci95": [
+                8.626248253625473,
+                23.986998828078747
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 16.06326597777259,
+              "leave_one_wearer_out_range": [
+                13.751120486496195,
+                17.56247107897616
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "gold_signed_margin_movement_bits": {
+              "ci95": [
+                8.626248253625473,
+                23.986998828078747
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 16.06326597777259,
+              "leave_one_wearer_out_range": [
+                13.751120486496195,
+                17.56247107897616
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "signed_donor_discrepancy_bits": {
+              "ci95": [
+                2.985125280847519,
+                7.559114043987759
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 5.311484475366551,
+              "leave_one_wearer_out_range": [
+                4.653644979820271,
+                6.023511715893933
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "signed_margin_movement_bits": {
+              "ci95": [
+                2.985125280847519,
+                7.559114043987759
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 5.311484475366551,
+              "leave_one_wearer_out_range": [
+                4.653644979820271,
+                6.023511715893933
+              ],
+              "n_clusters": 14,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16",
+          "position_set": "A",
+          "recovery": {
+            "bootstrap_draws": 19999,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "ci_method": "paired_cluster_percentile_ratio_of_means",
+            "denominator_ci95": [
+              14.46372182700913,
+              27.58952306262606
+            ],
+            "denominator_mean_bits": 20.849170633948894,
+            "estimand": "mean_cluster_absolute_residual_reduction / mean_cluster_absolute_donor_discrepancy",
+            "estimate": 1.0,
+            "excluded_bootstrap_draws": 0,
+            "excluded_clusters": 0,
+            "excluded_rows": 0,
+            "guard_bits": 0.01,
+            "n_clusters": 14,
+            "n_rows": 54,
+            "numerator_mean_bits": 20.849170633948894,
+            "small_denominator_clusters": 0,
+            "small_denominator_rows": 0,
+            "stable": true,
+            "valid_bootstrap_draws": 19999,
+            "zero_denominator_clusters": 0,
+            "zero_denominator_rows": 0
+          },
+          "technical_controls_pass": true
+        },
+        {
+          "cut": 34,
+          "descriptive_only": true,
+          "direction": "B0->B4",
+          "metrics": {
+            "absolute_donor_discrepancy_bits": {
+              "ci95": [
+                14.46372182700913,
+                27.58952306262606
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 20.849170633948894,
+              "leave_one_wearer_out_range": [
+                18.905171654686058,
+                22.144299533705578
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "absolute_residual_reduction_bits": {
+              "ci95": [
+                0.9892767049426608,
+                5.743052381031916
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 3.3303285526899282,
+              "leave_one_wearer_out_range": [
+                2.559974617139365,
+                3.874353096930652
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "gold_signed_donor_discrepancy_bits": {
+              "ci95": [
+                8.626248253625473,
+                23.986998828078747
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 16.06326597777259,
+              "leave_one_wearer_out_range": [
+                13.751120486496195,
+                17.56247107897616
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "gold_signed_margin_movement_bits": {
+              "ci95": [
+                2.020068498669679,
+                6.670324533947118
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 4.326743437066886,
+              "leave_one_wearer_out_range": [
+                3.63303680031455,
+                4.9474152801058375
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "signed_donor_discrepancy_bits": {
+              "ci95": [
+                2.985125280847519,
+                7.559114043987759
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 5.311484475366551,
+              "leave_one_wearer_out_range": [
+                4.653644979820271,
+                6.023511715893933
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "signed_margin_movement_bits": {
+              "ci95": [
+                -0.3789220731259808,
+                2.2666963915441913
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 0.964480281732686,
+              "leave_one_wearer_out_range": [
+                0.5392766828855239,
+                1.3681327165598693
+              ],
+              "n_clusters": 14,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16",
+          "position_set": "H",
+          "recovery": {
+            "bootstrap_draws": 19999,
+            "ci95": [
+              0.06284404300142,
+              0.22101567723665572
+            ],
+            "ci_method": "paired_cluster_percentile_ratio_of_means",
+            "denominator_ci95": [
+              14.46372182700913,
+              27.58952306262606
+            ],
+            "denominator_mean_bits": 20.849170633948894,
+            "estimand": "mean_cluster_absolute_residual_reduction / mean_cluster_absolute_donor_discrepancy",
+            "estimate": 0.15973434201104977,
+            "excluded_bootstrap_draws": 0,
+            "excluded_clusters": 0,
+            "excluded_rows": 0,
+            "guard_bits": 0.01,
+            "n_clusters": 14,
+            "n_rows": 54,
+            "numerator_mean_bits": 3.3303285526899282,
+            "small_denominator_clusters": 0,
+            "small_denominator_rows": 0,
+            "stable": true,
+            "valid_bootstrap_draws": 19999,
+            "zero_denominator_clusters": 0,
+            "zero_denominator_rows": 0
+          },
+          "technical_controls_pass": true
+        },
+        {
+          "cut": 34,
+          "descriptive_only": true,
+          "direction": "B0->B4",
+          "metrics": {
+            "absolute_donor_discrepancy_bits": {
+              "ci95": [
+                14.46372182700913,
+                27.58952306262606
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 20.849170633948894,
+              "leave_one_wearer_out_range": [
+                18.905171654686058,
+                22.144299533705578
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "absolute_residual_reduction_bits": {
+              "ci95": [
+                -0.15780819280579567,
+                0.20636784819080034
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 0.03341075726166078,
+              "leave_one_wearer_out_range": [
+                -0.002745395470127752,
+                0.09667111312170737
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "gold_signed_donor_discrepancy_bits": {
+              "ci95": [
+                8.626248253625473,
+                23.986998828078747
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 16.06326597777259,
+              "leave_one_wearer_out_range": [
+                13.751120486496195,
+                17.56247107897616
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "gold_signed_margin_movement_bits": {
+              "ci95": [
+                -0.18463727686790118,
+                0.20369094620976624
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 0.015162369492650962,
+              "leave_one_wearer_out_range": [
+                -0.02239750537521524,
+                0.07701900321661989
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "signed_donor_discrepancy_bits": {
+              "ci95": [
+                2.985125280847519,
+                7.559114043987759
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 5.311484475366551,
+              "leave_one_wearer_out_range": [
+                4.653644979820271,
+                6.023511715893933
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "signed_margin_movement_bits": {
+              "ci95": [
+                -0.033008043068638644,
+                0.1871801762013197
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 0.08520388863658448,
+              "leave_one_wearer_out_range": [
+                0.06401388724892049,
+                0.12470420322290376
+              ],
+              "n_clusters": 14,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16",
+          "position_set": "V",
+          "recovery": {
+            "bootstrap_draws": 19999,
+            "ci95": [
+              -0.009043134161558757,
+              0.009651121177989757
+            ],
+            "ci_method": "paired_cluster_percentile_ratio_of_means",
+            "denominator_ci95": [
+              14.46372182700913,
+              27.58952306262606
+            ],
+            "denominator_mean_bits": 20.849170633948894,
+            "estimand": "mean_cluster_absolute_residual_reduction / mean_cluster_absolute_donor_discrepancy",
+            "estimate": 0.0016024981448066688,
+            "excluded_bootstrap_draws": 0,
+            "excluded_clusters": 0,
+            "excluded_rows": 0,
+            "guard_bits": 0.01,
+            "n_clusters": 14,
+            "n_rows": 54,
+            "numerator_mean_bits": 0.03341075726166078,
+            "small_denominator_clusters": 0,
+            "small_denominator_rows": 0,
+            "stable": true,
+            "valid_bootstrap_draws": 19999,
+            "zero_denominator_clusters": 0,
+            "zero_denominator_rows": 0
+          },
+          "technical_controls_pass": true
+        },
+        {
+          "cut": 34,
+          "descriptive_only": true,
+          "direction": "B0->B4",
+          "metrics": {
+            "absolute_donor_discrepancy_bits": {
+              "ci95": [
+                14.46372182700913,
+                27.58952306262606
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 20.849170633948894,
+              "leave_one_wearer_out_range": [
+                18.905171654686058,
+                22.144299533705578
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "absolute_residual_reduction_bits": {
+              "ci95": [
+                7.994377857923693,
+                17.214959745111223
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 12.232180680088446,
+              "leave_one_wearer_out_range": [
+                10.364023933434348,
+                13.093353262678356
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "gold_signed_donor_discrepancy_bits": {
+              "ci95": [
+                8.626248253625473,
+                23.986998828078747
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 16.06326597777259,
+              "leave_one_wearer_out_range": [
+                13.751120486496195,
+                17.56247107897616
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "gold_signed_margin_movement_bits": {
+              "ci95": [
+                3.292698009781057,
+                13.83811839634806
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 8.219148598875114,
+              "leave_one_wearer_out_range": [
+                6.042297076743068,
+                9.402805466951525
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "signed_donor_discrepancy_bits": {
+              "ci95": [
+                2.985125280847519,
+                7.559114043987759
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 5.311484475366551,
+              "leave_one_wearer_out_range": [
+                4.653644979820271,
+                6.023511715893933
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "signed_margin_movement_bits": {
+              "ci95": [
+                3.3571104907531035,
+                7.4249483856178555
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 5.534222106102901,
+              "leave_one_wearer_out_range": [
+                5.082812177650897,
+                6.306733180594616
+              ],
+              "n_clusters": 14,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16",
+          "position_set": "K",
+          "recovery": {
+            "bootstrap_draws": 19999,
+            "ci95": [
+              0.46309400865725014,
+              0.6982184475828422
+            ],
+            "ci_method": "paired_cluster_percentile_ratio_of_means",
+            "denominator_ci95": [
+              14.46372182700913,
+              27.58952306262606
+            ],
+            "denominator_mean_bits": 20.849170633948894,
+            "estimand": "mean_cluster_absolute_residual_reduction / mean_cluster_absolute_donor_discrepancy",
+            "estimate": 0.5866986699303365,
+            "excluded_bootstrap_draws": 0,
+            "excluded_clusters": 0,
+            "excluded_rows": 0,
+            "guard_bits": 0.01,
+            "n_clusters": 14,
+            "n_rows": 54,
+            "numerator_mean_bits": 12.232180680088446,
+            "small_denominator_clusters": 0,
+            "small_denominator_rows": 0,
+            "stable": true,
+            "valid_bootstrap_draws": 19999,
+            "zero_denominator_clusters": 0,
+            "zero_denominator_rows": 0
+          },
+          "technical_controls_pass": true
+        },
+        {
+          "cut": 34,
+          "descriptive_only": true,
+          "direction": "B0->B4",
+          "metrics": {
+            "absolute_donor_discrepancy_bits": {
+              "ci95": [
+                14.46372182700913,
+                27.58952306262606
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 20.849170633948894,
+              "leave_one_wearer_out_range": [
+                18.905171654686058,
+                22.144299533705578
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "absolute_residual_reduction_bits": {
+              "ci95": [
+                14.46372182700913,
+                27.58952306262606
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 20.849170633948894,
+              "leave_one_wearer_out_range": [
+                18.905171654686058,
+                22.144299533705578
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "gold_signed_donor_discrepancy_bits": {
+              "ci95": [
+                8.626248253625473,
+                23.986998828078747
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 16.06326597777259,
+              "leave_one_wearer_out_range": [
+                13.751120486496195,
+                17.56247107897616
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "gold_signed_margin_movement_bits": {
+              "ci95": [
+                8.626248253625473,
+                23.986998828078747
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 16.06326597777259,
+              "leave_one_wearer_out_range": [
+                13.751120486496195,
+                17.56247107897616
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "signed_donor_discrepancy_bits": {
+              "ci95": [
+                2.985125280847519,
+                7.559114043987759
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 5.311484475366551,
+              "leave_one_wearer_out_range": [
+                4.653644979820271,
+                6.023511715893933
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "signed_margin_movement_bits": {
+              "ci95": [
+                2.985125280847519,
+                7.559114043987759
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 5.311484475366551,
+              "leave_one_wearer_out_range": [
+                4.653644979820271,
+                6.023511715893933
+              ],
+              "n_clusters": 14,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16",
+          "position_set": "A",
+          "recovery": {
+            "bootstrap_draws": 19999,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "ci_method": "paired_cluster_percentile_ratio_of_means",
+            "denominator_ci95": [
+              14.46372182700913,
+              27.58952306262606
+            ],
+            "denominator_mean_bits": 20.849170633948894,
+            "estimand": "mean_cluster_absolute_residual_reduction / mean_cluster_absolute_donor_discrepancy",
+            "estimate": 1.0,
+            "excluded_bootstrap_draws": 0,
+            "excluded_clusters": 0,
+            "excluded_rows": 0,
+            "guard_bits": 0.01,
+            "n_clusters": 14,
+            "n_rows": 54,
+            "numerator_mean_bits": 20.849170633948894,
+            "small_denominator_clusters": 0,
+            "small_denominator_rows": 0,
+            "stable": true,
+            "valid_bootstrap_draws": 19999,
+            "zero_denominator_clusters": 0,
+            "zero_denominator_rows": 0
+          },
+          "technical_controls_pass": true
+        },
+        {
+          "cut": 22,
+          "descriptive_only": true,
+          "direction": "B4->B0",
+          "metrics": {
+            "absolute_donor_discrepancy_bits": {
+              "ci95": [
+                14.46372182700913,
+                27.58952306262606
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 20.849170633948894,
+              "leave_one_wearer_out_range": [
+                18.905171654686058,
+                22.144299533705578
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "absolute_residual_reduction_bits": {
+              "ci95": [
+                11.436437615060713,
+                25.359162518383275
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 18.268233282856038,
+              "leave_one_wearer_out_range": [
+                16.267889355135217,
+                19.735906248656434
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "gold_signed_donor_discrepancy_bits": {
+              "ci95": [
+                -23.98699882807875,
+                -8.626248253625473
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -16.06326597777259,
+              "leave_one_wearer_out_range": [
+                -17.56247107897616,
+                -13.751120486496195
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "gold_signed_margin_movement_bits": {
+              "ci95": [
+                -24.299730249813148,
+                -9.162139490682366
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -16.43802837406753,
+              "leave_one_wearer_out_range": [
+                -17.77402000866256,
+                -14.262219297340259
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "signed_donor_discrepancy_bits": {
+              "ci95": [
+                -7.559114043987761,
+                -2.9851252808475204
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -5.311484475366551,
+              "leave_one_wearer_out_range": [
+                -6.023511715893933,
+                -4.653644979820271
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "signed_margin_movement_bits": {
+              "ci95": [
+                -6.081834278892532,
+                -2.1677993997654483
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -4.196320977064767,
+              "leave_one_wearer_out_range": [
+                -4.803492294583487,
+                -3.7185809876652534
+              ],
+              "n_clusters": 14,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16",
+          "position_set": "H",
+          "recovery": {
+            "bootstrap_draws": 19999,
+            "ci95": [
+              0.7863784249691587,
+              0.9229485936006512
+            ],
+            "ci_method": "paired_cluster_percentile_ratio_of_means",
+            "denominator_ci95": [
+              14.46372182700913,
+              27.58952306262606
+            ],
+            "denominator_mean_bits": 20.849170633948894,
+            "estimand": "mean_cluster_absolute_residual_reduction / mean_cluster_absolute_donor_discrepancy",
+            "estimate": 0.8762091117960207,
+            "excluded_bootstrap_draws": 0,
+            "excluded_clusters": 0,
+            "excluded_rows": 0,
+            "guard_bits": 0.01,
+            "n_clusters": 14,
+            "n_rows": 54,
+            "numerator_mean_bits": 18.268233282856038,
+            "small_denominator_clusters": 0,
+            "small_denominator_rows": 0,
+            "stable": true,
+            "valid_bootstrap_draws": 19999,
+            "zero_denominator_clusters": 0,
+            "zero_denominator_rows": 0
+          },
+          "technical_controls_pass": true
+        },
+        {
+          "cut": 22,
+          "descriptive_only": true,
+          "direction": "B4->B0",
+          "metrics": {
+            "absolute_donor_discrepancy_bits": {
+              "ci95": [
+                14.46372182700913,
+                27.58952306262606
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 20.849170633948894,
+              "leave_one_wearer_out_range": [
+                18.905171654686058,
+                22.144299533705578
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "absolute_residual_reduction_bits": {
+              "ci95": [
+                -0.22622623493934663,
+                0.5281293280442253
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 0.16504042057419827,
+              "leave_one_wearer_out_range": [
+                0.07716340183720606,
+                0.264436214278914
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "gold_signed_donor_discrepancy_bits": {
+              "ci95": [
+                -23.98699882807875,
+                -8.626248253625473
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -16.06326597777259,
+              "leave_one_wearer_out_range": [
+                -17.56247107897616,
+                -13.751120486496195
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "gold_signed_margin_movement_bits": {
+              "ci95": [
+                -0.414613609205165,
+                0.35691661482746007
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -0.036228361020124444,
+              "leave_one_wearer_out_range": [
+                -0.12571553475914224,
+                0.061557277682565754
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "signed_donor_discrepancy_bits": {
+              "ci95": [
+                -7.559114043987761,
+                -2.9851252808475204
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -5.311484475366551,
+              "leave_one_wearer_out_range": [
+                -6.023511715893933,
+                -4.653644979820271
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "signed_margin_movement_bits": {
+              "ci95": [
+                0.025494120890322835,
+                0.6971951132072477
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 0.3512811822544669,
+              "leave_one_wearer_out_range": [
+                0.25461022058909827,
+                0.4303230258365496
+              ],
+              "n_clusters": 14,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16",
+          "position_set": "V",
+          "recovery": {
+            "bootstrap_draws": 19999,
+            "ci95": [
+              -0.009705899717703255,
+              0.03181723818210023
+            ],
+            "ci_method": "paired_cluster_percentile_ratio_of_means",
+            "denominator_ci95": [
+              14.46372182700913,
+              27.58952306262606
+            ],
+            "denominator_mean_bits": 20.849170633948894,
+            "estimand": "mean_cluster_absolute_residual_reduction / mean_cluster_absolute_donor_discrepancy",
+            "estimate": 0.007915922578975944,
+            "excluded_bootstrap_draws": 0,
+            "excluded_clusters": 0,
+            "excluded_rows": 0,
+            "guard_bits": 0.01,
+            "n_clusters": 14,
+            "n_rows": 54,
+            "numerator_mean_bits": 0.16504042057419827,
+            "small_denominator_clusters": 0,
+            "small_denominator_rows": 0,
+            "stable": true,
+            "valid_bootstrap_draws": 19999,
+            "zero_denominator_clusters": 0,
+            "zero_denominator_rows": 0
+          },
+          "technical_controls_pass": true
+        },
+        {
+          "cut": 22,
+          "descriptive_only": true,
+          "direction": "B4->B0",
+          "metrics": {
+            "absolute_donor_discrepancy_bits": {
+              "ci95": [
+                14.46372182700913,
+                27.58952306262606
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 20.849170633948894,
+              "leave_one_wearer_out_range": [
+                18.905171654686058,
+                22.144299533705578
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "absolute_residual_reduction_bits": {
+              "ci95": [
+                -0.6428527033185876,
+                3.7207159705807435
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 1.4503431700874636,
+              "leave_one_wearer_out_range": [
+                0.8162843933847478,
+                1.9641980156333139
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "gold_signed_donor_discrepancy_bits": {
+              "ci95": [
+                -23.98699882807875,
+                -8.626248253625473
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -16.06326597777259,
+              "leave_one_wearer_out_range": [
+                -17.56247107897616,
+                -13.751120486496195
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "gold_signed_margin_movement_bits": {
+              "ci95": [
+                -3.331764025973101,
+                0.4864266432160291
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -1.366346969420136,
+              "leave_one_wearer_out_range": [
+                -1.8737405687608075,
+                -0.7258269465122417
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "signed_donor_discrepancy_bits": {
+              "ci95": [
+                -7.559114043987761,
+                -2.9851252808475204
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -5.311484475366551,
+              "leave_one_wearer_out_range": [
+                -6.023511715893933,
+                -4.653644979820271
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "signed_margin_movement_bits": {
+              "ci95": [
+                -1.6717457069062267,
+                1.0043719039881678
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -0.298012009717793,
+              "leave_one_wearer_out_range": [
+                -0.5741012430696215,
+                0.10909808478595506
+              ],
+              "n_clusters": 14,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16",
+          "position_set": "K",
+          "recovery": {
+            "bootstrap_draws": 19999,
+            "ci95": [
+              -0.03662649574449535,
+              0.15844597048916717
+            ],
+            "ci_method": "paired_cluster_percentile_ratio_of_means",
+            "denominator_ci95": [
+              14.46372182700913,
+              27.58952306262606
+            ],
+            "denominator_mean_bits": 20.849170633948894,
+            "estimand": "mean_cluster_absolute_residual_reduction / mean_cluster_absolute_donor_discrepancy",
+            "estimate": 0.06956359058838804,
+            "excluded_bootstrap_draws": 0,
+            "excluded_clusters": 0,
+            "excluded_rows": 0,
+            "guard_bits": 0.01,
+            "n_clusters": 14,
+            "n_rows": 54,
+            "numerator_mean_bits": 1.4503431700874636,
+            "small_denominator_clusters": 0,
+            "small_denominator_rows": 0,
+            "stable": true,
+            "valid_bootstrap_draws": 19999,
+            "zero_denominator_clusters": 0,
+            "zero_denominator_rows": 0
+          },
+          "technical_controls_pass": true
+        },
+        {
+          "cut": 22,
+          "descriptive_only": true,
+          "direction": "B4->B0",
+          "metrics": {
+            "absolute_donor_discrepancy_bits": {
+              "ci95": [
+                14.46372182700913,
+                27.58952306262606
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 20.849170633948894,
+              "leave_one_wearer_out_range": [
+                18.905171654686058,
+                22.144299533705578
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "absolute_residual_reduction_bits": {
+              "ci95": [
+                14.46372182700913,
+                27.58952306262606
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 20.849170633948894,
+              "leave_one_wearer_out_range": [
+                18.905171654686058,
+                22.144299533705578
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "gold_signed_donor_discrepancy_bits": {
+              "ci95": [
+                -23.98699882807875,
+                -8.626248253625473
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -16.06326597777259,
+              "leave_one_wearer_out_range": [
+                -17.56247107897616,
+                -13.751120486496195
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "gold_signed_margin_movement_bits": {
+              "ci95": [
+                -23.98699882807875,
+                -8.626248253625473
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -16.06326597777259,
+              "leave_one_wearer_out_range": [
+                -17.56247107897616,
+                -13.751120486496195
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "signed_donor_discrepancy_bits": {
+              "ci95": [
+                -7.559114043987761,
+                -2.9851252808475204
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -5.311484475366551,
+              "leave_one_wearer_out_range": [
+                -6.023511715893933,
+                -4.653644979820271
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "signed_margin_movement_bits": {
+              "ci95": [
+                -7.559114043987761,
+                -2.9851252808475204
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -5.311484475366551,
+              "leave_one_wearer_out_range": [
+                -6.023511715893933,
+                -4.653644979820271
+              ],
+              "n_clusters": 14,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16",
+          "position_set": "A",
+          "recovery": {
+            "bootstrap_draws": 19999,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "ci_method": "paired_cluster_percentile_ratio_of_means",
+            "denominator_ci95": [
+              14.46372182700913,
+              27.58952306262606
+            ],
+            "denominator_mean_bits": 20.849170633948894,
+            "estimand": "mean_cluster_absolute_residual_reduction / mean_cluster_absolute_donor_discrepancy",
+            "estimate": 1.0,
+            "excluded_bootstrap_draws": 0,
+            "excluded_clusters": 0,
+            "excluded_rows": 0,
+            "guard_bits": 0.01,
+            "n_clusters": 14,
+            "n_rows": 54,
+            "numerator_mean_bits": 20.849170633948894,
+            "small_denominator_clusters": 0,
+            "small_denominator_rows": 0,
+            "stable": true,
+            "valid_bootstrap_draws": 19999,
+            "zero_denominator_clusters": 0,
+            "zero_denominator_rows": 0
+          },
+          "technical_controls_pass": true
+        },
+        {
+          "cut": 34,
+          "descriptive_only": true,
+          "direction": "B4->B0",
+          "metrics": {
+            "absolute_donor_discrepancy_bits": {
+              "ci95": [
+                14.46372182700913,
+                27.58952306262606
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 20.849170633948894,
+              "leave_one_wearer_out_range": [
+                18.905171654686058,
+                22.144299533705578
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "absolute_residual_reduction_bits": {
+              "ci95": [
+                2.402854682307765,
+                9.842354863862885
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 5.5520680147938135,
+              "leave_one_wearer_out_range": [
+                3.749215260415256,
+                6.232315411930532
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "gold_signed_donor_discrepancy_bits": {
+              "ci95": [
+                -23.98699882807875,
+                -8.626248253625473
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -16.06326597777259,
+              "leave_one_wearer_out_range": [
+                -17.56247107897616,
+                -13.751120486496195
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "gold_signed_margin_movement_bits": {
+              "ci95": [
+                -10.366754151134923,
+                -3.2962198593663756
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -6.264291256667632,
+              "leave_one_wearer_out_range": [
+                -6.825924224969049,
+                -4.5162249055101364
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "signed_donor_discrepancy_bits": {
+              "ci95": [
+                -7.559114043987761,
+                -2.9851252808475204
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -5.311484475366551,
+              "leave_one_wearer_out_range": [
+                -6.023511715893933,
+                -4.653644979820271
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "signed_margin_movement_bits": {
+              "ci95": [
+                -1.240366118778739,
+                1.8828165082924793
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 0.34645082010081746,
+              "leave_one_wearer_out_range": [
+                0.02976724118922381,
+                0.7025624648188116
+              ],
+              "n_clusters": 14,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16",
+          "position_set": "H",
+          "recovery": {
+            "bootstrap_draws": 19999,
+            "ci95": [
+              0.13850476259512134,
+              0.40556485522848607
+            ],
+            "ci_method": "paired_cluster_percentile_ratio_of_means",
+            "denominator_ci95": [
+              14.46372182700913,
+              27.58952306262606
+            ],
+            "denominator_mean_bits": 20.849170633948894,
+            "estimand": "mean_cluster_absolute_residual_reduction / mean_cluster_absolute_donor_discrepancy",
+            "estimate": 0.2662968284097273,
+            "excluded_bootstrap_draws": 0,
+            "excluded_clusters": 0,
+            "excluded_rows": 0,
+            "guard_bits": 0.01,
+            "n_clusters": 14,
+            "n_rows": 54,
+            "numerator_mean_bits": 5.5520680147938135,
+            "small_denominator_clusters": 0,
+            "small_denominator_rows": 0,
+            "stable": true,
+            "valid_bootstrap_draws": 19999,
+            "zero_denominator_clusters": 0,
+            "zero_denominator_rows": 0
+          },
+          "technical_controls_pass": true
+        },
+        {
+          "cut": 34,
+          "descriptive_only": true,
+          "direction": "B4->B0",
+          "metrics": {
+            "absolute_donor_discrepancy_bits": {
+              "ci95": [
+                14.46372182700913,
+                27.58952306262606
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 20.849170633948894,
+              "leave_one_wearer_out_range": [
+                18.905171654686058,
+                22.144299533705578
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "absolute_residual_reduction_bits": {
+              "ci95": [
+                -0.03785205876054126,
+                0.5200786636128563
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 0.23830227096999196,
+              "leave_one_wearer_out_range": [
+                0.15374872046720192,
+                0.30431846015993486
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "gold_signed_donor_discrepancy_bits": {
+              "ci95": [
+                -23.98699882807875,
+                -8.626248253625473
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -16.06326597777259,
+              "leave_one_wearer_out_range": [
+                -17.56247107897616,
+                -13.751120486496195
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "gold_signed_margin_movement_bits": {
+              "ci95": [
+                -0.4470851472191832,
+                0.10358645814526195
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -0.1604782711863469,
+              "leave_one_wearer_out_range": [
+                -0.22050799885447095,
+                -0.06993825916173806
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "signed_donor_discrepancy_bits": {
+              "ci95": [
+                -7.559114043987761,
+                -2.9851252808475204
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -5.311484475366551,
+              "leave_one_wearer_out_range": [
+                -6.023511715893933,
+                -4.653644979820271
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "signed_margin_movement_bits": {
+              "ci95": [
+                -0.2688952566796035,
+                0.08936318548322818
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -0.0912419391112885,
+              "leave_one_wearer_out_range": [
+                -0.1433447578936476,
+                -0.046240289319244336
+              ],
+              "n_clusters": 14,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16",
+          "position_set": "V",
+          "recovery": {
+            "bootstrap_draws": 19999,
+            "ci95": [
+              -0.001982075685097636,
+              0.024431114713071696
+            ],
+            "ci_method": "paired_cluster_percentile_ratio_of_means",
+            "denominator_ci95": [
+              14.46372182700913,
+              27.58952306262606
+            ],
+            "denominator_mean_bits": 20.849170633948894,
+            "estimand": "mean_cluster_absolute_residual_reduction / mean_cluster_absolute_donor_discrepancy",
+            "estimate": 0.011429820166657478,
+            "excluded_bootstrap_draws": 0,
+            "excluded_clusters": 0,
+            "excluded_rows": 0,
+            "guard_bits": 0.01,
+            "n_clusters": 14,
+            "n_rows": 54,
+            "numerator_mean_bits": 0.23830227096999196,
+            "small_denominator_clusters": 0,
+            "small_denominator_rows": 0,
+            "stable": true,
+            "valid_bootstrap_draws": 19999,
+            "zero_denominator_clusters": 0,
+            "zero_denominator_rows": 0
+          },
+          "technical_controls_pass": true
+        },
+        {
+          "cut": 34,
+          "descriptive_only": true,
+          "direction": "B4->B0",
+          "metrics": {
+            "absolute_donor_discrepancy_bits": {
+              "ci95": [
+                14.46372182700913,
+                27.58952306262606
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 20.849170633948894,
+              "leave_one_wearer_out_range": [
+                18.905171654686058,
+                22.144299533705578
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "absolute_residual_reduction_bits": {
+              "ci95": [
+                9.39633612797138,
+                20.31613699429845
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 14.776353003736693,
+              "leave_one_wearer_out_range": [
+                13.391747231124233,
+                15.906059573317505
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "gold_signed_donor_discrepancy_bits": {
+              "ci95": [
+                -23.98699882807875,
+                -8.626248253625473
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -16.06326597777259,
+              "leave_one_wearer_out_range": [
+                -17.56247107897616,
+                -13.751120486496195
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "gold_signed_margin_movement_bits": {
+              "ci95": [
+                -17.503612998370933,
+                -5.662987006790889
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -11.415431707507578,
+              "leave_one_wearer_out_range": [
+                -12.713171865516859,
+                -9.772293527492875
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "signed_donor_discrepancy_bits": {
+              "ci95": [
+                -7.559114043987761,
+                -2.9851252808475204
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -5.311484475366551,
+              "leave_one_wearer_out_range": [
+                -6.023511715893933,
+                -4.653644979820271
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "signed_margin_movement_bits": {
+              "ci95": [
+                -6.112541246256137,
+                -2.1683226305488383
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -4.1109830110066,
+              "leave_one_wearer_out_range": [
+                -4.673441721275694,
+                -3.4862238942147292
+              ],
+              "n_clusters": 14,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16",
+          "position_set": "K",
+          "recovery": {
+            "bootstrap_draws": 19999,
+            "ci95": [
+              0.6197028916850664,
+              0.7781977209373289
+            ],
+            "ci_method": "paired_cluster_percentile_ratio_of_means",
+            "denominator_ci95": [
+              14.46372182700913,
+              27.58952306262606
+            ],
+            "denominator_mean_bits": 20.849170633948894,
+            "estimand": "mean_cluster_absolute_residual_reduction / mean_cluster_absolute_donor_discrepancy",
+            "estimate": 0.7087261773221916,
+            "excluded_bootstrap_draws": 0,
+            "excluded_clusters": 0,
+            "excluded_rows": 0,
+            "guard_bits": 0.01,
+            "n_clusters": 14,
+            "n_rows": 54,
+            "numerator_mean_bits": 14.776353003736693,
+            "small_denominator_clusters": 0,
+            "small_denominator_rows": 0,
+            "stable": true,
+            "valid_bootstrap_draws": 19999,
+            "zero_denominator_clusters": 0,
+            "zero_denominator_rows": 0
+          },
+          "technical_controls_pass": true
+        },
+        {
+          "cut": 34,
+          "descriptive_only": true,
+          "direction": "B4->B0",
+          "metrics": {
+            "absolute_donor_discrepancy_bits": {
+              "ci95": [
+                14.46372182700913,
+                27.58952306262606
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 20.849170633948894,
+              "leave_one_wearer_out_range": [
+                18.905171654686058,
+                22.144299533705578
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "absolute_residual_reduction_bits": {
+              "ci95": [
+                14.46372182700913,
+                27.58952306262606
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 20.849170633948894,
+              "leave_one_wearer_out_range": [
+                18.905171654686058,
+                22.144299533705578
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "gold_signed_donor_discrepancy_bits": {
+              "ci95": [
+                -23.98699882807875,
+                -8.626248253625473
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -16.06326597777259,
+              "leave_one_wearer_out_range": [
+                -17.56247107897616,
+                -13.751120486496195
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "gold_signed_margin_movement_bits": {
+              "ci95": [
+                -23.98699882807875,
+                -8.626248253625473
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -16.06326597777259,
+              "leave_one_wearer_out_range": [
+                -17.56247107897616,
+                -13.751120486496195
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "signed_donor_discrepancy_bits": {
+              "ci95": [
+                -7.559114043987761,
+                -2.9851252808475204
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -5.311484475366551,
+              "leave_one_wearer_out_range": [
+                -6.023511715893933,
+                -4.653644979820271
+              ],
+              "n_clusters": 14,
+              "valid": true
+            },
+            "signed_margin_movement_bits": {
+              "ci95": [
+                -7.559114043987761,
+                -2.9851252808475204
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -5.311484475366551,
+              "leave_one_wearer_out_range": [
+                -6.023511715893933,
+                -4.653644979820271
+              ],
+              "n_clusters": 14,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16",
+          "position_set": "A",
+          "recovery": {
+            "bootstrap_draws": 19999,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "ci_method": "paired_cluster_percentile_ratio_of_means",
+            "denominator_ci95": [
+              14.46372182700913,
+              27.58952306262606
+            ],
+            "denominator_mean_bits": 20.849170633948894,
+            "estimand": "mean_cluster_absolute_residual_reduction / mean_cluster_absolute_donor_discrepancy",
+            "estimate": 1.0,
+            "excluded_bootstrap_draws": 0,
+            "excluded_clusters": 0,
+            "excluded_rows": 0,
+            "guard_bits": 0.01,
+            "n_clusters": 14,
+            "n_rows": 54,
+            "numerator_mean_bits": 20.849170633948894,
+            "small_denominator_clusters": 0,
+            "small_denominator_rows": 0,
+            "stable": true,
+            "valid_bootstrap_draws": 19999,
+            "zero_denominator_clusters": 0,
+            "zero_denominator_rows": 0
+          },
+          "technical_controls_pass": true
+        }
+      ],
+      "release_sha256": "b050510c89fb8661957407bf2326513f69461d53bae048e7413653c50b34bc03",
+      "slurm_elapsed_seconds": 1490,
+      "source_analysis_sha256": "72a9643ab3b30c7fdd57d3e96a3354272aa1677e46bf4a1db590ec1fa689a934",
+      "technical_checks": {
+        "failed_checks": 0,
+        "failure_count": 0,
+        "n_checks": 972,
+        "status": "pass"
+      },
+      "warnings": [
+        "Descriptive only: no hypothesis tests, multiplicity correction, or confirmatory claim.",
+        "Both candidate orders and all eligible episodes contribute equally within each participant.",
+        "Null and negative recognition benefits are valid outcomes, not exclusion criteria.",
+        "Small donor discrepancies retain all clusters; unstable recovery intervals are withheld.",
+        "Raw A/B movement can cancel across orders; gold-oriented and by-order summaries are included.",
+        "Canary intervals are technical diagnostics, not scientific evidence.",
+        "Row validation does not audit pixels, event annotations, or hidden-state geometry."
+      ],
+      "wearers": 14
+    },
+    "new_interaction": {
+      "behavior": [
+        {
+          "condition": "B0",
+          "metrics": {
+            "accuracy": {
+              "ci95": [
+                0.7,
+                0.9083333333333334
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 0.8083333333333333,
+              "leave_one_wearer_out_range": [
+                0.7982456140350876,
+                0.8333333333333334
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "gold_margin_bits": {
+              "ci95": [
+                9.52831850495101,
+                18.590014431132467
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 14.145761069948401,
+              "leave_one_wearer_out_range": [
+                13.091429239069791,
+                15.172644398090412
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "loss_nats": {
+              "ci95": [
+                0.49005339102253503,
+                2.1896849365911177
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 1.2887207543626695,
+              "leave_one_wearer_out_range": [
+                1.0521579215892707,
+                1.356548162474387
+              ],
+              "n_clusters": 20,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16"
+        },
+        {
+          "condition": "B1",
+          "metrics": {
+            "accuracy": {
+              "ci95": [
+                0.5583333333333333,
+                0.8041666666666666
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 0.6833333333333333,
+              "leave_one_wearer_out_range": [
+                0.6666666666666666,
+                0.7192982456140351
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "gold_margin_bits": {
+              "ci95": [
+                1.883618863766968,
+                13.731441756892517
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 7.86522400581585,
+              "leave_one_wearer_out_range": [
+                6.684625487244617,
+                9.46244617426958
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "loss_nats": {
+              "ci95": [
+                1.4534608723422615,
+                4.600567766616498
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 2.841944122745563,
+              "leave_one_wearer_out_range": [
+                2.1713413667778547,
+                2.9915201291366005
+              ],
+              "n_clusters": 20,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16"
+        },
+        {
+          "condition": "B4",
+          "metrics": {
+            "accuracy": {
+              "ci95": [
+                0.475,
+                0.7833333333333333
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 0.6333333333333333,
+              "leave_one_wearer_out_range": [
+                0.6140350877192983,
+                0.6666666666666666
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "gold_margin_bits": {
+              "ci95": [
+                0.3290020842984748,
+                11.503651913238345
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 5.8908168742159575,
+              "leave_one_wearer_out_range": [
+                4.60986148040389,
+                7.059041957381085
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "loss_nats": {
+              "ci95": [
+                1.8568985363850905,
+                4.923985803577301
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 3.3275363172023376,
+              "leave_one_wearer_out_range": [
+                2.9078168538765516,
+                3.502669807511098
+              ],
+              "n_clusters": 20,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16"
+        },
+        {
+          "condition": "B2",
+          "metrics": {
+            "accuracy": {
+              "ci95": [
+                0.19166666666666665,
+                0.4499999999999999
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 0.3125,
+              "leave_one_wearer_out_range": [
+                0.27631578947368424,
+                0.32894736842105265
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "gold_margin_bits": {
+              "ci95": [
+                -12.72170552553239,
+                -0.0060017112195876
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -6.733234223220025,
+              "leave_one_wearer_out_range": [
+                -8.729926338058483,
+                -5.67576699715166
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "loss_nats": {
+              "ci95": [
+                6.11655897132918,
+                10.725890556037609
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 8.385552819579978,
+              "leave_one_wearer_out_range": [
+                7.848279261346652,
+                8.826897704726129
+              ],
+              "n_clusters": 20,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16"
+        }
+      ],
+      "bootstrap": {
+        "aggregation": [
+          "candidate_orders",
+          "episodes",
+          "participant"
+        ],
+        "confidence_level": 0.95,
+        "draws": 19999,
+        "episodes_equal_within_participant": true,
+        "method": "paired_cluster_percentile",
+        "orders_paired": true,
+        "participants_equal": true,
+        "seed": 20261025,
+        "unit": "participant"
+      },
+      "cells": 1628,
+      "claim_boundary": "Retrospective interaction recognition and directional output control under substitution only; no forecasting, native necessity, information routing, or universal depth-reversal claim.",
+      "dataset_manifest_sha256": "1d465223ad5143aed6478606466e7def6af07e35a675d66c4dc0b43b609a01b3",
+      "design": {
+        "conditions": {
+          "B0": "17 chronological scene frames",
+          "B1": "last scene only",
+          "B2": "first scene only",
+          "B4": "last scene repeated 17 times"
+        },
+        "position_sets": {
+          "A": "all active positions",
+          "H": "first 16 scene frames",
+          "K": "all non-scene positions",
+          "V": "last scene frame"
+        },
+        "scene_count": 17
+      },
+      "episodes": 37,
+      "history_contrasts": [
+        {
+          "control": "B4",
+          "descriptive_only": true,
+          "metrics": {
+            "accuracy_improvement": {
+              "ci95": [
+                0.04583333333333332,
+                0.32916666666666666
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 0.175,
+              "leave_one_wearer_out_range": [
+                0.13157894736842105,
+                0.19736842105263158
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "gold_margin_improvement_bits": {
+              "ci95": [
+                5.036995825611048,
+                11.753600547162593
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 8.254944195732444,
+              "leave_one_wearer_out_range": [
+                7.472141005577996,
+                8.848396089763066
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "loss_improvement_nats": {
+              "ci95": [
+                0.9254382520408845,
+                3.3544413856904782
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 2.0388155628396682,
+              "leave_one_wearer_out_range": [
+                1.6254929990015485,
+                2.1643510205787964
+              ],
+              "n_clusters": 20,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16",
+          "positive_favors": "B0",
+          "reference": "B0"
+        },
+        {
+          "control": "B1",
+          "descriptive_only": true,
+          "metrics": {
+            "accuracy_improvement": {
+              "ci95": [
+                0.033333333333333326,
+                0.22499999999999995
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 0.125,
+              "leave_one_wearer_out_range": [
+                0.10526315789473684,
+                0.14473684210526316
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "gold_margin_improvement_bits": {
+              "ci95": [
+                2.3822758908652135,
+                10.328529585078316
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 6.280537064132551,
+              "leave_one_wearer_out_range": [
+                5.361784128012341,
+                7.059561020198006
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "loss_improvement_nats": {
+              "ci95": [
+                0.5362757727898023,
+                2.8259232303747863
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 1.5532233683828933,
+              "leave_one_wearer_out_range": [
+                1.0794372255842928,
+                1.727976827303964
+              ],
+              "n_clusters": 20,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16",
+          "positive_favors": "B0",
+          "reference": "B0"
+        },
+        {
+          "control": "B2",
+          "descriptive_only": true,
+          "metrics": {
+            "accuracy_improvement": {
+              "ci95": [
+                0.3416666666666667,
+                0.6541666666666667
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 0.4958333333333333,
+              "leave_one_wearer_out_range": [
+                0.46929824561403505,
+                0.5219298245614035
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "gold_margin_improvement_bits": {
+              "ci95": [
+                13.220843979392791,
+                28.983964012398886
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 20.878995293168426,
+              "leave_one_wearer_out_range": [
+                18.78024700843456,
+                22.489239742599366
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "loss_improvement_nats": {
+              "ci95": [
+                4.809732483295659,
+                9.596662754767257
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 7.096832065217308,
+              "leave_one_wearer_out_range": [
+                6.491731100551745,
+                7.470487271254922
+              ],
+              "n_clusters": 20,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16",
+          "positive_favors": "B0",
+          "reference": "B0"
+        }
+      ],
+      "local_recomputation": {
+        "absolute_tolerance": 1e-12,
+        "analysis_sha256": "36258b4a03531422d7f3a5bf88f50376d6a1e369aac932a344ae5d5aa02824dc",
+        "bootstrap_draws": 19999,
+        "bootstrap_seed": 20261025,
+        "exact": false,
+        "ignored_keys": [
+          "provenance"
+        ],
+        "max_numeric_difference": 5.551115123125783e-17,
+        "numeric_difference_count": 2,
+        "private_evaluator_opened": true,
+        "recomputed": true
+      },
+      "memory": [
+        {
+          "gpu_total_memory_bytes": 85017493504,
+          "peak_memory_allocated_bytes": 64659431936,
+          "peak_memory_reserved_bytes": 66376957952,
+          "rank": 0
+        },
+        {
+          "gpu_total_memory_bytes": 85017493504,
+          "peak_memory_allocated_bytes": 64659431936,
+          "peak_memory_reserved_bytes": 66374860800,
+          "rank": 1
+        },
+        {
+          "gpu_total_memory_bytes": 85017493504,
+          "peak_memory_allocated_bytes": 64659431936,
+          "peak_memory_reserved_bytes": 66376957952,
+          "rank": 2
+        },
+        {
+          "gpu_total_memory_bytes": 85017493504,
+          "peak_memory_allocated_bytes": 64659431936,
+          "peak_memory_reserved_bytes": 66376957952,
+          "rank": 3
+        }
+      ],
+      "metric_definitions": {
+        "accuracy": "forced A/B choice; ties count as 0.5",
+        "gold_margin_bits": "correct-minus-incorrect candidate margin in bits",
+        "loss_nats": "negative log probability conditional on A or B",
+        "recovery": "ratio of participant means, not mean row-wise recovery; not clipped"
+      },
+      "patch_profiles": [
+        {
+          "cut": 22,
+          "descriptive_only": true,
+          "direction": "B0->B4",
+          "metrics": {
+            "absolute_donor_discrepancy_bits": {
+              "ci95": [
+                8.505023110927958,
+                14.027992528808706
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 11.176777363116097,
+              "leave_one_wearer_out_range": [
+                10.547754865981844,
+                11.636894700027952
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "absolute_residual_reduction_bits": {
+              "ci95": [
+                5.994716010419771,
+                11.845940469731882
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 8.84390967353921,
+              "leave_one_wearer_out_range": [
+                8.137188912125083,
+                9.40429271668685
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "gold_signed_donor_discrepancy_bits": {
+              "ci95": [
+                5.036995825611048,
+                11.753600547162593
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 8.254944195732444,
+              "leave_one_wearer_out_range": [
+                7.472141005577996,
+                8.848396089763066
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "gold_signed_margin_movement_bits": {
+              "ci95": [
+                5.237183059072521,
+                11.749028627029357
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 8.4430240761163,
+              "leave_one_wearer_out_range": [
+                7.715204072732547,
+                9.238576083798614
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "signed_donor_discrepancy_bits": {
+              "ci95": [
+                0.003468291200663746,
+                4.008075379561039
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 1.862894225986129,
+              "leave_one_wearer_out_range": [
+                1.106713966480255,
+                2.207718028572046
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "signed_margin_movement_bits": {
+              "ci95": [
+                0.3101873048572382,
+                4.25868208845049
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 2.119081742159499,
+              "leave_one_wearer_out_range": [
+                1.3146908312660666,
+                2.4647339383300975
+              ],
+              "n_clusters": 20,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16",
+          "position_set": "H",
+          "recovery": {
+            "bootstrap_draws": 19999,
+            "ci95": [
+              0.6961774287975359,
+              0.8545627140691547
+            ],
+            "ci_method": "paired_cluster_percentile_ratio_of_means",
+            "denominator_ci95": [
+              8.505023110927958,
+              14.0279925288087
+            ],
+            "denominator_mean_bits": 11.176777363116097,
+            "estimand": "mean_cluster_absolute_residual_reduction / mean_cluster_absolute_donor_discrepancy",
+            "estimate": 0.7912754621671662,
+            "excluded_bootstrap_draws": 0,
+            "excluded_clusters": 0,
+            "excluded_rows": 0,
+            "guard_bits": 0.01,
+            "n_clusters": 20,
+            "n_rows": 74,
+            "numerator_mean_bits": 8.84390967353921,
+            "small_denominator_clusters": 0,
+            "small_denominator_rows": 0,
+            "stable": true,
+            "valid_bootstrap_draws": 19999,
+            "zero_denominator_clusters": 0,
+            "zero_denominator_rows": 0
+          },
+          "technical_controls_pass": true
+        },
+        {
+          "cut": 22,
+          "descriptive_only": true,
+          "direction": "B0->B4",
+          "metrics": {
+            "absolute_donor_discrepancy_bits": {
+              "ci95": [
+                8.505023110927958,
+                14.027992528808706
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 11.176777363116097,
+              "leave_one_wearer_out_range": [
+                10.547754865981844,
+                11.636894700027952
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "absolute_residual_reduction_bits": {
+              "ci95": [
+                -0.3430250685052218,
+                0.2748352071200072
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -0.04790195854218366,
+              "leave_one_wearer_out_range": [
+                -0.13110013236134127,
+                -0.003559270417750788
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "gold_signed_donor_discrepancy_bits": {
+              "ci95": [
+                5.036995825611048,
+                11.753600547162593
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 8.254944195732444,
+              "leave_one_wearer_out_range": [
+                7.472141005577996,
+                8.848396089763066
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "gold_signed_margin_movement_bits": {
+              "ci95": [
+                -0.3730718354025499,
+                0.3189897263716683
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -0.024984103988663922,
+              "leave_one_wearer_out_range": [
+                -0.1069760749365837,
+                0.06327616240082845
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "signed_donor_discrepancy_bits": {
+              "ci95": [
+                0.003468291200663746,
+                4.008075379561039
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 1.862894225986129,
+              "leave_one_wearer_out_range": [
+                1.106713966480255,
+                2.207718028572046
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "signed_margin_movement_bits": {
+              "ci95": [
+                -0.12812388317145015,
+                0.6420742921518737
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 0.21095647810249618,
+              "leave_one_wearer_out_range": [
+                0.048841118568258624,
+                0.2521155986527887
+              ],
+              "n_clusters": 20,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16",
+          "position_set": "V",
+          "recovery": {
+            "bootstrap_draws": 19999,
+            "ci95": [
+              -0.034931054395292156,
+              0.022219232982212105
+            ],
+            "ci_method": "paired_cluster_percentile_ratio_of_means",
+            "denominator_ci95": [
+              8.505023110927958,
+              14.0279925288087
+            ],
+            "denominator_mean_bits": 11.176777363116097,
+            "estimand": "mean_cluster_absolute_residual_reduction / mean_cluster_absolute_donor_discrepancy",
+            "estimate": -0.004285847072543686,
+            "excluded_bootstrap_draws": 0,
+            "excluded_clusters": 0,
+            "excluded_rows": 0,
+            "guard_bits": 0.01,
+            "n_clusters": 20,
+            "n_rows": 74,
+            "numerator_mean_bits": -0.04790195854218366,
+            "small_denominator_clusters": 0,
+            "small_denominator_rows": 0,
+            "stable": true,
+            "valid_bootstrap_draws": 19999,
+            "zero_denominator_clusters": 0,
+            "zero_denominator_rows": 0
+          },
+          "technical_controls_pass": true
+        },
+        {
+          "cut": 22,
+          "descriptive_only": true,
+          "direction": "B0->B4",
+          "metrics": {
+            "absolute_donor_discrepancy_bits": {
+              "ci95": [
+                8.505023110927958,
+                14.027992528808706
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 11.176777363116097,
+              "leave_one_wearer_out_range": [
+                10.547754865981844,
+                11.636894700027952
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "absolute_residual_reduction_bits": {
+              "ci95": [
+                -1.5627506274069023,
+                0.8564310443844888
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -0.38058600733782344,
+              "leave_one_wearer_out_range": [
+                -0.7660363226564684,
+                -0.07434945427587081
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "gold_signed_donor_discrepancy_bits": {
+              "ci95": [
+                5.036995825611048,
+                11.753600547162593
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 8.254944195732444,
+              "leave_one_wearer_out_range": [
+                7.472141005577996,
+                8.848396089763066
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "gold_signed_margin_movement_bits": {
+              "ci95": [
+                -2.206881956714431,
+                -0.22671722099118174
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -1.1853393030970607,
+              "leave_one_wearer_out_range": [
+                -1.3390804420486826,
+                -0.9214581866540152
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "signed_donor_discrepancy_bits": {
+              "ci95": [
+                0.003468291200663746,
+                4.008075379561039
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 1.862894225986129,
+              "leave_one_wearer_out_range": [
+                1.106713966480255,
+                2.207718028572046
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "signed_margin_movement_bits": {
+              "ci95": [
+                -1.1694470774477805,
+                1.5148769156396422
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 0.11158345645552281,
+              "leave_one_wearer_out_range": [
+                -0.3618601998609461,
+                0.4211815220379795
+              ],
+              "n_clusters": 20,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16",
+          "position_set": "K",
+          "recovery": {
+            "bootstrap_draws": 19999,
+            "ci95": [
+              -0.1449044447086404,
+              0.07752451902241259
+            ],
+            "ci_method": "paired_cluster_percentile_ratio_of_means",
+            "denominator_ci95": [
+              8.505023110927958,
+              14.0279925288087
+            ],
+            "denominator_mean_bits": 11.176777363116097,
+            "estimand": "mean_cluster_absolute_residual_reduction / mean_cluster_absolute_donor_discrepancy",
+            "estimate": -0.034051497580490024,
+            "excluded_bootstrap_draws": 0,
+            "excluded_clusters": 0,
+            "excluded_rows": 0,
+            "guard_bits": 0.01,
+            "n_clusters": 20,
+            "n_rows": 74,
+            "numerator_mean_bits": -0.38058600733782344,
+            "small_denominator_clusters": 0,
+            "small_denominator_rows": 0,
+            "stable": true,
+            "valid_bootstrap_draws": 19999,
+            "zero_denominator_clusters": 0,
+            "zero_denominator_rows": 0
+          },
+          "technical_controls_pass": true
+        },
+        {
+          "cut": 22,
+          "descriptive_only": true,
+          "direction": "B0->B4",
+          "metrics": {
+            "absolute_donor_discrepancy_bits": {
+              "ci95": [
+                8.505023110927958,
+                14.027992528808706
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 11.176777363116097,
+              "leave_one_wearer_out_range": [
+                10.547754865981844,
+                11.636894700027952
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "absolute_residual_reduction_bits": {
+              "ci95": [
+                8.505023110927958,
+                14.027992528808706
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 11.176777363116097,
+              "leave_one_wearer_out_range": [
+                10.547754865981844,
+                11.636894700027952
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "gold_signed_donor_discrepancy_bits": {
+              "ci95": [
+                5.036995825611048,
+                11.753600547162593
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 8.254944195732444,
+              "leave_one_wearer_out_range": [
+                7.472141005577996,
+                8.848396089763066
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "gold_signed_margin_movement_bits": {
+              "ci95": [
+                5.036995825611048,
+                11.753600547162593
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 8.254944195732444,
+              "leave_one_wearer_out_range": [
+                7.472141005577996,
+                8.848396089763066
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "signed_donor_discrepancy_bits": {
+              "ci95": [
+                0.003468291200663746,
+                4.008075379561039
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 1.862894225986129,
+              "leave_one_wearer_out_range": [
+                1.106713966480255,
+                2.207718028572046
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "signed_margin_movement_bits": {
+              "ci95": [
+                0.003468291200663746,
+                4.008075379561039
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 1.862894225986129,
+              "leave_one_wearer_out_range": [
+                1.106713966480255,
+                2.207718028572046
+              ],
+              "n_clusters": 20,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16",
+          "position_set": "A",
+          "recovery": {
+            "bootstrap_draws": 19999,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "ci_method": "paired_cluster_percentile_ratio_of_means",
+            "denominator_ci95": [
+              8.505023110927958,
+              14.0279925288087
+            ],
+            "denominator_mean_bits": 11.176777363116097,
+            "estimand": "mean_cluster_absolute_residual_reduction / mean_cluster_absolute_donor_discrepancy",
+            "estimate": 1.0,
+            "excluded_bootstrap_draws": 0,
+            "excluded_clusters": 0,
+            "excluded_rows": 0,
+            "guard_bits": 0.01,
+            "n_clusters": 20,
+            "n_rows": 74,
+            "numerator_mean_bits": 11.176777363116097,
+            "small_denominator_clusters": 0,
+            "small_denominator_rows": 0,
+            "stable": true,
+            "valid_bootstrap_draws": 19999,
+            "zero_denominator_clusters": 0,
+            "zero_denominator_rows": 0
+          },
+          "technical_controls_pass": true
+        },
+        {
+          "cut": 34,
+          "descriptive_only": true,
+          "direction": "B0->B4",
+          "metrics": {
+            "absolute_donor_discrepancy_bits": {
+              "ci95": [
+                8.505023110927958,
+                14.027992528808706
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 11.176777363116097,
+              "leave_one_wearer_out_range": [
+                10.547754865981844,
+                11.636894700027952
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "absolute_residual_reduction_bits": {
+              "ci95": [
+                1.0658004086570896,
+                4.913827815446923
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 2.712473349905731,
+              "leave_one_wearer_out_range": [
+                1.8989750786772466,
+                2.933539285833425
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "gold_signed_donor_discrepancy_bits": {
+              "ci95": [
+                5.036995825611048,
+                11.753600547162593
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 8.254944195732444,
+              "leave_one_wearer_out_range": [
+                7.472141005577996,
+                8.848396089763066
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "gold_signed_margin_movement_bits": {
+              "ci95": [
+                1.1449420039284213,
+                5.248188285447027
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 2.9957525708399686,
+              "leave_one_wearer_out_range": [
+                2.1971637322922333,
+                3.378844827509843
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "signed_donor_discrepancy_bits": {
+              "ci95": [
+                0.003468291200663746,
+                4.008075379561039
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 1.862894225986129,
+              "leave_one_wearer_out_range": [
+                1.106713966480255,
+                2.207718028572046
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "signed_margin_movement_bits": {
+              "ci95": [
+                -0.6201004112437795,
+                0.7785528141661404
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 0.08349979024295397,
+              "leave_one_wearer_out_range": [
+                -0.0611997738863723,
+                0.22789287752600917
+              ],
+              "n_clusters": 20,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16",
+          "position_set": "H",
+          "recovery": {
+            "bootstrap_draws": 19999,
+            "ci95": [
+              0.1079887039852345,
+              0.39344644287051694
+            ],
+            "ci_method": "paired_cluster_percentile_ratio_of_means",
+            "denominator_ci95": [
+              8.505023110927958,
+              14.0279925288087
+            ],
+            "denominator_mean_bits": 11.176777363116097,
+            "estimand": "mean_cluster_absolute_residual_reduction / mean_cluster_absolute_donor_discrepancy",
+            "estimate": 0.24268832256219255,
+            "excluded_bootstrap_draws": 0,
+            "excluded_clusters": 0,
+            "excluded_rows": 0,
+            "guard_bits": 0.01,
+            "n_clusters": 20,
+            "n_rows": 74,
+            "numerator_mean_bits": 2.712473349905731,
+            "small_denominator_clusters": 0,
+            "small_denominator_rows": 0,
+            "stable": true,
+            "valid_bootstrap_draws": 19999,
+            "zero_denominator_clusters": 0,
+            "zero_denominator_rows": 0
+          },
+          "technical_controls_pass": true
+        },
+        {
+          "cut": 34,
+          "descriptive_only": true,
+          "direction": "B0->B4",
+          "metrics": {
+            "absolute_donor_discrepancy_bits": {
+              "ci95": [
+                8.505023110927958,
+                14.027992528808706
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 11.176777363116097,
+              "leave_one_wearer_out_range": [
+                10.547754865981844,
+                11.636894700027952
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "absolute_residual_reduction_bits": {
+              "ci95": [
+                0.23180807163142875,
+                1.240774055510972
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 0.6319304916762587,
+              "leave_one_wearer_out_range": [
+                0.37095614137260086,
+                0.6810090086256835
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "gold_signed_donor_discrepancy_bits": {
+              "ci95": [
+                5.036995825611048,
+                11.753600547162593
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 8.254944195732444,
+              "leave_one_wearer_out_range": [
+                7.472141005577996,
+                8.848396089763066
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "gold_signed_margin_movement_bits": {
+              "ci95": [
+                0.26693630887107483,
+                1.288309760183953
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 0.6807717824987836,
+              "leave_one_wearer_out_range": [
+                0.42236802644894283,
+                0.7324208937020255
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "signed_donor_discrepancy_bits": {
+              "ci95": [
+                0.003468291200663746,
+                4.008075379561039
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 1.862894225986129,
+              "leave_one_wearer_out_range": [
+                1.106713966480255,
+                2.207718028572046
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "signed_margin_movement_bits": {
+              "ci95": [
+                -0.13469862888312095,
+                0.45835613978206746
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 0.13074414448422267,
+              "leave_one_wearer_out_range": [
+                0.014237002003136098,
+                0.18666438286043557
+              ],
+              "n_clusters": 20,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16",
+          "position_set": "V",
+          "recovery": {
+            "bootstrap_draws": 19999,
+            "ci95": [
+              0.021111568735795713,
+              0.1067285115453591
+            ],
+            "ci_method": "paired_cluster_percentile_ratio_of_means",
+            "denominator_ci95": [
+              8.505023110927958,
+              14.0279925288087
+            ],
+            "denominator_mean_bits": 11.176777363116097,
+            "estimand": "mean_cluster_absolute_residual_reduction / mean_cluster_absolute_donor_discrepancy",
+            "estimate": 0.05653959734061267,
+            "excluded_bootstrap_draws": 0,
+            "excluded_clusters": 0,
+            "excluded_rows": 0,
+            "guard_bits": 0.01,
+            "n_clusters": 20,
+            "n_rows": 74,
+            "numerator_mean_bits": 0.6319304916762587,
+            "small_denominator_clusters": 0,
+            "small_denominator_rows": 0,
+            "stable": true,
+            "valid_bootstrap_draws": 19999,
+            "zero_denominator_clusters": 0,
+            "zero_denominator_rows": 0
+          },
+          "technical_controls_pass": true
+        },
+        {
+          "cut": 34,
+          "descriptive_only": true,
+          "direction": "B0->B4",
+          "metrics": {
+            "absolute_donor_discrepancy_bits": {
+              "ci95": [
+                8.505023110927958,
+                14.027992528808706
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 11.176777363116097,
+              "leave_one_wearer_out_range": [
+                10.547754865981844,
+                11.636894700027952
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "absolute_residual_reduction_bits": {
+              "ci95": [
+                2.786420759833502,
+                8.310280316166303
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 5.378453572248531,
+              "leave_one_wearer_out_range": [
+                4.463238978704244,
+                5.965255381444802
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "gold_signed_donor_discrepancy_bits": {
+              "ci95": [
+                5.036995825611048,
+                11.753600547162593
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 8.254944195732444,
+              "leave_one_wearer_out_range": [
+                7.472141005577996,
+                8.848396089763066
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "gold_signed_margin_movement_bits": {
+              "ci95": [
+                1.6129772547607129,
+                6.8444701823378225
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 4.046026937109205,
+              "leave_one_wearer_out_range": [
+                3.060684625926006,
+                4.705072213622941
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "signed_donor_discrepancy_bits": {
+              "ci95": [
+                0.003468291200663746,
+                4.008075379561039
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 1.862894225986129,
+              "leave_one_wearer_out_range": [
+                1.106713966480255,
+                2.207718028572046
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "signed_margin_movement_bits": {
+              "ci95": [
+                0.9554005087851222,
+                4.378429166244729
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 2.592248754159967,
+              "leave_one_wearer_out_range": [
+                2.021572501863443,
+                2.9944424916142665
+              ],
+              "n_clusters": 20,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16",
+          "position_set": "K",
+          "recovery": {
+            "bootstrap_draws": 19999,
+            "ci95": [
+              0.2975989614885354,
+              0.6411934829615513
+            ],
+            "ci_method": "paired_cluster_percentile_ratio_of_means",
+            "denominator_ci95": [
+              8.505023110927958,
+              14.0279925288087
+            ],
+            "denominator_mean_bits": 11.176777363116097,
+            "estimand": "mean_cluster_absolute_residual_reduction / mean_cluster_absolute_donor_discrepancy",
+            "estimate": 0.4812168478901339,
+            "excluded_bootstrap_draws": 0,
+            "excluded_clusters": 0,
+            "excluded_rows": 0,
+            "guard_bits": 0.01,
+            "n_clusters": 20,
+            "n_rows": 74,
+            "numerator_mean_bits": 5.378453572248531,
+            "small_denominator_clusters": 0,
+            "small_denominator_rows": 0,
+            "stable": true,
+            "valid_bootstrap_draws": 19999,
+            "zero_denominator_clusters": 0,
+            "zero_denominator_rows": 0
+          },
+          "technical_controls_pass": true
+        },
+        {
+          "cut": 34,
+          "descriptive_only": true,
+          "direction": "B0->B4",
+          "metrics": {
+            "absolute_donor_discrepancy_bits": {
+              "ci95": [
+                8.505023110927958,
+                14.027992528808706
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 11.176777363116097,
+              "leave_one_wearer_out_range": [
+                10.547754865981844,
+                11.636894700027952
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "absolute_residual_reduction_bits": {
+              "ci95": [
+                8.505023110927958,
+                14.027992528808706
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 11.176777363116097,
+              "leave_one_wearer_out_range": [
+                10.547754865981844,
+                11.636894700027952
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "gold_signed_donor_discrepancy_bits": {
+              "ci95": [
+                5.036995825611048,
+                11.753600547162593
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 8.254944195732444,
+              "leave_one_wearer_out_range": [
+                7.472141005577996,
+                8.848396089763066
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "gold_signed_margin_movement_bits": {
+              "ci95": [
+                5.036995825611048,
+                11.753600547162593
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 8.254944195732444,
+              "leave_one_wearer_out_range": [
+                7.472141005577996,
+                8.848396089763066
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "signed_donor_discrepancy_bits": {
+              "ci95": [
+                0.003468291200663746,
+                4.008075379561039
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 1.862894225986129,
+              "leave_one_wearer_out_range": [
+                1.106713966480255,
+                2.207718028572046
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "signed_margin_movement_bits": {
+              "ci95": [
+                0.003468291200663746,
+                4.008075379561039
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 1.862894225986129,
+              "leave_one_wearer_out_range": [
+                1.106713966480255,
+                2.207718028572046
+              ],
+              "n_clusters": 20,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16",
+          "position_set": "A",
+          "recovery": {
+            "bootstrap_draws": 19999,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "ci_method": "paired_cluster_percentile_ratio_of_means",
+            "denominator_ci95": [
+              8.505023110927958,
+              14.0279925288087
+            ],
+            "denominator_mean_bits": 11.176777363116097,
+            "estimand": "mean_cluster_absolute_residual_reduction / mean_cluster_absolute_donor_discrepancy",
+            "estimate": 1.0,
+            "excluded_bootstrap_draws": 0,
+            "excluded_clusters": 0,
+            "excluded_rows": 0,
+            "guard_bits": 0.01,
+            "n_clusters": 20,
+            "n_rows": 74,
+            "numerator_mean_bits": 11.176777363116097,
+            "small_denominator_clusters": 0,
+            "small_denominator_rows": 0,
+            "stable": true,
+            "valid_bootstrap_draws": 19999,
+            "zero_denominator_clusters": 0,
+            "zero_denominator_rows": 0
+          },
+          "technical_controls_pass": true
+        },
+        {
+          "cut": 22,
+          "descriptive_only": true,
+          "direction": "B4->B0",
+          "metrics": {
+            "absolute_donor_discrepancy_bits": {
+              "ci95": [
+                8.505023110927958,
+                14.027992528808706
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 11.176777363116097,
+              "leave_one_wearer_out_range": [
+                10.547754865981844,
+                11.636894700027952
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "absolute_residual_reduction_bits": {
+              "ci95": [
+                5.444480845512774,
+                10.70204526938126
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 7.955885555168285,
+              "leave_one_wearer_out_range": [
+                7.323837663877052,
+                8.329532173935586
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "gold_signed_donor_discrepancy_bits": {
+              "ci95": [
+                -11.753600547162595,
+                -5.036995825611049
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -8.254944195732444,
+              "leave_one_wearer_out_range": [
+                -8.848396089763066,
+                -7.472141005577996
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "gold_signed_margin_movement_bits": {
+              "ci95": [
+                -12.843189862346236,
+                -5.782608920714771
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -9.242664355298153,
+              "leave_one_wearer_out_range": [
+                -9.880983023586678,
+                -8.497609293189585
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "signed_donor_discrepancy_bits": {
+              "ci95": [
+                -4.008075379561041,
+                -0.0034682912006644825
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -1.862894225986129,
+              "leave_one_wearer_out_range": [
+                -2.207718028572046,
+                -1.106713966480255
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "signed_margin_movement_bits": {
+              "ci95": [
+                -3.368726043342828,
+                0.08832266804885747
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -1.5690953713747098,
+              "leave_one_wearer_out_range": [
+                -1.8818461141182352,
+                -0.9896531317772025
+              ],
+              "n_clusters": 20,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16",
+          "position_set": "H",
+          "recovery": {
+            "bootstrap_draws": 19999,
+            "ci95": [
+              0.6155474310337289,
+              0.7846947238938365
+            ],
+            "ci_method": "paired_cluster_percentile_ratio_of_means",
+            "denominator_ci95": [
+              8.505023110927958,
+              14.0279925288087
+            ],
+            "denominator_mean_bits": 11.176777363116097,
+            "estimand": "mean_cluster_absolute_residual_reduction / mean_cluster_absolute_donor_discrepancy",
+            "estimate": 0.7118228534660707,
+            "excluded_bootstrap_draws": 0,
+            "excluded_clusters": 0,
+            "excluded_rows": 0,
+            "guard_bits": 0.01,
+            "n_clusters": 20,
+            "n_rows": 74,
+            "numerator_mean_bits": 7.955885555168285,
+            "small_denominator_clusters": 0,
+            "small_denominator_rows": 0,
+            "stable": true,
+            "valid_bootstrap_draws": 19999,
+            "zero_denominator_clusters": 0,
+            "zero_denominator_rows": 0
+          },
+          "technical_controls_pass": true
+        },
+        {
+          "cut": 22,
+          "descriptive_only": true,
+          "direction": "B4->B0",
+          "metrics": {
+            "absolute_donor_discrepancy_bits": {
+              "ci95": [
+                8.505023110927958,
+                14.027992528808706
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 11.176777363116097,
+              "leave_one_wearer_out_range": [
+                10.547754865981844,
+                11.636894700027952
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "absolute_residual_reduction_bits": {
+              "ci95": [
+                -0.17989175808410587,
+                0.3886683376092131
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 0.1055723108108271,
+              "leave_one_wearer_out_range": [
+                0.030451727647062568,
+                0.19655144918497855
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "gold_signed_donor_discrepancy_bits": {
+              "ci95": [
+                -11.753600547162595,
+                -5.036995825611049
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -8.254944195732444,
+              "leave_one_wearer_out_range": [
+                -8.848396089763066,
+                -7.472141005577996
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "gold_signed_margin_movement_bits": {
+              "ci95": [
+                -0.6042084452556867,
+                -0.10275222341609534
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -0.3452700571014144,
+              "leave_one_wearer_out_range": [
+                -0.38566295838690023,
+                -0.2780194644068546
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "signed_donor_discrepancy_bits": {
+              "ci95": [
+                -4.008075379561041,
+                -0.0034682912006644825
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -1.862894225986129,
+              "leave_one_wearer_out_range": [
+                -2.207718028572046,
+                -1.106713966480255
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "signed_margin_movement_bits": {
+              "ci95": [
+                -0.24071930146000098,
+                0.14197047594521248
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -0.04433291596173627,
+              "leave_one_wearer_out_range": [
+                -0.09728711311398949,
+                0.017994042678084004
+              ],
+              "n_clusters": 20,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16",
+          "position_set": "V",
+          "recovery": {
+            "bootstrap_draws": 19999,
+            "ci95": [
+              -0.018085371660075313,
+              0.03245997460387934
+            ],
+            "ci_method": "paired_cluster_percentile_ratio_of_means",
+            "denominator_ci95": [
+              8.505023110927958,
+              14.0279925288087
+            ],
+            "denominator_mean_bits": 11.176777363116097,
+            "estimand": "mean_cluster_absolute_residual_reduction / mean_cluster_absolute_donor_discrepancy",
+            "estimate": 0.00944568433108642,
+            "excluded_bootstrap_draws": 0,
+            "excluded_clusters": 0,
+            "excluded_rows": 0,
+            "guard_bits": 0.01,
+            "n_clusters": 20,
+            "n_rows": 74,
+            "numerator_mean_bits": 0.1055723108108271,
+            "small_denominator_clusters": 0,
+            "small_denominator_rows": 0,
+            "stable": true,
+            "valid_bootstrap_draws": 19999,
+            "zero_denominator_clusters": 0,
+            "zero_denominator_rows": 0
+          },
+          "technical_controls_pass": true
+        },
+        {
+          "cut": 22,
+          "descriptive_only": true,
+          "direction": "B4->B0",
+          "metrics": {
+            "absolute_donor_discrepancy_bits": {
+              "ci95": [
+                8.505023110927958,
+                14.027992528808706
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 11.176777363116097,
+              "leave_one_wearer_out_range": [
+                10.547754865981844,
+                11.636894700027952
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "absolute_residual_reduction_bits": {
+              "ci95": [
+                -0.4084678056194321,
+                0.9816659352227753
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 0.26739396703312057,
+              "leave_one_wearer_out_range": [
+                0.07028333557037865,
+                0.44282135627967034
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "gold_signed_donor_discrepancy_bits": {
+              "ci95": [
+                -11.753600547162595,
+                -5.036995825611049
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -8.254944195732444,
+              "leave_one_wearer_out_range": [
+                -8.848396089763066,
+                -7.472141005577996
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "gold_signed_margin_movement_bits": {
+              "ci95": [
+                -1.0051989825185743,
+                0.8065567567538517
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -0.09532256971974089,
+              "leave_one_wearer_out_range": [
+                -0.28937689371481173,
+                0.11084445107528414
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "signed_donor_discrepancy_bits": {
+              "ci95": [
+                -4.008075379561041,
+                -0.0034682912006644825
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -1.862894225986129,
+              "leave_one_wearer_out_range": [
+                -2.207718028572046,
+                -1.106713966480255
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "signed_margin_movement_bits": {
+              "ci95": [
+                -0.2899491853707844,
+                1.2729716441301246
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 0.49281510276131923,
+              "leave_one_wearer_out_range": [
+                0.32655161836475255,
+                0.67476786987362
+              ],
+              "n_clusters": 20,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16",
+          "position_set": "K",
+          "recovery": {
+            "bootstrap_draws": 19999,
+            "ci95": [
+              -0.04333677295273857,
+              0.07990000211881607
+            ],
+            "ci_method": "paired_cluster_percentile_ratio_of_means",
+            "denominator_ci95": [
+              8.505023110927958,
+              14.0279925288087
+            ],
+            "denominator_mean_bits": 11.176777363116097,
+            "estimand": "mean_cluster_absolute_residual_reduction / mean_cluster_absolute_donor_discrepancy",
+            "estimate": 0.023924066691668525,
+            "excluded_bootstrap_draws": 0,
+            "excluded_clusters": 0,
+            "excluded_rows": 0,
+            "guard_bits": 0.01,
+            "n_clusters": 20,
+            "n_rows": 74,
+            "numerator_mean_bits": 0.26739396703312057,
+            "small_denominator_clusters": 0,
+            "small_denominator_rows": 0,
+            "stable": true,
+            "valid_bootstrap_draws": 19999,
+            "zero_denominator_clusters": 0,
+            "zero_denominator_rows": 0
+          },
+          "technical_controls_pass": true
+        },
+        {
+          "cut": 22,
+          "descriptive_only": true,
+          "direction": "B4->B0",
+          "metrics": {
+            "absolute_donor_discrepancy_bits": {
+              "ci95": [
+                8.505023110927958,
+                14.027992528808706
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 11.176777363116097,
+              "leave_one_wearer_out_range": [
+                10.547754865981844,
+                11.636894700027952
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "absolute_residual_reduction_bits": {
+              "ci95": [
+                8.505023110927958,
+                14.027992528808706
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 11.176777363116097,
+              "leave_one_wearer_out_range": [
+                10.547754865981844,
+                11.636894700027952
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "gold_signed_donor_discrepancy_bits": {
+              "ci95": [
+                -11.753600547162595,
+                -5.036995825611049
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -8.254944195732444,
+              "leave_one_wearer_out_range": [
+                -8.848396089763066,
+                -7.472141005577996
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "gold_signed_margin_movement_bits": {
+              "ci95": [
+                -11.753600547162595,
+                -5.036995825611049
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -8.254944195732444,
+              "leave_one_wearer_out_range": [
+                -8.848396089763066,
+                -7.472141005577996
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "signed_donor_discrepancy_bits": {
+              "ci95": [
+                -4.008075379561041,
+                -0.0034682912006644825
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -1.862894225986129,
+              "leave_one_wearer_out_range": [
+                -2.207718028572046,
+                -1.106713966480255
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "signed_margin_movement_bits": {
+              "ci95": [
+                -4.008075379561041,
+                -0.0034682912006644825
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -1.862894225986129,
+              "leave_one_wearer_out_range": [
+                -2.207718028572046,
+                -1.106713966480255
+              ],
+              "n_clusters": 20,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16",
+          "position_set": "A",
+          "recovery": {
+            "bootstrap_draws": 19999,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "ci_method": "paired_cluster_percentile_ratio_of_means",
+            "denominator_ci95": [
+              8.505023110927958,
+              14.0279925288087
+            ],
+            "denominator_mean_bits": 11.176777363116097,
+            "estimand": "mean_cluster_absolute_residual_reduction / mean_cluster_absolute_donor_discrepancy",
+            "estimate": 1.0,
+            "excluded_bootstrap_draws": 0,
+            "excluded_clusters": 0,
+            "excluded_rows": 0,
+            "guard_bits": 0.01,
+            "n_clusters": 20,
+            "n_rows": 74,
+            "numerator_mean_bits": 11.176777363116097,
+            "small_denominator_clusters": 0,
+            "small_denominator_rows": 0,
+            "stable": true,
+            "valid_bootstrap_draws": 19999,
+            "zero_denominator_clusters": 0,
+            "zero_denominator_rows": 0
+          },
+          "technical_controls_pass": true
+        },
+        {
+          "cut": 34,
+          "descriptive_only": true,
+          "direction": "B4->B0",
+          "metrics": {
+            "absolute_donor_discrepancy_bits": {
+              "ci95": [
+                8.505023110927958,
+                14.027992528808706
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 11.176777363116097,
+              "leave_one_wearer_out_range": [
+                10.547754865981844,
+                11.636894700027952
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "absolute_residual_reduction_bits": {
+              "ci95": [
+                1.3271409421018725,
+                5.366833850483353
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 3.1659689504602344,
+              "leave_one_wearer_out_range": [
+                2.4973543985751494,
+                3.4939529869535972
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "gold_signed_donor_discrepancy_bits": {
+              "ci95": [
+                -11.753600547162595,
+                -5.036995825611049
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -8.254944195732444,
+              "leave_one_wearer_out_range": [
+                -8.848396089763066,
+                -7.472141005577996
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "gold_signed_margin_movement_bits": {
+              "ci95": [
+                -6.012037046073855,
+                -1.378468866772841
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -3.595020388150848,
+              "leave_one_wearer_out_range": [
+                -4.11168578256783,
+                -2.948987490881058
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "signed_donor_discrepancy_bits": {
+              "ci95": [
+                -4.008075379561041,
+                -0.0034682912006644825
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -1.862894225986129,
+              "leave_one_wearer_out_range": [
+                -2.207718028572046,
+                -1.106713966480255
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "signed_margin_movement_bits": {
+              "ci95": [
+                -0.1453286876708827,
+                1.2408584871687638
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 0.5559681527810351,
+              "leave_one_wearer_out_range": [
+                0.4092430003438646,
+                0.7394651347532516
+              ],
+              "n_clusters": 20,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16",
+          "position_set": "H",
+          "recovery": {
+            "bootstrap_draws": 19999,
+            "ci95": [
+              0.13489408969278685,
+              0.42732124670925753
+            ],
+            "ci_method": "paired_cluster_percentile_ratio_of_means",
+            "denominator_ci95": [
+              8.505023110927958,
+              14.0279925288087
+            ],
+            "denominator_mean_bits": 11.176777363116097,
+            "estimand": "mean_cluster_absolute_residual_reduction / mean_cluster_absolute_donor_discrepancy",
+            "estimate": 0.2832631310084143,
+            "excluded_bootstrap_draws": 0,
+            "excluded_clusters": 0,
+            "excluded_rows": 0,
+            "guard_bits": 0.01,
+            "n_clusters": 20,
+            "n_rows": 74,
+            "numerator_mean_bits": 3.1659689504602344,
+            "small_denominator_clusters": 0,
+            "small_denominator_rows": 0,
+            "stable": true,
+            "valid_bootstrap_draws": 19999,
+            "zero_denominator_clusters": 0,
+            "zero_denominator_rows": 0
+          },
+          "technical_controls_pass": true
+        },
+        {
+          "cut": 34,
+          "descriptive_only": true,
+          "direction": "B4->B0",
+          "metrics": {
+            "absolute_donor_discrepancy_bits": {
+              "ci95": [
+                8.505023110927958,
+                14.027992528808706
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 11.176777363116097,
+              "leave_one_wearer_out_range": [
+                10.547754865981844,
+                11.636894700027952
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "absolute_residual_reduction_bits": {
+              "ci95": [
+                -0.18433226505527042,
+                0.16991356542031294
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -0.005283299192217863,
+              "leave_one_wearer_out_range": [
+                -0.05064560117364031,
+                0.0347771450856792
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "gold_signed_donor_discrepancy_bits": {
+              "ci95": [
+                -11.753600547162595,
+                -5.036995825611049
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -8.254944195732444,
+              "leave_one_wearer_out_range": [
+                -8.848396089763066,
+                -7.472141005577996
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "gold_signed_margin_movement_bits": {
+              "ci95": [
+                -0.08685760857408663,
+                0.23960505325063958
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 0.06614701309105726,
+              "leave_one_wearer_out_range": [
+                0.02454420122980718,
+                0.09691625177263394
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "signed_donor_discrepancy_bits": {
+              "ci95": [
+                -4.008075379561041,
+                -0.0034682912006644825
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -1.862894225986129,
+              "leave_one_wearer_out_range": [
+                -2.207718028572046,
+                -1.106713966480255
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "signed_margin_movement_bits": {
+              "ci95": [
+                -0.029564283405651794,
+                0.2169478479345897
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 0.090144927696335,
+              "leave_one_wearer_out_range": [
+                0.056923734131505435,
+                0.109126505939176
+              ],
+              "n_clusters": 20,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16",
+          "position_set": "V",
+          "recovery": {
+            "bootstrap_draws": 19999,
+            "ci95": [
+              -0.014476144687716132,
+              0.018209263021576952
+            ],
+            "ci_method": "paired_cluster_percentile_ratio_of_means",
+            "denominator_ci95": [
+              8.505023110927958,
+              14.0279925288087
+            ],
+            "denominator_mean_bits": 11.176777363116097,
+            "estimand": "mean_cluster_absolute_residual_reduction / mean_cluster_absolute_donor_discrepancy",
+            "estimate": -0.0004727032686231189,
+            "excluded_bootstrap_draws": 0,
+            "excluded_clusters": 0,
+            "excluded_rows": 0,
+            "guard_bits": 0.01,
+            "n_clusters": 20,
+            "n_rows": 74,
+            "numerator_mean_bits": -0.005283299192217863,
+            "small_denominator_clusters": 0,
+            "small_denominator_rows": 0,
+            "stable": true,
+            "valid_bootstrap_draws": 19999,
+            "zero_denominator_clusters": 0,
+            "zero_denominator_rows": 0
+          },
+          "technical_controls_pass": true
+        },
+        {
+          "cut": 34,
+          "descriptive_only": true,
+          "direction": "B4->B0",
+          "metrics": {
+            "absolute_donor_discrepancy_bits": {
+              "ci95": [
+                8.505023110927958,
+                14.027992528808706
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 11.176777363116097,
+              "leave_one_wearer_out_range": [
+                10.547754865981844,
+                11.636894700027952
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "absolute_residual_reduction_bits": {
+              "ci95": [
+                4.097598104732297,
+                9.060843511953374
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 6.419546943494156,
+              "leave_one_wearer_out_range": [
+                5.582855243426214,
+                6.873687644646229
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "gold_signed_donor_discrepancy_bits": {
+              "ci95": [
+                -11.753600547162595,
+                -5.036995825611049
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -8.254944195732444,
+              "leave_one_wearer_out_range": [
+                -8.848396089763066,
+                -7.472141005577996
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "gold_signed_margin_movement_bits": {
+              "ci95": [
+                -7.773607916555085,
+                -2.4362855314422878
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -4.910352530428075,
+              "leave_one_wearer_out_range": [
+                -5.349128979685468,
+                -3.9942295454619177
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "signed_donor_discrepancy_bits": {
+              "ci95": [
+                -4.008075379561041,
+                -0.0034682912006644825
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -1.862894225986129,
+              "leave_one_wearer_out_range": [
+                -2.207718028572046,
+                -1.106713966480255
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "signed_margin_movement_bits": {
+              "ci95": [
+                -3.715726312641734,
+                0.12113905605937571
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -1.7179671640246634,
+              "leave_one_wearer_out_range": [
+                -2.125162405699445,
+                -1.068056167543533
+              ],
+              "n_clusters": 20,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16",
+          "position_set": "K",
+          "recovery": {
+            "bootstrap_draws": 19999,
+            "ci95": [
+              0.4202505483351974,
+              0.712789388425312
+            ],
+            "ci_method": "paired_cluster_percentile_ratio_of_means",
+            "denominator_ci95": [
+              8.505023110927958,
+              14.0279925288087
+            ],
+            "denominator_mean_bits": 11.176777363116097,
+            "estimand": "mean_cluster_absolute_residual_reduction / mean_cluster_absolute_donor_discrepancy",
+            "estimate": 0.5743647506730312,
+            "excluded_bootstrap_draws": 0,
+            "excluded_clusters": 0,
+            "excluded_rows": 0,
+            "guard_bits": 0.01,
+            "n_clusters": 20,
+            "n_rows": 74,
+            "numerator_mean_bits": 6.419546943494156,
+            "small_denominator_clusters": 0,
+            "small_denominator_rows": 0,
+            "stable": true,
+            "valid_bootstrap_draws": 19999,
+            "zero_denominator_clusters": 0,
+            "zero_denominator_rows": 0
+          },
+          "technical_controls_pass": true
+        },
+        {
+          "cut": 34,
+          "descriptive_only": true,
+          "direction": "B4->B0",
+          "metrics": {
+            "absolute_donor_discrepancy_bits": {
+              "ci95": [
+                8.505023110927958,
+                14.027992528808706
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 11.176777363116097,
+              "leave_one_wearer_out_range": [
+                10.547754865981844,
+                11.636894700027952
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "absolute_residual_reduction_bits": {
+              "ci95": [
+                8.505023110927958,
+                14.027992528808706
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": 11.176777363116097,
+              "leave_one_wearer_out_range": [
+                10.547754865981844,
+                11.636894700027952
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "gold_signed_donor_discrepancy_bits": {
+              "ci95": [
+                -11.753600547162595,
+                -5.036995825611049
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -8.254944195732444,
+              "leave_one_wearer_out_range": [
+                -8.848396089763066,
+                -7.472141005577996
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "gold_signed_margin_movement_bits": {
+              "ci95": [
+                -11.753600547162595,
+                -5.036995825611049
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -8.254944195732444,
+              "leave_one_wearer_out_range": [
+                -8.848396089763066,
+                -7.472141005577996
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "signed_donor_discrepancy_bits": {
+              "ci95": [
+                -4.008075379561041,
+                -0.0034682912006644825
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -1.862894225986129,
+              "leave_one_wearer_out_range": [
+                -2.207718028572046,
+                -1.106713966480255
+              ],
+              "n_clusters": 20,
+              "valid": true
+            },
+            "signed_margin_movement_bits": {
+              "ci95": [
+                -4.008075379561041,
+                -0.0034682912006644825
+              ],
+              "ci_method": "cluster_percentile",
+              "estimate": -1.862894225986129,
+              "leave_one_wearer_out_range": [
+                -2.207718028572046,
+                -1.106713966480255
+              ],
+              "n_clusters": 20,
+              "valid": true
+            }
+          },
+          "model_key": "gemma4_31b_hf_bf16",
+          "position_set": "A",
+          "recovery": {
+            "bootstrap_draws": 19999,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "ci_method": "paired_cluster_percentile_ratio_of_means",
+            "denominator_ci95": [
+              8.505023110927958,
+              14.0279925288087
+            ],
+            "denominator_mean_bits": 11.176777363116097,
+            "estimand": "mean_cluster_absolute_residual_reduction / mean_cluster_absolute_donor_discrepancy",
+            "estimate": 1.0,
+            "excluded_bootstrap_draws": 0,
+            "excluded_clusters": 0,
+            "excluded_rows": 0,
+            "guard_bits": 0.01,
+            "n_clusters": 20,
+            "n_rows": 74,
+            "numerator_mean_bits": 11.176777363116097,
+            "small_denominator_clusters": 0,
+            "small_denominator_rows": 0,
+            "stable": true,
+            "valid_bootstrap_draws": 19999,
+            "zero_denominator_clusters": 0,
+            "zero_denominator_rows": 0
+          },
+          "technical_controls_pass": true
+        }
+      ],
+      "release_sha256": "dd9826601ad385ae01d1069046130477ece40d0f3b7111cd7e4ee74cda37bd0e",
+      "slurm_elapsed_seconds": 2058,
+      "source_analysis_sha256": "36258b4a03531422d7f3a5bf88f50376d6a1e369aac932a344ae5d5aa02824dc",
+      "technical_checks": {
+        "failed_checks": 0,
+        "failure_count": 0,
+        "n_checks": 1332,
+        "status": "pass"
+      },
+      "warnings": [
+        "Descriptive only: no hypothesis tests, multiplicity correction, or confirmatory claim.",
+        "Both candidate orders and all eligible episodes contribute equally within each participant.",
+        "Null and negative recognition benefits are valid outcomes, not exclusion criteria.",
+        "Small donor discrepancies retain all clusters; unstable recovery intervals are withheld.",
+        "Raw A/B movement can cancel across orders; gold-oriented and by-order summaries are included.",
+        "Canary intervals are technical diagnostics, not scientific evidence.",
+        "Row validation does not audit pixels, event annotations, or hidden-state geometry."
+      ],
+      "wearers": 20
+    }
+  },
+  "version": 1
+}

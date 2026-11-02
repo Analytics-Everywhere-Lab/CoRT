@@ -1,0 +1,784 @@
+{
+  "cached_validation_621156": {
+    "bootstrap_draws": 10000,
+    "bootstrap_seed": 20261015,
+    "conditions": {
+      "C379_L22_merge": {
+        "ci95_percent": [
+          -0.5712214993794817,
+          0.4010577507892153
+        ],
+        "latency_change_percent": -0.07721852242470462,
+        "seed_reporting": "individual",
+        "warm_request_ms": 305.68420190581014
+      },
+      "C379_L22_merge__correct_L34_FQ_seed17": {
+        "ci95_percent": [
+          6.448351197976264,
+          7.829506516673499
+        ],
+        "latency_change_percent": 7.111873555550052,
+        "seed_reporting": "individual",
+        "warm_request_ms": 327.6771032420913
+      },
+      "C379_L22_merge__correct_L34_FQ_seed29": {
+        "ci95_percent": [
+          6.562768588721605,
+          7.756930873414159
+        ],
+        "latency_change_percent": 7.166263490114244,
+        "seed_reporting": "individual",
+        "warm_request_ms": 327.8434931633196
+      },
+      "C379_L22_merge__correct_L34_FQ_seed_mean": {
+        "ci95_percent": [
+          6.5848933967591075,
+          7.667079348095954
+        ],
+        "latency_change_percent": 7.139068522832148,
+        "seed_reporting": "mean of two separately evaluated adapters, not ensemble",
+        "warm_request_ms": 327.7602982027054
+      },
+      "C384_L22_merge__F67_L34_merge": {
+        "ci95_percent": [
+          -3.100301566647395,
+          -2.2166367605451494
+        ],
+        "latency_change_percent": -2.654656503570796,
+        "seed_reporting": "individual",
+        "warm_request_ms": 297.7992925730452
+      },
+      "F0_L22_prune": {
+        "ci95_percent": [
+          -3.707120896711939,
+          -2.867182376463753
+        ],
+        "latency_change_percent": -3.304209654966206,
+        "seed_reporting": "individual",
+        "warm_request_ms": 295.81217678479754
+      },
+      "F0_L30_prune": {
+        "ci95_percent": [
+          -2.559920209683057,
+          -1.687345350811919
+        ],
+        "latency_change_percent": -2.1127494634401334,
+        "seed_reporting": "individual",
+        "warm_request_ms": 299.45709691575814
+      },
+      "F0_L34_prune": {
+        "ci95_percent": [
+          -1.8369806536114621,
+          -0.8249144232875809
+        ],
+        "latency_change_percent": -1.322841035028699,
+        "seed_reporting": "individual",
+        "warm_request_ms": 301.87358816977525
+      },
+      "F67_L34_merge": {
+        "ci95_percent": [
+          -0.7171564432776442,
+          0.04381728728561683
+        ],
+        "latency_change_percent": -0.33580598583000665,
+        "seed_reporting": "individual",
+        "warm_request_ms": 304.89313002805585
+      },
+      "F67_L34_merge__correct_L34_readout_seed17": {
+        "ci95_percent": [
+          6.563824583741064,
+          7.722550895646081
+        ],
+        "latency_change_percent": 7.147819241547482,
+        "seed_reporting": "individual",
+        "warm_request_ms": 327.7870684389523
+      },
+      "F67_L34_merge__correct_L34_readout_seed29": {
+        "ci95_percent": [
+          6.445084531824254,
+          7.332964376594991
+        ],
+        "latency_change_percent": 6.894962995624998,
+        "seed_reporting": "individual",
+        "warm_request_ms": 327.01352952631646
+      },
+      "F67_L34_merge__correct_L34_readout_seed_mean": {
+        "ci95_percent": [
+          6.583969312568944,
+          7.414544963599723
+        ],
+        "latency_change_percent": 7.021391118586262,
+        "seed_reporting": "mean of two separately evaluated adapters, not ensemble",
+        "warm_request_ms": 327.4002989826344
+      },
+      "Fhalf_Chalf_L34_prune": {
+        "ci95_percent": [
+          -4.897776904283164,
+          -4.318629158586144
+        ],
+        "latency_change_percent": -4.5949324183834905,
+        "seed_reporting": "individual",
+        "warm_request_ms": 291.86359216793096
+      },
+      "native__correct_L34_CQ_seed17": {
+        "ci95_percent": [
+          8.268274673090424,
+          9.369877437105979
+        ],
+        "latency_change_percent": 8.814729089755534,
+        "seed_reporting": "individual",
+        "warm_request_ms": 332.8864861999838
+      },
+      "native__correct_L34_CQ_seed29": {
+        "ci95_percent": [
+          8.216626214326748,
+          9.44810263037461
+        ],
+        "latency_change_percent": 8.816735105126682,
+        "seed_reporting": "individual",
+        "warm_request_ms": 332.89262301081584
+      },
+      "native__correct_L34_CQ_seed_mean": {
+        "ci95_percent": [
+          8.279690701700128,
+          9.358895258536682
+        ],
+        "latency_change_percent": 8.81573209744111,
+        "seed_reporting": "mean of two separately evaluated adapters, not ensemble",
+        "warm_request_ms": 332.8895546053998
+      },
+      "native__correct_L34_FQ_seed17": {
+        "ci95_percent": [
+          8.163661703272462,
+          9.212831732302366
+        ],
+        "latency_change_percent": 8.692866906670925,
+        "seed_reporting": "individual",
+        "warm_request_ms": 332.51368488653077
+      },
+      "native__correct_L34_FQ_seed29": {
+        "ci95_percent": [
+          8.14633533922032,
+          9.164073172636424
+        ],
+        "latency_change_percent": 8.663492980808973,
+        "seed_reporting": "individual",
+        "warm_request_ms": 332.42382404647833
+      },
+      "native__correct_L34_FQ_seed_mean": {
+        "ci95_percent": [
+          8.195691499782352,
+          9.107928522001673
+        ],
+        "latency_change_percent": 8.678179943739961,
+        "seed_reporting": "mean of two separately evaluated adapters, not ensemble",
+        "warm_request_ms": 332.46875446650455
+      },
+      "native__correct_L34_readout_seed17": {
+        "ci95_percent": [
+          8.185662599010877,
+          9.243556930065255
+        ],
+        "latency_change_percent": 8.718172567488768,
+        "seed_reporting": "individual",
+        "warm_request_ms": 332.59110007270164
+      },
+      "native__correct_L34_readout_seed29": {
+        "ci95_percent": [
+          8.123653316594698,
+          9.047074016399666
+        ],
+        "latency_change_percent": 8.591045249910056,
+        "seed_reporting": "individual",
+        "warm_request_ms": 332.20219163720947
+      },
+      "native__correct_L34_readout_seed_mean": {
+        "ci95_percent": [
+          8.213020125561163,
+          9.04525740349481
+        ],
+        "latency_change_percent": 8.654608908699423,
+        "seed_reporting": "mean of two separately evaluated adapters, not ensemble",
+        "warm_request_ms": 332.3966458549556
+      }
+    },
+    "draw_index_sha256_by_source": {
+      "escape": "031c3585e54a49a396665c2395f58515c0eb42753ddaed2f733dc41a0f2c3fc8",
+      "thu_read": "f7189db1cd454744beeeb84304ce420c43607536be116c155cfbd01b9db7cdb7",
+      "youtube": "3823ba1a9ef0fad16dd138013dd23ec64bf2f7109104c2da7575c3d04e35edf3"
+    },
+    "method": "Original source-equal/unit-equal bootstrap; consume original full-cohort accuracy RNG draws first. Pair all conditions by request/repeat/device and shared unit draws. Average five repeats per request, requests within unit, separately evaluated seeds within unit, then units within source and three sources equally. Draw-wise 100*(condition/native-1), percentile 95%; no endpoint division.",
+    "minimum_bootstrap_native_ms": 303.464018624682,
+    "missing_timing_treatment": "Six untimed YouTube units excluded; no zero-fill, imputation, or accuracy-cohort extrapolation. Equal-source weighting retained over 8 THU-READ, 15 escape and 21 YouTube timed units.",
+    "native_ms": 305.9204291409881,
+    "repeats": 5,
+    "requests_per_condition": 128,
+    "source_unit_counts": {
+      "escape": {
+        "full_units": 15,
+        "timed_units": 15
+      },
+      "thu_read": {
+        "full_units": 8,
+        "timed_units": 8
+      },
+      "youtube": {
+        "full_units": 27,
+        "timed_units": 21
+      }
+    },
+    "timing_rows": 11520
+  },
+  "comparison_tolerance": {
+    "atol": 1e-12,
+    "rtol": 1e-11
+  },
+  "existing_artifacts": "Original Gemma factorial summary contains marginal rho intervals but no CQ/K ratio interval or draws. The inspected original analysis directory has four summary/table files, no saved draw file. Original timing summary contains paired speedup and marginal latency intervals for 18 individual conditions, but not seed-mean latency-change intervals. Reconstructed draws checked against saved intervals.",
+  "gemma_l34_CQ_over_K": {
+    "bootstrap_draws": 10000,
+    "bootstrap_seed": 20260927,
+    "ci95": [
+      0.7152762692312669,
+      0.7751466453260072
+    ],
+    "cluster_count": 46,
+    "draw_index_sha256": "42ccfd60a84065c3d05653923537f2dad2aa3c3b49628098b6460d3e1ce5e577",
+    "estimate": 0.7461402173753636,
+    "method": "Paired draw-wise rho(CQ)/rho(CQPR); CQPR verified equal to K; percentile 95% interval. Original sorted participant clusters and eight-row means; ratio of means in each recovery, not mean of individual recoveries.",
+    "minimum_bootstrap_rho_K": 0.9042787763137254,
+    "nonpositive_denominator_draws": 0,
+    "rho_CQ": 0.6960654182112112,
+    "rho_K": 0.9328882185974421,
+    "rows_per_cluster": 8
+  },
+  "point_and_interval_reproduction_checks": [
+    {
+      "check": "Gemma CQ and K paired baseline gaps",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "Gemma CQ saved point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "Gemma CQ saved marginal CI",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "Gemma CQPR saved point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "Gemma CQPR saved marginal CI",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "C379_L22_merge CSV latency point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "C379_L22_merge CSV latency-change point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "C379_L22_merge sealed latency point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "C379_L22_merge sealed latency CI",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "C379_L22_merge sealed paired speedup CI",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "C379_L22_merge__correct_L34_FQ_seed29 CSV latency point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "C379_L22_merge__correct_L34_FQ_seed29 CSV latency-change point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "C379_L22_merge__correct_L34_FQ_seed29 sealed latency point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "C379_L22_merge__correct_L34_FQ_seed29 sealed latency CI",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "C379_L22_merge__correct_L34_FQ_seed29 sealed paired speedup CI",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "native CSV latency point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "native CSV latency-change point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "native sealed latency point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "native sealed latency CI",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "native sealed paired speedup CI",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "C384_L22_merge__F67_L34_merge CSV latency point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "C384_L22_merge__F67_L34_merge CSV latency-change point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "C384_L22_merge__F67_L34_merge sealed latency point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "C384_L22_merge__F67_L34_merge sealed latency CI",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "C384_L22_merge__F67_L34_merge sealed paired speedup CI",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "native__correct_L34_readout_seed29 CSV latency point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "native__correct_L34_readout_seed29 CSV latency-change point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "native__correct_L34_readout_seed29 sealed latency point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "native__correct_L34_readout_seed29 sealed latency CI",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "native__correct_L34_readout_seed29 sealed paired speedup CI",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "C379_L22_merge__correct_L34_FQ_seed17 CSV latency point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "C379_L22_merge__correct_L34_FQ_seed17 CSV latency-change point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "C379_L22_merge__correct_L34_FQ_seed17 sealed latency point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "C379_L22_merge__correct_L34_FQ_seed17 sealed latency CI",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "C379_L22_merge__correct_L34_FQ_seed17 sealed paired speedup CI",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "Fhalf_Chalf_L34_prune CSV latency point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "Fhalf_Chalf_L34_prune CSV latency-change point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "Fhalf_Chalf_L34_prune sealed latency point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "Fhalf_Chalf_L34_prune sealed latency CI",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "Fhalf_Chalf_L34_prune sealed paired speedup CI",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "F67_L34_merge__correct_L34_readout_seed17 CSV latency point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "F67_L34_merge__correct_L34_readout_seed17 CSV latency-change point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "F67_L34_merge__correct_L34_readout_seed17 sealed latency point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "F67_L34_merge__correct_L34_readout_seed17 sealed latency CI",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "F67_L34_merge__correct_L34_readout_seed17 sealed paired speedup CI",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "F0_L22_prune CSV latency point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "F0_L22_prune CSV latency-change point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "F0_L22_prune sealed latency point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "F0_L22_prune sealed latency CI",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "F0_L22_prune sealed paired speedup CI",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "native__correct_L34_readout_seed17 CSV latency point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "native__correct_L34_readout_seed17 CSV latency-change point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "native__correct_L34_readout_seed17 sealed latency point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "native__correct_L34_readout_seed17 sealed latency CI",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "native__correct_L34_readout_seed17 sealed paired speedup CI",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "F67_L34_merge__correct_L34_readout_seed29 CSV latency point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "F67_L34_merge__correct_L34_readout_seed29 CSV latency-change point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "F67_L34_merge__correct_L34_readout_seed29 sealed latency point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "F67_L34_merge__correct_L34_readout_seed29 sealed latency CI",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "F67_L34_merge__correct_L34_readout_seed29 sealed paired speedup CI",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "native__correct_L34_FQ_seed29 CSV latency point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "native__correct_L34_FQ_seed29 CSV latency-change point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "native__correct_L34_FQ_seed29 sealed latency point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "native__correct_L34_FQ_seed29 sealed latency CI",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "native__correct_L34_FQ_seed29 sealed paired speedup CI",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "native__correct_L34_CQ_seed17 CSV latency point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "native__correct_L34_CQ_seed17 CSV latency-change point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "native__correct_L34_CQ_seed17 sealed latency point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "native__correct_L34_CQ_seed17 sealed latency CI",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "native__correct_L34_CQ_seed17 sealed paired speedup CI",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "native__correct_L34_CQ_seed29 CSV latency point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "native__correct_L34_CQ_seed29 CSV latency-change point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "native__correct_L34_CQ_seed29 sealed latency point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "native__correct_L34_CQ_seed29 sealed latency CI",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "native__correct_L34_CQ_seed29 sealed paired speedup CI",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "F0_L30_prune CSV latency point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "F0_L30_prune CSV latency-change point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "F0_L30_prune sealed latency point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "F0_L30_prune sealed latency CI",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "F0_L30_prune sealed paired speedup CI",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "F0_L34_prune CSV latency point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "F0_L34_prune CSV latency-change point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "F0_L34_prune sealed latency point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "F0_L34_prune sealed latency CI",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "F0_L34_prune sealed paired speedup CI",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "native__correct_L34_FQ_seed17 CSV latency point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "native__correct_L34_FQ_seed17 CSV latency-change point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "native__correct_L34_FQ_seed17 sealed latency point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "native__correct_L34_FQ_seed17 sealed latency CI",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "native__correct_L34_FQ_seed17 sealed paired speedup CI",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "F67_L34_merge CSV latency point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "F67_L34_merge CSV latency-change point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "F67_L34_merge sealed latency point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "F67_L34_merge sealed latency CI",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "F67_L34_merge sealed paired speedup CI",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "native__correct_L34_FQ_seed_mean CSV latency point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "native__correct_L34_FQ_seed_mean CSV latency-change point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "native__correct_L34_CQ_seed_mean CSV latency point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "native__correct_L34_CQ_seed_mean CSV latency-change point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "native__correct_L34_readout_seed_mean CSV latency point",
+      "max_abs_error": 5.684341886080802e-14
+    },
+    {
+      "check": "native__correct_L34_readout_seed_mean CSV latency-change point",
+      "max_abs_error": 2.1316282072803006e-14
+    },
+    {
+      "check": "C379_L22_merge__correct_L34_FQ_seed_mean CSV latency point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "C379_L22_merge__correct_L34_FQ_seed_mean CSV latency-change point",
+      "max_abs_error": 0.0
+    },
+    {
+      "check": "F67_L34_merge__correct_L34_readout_seed_mean CSV latency point",
+      "max_abs_error": 5.684341886080802e-14
+    },
+    {
+      "check": "F67_L34_merge__correct_L34_readout_seed_mean CSV latency-change point",
+      "max_abs_error": 2.220446049250313e-14
+    }
+  ],
+  "reporting_status": "Post hoc reporting; descriptive 95% intervals only. No new confirmatory tests, scientific status changes, model execution or training.",
+  "runtime": {
+    "cpu_threads": 1,
+    "deadline_seconds": 120,
+    "max_input_file_bytes": 10485760,
+    "max_total_input_bytes": 67108864,
+    "numpy_version": "2.4.6",
+    "python_version": "3.12.10"
+  },
+  "source_files_anonymous": [
+    {
+      "bytes": 1954340,
+      "sha256": "6255bedf734757f17efc68eb51746b0842020da2a142e80a23979337095f51d0"
+    },
+    {
+      "bytes": 5467,
+      "sha256": "272267e90364808ca9efd487c8691824ca3421e90e8ef4145cb3afa3dca53b29"
+    },
+    {
+      "bytes": 117847,
+      "sha256": "9326bf345812bad731086ee100d73a66519030055c15fb4beb37d5d33dc6012a"
+    },
+    {
+      "bytes": 22426,
+      "sha256": "a58c4f03c8c8557f311f4b21ce04441df96580da7421fcaef0fbb9a9e93871c4"
+    },
+    {
+      "bytes": 19634,
+      "sha256": "2961726cc9debfefc611565126e67185ef4db4e6250a8b3bb5be11f642685324"
+    },
+    {
+      "bytes": 5116,
+      "sha256": "85f554a452ff54a597b5c5754bdc16c7a16b1f2b0aea1f8d755e35998ca10c3a"
+    },
+    {
+      "bytes": 72306,
+      "sha256": "f7ced956476fad63fc570c27e216a2c33079956e03cd17745961fabe3f74a0b7"
+    },
+    {
+      "bytes": 77581,
+      "sha256": "5c9c86a114a89cef226261fa5c77b8ac648bf564a7bb198dc657bdd171c6603f"
+    },
+    {
+      "bytes": 38953,
+      "sha256": "2e755df4afcd6dd24a9d2e2b4a7b0aa79740e1f4e96499cd7c0d45eb039d967c"
+    },
+    {
+      "bytes": 9557,
+      "sha256": "33da7ce0148ea85e834ecc5c5f5710f1022fd023101fc6c6ecdb38e7f4d8cf40"
+    },
+    {
+      "bytes": 5116,
+      "sha256": "85f554a452ff54a597b5c5754bdc16c7a16b1f2b0aea1f8d755e35998ca10c3a"
+    },
+    {
+      "bytes": 120054,
+      "sha256": "2aef0a6fb6fdb6476a768efbe09a89e901945865cbd641d7d840a6072e9b1a66"
+    },
+    {
+      "bytes": 4609130,
+      "sha256": "fb2ed4588b8963a7795ef78b58daea5479e607e7048c87aa8fa2465f62a231fb"
+    },
+    {
+      "bytes": 7686078,
+      "sha256": "92cc5e0ed598e506d356a6ff8b14fcfaad84449502fcccc29920ee0c9067f14e"
+    },
+    {
+      "bytes": 4609600,
+      "sha256": "95e06191c196a0ff8424df4f3c12ac0314dcdca007395120318bc06b1761ffba"
+    },
+    {
+      "bytes": 7681087,
+      "sha256": "50ca554a5ca0f8fb7638c5360516b38243fea9cf4d0a4ef340804770f73e0b09"
+    },
+    {
+      "bytes": 104377,
+      "sha256": "054ec59d991c59bcb8ba9501fb489eeca65703b188e69550ba6d9415d55e05fd"
+    },
+    {
+      "bytes": 20836,
+      "sha256": "18b17c1b5a04257cfd50175628da424007c72d1475730d0893f7127c95f3bfa9"
+    },
+    {
+      "bytes": 965,
+      "sha256": "351265062574ca721d22bd18317f21d5d51d8a038a8fe5173816ac4fcca7731b"
+    },
+    {
+      "bytes": 17831,
+      "sha256": "c24107765b8eee4e33c0f6d513e1ef01331ebe8f753d7d297d6de46b0b9c61cd"
+    },
+    {
+      "bytes": 3944877,
+      "sha256": "f3d3facd1689b95b307c26944d6cde7a1f24b5f9428558e6b4ea7a7b0604c608"
+    },
+    {
+      "bytes": 8594732,
+      "sha256": "8fe2b671d9c530c2f1fe5bfb2aaeaa44eeba065cb691b94226fd09e2fd96511f"
+    },
+    {
+      "bytes": 8056183,
+      "sha256": "3854d1b685eff0b7f536cd7f1d6215481d3404d056ec3c96abc4785778aec1e1"
+    },
+    {
+      "bytes": 8058305,
+      "sha256": "00d4aa08ea4201adfeffaabe9fbe7d8a199feb27c0506b45f80eed797bc888fa"
+    }
+  ],
+  "status": "success"
+}

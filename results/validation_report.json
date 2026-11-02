@@ -1,0 +1,18 @@
+{
+  "commands": [
+    {"command": "python analysis/rebuild_public_results.py", "status": "passed"},
+    {"command": "python analysis/replay_cluster_sufficient_stats.py", "status": "passed", "datasets": 4, "reference_values": 252, "discrepancies": 0},
+    {"command": "python analysis/render_public_figures.py", "status": "passed", "data_only_pngs": 6},
+    {"command": "python -B -m unittest discover -s tests -v", "status": "passed", "tests": 29}
+  ],
+  "aggregate_source_projection_checks": 13,
+  "final_practical_original_summary_checks": 2,
+  "rebuild_byte_idempotent": true,
+  "render_byte_idempotent": true,
+  "aggregate_inputs_and_source_receipts_unchanged_by_rebuild": true,
+  "static_arrays_and_expected_bytes_preserved": true,
+  "privacy_path_and_identity_hits": 0,
+  "visual_inspection": {"figures": [3, 4, 5, 6, 7, 8], "status": "checked_nonblank_and_legible"},
+  "temporal_and_practical_ci_replayed": false,
+  "original_source_files_modified": false
+}

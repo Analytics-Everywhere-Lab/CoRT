@@ -1,0 +1,54 @@
+{
+  "alpha": null,
+  "attention_backend": "sdpa",
+  "bootstrap_draws": 19999,
+  "candidate_policy": "preserved audited static pair; no new outcome-based selection",
+  "confirmation_limit": null,
+  "confirmation_secondary_corruption": "B9",
+  "current_canary_limit": 4,
+  "current_limit": 96,
+  "cut_selection": "fixed cuts 22,34; no outcome-based selection",
+  "dtype": "bfloat16",
+  "exploration_limit": 60,
+  "exposure_policy": {
+    "historical_static_sha256": "6c7bba92d04f5dfdf22365585242881d7062034023c908dd3cbd3b32a455ee4c",
+    "kind": "matched_static_reuse",
+    "temporal_exposure_sha256": "e2a1032b97ed1f28ea361b8910d35e4726780d47b7a7795069ba19b82dfe51c9",
+    "version": 1
+  },
+  "fixed_cuts": [
+    22,
+    34
+  ],
+  "history_offsets_s": [
+    -2,
+    -1.75,
+    -1.5,
+    -1.25,
+    -1,
+    -0.75,
+    -0.5,
+    -0.25,
+    0
+  ],
+  "minimum_confirmation_clusters": 46,
+  "models": {
+    "gemma4_31b_hf_bf16": {
+      "layers": 60,
+      "repo": "google/gemma-4-31B-it",
+      "revision": "3548789868c5356dbf307c98e6f609007b82b3eb"
+    }
+  },
+  "patch_corruption": "B4",
+  "patching": "fixed_current_history_v1",
+  "pilot_limit": 100,
+  "primary_family": "descriptive_only",
+  "primary_models": [],
+  "prompt": "The final two images are candidate objects A and B, respectively. Any preceding images are observed scene frames in the presented order. The task concerns the current observation time. Which referenced target is the first-order interacting object, meaning the object directly manipulated by a visible hand rather than a second-order object interacting through it? Answer with only A or B.",
+  "pruning_enabled": false,
+  "schema_version": 3,
+  "seed": 20261023,
+  "study": "temporal-current-dense-v1",
+  "survey_stride": 2,
+  "task": "current_interaction"
+}

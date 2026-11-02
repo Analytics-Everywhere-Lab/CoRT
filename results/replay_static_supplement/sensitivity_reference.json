@@ -1,0 +1,76 @@
+{
+  "family_A": {
+    "cells": {
+      "early22_F_over_K_materiality": {
+        "basic_one_sided_lower_95": 11.12670502709752,
+        "basic_one_sided_lower_97_5": 10.721574894397534,
+        "centered_upper_tail_count": 0,
+        "cluster_count": 46,
+        "descriptive_percentile_ci95": [
+          10.827684185889309,
+          15.481667256605261
+        ],
+        "draws": 10000,
+        "estimate": 13.101621075501397,
+        "null": 0.0,
+        "observed_effect_above_null": 13.101621075501397,
+        "one_sided_centered_add_one_p": 9.999000099990002e-05,
+        "posthoc_holm_below_0_05": true,
+        "posthoc_holm_p": 0.00019998000199980003
+      },
+      "late34_K_over_F_materiality": {
+        "basic_one_sided_lower_95": 13.735926100566981,
+        "basic_one_sided_lower_97_5": 13.299758956722137,
+        "centered_upper_tail_count": 0,
+        "cluster_count": 46,
+        "descriptive_percentile_ci95": [
+          13.439966579908042,
+          18.11230330093183
+        ],
+        "draws": 10000,
+        "estimate": 15.706031128826984,
+        "null": 0.0,
+        "observed_effect_above_null": 15.706031128826984,
+        "one_sided_centered_add_one_p": 9.999000099990002e-05,
+        "posthoc_holm_below_0_05": true,
+        "posthoc_holm_p": 0.00019998000199980003
+      }
+    },
+    "draw_indices_sha256": "29185b9eec4672991940b3743e12e8ff138adc6195b5dea5096aec4f661b42f8",
+    "family_size": 2,
+    "multiplicity": "Holm within this family only",
+    "status": "POSTHOC"
+  },
+  "loco_min_median_max": {
+    "early_F": [
+      0.8207893696693433,
+      0.826853262264473,
+      0.8325968969826842
+    ],
+    "early_F_minus_K": [
+      0.7722887674065786,
+      0.7796477227192016,
+      0.7849690053295338
+    ],
+    "early_K": [
+      0.04390011787215886,
+      0.04724103234988786,
+      0.05093397270037758
+    ],
+    "late_F": [
+      0.017093832360716155,
+      0.01857616577664123,
+      0.022071448173993646
+    ],
+    "late_K": [
+      0.9307832696307516,
+      0.9327472815330358,
+      0.9348684984761673
+    ],
+    "late_K_minus_F": [
+      0.9109894541209577,
+      0.9139671515127692,
+      0.9173920671657158
+    ]
+  }
+}

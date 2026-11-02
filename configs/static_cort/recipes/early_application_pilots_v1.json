@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "data": {
+    "source_hashes": {
+      "public/real_request_pack.jsonl": "c1137e94d6354d4e28ed3690ae68d5f88dad52567a8d1a8165274b2a785011de",
+      "hidden/evaluator_index.jsonl": "a35bc9bab91bdbf8c751ffa8cef12bcd80411b44d0c79f9522e52b99b81cbbe8"
+    }
+  },
+  "model": {
+    "key": "gemma4_31b_hf_bf16",
+    "id": "google/gemma-4-31B-it",
+    "revision": "3548789868c5356dbf307c98e6f609007b82b3eb",
+    "torch": "2.12.1+cu126",
+    "transformers": "5.13.0"
+  },
+  "compression": {
+    "variants": ["native", "merge_F_L34", "merge_F_L34_expand47", "merge_F_L22", "merge_C_L34", "merge_C_L22", "prune_F_L34"],
+    "remove_count": 133,
+    "canary_frames": 16,
+    "benchmark_requests": 64,
+    "timing_repeats": 3,
+    "canary_timing_repeats": 2,
+    "warmups": 2,
+    "accuracy_loss_tolerance_pp": 1.0
+  },
+  "steering": {
+    "targets": ["l34_cq", "l22_cq", "l34_readout", "l34_f"],
+    "seeds": [17, 29],
+    "rank": 4,
+    "learning_rate": 0.001,
+    "gradient_accumulation": 4,
+    "checkpoint_selection": "final",
+    "steps": 256,
+    "canary_steps": 2,
+    "canary_eval_per_split": 4
+  },
+  "measurement": {"batch_size": 1},
+  "bootstrap": {"draws": 2000, "seed": 20261014}
+}

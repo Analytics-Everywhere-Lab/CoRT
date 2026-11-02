@@ -1,0 +1,54 @@
+{
+  "errors": 0,
+  "failures": 0,
+  "heavy_imports": [],
+  "kind": "synthetic_cpu_tests_not_experiment_results",
+  "model_or_gpu_execution": false,
+  "network_used": false,
+  "packages": {
+    "Pillow": "11.3.0",
+    "numpy": "2.4.6"
+  },
+  "python": "3.12.15",
+  "skipped": [
+    {
+      "reason": "requires historical prepared-release adapter paths",
+      "test": "test_canary_end_to_end_all_requests_and_repeats_no_labels (research.lifecycle_memory.tests.test_role_aware_transfer.TransferTests.test_canary_end_to_end_all_requests_and_repeats_no_labels)"
+    },
+    {
+      "reason": "requires historical prepared-release adapter paths",
+      "test": "test_freeze_exact_assets_mode_and_no_source_changes (research.lifecycle_memory.tests.test_role_aware_transfer.TransferTests.test_freeze_exact_assets_mode_and_no_source_changes)"
+    },
+    {
+      "reason": "requires historical prepared-release adapter paths",
+      "test": "test_freeze_receipt_provenance_and_offline_environment_restoration (research.lifecycle_memory.tests.test_role_aware_transfer.TransferTests.test_freeze_receipt_provenance_and_offline_environment_restoration)"
+    },
+    {
+      "reason": "requires historical prepared-release adapter paths",
+      "test": "test_full_fake_counts_and_real_estimator_individual_decisions (research.lifecycle_memory.tests.test_role_aware_transfer.TransferTests.test_full_fake_counts_and_real_estimator_individual_decisions)"
+    },
+    {
+      "reason": "requires historical prepared-release adapter paths",
+      "test": "test_invalid_worker_is_rejected_before_full_evaluator_check (research.lifecycle_memory.tests.test_role_aware_transfer.TransferTests.test_invalid_worker_is_rejected_before_full_evaluator_check)"
+    },
+    {
+      "reason": "requires historical prepared-release adapter paths",
+      "test": "test_timed_drift_stops_worker_and_saves_failure (research.lifecycle_memory.tests.test_role_aware_transfer.TransferTests.test_timed_drift_stops_worker_and_saves_failure)"
+    },
+    {
+      "reason": "requires historical prepared-release adapter paths",
+      "test": "test_verifier_rejects_resealed_missing_duplicate_and_changed_evidence (research.lifecycle_memory.tests.test_role_aware_transfer.TransferTests.test_verifier_rejects_resealed_missing_duplicate_and_changed_evidence)"
+    }
+  ],
+  "suites": [
+    "test_source",
+    "research.lifecycle_memory.tests.test_role_aware_killarney_runtime",
+    "research.lifecycle_memory.tests.test_role_aware_transfer",
+    "research.lifecycle_memory.tests.test_temporal_forecasting_protocol",
+    "research.lifecycle_memory.tests.test_temporal_forecasting_data",
+    "research.lifecycle_memory.tests.test_temporal_dense_analysis",
+    "research.lifecycle_memory.tests.test_temporal_recognition_analysis",
+    "research.lifecycle_memory.tests.test_temporal_followup_analysis"
+  ],
+  "tests_run": 135
+}

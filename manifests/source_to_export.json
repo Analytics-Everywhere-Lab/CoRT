@@ -1,0 +1,486 @@
+{
+  "entries": [
+    {
+      "edits": [
+        {
+          "export_value": "__DEPLOYMENT_ACCOUNT__",
+          "json_pointer": "/tamia/account",
+          "operation": "replace",
+          "original_value_sha256_utf8": "7394ad2423eb61b87a90dac11c399041786d4b5fefc79fb75fdfbb3b0c9df5b3",
+          "reason": "Private deployment account or absolute container location."
+        },
+        {
+          "export_value": "__CONTAINER_IMAGE_PATH__",
+          "json_pointer": "/tamia/sif",
+          "operation": "replace",
+          "original_value_sha256_utf8": "1efd76e238a8ccf89322a72c83b8f35c9e4efce1c44837b6fab5d28bf9878803",
+          "reason": "Private deployment account or absolute container location."
+        }
+      ],
+      "export_mode": "sanitized_deployment_only",
+      "export_path": "protocols/preregistration/behavioral_2afc_v1_2026_07_22.json",
+      "export_sha256": "164f2ab83ed5431ac43ec5ec9393efd484f676914653e732c5175de6e663f732",
+      "included": true,
+      "scientific_role": "Current static behavioral eligibility plan; frozen before its confirmation outcomes.",
+      "source_path": "docs/research/lifecycle_memory/phase 2 research/preregistration/reanchored_choice_likelihood_confirmation_v1_2026_07_22.json",
+      "source_sha256": "920f441efc5faf4de0070a61cbf64132de7b1ebe2828bea9781e3b8cfa9715ba"
+    },
+    {
+      "edits": [
+        {
+          "export_value": "__DEPLOYMENT_ACCOUNT__",
+          "json_pointer": "/tamia/account",
+          "operation": "replace",
+          "original_value_sha256_utf8": "7394ad2423eb61b87a90dac11c399041786d4b5fefc79fb75fdfbb3b0c9df5b3",
+          "reason": "Private deployment account or absolute container location."
+        },
+        {
+          "export_value": "__CONTAINER_IMAGE_PATH__",
+          "json_pointer": "/tamia/sif",
+          "operation": "replace",
+          "original_value_sha256_utf8": "1efd76e238a8ccf89322a72c83b8f35c9e4efce1c44837b6fab5d28bf9878803",
+          "reason": "Private deployment account or absolute container location."
+        }
+      ],
+      "export_mode": "sanitized_deployment_only",
+      "export_path": "protocols/preregistration/answer_token_causal_intervention_v1_2026_07_23.json",
+      "export_sha256": "87868dc8eb7ab417885a5222b3a00b8cc01a1f9a0f74efcf58f76cb2084d0234",
+      "included": true,
+      "scientific_role": "July 23 answer-token causal parent plan; distinct from the July 22 behavioral plan.",
+      "source_path": "docs/research/lifecycle_memory/phase 2 research/preregistration/reanchored_answer_token_causal_intervention_v1_2026_07_23.json",
+      "source_sha256": "21dfd51486c95e370dac2e5c9cc297dd897a136ad7772286467525ee06047703"
+    },
+    {
+      "edits": [],
+      "export_mode": "verbatim",
+      "export_path": "protocols/preregistration/transport_decomposition_v1_2026_07_26.json",
+      "export_sha256": "3b362fcf45668a1c693d3f6ae6c0ce4bc9420dd95620eaa2c2d97db84ff91b3b",
+      "included": true,
+      "scientific_role": "Follow-up operator decomposition on reused 80-cluster cohort; not independent held-out confirmation.",
+      "source_path": "docs/research/lifecycle_memory/phase 2 research/preregistration/patchaudit_transport_decomposition_v1_2026_07_26.json",
+      "source_sha256": "3b362fcf45668a1c693d3f6ae6c0ce4bc9420dd95620eaa2c2d97db84ff91b3b"
+    },
+    {
+      "edits": [],
+      "export_mode": "verbatim",
+      "export_path": "protocols/preregistration/component_closure_v1_2026_07_26.json",
+      "export_sha256": "9ba19acaf8f50a19c1526c07ac9bbefc7fa4064a9a01079129fdccb22fc6c5a1",
+      "included": true,
+      "scientific_role": "Static Gemma confirmation family, component roles and Qwen descriptive design; created/frozen before component-patch outcomes.",
+      "source_path": "docs/research/lifecycle_memory/phase 2 research/preregistration/patchaudit_heldout_component_closure_v1_2026_07_26.json",
+      "source_sha256": "9ba19acaf8f50a19c1526c07ac9bbefc7fa4064a9a01079129fdccb22fc6c5a1"
+    },
+    {
+      "edits": [],
+      "export_mode": "verbatim",
+      "export_path": "protocols/current/qwen_role_factorial_v1.json",
+      "export_sha256": "3185e817bfb163bbe10bf7f6705222ac9da186e854010568bc386c0166efb2db",
+      "included": true,
+      "scientific_role": "Current separate Qwen L36 prospective follow-up on reused 46-cluster cohort.",
+      "source_path": "docs/research/lifecycle_memory/phase 2 research/jobs/qwen_role_factorial/config.json",
+      "source_sha256": "3185e817bfb163bbe10bf7f6705222ac9da186e854010568bc386c0166efb2db"
+    },
+    {
+      "edits": [],
+      "export_mode": "verbatim",
+      "export_path": "configs/static_cort/model_plans/jobd_transport_models.json",
+      "export_sha256": "e54eee79a6d5dce096be9ce6d875fe3152346544227783397a71c643456eb6f3",
+      "included": true,
+      "scientific_role": "Exact model and processor repository revisions for static runs.",
+      "source_path": "docs/research/lifecycle_memory/phase 2 research/jobs/patchaudit_jobD_transport_decomposition/model_plan.json",
+      "source_sha256": "e54eee79a6d5dce096be9ce6d875fe3152346544227783397a71c643456eb6f3"
+    },
+    {
+      "edits": [],
+      "export_mode": "verbatim",
+      "export_path": "configs/static_cort/model_plans/jobe_component_models.json",
+      "export_sha256": "a891d950a3ffedcf33de54ee474b08e36ff8de040783d306d4bc9c8bf60bcd53",
+      "included": true,
+      "scientific_role": "Exact model and processor repository revisions for static confirmation.",
+      "source_path": "docs/research/lifecycle_memory/phase 2 research/jobs/patchaudit_jobE_heldout_component_closure/model_plan.json",
+      "source_sha256": "a891d950a3ffedcf33de54ee474b08e36ff8de040783d306d4bc9c8bf60bcd53"
+    },
+    {
+      "edits": [],
+      "export_mode": "verbatim",
+      "export_path": "configs/static_cort/recipes/compression_and_correction_screen_v1.json",
+      "export_sha256": "32b5efd4b6f188e13a123949e6b4f179c75f005f215082903c59252b54d2d3d1",
+      "included": true,
+      "scientific_role": "Earlier exploratory compression/correction matrix; fixed designs, seeds and decision tolerance.",
+      "source_path": "docs/research/lifecycle_memory/phase 2 research/jobs/decoder_token_matrix/config.json",
+      "source_sha256": "32b5efd4b6f188e13a123949e6b4f179c75f005f215082903c59252b54d2d3d1"
+    },
+    {
+      "edits": [],
+      "export_mode": "verbatim",
+      "export_path": "configs/static_cort/recipes/early_application_pilots_v1.json",
+      "export_sha256": "263aa5dada85b0df52b2e39a3e2c6c794d71dc07b689474d16ad5c7f58677547",
+      "included": true,
+      "scientific_role": "Earlier application pilot design.",
+      "source_path": "docs/research/lifecycle_memory/phase 2 research/jobs/decoder_application_pilots/config.json",
+      "source_sha256": "263aa5dada85b0df52b2e39a3e2c6c794d71dc07b689474d16ad5c7f58677547"
+    },
+    {
+      "edits": [],
+      "export_mode": "verbatim",
+      "export_path": "configs/static_cort/recipes/cross_source_validation_v1.json",
+      "export_sha256": "272267e90364808ca9efd487c8691824ca3421e90e8ef4145cb3afa3dca53b29",
+      "included": true,
+      "scientific_role": "Cross-source transfer of preselected compression/correction cases; reused development data.",
+      "source_path": "docs/research/lifecycle_memory/phase 2 research/jobs/decoder_cached_validation/config.json",
+      "source_sha256": "272267e90364808ca9efd487c8691824ca3421e90e8ef4145cb3afa3dca53b29"
+    },
+    {
+      "edits": [],
+      "export_mode": "verbatim",
+      "export_path": "configs/static_cort/recipes/late_removal_training_v2.json",
+      "export_sha256": "39c626caf0dc50f2174c3e76e9dc32793b7bc1d1bc23c5033b3f58aa8bd15148",
+      "included": true,
+      "scientific_role": "Later-created E4 removal-trained policy protocol; frozen before its own training/evaluation outcomes, after earlier results.",
+      "source_path": "docs/research/lifecycle_memory/phase 2 research/jobs/role_aware_policy/config.json",
+      "source_sha256": "39c626caf0dc50f2174c3e76e9dc32793b7bc1d1bc23c5033b3f58aa8bd15148"
+    },
+    {
+      "edits": [],
+      "export_mode": "verbatim",
+      "export_path": "configs/static_cort/recipes/late_scene_removal_eval_v1.json",
+      "export_sha256": "fbadb27f0a945271593db605cb12036068388868d9175760aebf08573adb4bd8",
+      "included": true,
+      "scientific_role": "Later-created E4 eval-only follow-up; frozen before its own run, after the removal-trained benchmark outcomes.",
+      "source_path": "docs/research/lifecycle_memory/phase 2 research/jobs/role_aware_transfer/config.json",
+      "source_sha256": "fbadb27f0a945271593db605cb12036068388868d9175760aebf08573adb4bd8"
+    },
+    {
+      "edits": [],
+      "export_mode": "verbatim",
+      "export_path": "configs/temporal/dense_current_v2.json",
+      "export_sha256": "bb43e8a48905accd890bb8e04fd9e34047d6d06b727956d487775cdffb7080c7",
+      "included": true,
+      "scientific_role": "Current dense-history protocol of record. v2 differs from v1 only in exposure-registry pin according to status record.",
+      "source_path": "data/external/temporal_forecasting/preparation/dense_current_config_2026_10_25_v2/protocol.json",
+      "source_sha256": "bb43e8a48905accd890bb8e04fd9e34047d6d06b727956d487775cdffb7080c7"
+    },
+    {
+      "edits": [],
+      "export_mode": "verbatim",
+      "export_path": "configs/temporal/new_interaction_v1.json",
+      "export_sha256": "71676831b7eb102c667a0d4d6dec6c85c9e6854d49c25ec3d2bb3f3de4e1cb2f",
+      "included": true,
+      "scientific_role": "Current frozen new-interaction recognition task recipe.",
+      "source_path": "data/external/temporal_forecasting/preparation/event_recognition_2026_10_25_v1/new_interaction_v1_protocol.json",
+      "source_sha256": "71676831b7eb102c667a0d4d6dec6c85c9e6854d49c25ec3d2bb3f3de4e1cb2f"
+    },
+    {
+      "edits": [],
+      "export_mode": "verbatim",
+      "export_path": "configs/temporal/interaction_order_v1.json",
+      "export_sha256": "050b7c91d8f190ab9b618223e44c496f207b79d34d491d4bdfc02c5df74abee8",
+      "included": true,
+      "scientific_role": "Current frozen interaction-order recognition task recipe.",
+      "source_path": "data/external/temporal_forecasting/preparation/event_recognition_2026_10_25_v1/interaction_order_v1_protocol.json",
+      "source_sha256": "050b7c91d8f190ab9b618223e44c496f207b79d34d491d4bdfc02c5df74abee8"
+    },
+    {
+      "edits": [],
+      "export_mode": "verbatim",
+      "export_path": "configs/temporal/protocol.py",
+      "export_sha256": "9ecf07efb32d0cd6651995569bfda7c2255b162dd8aba67b97e1aec95acc3f73",
+      "included": true,
+      "scientific_role": "Source protocol implementation defining prompts, cuts, conditions, inventories and model pins.",
+      "source_path": "research/lifecycle_memory/temporal_forecasting/protocol.py",
+      "source_sha256": "9ecf07efb32d0cd6651995569bfda7c2255b162dd8aba67b97e1aec95acc3f73"
+    },
+    {
+      "edits": [],
+      "export_mode": "verbatim",
+      "export_path": "configs/temporal/recognition_protocol.py",
+      "export_sha256": "f4593688ccd4a859fa152eb132306dc2615f2cfbfd0937ed8746bf62267a2e93",
+      "included": true,
+      "scientific_role": "Source recognition implementation defining 17-frame prompt literals, task rules and geometry.",
+      "source_path": "research/lifecycle_memory/temporal_forecasting/recognition_protocol.py",
+      "source_sha256": "f4593688ccd4a859fa152eb132306dc2615f2cfbfd0937ed8746bf62267a2e93"
+    },
+    {
+      "edits": [],
+      "export_mode": "verbatim",
+      "export_path": "configs/temporal/gemma_model_inventory.json",
+      "export_sha256": "fec2bf8c12c3d5632db8d3e5776442dd822d2de6b455aaa5b39fb2adf49e43ec",
+      "included": true,
+      "scientific_role": "Per-file model and processor inventory for Gemma. Paths relative to checkpoint snapshot.",
+      "source_path": "docs/research/lifecycle_memory/phase 2 research/jobs/temporal_current/model_inventory.json",
+      "source_sha256": "fec2bf8c12c3d5632db8d3e5776442dd822d2de6b455aaa5b39fb2adf49e43ec"
+    },
+    {
+      "edits": [
+        {
+          "after": "\"\"\"Audited token-component partitions for PatchAudit.\n\nThe module is intentionally standard-library-only.  It turns processor-proved\ntoken boundaries into an immutable partition receipt, factorial component\nunions, and deterministic candidate-crop cardinality controls.\n\"\"\"",
+          "before": "\"\"\"Audited token-component partitions for PatchAudit Job E.\n\nThe module is intentionally standard-library-only.  It turns processor-proved\ntoken boundaries into an immutable partition receipt, factorial component\nunions, and deterministic candidate-crop cardinality controls.\n\"\"\"",
+          "kind": "public_comment_edit"
+        },
+        {
+          "after": "\"\"\"Build and prove the token-position component partition.\n\n    ``image_slot_positions`` must contain exactly three processor-proved sets:\n    the full-frame slot followed by the two candidate-crop slots.  The answer\n    prefix is the contiguous final ``answer_prefix_token_count`` active tokens,\n    matching the existing append-only answer-scoring contract.\n    \"\"\"",
+          "before": "\"\"\"Build and prove the Job E token-component partition.\n\n    ``image_slot_positions`` must contain exactly three processor-proved sets:\n    the full-frame slot followed by the two candidate-crop slots.  The answer\n    prefix is the contiguous final ``answer_prefix_token_count`` active tokens,\n    matching the existing append-only answer-scoring contract.\n    \"\"\"",
+          "kind": "public_comment_edit"
+        },
+        {
+          "after": "# A concise alias for callers using the token-position ``position_partition`` style.",
+          "before": "# A concise alias for callers that follow the Job D ``position_partition`` style.",
+          "kind": "public_comment_edit"
+        }
+      ],
+      "export_mode": "comment_docstring_edits",
+      "export_path": "protocols/specifications/component_partition.py",
+      "export_sha256": "905cc9de19671296c8af06ace182c7b269a6046fc07bcb34c8880874e7173f24",
+      "included": true,
+      "scientific_role": "Executable C/Q/P/R partition contract and deterministic crop-token sample rule.",
+      "source_path": "research/lifecycle_memory/patchaudit_component_partition.py",
+      "source_sha256": "e6a59fa7ac3c92288d6a0f7d30ac5d0997a239f5a63a87856b96fffc3c378191"
+    },
+    {
+      "edits": [
+        {
+          "after": "\"\"\"Audited decoder transport operators for PatchAudit.\n\nThis module deliberately does not modify the frozen answer-token causal-patch\nengine. It reuses its tensor extraction and module-resolution contracts while\nadding explicit position-indexed capture, one-shot patches, and multi-layer\npersistent clamps.\n\"\"\"",
+          "before": "\"\"\"Audited decoder transport operators for the PatchAudit follow-up.\n\nThis module deliberately does not modify the frozen Job C-R engine. It reuses\nits tensor extraction and module-resolution contracts while adding explicit\nposition-indexed capture, one-shot patches, and multi-layer persistent clamps.\n\"\"\"",
+          "kind": "public_comment_edit"
+        }
+      ],
+      "export_mode": "comment_docstring_edits",
+      "export_path": "protocols/specifications/transport_operators.py",
+      "export_sha256": "a522f15998e84eb19c28e40517d7bd50d1157d809b0fb367f9e9bf11bc76cfe2",
+      "included": true,
+      "scientific_role": "Executable transport operator semantics. Persistent clamp is retained as a frozen outcome condition but is structurally redundant in matched runs and does not test recontamination.",
+      "source_path": "research/lifecycle_memory/patchaudit_transport_operators.py",
+      "source_sha256": "73bfbbc64ff08f1c62590649f0ec45f1b52e9ec3adbecbd415598daf52f717e5"
+    },
+    {
+      "edits": [
+        {
+          "export_value": "__DEPLOYMENT_ACCOUNT__",
+          "json_pointer": "/tamia/account",
+          "operation": "replace",
+          "original_value_sha256_utf8": "7394ad2423eb61b87a90dac11c399041786d4b5fefc79fb75fdfbb3b0c9df5b3",
+          "reason": "Private deployment account or absolute container location."
+        },
+        {
+          "export_value": "__CONTAINER_IMAGE_PATH__",
+          "json_pointer": "/tamia/sif",
+          "operation": "replace",
+          "original_value_sha256_utf8": "1efd76e238a8ccf89322a72c83b8f35c9e4efce1c44837b6fab5d28bf9878803",
+          "reason": "Private deployment account or absolute container location."
+        }
+      ],
+      "export_mode": "sanitized_deployment_only",
+      "export_path": "protocols/historical_provenance/static_construction_retained_2026_07_21.json",
+      "export_sha256": "71ad8b95d898d05c512f53a705ca0f896d8933020537467a183071b57144c2e0",
+      "included": true,
+      "scientific_role": "Complete historical July 21 specification, including superseded generated-JSON jobs and original models. Construction provenance only for the current paper; historical downstream tests are not current CoRT experiments.",
+      "source_path": "docs/research/lifecycle_memory/phase 2 research/preregistration/reanchored_evidence_failure_localization_v1_2026_07_21.json",
+      "source_sha256": "bd0f021fd510d873f388075a3d4c0e0d138da07fc6da8215cc0ff16b1d09279f"
+    },
+    {
+      "edits": [],
+      "export_mode": "verbatim",
+      "export_path": "protocols/contracts/behavioral.json",
+      "export_sha256": "d0d75a84db28acf3143fe4af829f29034cfbba8c959d8732cbc93a57bb9f19ed",
+      "included": true,
+      "scientific_role": "Original canary, completion, resource, and identity gates; private deployment values replaced.",
+      "source_path": "docs/research/lifecycle_memory/phase 2 research/jobs/reanchored_jobAR_answer_token/job_contract.json",
+      "source_sha256": "d0d75a84db28acf3143fe4af829f29034cfbba8c959d8732cbc93a57bb9f19ed"
+    },
+    {
+      "edits": [],
+      "export_mode": "verbatim",
+      "export_path": "protocols/contracts/answer_token_causal.json",
+      "export_sha256": "41492239735b08d912cdf7f00bdd62c7ed3358ecd79225adb3da463c60b21f0a",
+      "included": true,
+      "scientific_role": "Original canary, completion, resource, and identity gates; private deployment values replaced.",
+      "source_path": "docs/research/lifecycle_memory/phase 2 research/jobs/reanchored_jobCR_answer_token_causal_patch/patch_contract.json",
+      "source_sha256": "41492239735b08d912cdf7f00bdd62c7ed3358ecd79225adb3da463c60b21f0a"
+    },
+    {
+      "edits": [
+        {
+          "export_value": "__DEPLOYMENT_ACCOUNT__",
+          "json_pointer": "/execution/account",
+          "operation": "replace",
+          "original_value_sha256_utf8": "7394ad2423eb61b87a90dac11c399041786d4b5fefc79fb75fdfbb3b0c9df5b3",
+          "reason": "Private deployment account or absolute container location."
+        },
+        {
+          "export_value": "__CONTAINER_IMAGE_PATH__",
+          "json_pointer": "/execution/container",
+          "operation": "replace",
+          "original_value_sha256_utf8": "1efd76e238a8ccf89322a72c83b8f35c9e4efce1c44837b6fab5d28bf9878803",
+          "reason": "Private deployment account or absolute container location."
+        }
+      ],
+      "export_mode": "sanitized_deployment_only",
+      "export_path": "protocols/contracts/transport.json",
+      "export_sha256": "ef2521483c71c44e9f246b0c80d9fbc1bc73ffe33afc9f4a5beb59e38081de1b",
+      "included": true,
+      "scientific_role": "Original canary, completion, resource, and identity gates; private deployment values replaced.",
+      "source_path": "docs/research/lifecycle_memory/phase 2 research/jobs/patchaudit_jobD_transport_decomposition/patch_contract.json",
+      "source_sha256": "e98a306e7698a0448ee27f45a878070206cfea5b60b64fd27469409e8d0df1a4"
+    },
+    {
+      "edits": [
+        {
+          "export_value": "__DEPLOYMENT_ACCOUNT__",
+          "json_pointer": "/execution/account",
+          "operation": "replace",
+          "original_value_sha256_utf8": "7394ad2423eb61b87a90dac11c399041786d4b5fefc79fb75fdfbb3b0c9df5b3",
+          "reason": "Private deployment account or absolute container location."
+        },
+        {
+          "export_value": "__CONTAINER_IMAGE_PATH__",
+          "json_pointer": "/execution/container",
+          "operation": "replace",
+          "original_value_sha256_utf8": "1efd76e238a8ccf89322a72c83b8f35c9e4efce1c44837b6fab5d28bf9878803",
+          "reason": "Private deployment account or absolute container location."
+        }
+      ],
+      "export_mode": "sanitized_deployment_only",
+      "export_path": "protocols/contracts/component_closure.json",
+      "export_sha256": "86a16ad060a16352e4b454d13d5ff789468838e4eb2274eebe453dd01880dc3c",
+      "included": true,
+      "scientific_role": "Original canary, completion, resource, and identity gates; private deployment values replaced.",
+      "source_path": "docs/research/lifecycle_memory/phase 2 research/jobs/patchaudit_jobE_heldout_component_closure/patch_contract.json",
+      "source_sha256": "dbae7054c5873aee3e248dea42d998c8c9bc5ef7e5b65f5c7b2c83bb2e66224a"
+    },
+    {
+      "edits": [],
+      "export_mode": "verbatim",
+      "export_path": "configs/temporal/new_interaction_followup_v1.json",
+      "export_sha256": "c1232f374a0965a16269a870d8e4d58c9fe139af722ccdd2d8c2edb4d971aa22",
+      "included": true,
+      "scientific_role": "Executed schema-5 temporal factorial/order follow-up; current paper Figure 7 and supplementary order controls.",
+      "source_path": "runs/temporal_recognition/followup_fir_deployment_2026_10_25_v1/new_interaction/protocol.json",
+      "source_sha256": "c1232f374a0965a16269a870d8e4d58c9fe139af722ccdd2d8c2edb4d971aa22"
+    },
+    {
+      "edits": [],
+      "export_mode": "verbatim",
+      "export_path": "configs/temporal/interaction_order_followup_v1.json",
+      "export_sha256": "df153b2ada0222252b2021843abb9f0e3678ddec35e68cddefc4daab0ea1b141",
+      "included": true,
+      "scientific_role": "Executed schema-5 temporal factorial/order follow-up; current paper Figure 7 and supplementary order controls.",
+      "source_path": "runs/temporal_recognition/followup_fir_deployment_2026_10_25_v1/interaction_order/protocol.json",
+      "source_sha256": "df153b2ada0222252b2021843abb9f0e3678ddec35e68cddefc4daab0ea1b141"
+    },
+    {
+      "edits": [],
+      "export_mode": "verbatim",
+      "export_path": "configs/temporal/followup_protocol.py",
+      "export_sha256": "5ed381696a0552fb050d8a73777cf7e25f67bfa3ad0ee784ef45dc3d4fe4209f",
+      "included": true,
+      "scientific_role": "Unmodified source specification of the 78-cell-per-clip follow-up inventory and frozen permutations.",
+      "source_path": "research/lifecycle_memory/temporal_forecasting/followup_protocol.py",
+      "source_sha256": "5ed381696a0552fb050d8a73777cf7e25f67bfa3ad0ee784ef45dc3d4fe4209f"
+    },
+    {
+      "edits": [],
+      "export_mode": "exact_top_level_projection",
+      "export_path": "configs/static_cort/recipes/late_removal_training_executed.json",
+      "export_sha256": "33728af1d7fef4b4af34bf665db7f6e965390accc3db56ee38148c2c36001de8",
+      "included": true,
+      "included_json_pointers": [
+        "/bootstrap",
+        "/cut",
+        "/decision",
+        "/experiment_id",
+        "/measurement",
+        "/model",
+        "/schema_version",
+        "/scope",
+        "/seeds",
+        "/status",
+        "/variants",
+        "/primary_compression",
+        "/secondary_compression",
+        "/reference_cases",
+        "/saved_bias_bits",
+        "/training",
+        "/training_cases"
+      ],
+      "omitted_json_pointers": [
+        "/adapters",
+        "/data",
+        "/freeze"
+      ],
+      "projection_reason": "Publish executed scientific settings, not per-request inventories or nested data records. Retained values are unchanged.",
+      "scientific_role": "Executed 26-variant removal-trained benchmark settings; supplements the pre-run design.",
+      "source_path": "runs/killarney/role-aware-combined/full/6469516/frozen_config.json",
+      "source_sha256": "c7fef473e7c036793a43e997cdbebaf4db37806a8aa98ec8206260d3823c1eb4"
+    },
+    {
+      "edits": [],
+      "export_mode": "exact_top_level_projection",
+      "export_path": "configs/static_cort/recipes/late_scene_removal_executed.json",
+      "export_sha256": "48fec20c5b170674a2b403ca84bfd78dc9ba426bf808680bc6d22f73477d6946",
+      "included": true,
+      "included_json_pointers": [
+        "/bootstrap",
+        "/cut",
+        "/decision",
+        "/experiment_id",
+        "/measurement",
+        "/model",
+        "/schema_version",
+        "/scope",
+        "/seeds",
+        "/status",
+        "/variants",
+        "/compression_id",
+        "/deployment_seed",
+        "/evaluation_manifest_sha256",
+        "/reference_config_sha256",
+        "/training_allowed"
+      ],
+      "omitted_json_pointers": [
+        "/adapters",
+        "/freeze"
+      ],
+      "projection_reason": "Publish executed scientific settings, not per-request inventories or nested data records. Retained values are unchanged.",
+      "scientific_role": "Executed five-variant scene-only benchmark settings; supplements the awaiting_freeze design snapshot.",
+      "source_path": "runs/killarney/role-aware-transfer/full/6478505/frozen_config.json",
+      "source_sha256": "c31e8b92416e8177d34aeab4306083d960eb7b4b462d506b82481594b7602374"
+    },
+    {
+      "edits": [],
+      "export_mode": "documented_literal_extraction",
+      "export_path": "configs/static_cort/prompt_serialization.json",
+      "export_sha256": "3daf5b666043b8ff4456dec54f124391baf2b8d7795cb62caf6ebfeabad2e4eb",
+      "included": true,
+      "scientific_role": "Exact source prompt literals plus documented serialization; not a replacement frozen plan.",
+      "source_path": "research/lifecycle_memory/build_phase2_reanchored_egohos_battery.py",
+      "source_sha256": "f2a00a6ad63c3bb827a83ce7cdd5768ffb8a4c791a0c9360c21c57e3469f1d8d",
+      "source_symbols": [
+        "SYSTEM_PROMPT",
+        "EXPECTED_USER_PROMPT"
+      ]
+    }
+  ],
+  "excluded_entries": [
+    {
+      "reason": "Superseded exposure-registry pin; version 2 is exported.",
+      "source_path": "data/external/temporal_forecasting/preparation/dense_current_config_2026_10_25_v1/protocol.json"
+    },
+    {
+      "reason": "Earlier forecasting study, not a current CoRT recognition experiment.",
+      "source_path": "docs/research/lifecycle_memory/phase 2 research/jobs/temporal_forecasting/protocol.json"
+    }
+  ],
+  "export_root": ".",
+  "namespace": "research.lifecycle_memory",
+  "notes": [
+    "source_path is repository-relative provenance, not a private absolute path or a public download URL.",
+    "source_sha256 hashes original bytes; export_sha256 hashes released bytes. SHA-256 hex digests are not raw data identifiers.",
+    "Deployment edits replace only private account/container locations. Resource settings, scientific values, technical gates, and frozen status strings remain unchanged.",
+    "Exact projections explicitly list included and omitted fields and are not claimed to be complete runtime configs.",
+    "Historical source references and embedded original hashes remain unchanged; these are archival specifications, not automatic launch authorizations.",
+    "Frozen source instructions describe historical study rules. Current status and interpretation are in docs/experiments.md."
+  ],
+  "release_date": "2026-11-01",
+  "schema_version": 2,
+  "source_repository": "mani-research"
+}

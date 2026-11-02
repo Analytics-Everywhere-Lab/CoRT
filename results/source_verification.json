@@ -1,0 +1,97 @@
+{
+  "aggregate_checks": [
+    {
+      "exact_projection": true,
+      "name": "behavior",
+      "source_unchanged": true
+    },
+    {
+      "exact_projection": true,
+      "name": "exploratory_depth",
+      "source_unchanged": true
+    },
+    {
+      "exact_projection": true,
+      "name": "gemma_supplementary",
+      "source_unchanged": true
+    },
+    {
+      "exact_projection": true,
+      "name": "static_endpoints",
+      "source_unchanged": true
+    },
+    {
+      "exact_projection": true,
+      "name": "exploratory_endpoints",
+      "source_unchanged": true
+    },
+    {
+      "exact_projection": true,
+      "name": "temporal_current",
+      "source_unchanged": true
+    },
+    {
+      "exact_projection": true,
+      "name": "temporal_recognition",
+      "source_unchanged": true
+    },
+    {
+      "exact_projection": true,
+      "name": "temporal_followup",
+      "source_unchanged": true
+    },
+    {
+      "exact_projection": true,
+      "name": "practical_final",
+      "source_unchanged": true
+    },
+    {
+      "exact_projection": true,
+      "name": "practical_compression",
+      "source_unchanged": true
+    },
+    {
+      "exact_projection": true,
+      "name": "practical_followup_public",
+      "source_unchanged": true
+    },
+    {
+      "exact_projection": true,
+      "name": "reporting_intervals",
+      "source_unchanged": true
+    },
+    {
+      "exact_projection": true,
+      "name": "bias_baseline",
+      "source_unchanged": true
+    }
+  ],
+  "final_practical_original_summaries": [
+    {
+      "export_pointer": "/benchmarks/combined",
+      "selected_keys": [
+        "accuracy_differences_vs_native",
+        "counts",
+        "decision",
+        "metrics",
+        "per_source",
+        "timing"
+      ],
+      "sha256": "1f61e6b58120df3588a904ba84fc907d0d41658aa31799154c694b97a844d541"
+    },
+    {
+      "export_pointer": "/benchmarks/followup",
+      "selected_keys": [
+        "accuracy_differences_vs_native",
+        "counts",
+        "decision",
+        "metrics",
+        "per_source",
+        "retention_diagnostics",
+        "timing"
+      ],
+      "sha256": "cd85793f1f9724c2cecd41f370b9f66ab5e57d4fc76d65adfbc3d731a7e40075"
+    }
+  ],
+  "private_source_paths_saved": false
+}

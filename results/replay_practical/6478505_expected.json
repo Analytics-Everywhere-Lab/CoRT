@@ -1,0 +1,512 @@
+{
+  "accuracy_differences_vs_native": {
+    "F133_L34_readout_seed17": {
+      "ci95": [
+        0.011144327234332677,
+        0.06669191943374948
+      ],
+      "estimate": 0.03600345954376455,
+      "family_lower_bound": 0.008493409942756347
+    },
+    "F133_L34_readout_seed29": {
+      "ci95": [
+        -0.009475662444752881,
+        0.08145725579290393
+      ],
+      "estimate": 0.03384232647849205,
+      "family_lower_bound": -0.015208624879921185
+    },
+    "native_readout_seed17": {
+      "ci95": [
+        0.017185923175710757,
+        0.07326743776879939
+      ],
+      "estimate": 0.042545436085741094,
+      "family_lower_bound": 0.014618293078260394
+    },
+    "native_readout_seed29": {
+      "ci95": [
+        -0.006813098706344895,
+        0.08482719330213884
+      ],
+      "estimate": 0.03722803541975655,
+      "family_lower_bound": -0.012279722859243563
+    }
+  },
+  "counts": {
+    "clusters": 50,
+    "frames": 447,
+    "requests": 894,
+    "timed_clusters": 44
+  },
+  "decision": {
+    "both_seeds_pass": false,
+    "co_primaries": {
+      "seed17": {
+        "accuracy_lower_bound": 0.008493409942756347,
+        "accuracy_pass": true,
+        "speed_pass": true,
+        "speedup_lower_bound": 1.0266130643209077,
+        "upper_left_pass": true
+      },
+      "seed29": {
+        "accuracy_lower_bound": -0.015208624879921185,
+        "accuracy_pass": false,
+        "speed_pass": true,
+        "speedup_lower_bound": 1.0245883670295448,
+        "upper_left_pass": false
+      }
+    },
+    "deployment_seed": 17,
+    "winner_selection": false
+  },
+  "metrics": {
+    "F133_L34_readout_seed17": {
+      "accuracy": {
+        "ci95": [
+          0.9271759996791316,
+          0.9688137473254577
+        ],
+        "estimate": 0.9482815586737156,
+        "family_lower_bound": 0.9241520455936987
+      },
+      "log_loss_nats": {
+        "ci95": [
+          0.09807635877499736,
+          0.23408445176609738
+        ],
+        "estimate": 0.1664586921233311,
+        "family_lower_bound": 0.08862072782334923
+      }
+    },
+    "F133_L34_readout_seed29": {
+      "accuracy": {
+        "ci95": [
+          0.9162104307527782,
+          0.9706212652231171
+        ],
+        "estimate": 0.9461204256084431,
+        "family_lower_bound": 0.9112640149152269
+      },
+      "log_loss_nats": {
+        "ci95": [
+          0.14375929813177293,
+          0.46320676196855043
+        ],
+        "estimate": 0.2881223930946241,
+        "family_lower_bound": 0.12665028049643393
+      }
+    },
+    "native": {
+      "accuracy": {
+        "ci95": [
+          0.8732169673604859,
+          0.9451123075312889
+        ],
+        "estimate": 0.9122780991299511,
+        "family_lower_bound": 0.8665928010603938
+      },
+      "log_loss_nats": {
+        "ci95": [
+          0.5166878001918471,
+          1.617031451598563
+        ],
+        "estimate": 0.9972827332786207,
+        "family_lower_bound": 0.46867956480629314
+      }
+    },
+    "native_readout_seed17": {
+      "accuracy": {
+        "ci95": [
+          0.9355816418663642,
+          0.9734686077760698
+        ],
+        "estimate": 0.9548235352156921,
+        "family_lower_bound": 0.9325208009734154
+      },
+      "log_loss_nats": {
+        "ci95": [
+          0.089424269896408,
+          0.23075942347076742
+        ],
+        "estimate": 0.15945842680217287,
+        "family_lower_bound": 0.08019751827618583
+      }
+    },
+    "native_readout_seed29": {
+      "accuracy": {
+        "ci95": [
+          0.9196996670117584,
+          0.973785127338368
+        ],
+        "estimate": 0.9495061345497074,
+        "family_lower_bound": 0.9145990889607447
+      },
+      "log_loss_nats": {
+        "ci95": [
+          0.13242591669318338,
+          0.42802793352126495
+        ],
+        "estimate": 0.26675950699338014,
+        "family_lower_bound": 0.11731471195158365
+      }
+    }
+  },
+  "overhead": {
+    "zero_minus_matching_compression_forward_ms": {}
+  },
+  "per_source": {
+    "escape": {
+      "F133_L34_readout_seed17": {
+        "ci95": [
+          -0.007207792207792211,
+          0.038713474025974
+        ],
+        "estimate": 0.016352813852813848,
+        "family_lower_bound": -0.010909090909090905
+      },
+      "F133_L34_readout_seed29": {
+        "ci95": [
+          -0.10060606060606062,
+          0.023551406926406882
+        ],
+        "estimate": -0.025606060606060625,
+        "family_lower_bound": -0.11601812770562772
+      },
+      "native_readout_seed17": {
+        "ci95": [
+          -0.0013744588744588762,
+          0.04547700216450212
+        ],
+        "estimate": 0.023614718614718606,
+        "family_lower_bound": -0.005304924242424244
+      },
+      "native_readout_seed29": {
+        "ci95": [
+          -0.10000595238095239,
+          0.025454816017316
+        ],
+        "estimate": -0.024469696969696985,
+        "family_lower_bound": -0.1150029761904762
+      }
+    },
+    "thu_read": {
+      "F133_L34_readout_seed17": {
+        "ci95": [
+          -0.039705882352941174,
+          0.10714285714285714
+        ],
+        "estimate": 0.02280578898225956,
+        "family_lower_bound": -0.04485294117647058
+      },
+      "F133_L34_readout_seed29": {
+        "ci95": [
+          -0.04039252822341059,
+          0.18148820134114252
+        ],
+        "estimate": 0.057299889652830824,
+        "family_lower_bound": -0.05302287581699347
+      },
+      "native_readout_seed17": {
+        "ci95": [
+          -0.034432560903149154,
+          0.11282467532467531
+        ],
+        "estimate": 0.028487607164077736,
+        "family_lower_bound": -0.04137700534759359
+      },
+      "native_readout_seed29": {
+        "ci95": [
+          -0.03736631016042781,
+          0.19047619047619047
+        ],
+        "estimate": 0.06424433409727527,
+        "family_lower_bound": -0.05207219251336899
+      }
+    },
+    "youtube": {
+      "F133_L34_readout_seed17": {
+        "ci95": [
+          0.04007130215463549,
+          0.09838596717068937
+        ],
+        "estimate": 0.06885177579622025,
+        "family_lower_bound": 0.03658334142709143
+      },
+      "F133_L34_readout_seed29": {
+        "ci95": [
+          0.036606341189674534,
+          0.10476904011626233
+        ],
+        "estimate": 0.06983315038870595,
+        "family_lower_bound": 0.031818479231673705
+      },
+      "native_readout_seed17": {
+        "ci95": [
+          0.04634733193760971,
+          0.10634044068071845
+        ],
+        "estimate": 0.07553398247842692,
+        "family_lower_bound": 0.042555024065440726
+      },
+      "native_readout_seed29": {
+        "ci95": [
+          0.04142924333896556,
+          0.10447738603988602
+        ],
+        "estimate": 0.07190946913169137,
+        "family_lower_bound": 0.037712491983325325
+      }
+    }
+  },
+  "per_source_retention": {
+    "escape": {
+      "F133_L34_readout_seed17": {
+        "accuracy": {
+          "ci95": [
+            -0.020952380952380945,
+            0.003333333333333336
+          ],
+          "estimate": -0.0072619047619047585
+        },
+        "log_loss_nats": {
+          "ci95": [
+            -0.0164351074692364,
+            0.03885625053258497
+          ],
+          "estimate": 0.01200574124578054
+        }
+      },
+      "F133_L34_readout_seed29": {
+        "accuracy": {
+          "ci95": [
+            -0.0125,
+            0.009090909090909084
+          ],
+          "estimate": -0.0011363636363636391
+        },
+        "log_loss_nats": {
+          "ci95": [
+            -0.0046292829395747056,
+            0.08054316661140203
+          ],
+          "estimate": 0.031351456994574645
+        }
+      }
+    },
+    "thu_read": {
+      "F133_L34_readout_seed17": {
+        "accuracy": {
+          "ci95": [
+            -0.01704545454545453,
+            0.0
+          ],
+          "estimate": -0.005681818181818177
+        },
+        "log_loss_nats": {
+          "ci95": [
+            -0.019368440257539254,
+            0.01161780673632512
+          ],
+          "estimate": -0.0023948892574828587
+        }
+      },
+      "F133_L34_readout_seed29": {
+        "accuracy": {
+          "ci95": [
+            -0.020833333333333343,
+            0.0
+          ],
+          "estimate": -0.0069444444444444475
+        },
+        "log_loss_nats": {
+          "ci95": [
+            -0.002842500895449935,
+            0.07842211083689513
+          ],
+          "estimate": 0.03367304318184159
+        }
+      }
+    },
+    "youtube": {
+      "F133_L34_readout_seed17": {
+        "accuracy": {
+          "ci95": [
+            -0.012950012950012931,
+            -0.0015540015540015507
+          ],
+          "estimate": -0.006682206682206673
+        },
+        "log_loss_nats": {
+          "ci95": [
+            -0.003685610146890453,
+            0.02837869058716246
+          ],
+          "estimate": 0.011389943975176993
+        }
+      },
+      "F133_L34_readout_seed29": {
+        "accuracy": {
+          "ci95": [
+            -0.011522633744855947,
+            0.006790123456790132
+          ],
+          "estimate": -0.0020763187429854004
+        },
+        "log_loss_nats": {
+          "ci95": [
+            -0.019953169856396256,
+            0.012532779128568679
+          ],
+          "estimate": -0.0009358418726843622
+        }
+      }
+    }
+  },
+  "retention_diagnostics": {
+    "F133_L34_readout_seed17": {
+      "accuracy": {
+        "ci95": [
+          -0.012718853677187001,
+          -0.0014344297677630986
+        ],
+        "estimate": -0.006541976541976535
+      },
+      "log_loss_nats": {
+        "ci95": [
+          -0.005150601699136586,
+          0.018644343773663107
+        ],
+        "estimate": 0.0070002653211582245
+      }
+    },
+    "F133_L34_readout_seed29": {
+      "accuracy": {
+        "ci95": [
+          -0.010134212495323605,
+          0.0022696486469634632
+        ],
+        "estimate": -0.003385708941264496
+      },
+      "log_loss_nats": {
+        "ci95": [
+          0.0023525947025945892,
+          0.044080706207389714
+        ],
+        "estimate": 0.021362886101243955
+      }
+    }
+  },
+  "timing": {
+    "F133_L34_readout_seed17": {
+      "latency_change_percent": -2.900299080522273,
+      "memory_bytes": {
+        "peak_allocated_bytes": {
+          "max": 62900137472,
+          "source_unit_equal_mean": 62900137472.0
+        },
+        "peak_reserved_bytes": {
+          "max": 63214452736,
+          "source_unit_equal_mean": 63214452736.0
+        }
+      },
+      "model_forward_ms": 241.3571252398302,
+      "native_ms": 314.67928626499275,
+      "request_ms": 305.5526458188551,
+      "speedup": 1.0298692895349637,
+      "speedup_ci95": [
+        1.0270005630912837,
+        1.033163923084439
+      ],
+      "speedup_family_lower_bound": 1.0266130643209077
+    },
+    "F133_L34_readout_seed29": {
+      "latency_change_percent": -2.746333634175868,
+      "memory_bytes": {
+        "peak_allocated_bytes": {
+          "max": 62900137472,
+          "source_unit_equal_mean": 62900137472.0
+        },
+        "peak_reserved_bytes": {
+          "max": 63214452736,
+          "source_unit_equal_mean": 63214452736.0
+        }
+      },
+      "model_forward_ms": 241.35634247454746,
+      "native_ms": 314.67928626499275,
+      "request_ms": 306.0371431865127,
+      "speedup": 1.0282388699244036,
+      "speedup_ci95": [
+        1.025098199500838,
+        1.0317101245146636
+      ],
+      "speedup_family_lower_bound": 1.0245883670295448
+    },
+    "native": {
+      "latency_change_percent": 0.0,
+      "memory_bytes": {
+        "peak_allocated_bytes": {
+          "max": 62900137472,
+          "source_unit_equal_mean": 62900137472.0
+        },
+        "peak_reserved_bytes": {
+          "max": 63214452736,
+          "source_unit_equal_mean": 63214452736.0
+        }
+      },
+      "model_forward_ms": 249.77484967027394,
+      "native_ms": 314.67928626499275,
+      "request_ms": 314.67928626499275,
+      "speedup": 1.0,
+      "speedup_ci95": [
+        1.0,
+        1.0
+      ],
+      "speedup_family_lower_bound": 1.0
+    },
+    "native_readout_seed17": {
+      "latency_change_percent": -0.35960731220763265,
+      "memory_bytes": {
+        "peak_allocated_bytes": {
+          "max": 62900137472,
+          "source_unit_equal_mean": 62900137472.0
+        },
+        "peak_reserved_bytes": {
+          "max": 63214452736,
+          "source_unit_equal_mean": 63214452736.0
+        }
+      },
+      "model_forward_ms": 249.63951112177233,
+      "native_ms": 314.67928626499275,
+      "request_ms": 313.54767654158104,
+      "speedup": 1.0036090515352987,
+      "speedup_ci95": [
+        1.0011060926333026,
+        1.006635175315431
+      ],
+      "speedup_family_lower_bound": 1.0008118060731972
+    },
+    "native_readout_seed29": {
+      "latency_change_percent": 0.15911399064429954,
+      "memory_bytes": {
+        "peak_allocated_bytes": {
+          "max": 62900137472,
+          "source_unit_equal_mean": 62900137472.0
+        },
+        "peak_reserved_bytes": {
+          "max": 63214452736,
+          "source_unit_equal_mean": 63214452736.0
+        }
+      },
+      "model_forward_ms": 249.83558981810117,
+      "native_ms": 314.67928626499275,
+      "request_ms": 315.1799850351,
+      "speedup": 0.9984113877978277,
+      "speedup_ci95": [
+        0.9935856368359578,
+        1.003008041353913
+      ],
+      "speedup_family_lower_bound": 0.9928830667162868
+    }
+  }
+}

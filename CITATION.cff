@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite this software release when using the CoRT code or numerical records."
+title: "CoRT: Counterfactual Role Tracing"
+type: software
+authors:
+  - family-names: "Bazmandegan"
+    given-names: "Emad"
+repository-code: "https://github.com/emadbazmandegan/cort_code"
+license: Apache-2.0
+version: "1.2.0"
+date-released: "2026-11-02"

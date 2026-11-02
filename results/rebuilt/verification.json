@@ -1,0 +1,12 @@
+{
+  "additional_receipt": "manifests/replay_verification.json",
+  "additional_scope": "selected_statistics_not_every_runtime_field",
+  "aggregate_exports": 13,
+  "aggregate_numeric_scalars": 16882,
+  "figure_data_files": 6,
+  "map_rows": 26,
+  "numpy_version": "2.4.6",
+  "static_discrepancies": [],
+  "static_reference_scalars": 252,
+  "temporal_and_practical_ci_replayed": true
+}

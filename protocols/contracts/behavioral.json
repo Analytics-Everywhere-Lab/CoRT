@@ -1,0 +1,65 @@
+{
+  "kind": "phase2_reanchored_job_a_operational_contract",
+  "version": 5,
+  "analyzer_relative_path": "research/lifecycle_memory/analyze_phase2_reanchored_answer_token_confirmation.py",
+  "governing_preregistration": {
+    "path": "docs/research/lifecycle_memory/phase 2 research/preregistration/reanchored_choice_likelihood_confirmation_v1_2026_07_22.json",
+    "sha256": "920f441efc5faf4de0070a61cbf64132de7b1ebe2828bea9781e3b8cfa9715ba"
+  },
+  "governing_rights_ledger": {
+    "path": "docs/research/lifecycle_memory/phase 2 research/job3_stage_a_rights_and_provenance_ledger_2026_07_14.md",
+    "sha256": "65c1c3ae08ea6e2d1df3cc4ebe175c8740fb18d2bae9c8436639136d1fb5d541"
+  },
+  "battery": {
+    "manifest_relative_path": "manifest.json",
+    "hash_manifest_relative_path": "hash_manifest.json",
+    "hidden_evaluator_relative_path": "hidden/evaluator_index.json",
+    "pack_relative_paths": {
+      "real": "public/real_request_pack.json",
+      "blank_full": "public/blank_full_request_pack.json",
+      "wrong_time": "public/wrong_time_request_pack.json"
+    },
+    "required_frame_count": 320,
+    "required_trial_count": 640,
+    "required_participant_count": 80,
+    "required_trials_per_frame": 2,
+    "required_inputs_per_request": 3
+  },
+  "canary": {
+    "frame_count": 4,
+    "label_visibility": "forbidden",
+    "oom_retry": "halve_microbatch_until_one_and_record",
+    "utilization_tail_gate": {
+      "telemetry_interval_seconds": 2.0,
+      "minimum_common_allocation_mean_pct": 25.0,
+      "common_allocation_mean_role": "descriptive_advisory_union_window_absent_rank_buckets_zero_filled",
+      "minimum_worker_inference_mean_pct": 25.0,
+      "minimum_worker_inference_p90_pct": 60.0,
+      "minimum_worker_inference_sample_count": 5,
+      "minimum_projected_rank_occupancy_fraction": 0.70,
+      "maximum_projected_rank_tail_idle_fraction": 0.45
+    },
+    "required_telemetry": [
+      "load_time_s",
+      "decisions_per_second",
+      "peak_gpu_memory",
+      "gpu_worker_window_utilization_distribution",
+      "gpu_inference_window_utilization_distribution",
+      "effective_batch_size",
+      "batch_fallback"
+    ]
+  },
+  "full_batch_rule": "A full run must consume the exact hash-recorded batch sizes and the counterbalance-aligned two-shard-per-anchor schedule emitted by a successful canary. Full mode may not retry, resize, reassign, or adapt.",
+  "image_staging": "The coordinator alone hashes the sealed evaluator. Before the technical gate, workers receive only public manifests, packs, and selected assets under narrow read-only binds. The evaluator is staged only after exact result completeness passes.",
+  "worker_topology": {
+    "0": "qwen35_27b_hf_bf16_rank0:first_half",
+    "1": "qwen35_27b_hf_bf16_rank1:second_half",
+    "2": "gemma4_31b_hf_bf16_rank2:first_half",
+    "3": "gemma4_31b_hf_bf16_rank3:second_half"
+  },
+  "burned_binary_reference": {
+    "path": "runs/research/lifecycle_memory/phase_2/job3_burned_egohos_prompt_repair_round1_final_2026_07_21",
+    "evaluator_index_sha256": "58ac9787a84af6f54cc8608fe13fbd3f783cf1815385db6780b69a036f64a3aa",
+    "role": "construct_validity_reference_only_not_a_job_a_gate"
+  }
+}

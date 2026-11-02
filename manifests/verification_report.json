@@ -1,0 +1,245 @@
+{
+  "verified_release": "1.0.0",
+  "historical_report": true,
+  "current_release_inventory": "RELEASE_MANIFEST.json",
+  "current_numerical_verification": "manifests/replay_verification.json",
+  "config_protocol_files": 31,
+  "deployment_field_replacements": 10,
+  "exact_projection_values_verified": true,
+  "files": [
+    {
+      "bytes": 406,
+      "path": "configs/static_cort/model_plans/jobd_transport_models.json",
+      "sha256": "e54eee79a6d5dce096be9ce6d875fe3152346544227783397a71c643456eb6f3"
+    },
+    {
+      "bytes": 406,
+      "path": "configs/static_cort/model_plans/jobe_component_models.json",
+      "sha256": "a891d950a3ffedcf33de54ee474b08e36ff8de040783d306d4bc9c8bf60bcd53"
+    },
+    {
+      "bytes": 1177,
+      "path": "configs/static_cort/prompt_serialization.json",
+      "sha256": "3daf5b666043b8ff4456dec54f124391baf2b8d7795cb62caf6ebfeabad2e4eb"
+    },
+    {
+      "bytes": 1690,
+      "path": "configs/static_cort/recipes/compression_and_correction_screen_v1.json",
+      "sha256": "32b5efd4b6f188e13a123949e6b4f179c75f005f215082903c59252b54d2d3d1"
+    },
+    {
+      "bytes": 5467,
+      "path": "configs/static_cort/recipes/cross_source_validation_v1.json",
+      "sha256": "272267e90364808ca9efd487c8691824ca3421e90e8ef4145cb3afa3dca53b29"
+    },
+    {
+      "bytes": 1208,
+      "path": "configs/static_cort/recipes/early_application_pilots_v1.json",
+      "sha256": "263aa5dada85b0df52b2e39a3e2c6c794d71dc07b689474d16ad5c7f58677547"
+    },
+    {
+      "bytes": 6918,
+      "path": "configs/static_cort/recipes/late_removal_training_executed.json",
+      "sha256": "33728af1d7fef4b4af34bf665db7f6e965390accc3db56ee38148c2c36001de8"
+    },
+    {
+      "bytes": 7522,
+      "path": "configs/static_cort/recipes/late_removal_training_v2.json",
+      "sha256": "39c626caf0dc50f2174c3e76e9dc32793b7bc1d1bc23c5033b3f58aa8bd15148"
+    },
+    {
+      "bytes": 2124,
+      "path": "configs/static_cort/recipes/late_scene_removal_eval_v1.json",
+      "sha256": "fbadb27f0a945271593db605cb12036068388868d9175760aebf08573adb4bd8"
+    },
+    {
+      "bytes": 2322,
+      "path": "configs/static_cort/recipes/late_scene_removal_executed.json",
+      "sha256": "48fec20c5b170674a2b403ca84bfd78dc9ba426bf808680bc6d22f73477d6946"
+    },
+    {
+      "bytes": 1783,
+      "path": "configs/temporal/dense_current_v2.json",
+      "sha256": "bb43e8a48905accd890bb8e04fd9e34047d6d06b727956d487775cdffb7080c7"
+    },
+    {
+      "bytes": 6579,
+      "path": "configs/temporal/followup_protocol.py",
+      "sha256": "5ed381696a0552fb050d8a73777cf7e25f67bfa3ad0ee784ef45dc3d4fe4209f"
+    },
+    {
+      "bytes": 2169,
+      "path": "configs/temporal/gemma_model_inventory.json",
+      "sha256": "fec2bf8c12c3d5632db8d3e5776442dd822d2de6b455aaa5b39fb2adf49e43ec"
+    },
+    {
+      "bytes": 2400,
+      "path": "configs/temporal/interaction_order_followup_v1.json",
+      "sha256": "df153b2ada0222252b2021843abb9f0e3678ddec35e68cddefc4daab0ea1b141"
+    },
+    {
+      "bytes": 1554,
+      "path": "configs/temporal/interaction_order_v1.json",
+      "sha256": "050b7c91d8f190ab9b618223e44c496f207b79d34d491d4bdfc02c5df74abee8"
+    },
+    {
+      "bytes": 2523,
+      "path": "configs/temporal/new_interaction_followup_v1.json",
+      "sha256": "c1232f374a0965a16269a870d8e4d58c9fe139af722ccdd2d8c2edb4d971aa22"
+    },
+    {
+      "bytes": 1677,
+      "path": "configs/temporal/new_interaction_v1.json",
+      "sha256": "71676831b7eb102c667a0d4d6dec6c85c9e6854d49c25ec3d2bb3f3de4e1cb2f"
+    },
+    {
+      "bytes": 19706,
+      "path": "configs/temporal/protocol.py",
+      "sha256": "9ecf07efb32d0cd6651995569bfda7c2255b162dd8aba67b97e1aec95acc3f73"
+    },
+    {
+      "bytes": 10746,
+      "path": "configs/temporal/recognition_protocol.py",
+      "sha256": "f4593688ccd4a859fa152eb132306dc2615f2cfbfd0937ed8746bf62267a2e93"
+    },
+    {
+      "bytes": 9014,
+      "path": "docs/data_access.md",
+      "sha256": "a6b029fb6b401a576b800fa5eed42a78ba88d792f767304f1f5b767cf26c2a99"
+    },
+    {
+      "bytes": 6871,
+      "path": "docs/environment.md",
+      "sha256": "56965a9ae788adccfda3f2e3bfe94fd5e0895e5ffc1e2a59537eea0f8e8c43af"
+    },
+    {
+      "bytes": 10549,
+      "path": "docs/experiments.md",
+      "sha256": "37fbeed3a22b5945c1de04bbd7232095bc1fb121a8a79b76a8389b23e6041b68"
+    },
+    {
+      "bytes": 4314,
+      "path": "manifests/documentation_provenance.json",
+      "sha256": "709cc9a3f0dd7211b5f5020df87b23357cffd71966607cd55f7b455e41a1e0ef"
+    },
+    {
+      "bytes": 5862,
+      "path": "manifests/experiment_inventory.json",
+      "sha256": "7208ae5dd99a0cf5aa05e9a3c289c2647ce46345eb5d52fac2dfbf0f4c92c5d3"
+    },
+    {
+      "bytes": 24818,
+      "path": "manifests/source_to_export.json",
+      "sha256": "1c6669f489b8a646dddc41d26b03e8d6666499c59c1b202fe27b6fd5c386f689"
+    },
+    {
+      "bytes": 3642,
+      "path": "protocols/contracts/answer_token_causal.json",
+      "sha256": "41492239735b08d912cdf7f00bdd62c7ed3358ecd79225adb3da463c60b21f0a"
+    },
+    {
+      "bytes": 3181,
+      "path": "protocols/contracts/behavioral.json",
+      "sha256": "d0d75a84db28acf3143fe4af829f29034cfbba8c959d8732cbc93a57bb9f19ed"
+    },
+    {
+      "bytes": 2696,
+      "path": "protocols/contracts/component_closure.json",
+      "sha256": "86a16ad060a16352e4b454d13d5ff789468838e4eb2274eebe453dd01880dc3c"
+    },
+    {
+      "bytes": 2134,
+      "path": "protocols/contracts/transport.json",
+      "sha256": "ef2521483c71c44e9f246b0c80d9fbc1bc73ffe33afc9f4a5beb59e38081de1b"
+    },
+    {
+      "bytes": 1565,
+      "path": "protocols/current/qwen_role_factorial_v1.json",
+      "sha256": "3185e817bfb163bbe10bf7f6705222ac9da186e854010568bc386c0166efb2db"
+    },
+    {
+      "bytes": 16003,
+      "path": "protocols/historical_provenance/static_construction_retained_2026_07_21.json",
+      "sha256": "71ad8b95d898d05c512f53a705ca0f896d8933020537467a183071b57144c2e0"
+    },
+    {
+      "bytes": 11802,
+      "path": "protocols/preregistration/answer_token_causal_intervention_v1_2026_07_23.json",
+      "sha256": "87868dc8eb7ab417885a5222b3a00b8cc01a1f9a0f74efcf58f76cb2084d0234"
+    },
+    {
+      "bytes": 11556,
+      "path": "protocols/preregistration/behavioral_2afc_v1_2026_07_22.json",
+      "sha256": "164f2ab83ed5431ac43ec5ec9393efd484f676914653e732c5175de6e663f732"
+    },
+    {
+      "bytes": 10826,
+      "path": "protocols/preregistration/component_closure_v1_2026_07_26.json",
+      "sha256": "9ba19acaf8f50a19c1526c07ac9bbefc7fa4064a9a01079129fdccb22fc6c5a1"
+    },
+    {
+      "bytes": 8001,
+      "path": "protocols/preregistration/transport_decomposition_v1_2026_07_26.json",
+      "sha256": "3b362fcf45668a1c693d3f6ae6c0ce4bc9420dd95620eaa2c2d97db84ff91b3b"
+    },
+    {
+      "bytes": 20050,
+      "path": "protocols/specifications/component_partition.py",
+      "sha256": "e6a59fa7ac3c92288d6a0f7d30ac5d0997a239f5a63a87856b96fffc3c378191"
+    },
+    {
+      "bytes": 21198,
+      "path": "protocols/specifications/transport_operators.py",
+      "sha256": "73bfbbc64ff08f1c62590649f0ec45f1b52e9ec3adbecbd415598daf52f717e5"
+    }
+  ],
+  "inclusive_row_counts_verified_against_local_completed_results": {
+    "practical": 43806,
+    "static": 44560,
+    "temporal": 12032
+  },
+  "local_observed_tests": [
+    {
+      "command": "python -B -m unittest discover -s tests -v",
+      "numpy": "2.4.6",
+      "python": "3.12.15",
+      "status": "pass",
+      "tests": 29
+    },
+    {
+      "command": "python -B runtime/cpu_checks.py",
+      "detail": "Synthetic CPU suite; seven tests require excluded frozen adapter files.",
+      "numpy": "2.4.6",
+      "python": "3.12.15",
+      "skipped": 7,
+      "status": "pass",
+      "tests": 127
+    },
+    {
+      "command": "python -B analysis/replay_cluster_sufficient_stats.py",
+      "datasets": 4,
+      "discrepancies": 0,
+      "historical_comparison_performed": true,
+      "numpy": "2.4.6",
+      "python": "3.12.15",
+      "status": "pass"
+    }
+  ],
+  "no_other_value_changes_in_complete_sanitized_plans": true,
+  "not_performed": [
+    "new model inference or training",
+    "independent dataset reannotation",
+    "statistical replay of temporal or practical confidence intervals"
+  ],
+  "private_paths_accounts_credentials_raw_identifier_patterns": "no matches",
+  "release_date": "2026-11-02",
+  "sanitized_files": 5,
+  "schema_version": 1,
+  "scope": "Configuration and protocol provenance, public documentation, and CPU release checks.",
+  "scoped_files_hashed_excluding_this_report": 37,
+  "source_and_export_hashes_verified": true,
+  "source_prompt_literals_verified": true,
+  "status": "pass",
+  "syntax_finite_json_and_no_media_weights_symlinks_checks": "pass",
+  "temporal_followup_protocols_and_inventories_verified": true
+}

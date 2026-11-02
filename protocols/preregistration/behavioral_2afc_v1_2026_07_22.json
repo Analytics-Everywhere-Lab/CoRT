@@ -1,0 +1,191 @@
+{
+  "analysis_visibility": {
+    "canary": "Technical and evaluator-unjoined. The evaluator may be byte-hashed but never parsed, joined, or used to emit accuracy, effect direction, confidence intervals, p-values, or promotion decisions.",
+    "full": "Hidden labels are joined only after exact model, data, code, token-boundary, row-completeness, and copyback gates pass.",
+    "mechanism": "This behavioral confirmation does not itself localize or causally identify a failure site. Any later mechanism job requires a separately frozen confirmation-bound intervention specification."
+  },
+  "behavioral_analysis": {
+    "anchor_contrast": "qwen35_27b_hf_bf16_minus_gemma4_31b_hf_bf16_delta_evidence",
+    "anchor_contrast_scope": "secondary_descriptive_unless_a_separately_prespecified_interaction_test_is_reported",
+    "bootstrap": {
+      "cluster_key": "ego4d_participant_id",
+      "confidence_interval": "percentile_95_with_one_sided_95_lower_bound_for_each_smooth_component",
+      "draws": 10000,
+      "seed": 20260722,
+      "statistic": "participant_equal_mean_of_within_question_paired_differences"
+    },
+    "candidate_comparability_gate": "A and B must each encode as exactly one token after the identical frozen prefix, append at the exact generation boundary, preserve visual tensors, and have finite log probabilities. Any violation withholds that model configuration.",
+    "counterbalanced_pair_correctness": {
+      "claim_boundary": "This defeats a fixed A/B position shortcut but does not by itself prove scene-target binding.",
+      "confirmatory_gate": "participant-cluster one-sided lower 95 percent bound above 0.25 and its centered-bootstrap p value included in the per-model conjunction",
+      "primary": "same-frame both counterbalanced crop orders correct rate on real with paired chance null 0.25",
+      "secondary": "crop-order consistency, prediction flip compliance, and paired correct-answer margin separation"
+    },
+    "multiplicity": {
+      "family": "two-anchor-model conjunctive tests, each the maximum of the real-minus-blank, real-minus-wrong-time, and counterbalanced-pair-correctness one-sided p values",
+      "method": "holm"
+    },
+    "primary_choice_rule": "Append the identical frozen prefix {\"answer\":\" at the exact generation boundary. Choose A iff the single A answer token has strictly greater log probability than the single B answer token; choose B iff B is strictly greater. A tie is invalid and incorrect.",
+    "primary_effect_summary": "minimum of the two observed smooth evidence-effect components, with componentwise one-sided participant-cluster bootstrap gates",
+    "primary_estimand": "participant_equal intersection-union test requiring positive real-minus-blank_full and real-minus-wrong_time forced-choice accuracy effects",
+    "primary_outcome": "exact_answer_token_log_likelihood_forced_choice_accuracy",
+    "secondary_outcomes": [
+      "strict_greedy_canonical_JSON_accuracy",
+      "strict_parse_validity",
+      "abstention_rate",
+      "correct_candidate_margin_bits",
+      "anchor_model_interaction_contrast"
+    ]
+  },
+  "candidate_completions": {
+    "A": "A",
+    "B": "B"
+  },
+  "candidate_shared_prefix": "{\"answer\":\"",
+  "claim_boundary": "The strongest permitted claim is that exact forced-choice preference depends on correct full-frame visual evidence for specified model configurations, while resisting fixed crop-order shortcuts. The study does not establish participant-independent replication, durable memory, universal architecture defects, exact computational origin, or causal localization.",
+  "created_at": "2026-07-22",
+  "data": {
+    "arms": [
+      "real",
+      "blank_full",
+      "wrong_time"
+    ],
+    "burned_exclusion": {
+      "evaluator_index": "runs/research/lifecycle_memory/phase_2/job3_burned_egohos_prompt_repair_round1_final_2026_07_21/hidden/evaluator_index.json",
+      "evaluator_index_sha256": "58ac9787a84af6f54cc8608fe13fbd3f783cf1815385db6780b69a036f64a3aa",
+      "rule": "Retain the original prompt-repair burned exclusion exactly."
+    },
+    "candidate_sidecar": "data/external/egohos/derived/job3_stage_a2_census_mapped_subset_v2_2026_07_17/hidden/egohos_candidate_sidecar.jsonl",
+    "candidate_sidecar_sha256": "89ff17f0d788f337c659c7a4cec086abcb4fa0ea9a1a7b48d30221eef5c848bd",
+    "fixed_geometry": {
+      "full_frame": "All real, blank_full, and wrong_time assets have one identical pixel width and height.",
+      "reference_crop": "All first-order and second-order target crops are centered on one identical canvas width and height.",
+      "require_processor_token_shape_identity_for_patching": true
+    },
+    "frame_count": 320,
+    "frame_level_statistical_units": 320,
+    "independence_boundary": "The confirmation cohort is source-frame-disjoint and donor-frame-disjoint from Job A, but not participant-disjoint or video-disjoint. Inference is participant-clustered and no independent-participant replication claim is permitted.",
+    "mechanism_subset": {
+      "frame_count": 80,
+      "participant_clusters": 80,
+      "selection": "outcome_blind_participant_first_hash_order_one_frame_per_participant_before_fill",
+      "trial_count": 160
+    },
+    "minimum_participant_clusters": 80,
+    "selection": {
+      "additional_exclusion": {
+        "path": "runs/research/lifecycle_memory/phase_2/reanchored_egohos_battery_v3_2026_07_21/hidden/evaluator_index.json",
+        "rule": "Exclude every prior Job A source frame from confirmation selection and from wrong-time donor use. Participant and video overlap is permitted because a participant-disjoint or video-disjoint cohort is not constructible from the available mapped pool.",
+        "scope": "source_and_donor_frames_only",
+        "sha256": "620f000ffcaadab02620747201781ab113ebfeb9b1da5704bc1ea3035aa2e013"
+      },
+      "exact_targets_per_frame": 2,
+      "first_order_classes": [
+        3,
+        4,
+        5
+      ],
+      "max_frames_per_participant": 10,
+      "one_target_per_role": true,
+      "outcome_blind_hash_order": true,
+      "second_order_classes": [
+        6,
+        7,
+        8
+      ],
+      "target_component_rule": "within the chosen class mask, select the largest 8-connected component with area at least 64 pixels; break exact area ties by lexicographically smallest top,left,bottom,right bounding box; render only that component and record its hidden fingerprint",
+      "wrong_time_minimum_source_frame_gap": 900,
+      "wrong_time_same_video": true
+    },
+    "statistical_unit": "participant cluster; two counterbalanced crop orders are paired repeated trials within each of 320 source-frame units",
+    "target_roles": [
+      "first_order_interacting_object",
+      "second_order_interacting_object"
+    ]
+  },
+  "generation": {
+    "do_sample": false,
+    "max_new_tokens": 96,
+    "prompt_source": "reanchored_egohos_first_vs_second_order_2afc_v1",
+    "prompt_source_prespec": "docs/research/lifecycle_memory/phase 2 research/jobs/mech_job3_heldout_confirmation/scoring_prespec_prompt_repair_round1_final.json",
+    "prompt_source_prespec_sha256": "19cbe5775b122dba9a02ced1f62b2c29c12e35d07e4f646cc6af7fdf20c42dc8",
+    "prompt_text": "Input 1 is a full frame. Inputs 2 and 3 are unmarked target-only reference crops A and B. Which referenced target is the first-order interacting object, meaning the object directly manipulated by a visible hand rather than a second-order object interacting through it? Return exactly one JSON object with answer A or B plus the frozen abstention and confidence keys."
+  },
+  "job_a": {
+    "arms_per_question": 3,
+    "expected_model_decisions": 3840,
+    "models": 2,
+    "promotion_rule": "Per anchor model, require the capability gate, positive one-sided lower bounds for both evidence contrasts, the counterbalanced-pair lower bound above 0.25, and Holm-adjusted conjunctive p below 0.05 across the two anchors.",
+    "questions_per_model": 640,
+    "required_outputs": [
+      "exact_single_token_A_and_B_log_probabilities_after_frozen_shared_prefix",
+      "answer_token_ids_and_prefix_hash",
+      "forced_choice_prediction",
+      "strict_greedy_JSON_as_secondary"
+    ],
+    "tamia_walltime_initial": "01:30:00"
+  },
+  "job_b": {
+    "arms": [
+      "real",
+      "blank_full",
+      "wrong_time"
+    ],
+    "diagnostic_frame_count": 80,
+    "diagnostic_trial_count": 160,
+    "status": "deferred_until_behavioral_confirmation",
+    "subset_selection": "outcome_blind_participant_first_hash_order_one_frame_per_participant_before_fill"
+  },
+  "job_c": {
+    "eligibility": "Only models passing this confirmation protocol may enter a future causal intervention job. The old Job C preregistration is not automatically unlocked.",
+    "status": "blocked_until_a_new_confirmation_bound_intervention_prespec_is_frozen"
+  },
+  "kill_rules": [
+    "Do not run if the exact 320-frame, 80-participant-minimum cohort cannot be built without relaxing a frozen rule.",
+    "Do not promote a model unless real-arm forced-choice accuracy is at least 0.65 and its participant-cluster lower bound is strictly above 0.50.",
+    "Do not promote a model unless both evidence contrasts and counterbalanced-pair correctness pass inside the model conjunction and two-anchor-model Holm family.",
+    "Withhold a model configuration unless A and B each encode as exactly one answer token after the frozen shared prefix, or for candidate-text drift, token-boundary failure, visual-tensor drift, missing or duplicate rows, nonfinite scores, or provenance mismatch.",
+    "Do not use strict generated-JSON accuracy as the primary outcome or amend its parser after model output exists.",
+    "Do not call this participant-independent or video-independent replication.",
+    "Do not reuse Job A model outputs as confirmation observations.",
+    "Do not issue a causal localization claim from this behavioral job."
+  ],
+  "kind": "phase2_reanchored_evidence_failure_localization_prespec",
+  "models": [
+    {
+      "model_id": "Qwen/Qwen3.5-27B",
+      "model_key": "qwen35_27b_hf_bf16",
+      "revision": "fc05daec18b0a78c049392ed2e771dde82bdf654"
+    },
+    {
+      "model_id": "google/gemma-4-31B-it",
+      "model_key": "gemma4_31b_hf_bf16",
+      "revision": "3548789868c5356dbf307c98e6f609007b82b3eb"
+    }
+  ],
+  "rationale": "Job A completed technically, but its strict generated-JSON primary outcome confounded task choice with response-format compliance. This new study prospectively tests the same visual-evidence question using the exact A-versus-B answer-token likelihood after an identical frozen prefix. No Job A output is reused as confirmation data.",
+  "status": "prospectively_frozen_before_any_confirmation_cohort_model_output",
+  "study_id": "reanchored_answer_token_confirmation_v1",
+  "tamia": {
+    "account": "__DEPLOYMENT_ACCOUNT__",
+    "cpus_per_task": 12,
+    "gpus": "h100:4",
+    "host_memory": "480G",
+    "ntasks_per_node": 4,
+    "partition": null,
+    "runtime": "HF_PyTorch_bf16_offline_Apptainer",
+    "sif": "__CONTAINER_IMAGE_PATH__"
+  },
+  "task_capability_gate": {
+    "arm": "real_full_frame_plus_two_counterbalanced_reference_crops",
+    "bootstrap_cluster": "ego4d_participant_id",
+    "confidence": 0.95,
+    "minimum_accuracy": 0.65,
+    "minimum_cluster_bootstrap_lower_bound": 0.5,
+    "per_model": true,
+    "primary_metric": "exact_answer_token_log_likelihood_forced_choice_accuracy",
+    "source_cohort": "fresh_320_frame_source_and_donor_disjoint_confirmation_cohort",
+    "strict_lower_bound_operator": ">"
+  },
+  "version": 1
+}

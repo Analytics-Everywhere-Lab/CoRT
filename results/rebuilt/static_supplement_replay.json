@@ -1,0 +1,4198 @@
+{
+  "behavior": {
+    "gemma4_31b_hf_bf16": {
+      "cells": {
+        "blank": {
+          "ci95": [
+            0.10642403455284553,
+            0.26824949186991875
+          ],
+          "estimate": 0.1871007549361208,
+          "one_sided_lower_95": 0.11966318234610918
+        },
+        "pair": {
+          "ci95": [
+            0.6365556039488967,
+            0.8016303716608595
+          ],
+          "estimate": 0.7219221835075493,
+          "one_sided_lower_95": 0.6520034843205575
+        },
+        "real": {
+          "ci95": [
+            0.7124350319396051,
+            0.8498718786295006
+          ],
+          "estimate": 0.7835075493612079,
+          "one_sided_lower_95": 0.724259581881533
+        },
+        "wrong": {
+          "ci95": [
+            0.06576655052264808,
+            0.2458623693379791
+          ],
+          "estimate": 0.1559088269454123,
+          "one_sided_lower_95": 0.08000798490127758
+        }
+      },
+      "conjunction": 0.00039996000399960006,
+      "tails": {
+        "blank": 9.999000099990002e-05,
+        "pair": 9.999000099990002e-05,
+        "wrong": 0.00039996000399960006
+      }
+    },
+    "qwen35_27b_hf_bf16": {
+      "cells": {
+        "blank": {
+          "ci95": [
+            0.20623983739837398,
+            0.3403622241579558
+          ],
+          "estimate": 0.27674216027874565,
+          "one_sided_lower_95": 0.21860627177700348
+        },
+        "pair": {
+          "ci95": [
+            0.6226190476190476,
+            0.786441637630662
+          ],
+          "estimate": 0.707171893147503,
+          "one_sided_lower_95": 0.637656794425087
+        },
+        "real": {
+          "ci95": [
+            0.7105807200929152,
+            0.8449194250871079
+          ],
+          "estimate": 0.7811120789779326,
+          "one_sided_lower_95": 0.7226720383275261
+        },
+        "wrong": {
+          "ci95": [
+            0.13466862659698026,
+            0.2790860917537746
+          ],
+          "estimate": 0.2079994192799071,
+          "one_sided_lower_95": 0.1465156794425087
+        }
+      },
+      "conjunction": 9.999000099990002e-05,
+      "tails": {
+        "blank": 9.999000099990002e-05,
+        "pair": 9.999000099990002e-05,
+        "wrong": 9.999000099990002e-05
+      }
+    }
+  },
+  "comparison": "rtol=atol=1e-12; metric draw arrays SHA-256 exact",
+  "counts": {
+    "behavior_clusters_per_model": 82,
+    "behavior_models": 2,
+    "exploratory_clusters": 80,
+    "exploratory_endpoints": 128,
+    "exploratory_outcomes": 20480,
+    "exploratory_screen_tests": 4,
+    "gemma_stratified_endpoints": 16,
+    "gemma_windows": 12,
+    "loco_rows": 46,
+    "metric_rows": 322,
+    "metric_strata": 7,
+    "sensitivity_tests": 2,
+    "stratified_cluster_records": 736,
+    "window_cluster_records": 552
+  },
+  "coverage": {
+    "behavior": "original_random_Random_full_intervals_and_tails",
+    "exploratory": "four_cut_profiles_middle_cut_four_test_family_clamp_full_sequence",
+    "gemma_stratified_endpoints": "F_K_by_corruption_direction_at_two_cuts",
+    "gemma_windows": "twelve_deterministic_overlapping_selected_windows_not_random_reference",
+    "loco": "46_recomputed_rows_saved_min_median_max_reference_only",
+    "metric_dependence": "seven_strata_and_exact_saved_draw_hashes",
+    "sensitivity": "current_family_A_only"
+  },
+  "exploratory": {
+    "clamp_vectors_identical": true,
+    "endpoints": [
+      {
+        "ci95": [
+          0.5585538200883162,
+          0.6558333878928612
+        ],
+        "estimate": 0.6097172391982324,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "rescue",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "single_full_frame",
+          "start_layer": 24
+        },
+        "mean_error_bits": 1.1045634009697602,
+        "mean_gap_bits": 2.830161902874285
+      },
+      {
+        "ci95": [
+          0.5588090138901497,
+          0.6564278063754218
+        ],
+        "estimate": 0.6097172391982324,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "rescue",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "persistent_full_frame",
+          "start_layer": 24
+        },
+        "mean_error_bits": 1.1045634009697602,
+        "mean_gap_bits": 2.830161902874285
+      },
+      {
+        "ci95": [
+          -0.027260235863704827,
+          0.05108427344790115
+        ],
+        "estimate": 0.01274392393985957,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "rescue",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "complement_once",
+          "start_layer": 24
+        },
+        "mean_error_bits": 2.794094534846567,
+        "mean_gap_bits": 2.830161902874285
+      },
+      {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "estimate": 1.0,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "rescue",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "full_sequence_once",
+          "start_layer": 24
+        },
+        "mean_error_bits": 0.0,
+        "mean_gap_bits": 2.830161902874285
+      },
+      {
+        "ci95": [
+          0.11358091820333543,
+          0.23371837599378045
+        ],
+        "estimate": 0.1728395041754719,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "rescue",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "single_full_frame",
+          "start_layer": 28
+        },
+        "mean_error_bits": 2.3409981228451837,
+        "mean_gap_bits": 2.830161902874285
+      },
+      {
+        "ci95": [
+          0.11547142153285939,
+          0.23462219327394185
+        ],
+        "estimate": 0.1728395041754719,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "rescue",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "persistent_full_frame",
+          "start_layer": 28
+        },
+        "mean_error_bits": 2.3409981228451837,
+        "mean_gap_bits": 2.830161902874285
+      },
+      {
+        "ci95": [
+          0.1519960194958734,
+          0.2419523001152017
+        ],
+        "estimate": 0.19713261676028926,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "rescue",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "complement_once",
+          "start_layer": 28
+        },
+        "mean_error_bits": 2.2722446811053976,
+        "mean_gap_bits": 2.830161902874285
+      },
+      {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "estimate": 1.0,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "rescue",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "full_sequence_once",
+          "start_layer": 28
+        },
+        "mean_error_bits": 0.0,
+        "mean_gap_bits": 2.830161902874285
+      },
+      {
+        "ci95": [
+          0.0731397190712973,
+          0.17134370901571028
+        ],
+        "estimate": 0.12106729998514265,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "rescue",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "single_full_frame",
+          "start_layer": 32
+        },
+        "mean_error_bits": 2.4875218427724817,
+        "mean_gap_bits": 2.830161902874285
+      },
+      {
+        "ci95": [
+          0.07357538799741004,
+          0.17145143578294605
+        ],
+        "estimate": 0.12106729998514265,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "rescue",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "persistent_full_frame",
+          "start_layer": 32
+        },
+        "mean_error_bits": 2.4875218427724817,
+        "mean_gap_bits": 2.830161902874285
+      },
+      {
+        "ci95": [
+          0.45008015882712515,
+          0.5444923984374929
+        ],
+        "estimate": 0.49900437847202395,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "rescue",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "complement_once",
+          "start_layer": 32
+        },
+        "mean_error_bits": 1.4178987215553018,
+        "mean_gap_bits": 2.830161902874285
+      },
+      {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "estimate": 1.0,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "rescue",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "full_sequence_once",
+          "start_layer": 32
+        },
+        "mean_error_bits": 0.0,
+        "mean_gap_bits": 2.830161902874285
+      },
+      {
+        "ci95": [
+          0.06492437669374952,
+          0.12018517210599534
+        ],
+        "estimate": 0.09239346653913805,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "rescue",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "single_full_frame",
+          "start_layer": 36
+        },
+        "mean_error_bits": 2.5686734338007264,
+        "mean_gap_bits": 2.830161902874285
+      },
+      {
+        "ci95": [
+          0.06491819064117121,
+          0.12166788020142932
+        ],
+        "estimate": 0.09239346653913805,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "rescue",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "persistent_full_frame",
+          "start_layer": 36
+        },
+        "mean_error_bits": 2.5686734338007264,
+        "mean_gap_bits": 2.830161902874285
+      },
+      {
+        "ci95": [
+          0.7193049366090499,
+          0.7916813694800157
+        ],
+        "estimate": 0.7574671349032187,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "rescue",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "complement_once",
+          "start_layer": 36
+        },
+        "mean_error_bits": 0.6864072749918588,
+        "mean_gap_bits": 2.830161902874285
+      },
+      {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "estimate": 1.0,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "rescue",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "full_sequence_once",
+          "start_layer": 36
+        },
+        "mean_error_bits": 0.0,
+        "mean_gap_bits": 2.830161902874285
+      },
+      {
+        "ci95": [
+          0.7748362521527603,
+          0.839725180389381
+        ],
+        "estimate": 0.8096375892892105,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "damage",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "single_full_frame",
+          "start_layer": 24
+        },
+        "mean_error_bits": 0.5387564425329844,
+        "mean_gap_bits": 2.830161902874285
+      },
+      {
+        "ci95": [
+          0.7745962011009385,
+          0.8396918454842944
+        ],
+        "estimate": 0.8096375892892105,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "damage",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "persistent_full_frame",
+          "start_layer": 24
+        },
+        "mean_error_bits": 0.5387564425329844,
+        "mean_gap_bits": 2.830161902874285
+      },
+      {
+        "ci95": [
+          0.2000851925027535,
+          0.29978531361590843
+        ],
+        "estimate": 0.25009955933509254,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "damage",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "complement_once",
+          "start_layer": 24
+        },
+        "mean_error_bits": 2.1223396581184595,
+        "mean_gap_bits": 2.830161902874285
+      },
+      {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "estimate": 1.0,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "damage",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "full_sequence_once",
+          "start_layer": 24
+        },
+        "mean_error_bits": 0.0,
+        "mean_gap_bits": 2.830161902874285
+      },
+      {
+        "ci95": [
+          0.6231676834595349,
+          0.6987286567968282
+        ],
+        "estimate": 0.6634806842517699,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "damage",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "single_full_frame",
+          "start_layer": 28
+        },
+        "mean_error_bits": 0.9524041470119633,
+        "mean_gap_bits": 2.830161902874285
+      },
+      {
+        "ci95": [
+          0.623627460970624,
+          0.6988865872693656
+        ],
+        "estimate": 0.6634806842517699,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "damage",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "persistent_full_frame",
+          "start_layer": 28
+        },
+        "mean_error_bits": 0.9524041470119633,
+        "mean_gap_bits": 2.830161902874285
+      },
+      {
+        "ci95": [
+          0.38707724175293123,
+          0.5376314841163282
+        ],
+        "estimate": 0.46714456330000187,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "damage",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "complement_once",
+          "start_layer": 28
+        },
+        "mean_error_bits": 1.5080671566877748,
+        "mean_gap_bits": 2.830161902874285
+      },
+      {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "estimate": 1.0,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "damage",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "full_sequence_once",
+          "start_layer": 28
+        },
+        "mean_error_bits": 0.0,
+        "mean_gap_bits": 2.830161902874285
+      },
+      {
+        "ci95": [
+          0.3475110286799852,
+          0.43867257078564115
+        ],
+        "estimate": 0.3942652347319284,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "damage",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "single_full_frame",
+          "start_layer": 32
+        },
+        "mean_error_bits": 1.7143274559081938,
+        "mean_gap_bits": 2.830161902874285
+      },
+      {
+        "ci95": [
+          0.34702177765943953,
+          0.4385354877382577
+        ],
+        "estimate": 0.3942652347319284,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "damage",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "persistent_full_frame",
+          "start_layer": 32
+        },
+        "mean_error_bits": 1.7143274559081938,
+        "mean_gap_bits": 2.830161902874285
+      },
+      {
+        "ci95": [
+          0.5235227973116553,
+          0.6459330509150352
+        ],
+        "estimate": 0.5882118665668421,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "damage",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "complement_once",
+          "start_layer": 32
+        },
+        "mean_error_bits": 1.1654270872982362,
+        "mean_gap_bits": 2.830161902874285
+      },
+      {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "estimate": 1.0,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "damage",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "full_sequence_once",
+          "start_layer": 32
+        },
+        "mean_error_bits": 0.0,
+        "mean_gap_bits": 2.830161902874285
+      },
+      {
+        "ci95": [
+          0.09959677237905634,
+          0.17986779467333106
+        ],
+        "estimate": 0.1413779366644019,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "damage",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "single_full_frame",
+          "start_layer": 36
+        },
+        "mean_error_bits": 2.430039452619721,
+        "mean_gap_bits": 2.830161902874285
+      },
+      {
+        "ci95": [
+          0.09964401859854156,
+          0.18163930481078777
+        ],
+        "estimate": 0.1413779366644019,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "damage",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "persistent_full_frame",
+          "start_layer": 36
+        },
+        "mean_error_bits": 2.430039452619721,
+        "mean_gap_bits": 2.830161902874285
+      },
+      {
+        "ci95": [
+          0.7551100043705031,
+          0.8160585521563938
+        ],
+        "estimate": 0.7873357206319533,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "damage",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "complement_once",
+          "start_layer": 36
+        },
+        "mean_error_bits": 0.6018743415696596,
+        "mean_gap_bits": 2.830161902874285
+      },
+      {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "estimate": 1.0,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "damage",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "full_sequence_once",
+          "start_layer": 36
+        },
+        "mean_error_bits": 0.0,
+        "mean_gap_bits": 2.830161902874285
+      },
+      {
+        "ci95": [
+          0.7837343917687521,
+          0.8617645082253631
+        ],
+        "estimate": 0.8281914788961987,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "rescue",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "single_full_frame",
+          "start_layer": 24
+        },
+        "mean_error_bits": 0.3640551001619991,
+        "mean_gap_bits": 2.118958348649358
+      },
+      {
+        "ci95": [
+          0.7851131232384726,
+          0.8618135327055183
+        ],
+        "estimate": 0.8281914788961987,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "rescue",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "persistent_full_frame",
+          "start_layer": 24
+        },
+        "mean_error_bits": 0.3640551001619991,
+        "mean_gap_bits": 2.118958348649358
+      },
+      {
+        "ci95": [
+          -0.06729482668986003,
+          0.038192208020511875
+        ],
+        "estimate": -0.00957446093820491,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "rescue",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "complement_once",
+          "start_layer": 24
+        },
+        "mean_error_bits": 2.1392462325881842,
+        "mean_gap_bits": 2.118958348649358
+      },
+      {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "estimate": 1.0,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "rescue",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "full_sequence_once",
+          "start_layer": 24
+        },
+        "mean_error_bits": 0.0,
+        "mean_gap_bits": 2.118958348649358
+      },
+      {
+        "ci95": [
+          0.4050918349419892,
+          0.5734272826037033
+        ],
+        "estimate": 0.4946808512903258,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "rescue",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "single_full_frame",
+          "start_layer": 28
+        },
+        "mean_error_bits": 1.0707502288907507,
+        "mean_gap_bits": 2.118958348649358
+      },
+      {
+        "ci95": [
+          0.40375791800148936,
+          0.5756025744216441
+        ],
+        "estimate": 0.4946808512903258,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "rescue",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "persistent_full_frame",
+          "start_layer": 28
+        },
+        "mean_error_bits": 1.0707502288907507,
+        "mean_gap_bits": 2.118958348649358
+      },
+      {
+        "ci95": [
+          0.11411529742926703,
+          0.24870631925200246
+        ],
+        "estimate": 0.18563830113161006,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "rescue",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "complement_once",
+          "start_layer": 28
+        },
+        "mean_error_bits": 1.7255985206374493,
+        "mean_gap_bits": 2.118958348649358
+      },
+      {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "estimate": 1.0,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "rescue",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "full_sequence_once",
+          "start_layer": 28
+        },
+        "mean_error_bits": 0.0,
+        "mean_gap_bits": 2.118958348649358
+      },
+      {
+        "ci95": [
+          0.13677590516484486,
+          0.34464675788581484
+        ],
+        "estimate": 0.24574468392183757,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "rescue",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "single_full_frame",
+          "start_layer": 32
+        },
+        "mean_error_bits": 1.5982355990169825,
+        "mean_gap_bits": 2.118958348649358
+      },
+      {
+        "ci95": [
+          0.1350843418431583,
+          0.34479712283331176
+        ],
+        "estimate": 0.24574468392183757,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "rescue",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "persistent_full_frame",
+          "start_layer": 32
+        },
+        "mean_error_bits": 1.5982355990169825,
+        "mean_gap_bits": 2.118958348649358
+      },
+      {
+        "ci95": [
+          0.334911169219185,
+          0.47220740447608006
+        ],
+        "estimate": 0.4074468110655842,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "rescue",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "complement_once",
+          "start_layer": 32
+        },
+        "mean_error_bits": 1.2555955267113807,
+        "mean_gap_bits": 2.118958348649358
+      },
+      {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "estimate": 1.0,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "rescue",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "full_sequence_once",
+          "start_layer": 32
+        },
+        "mean_error_bits": 0.0,
+        "mean_gap_bits": 2.118958348649358
+      },
+      {
+        "ci95": [
+          0.06439375507889478,
+          0.23341879518873185
+        ],
+        "estimate": 0.15372340897957715,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "rescue",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "single_full_frame",
+          "start_layer": 36
+        },
+        "mean_error_bits": 1.7932248478092432,
+        "mean_gap_bits": 2.118958348649358
+      },
+      {
+        "ci95": [
+          0.06435864532828792,
+          0.23566330636386584
+        ],
+        "estimate": 0.15372340897957715,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "rescue",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "persistent_full_frame",
+          "start_layer": 36
+        },
+        "mean_error_bits": 1.7932248478092432,
+        "mean_gap_bits": 2.118958348649358
+      },
+      {
+        "ci95": [
+          0.5872517192453255,
+          0.7125933743639037
+        ],
+        "estimate": 0.6542553170796315,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "rescue",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "complement_once",
+          "start_layer": 36
+        },
+        "mean_error_bits": 0.73261858237524,
+        "mean_gap_bits": 2.118958348649358
+      },
+      {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "estimate": 1.0,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "rescue",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "full_sequence_once",
+          "start_layer": 36
+        },
+        "mean_error_bits": 0.0,
+        "mean_gap_bits": 2.118958348649358
+      },
+      {
+        "ci95": [
+          0.7353126039175416,
+          0.8364285001430868
+        ],
+        "estimate": 0.7925531861012137,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "damage",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "single_full_frame",
+          "start_layer": 24
+        },
+        "mean_error_bits": 0.4395711582115428,
+        "mean_gap_bits": 2.118958348649358
+      },
+      {
+        "ci95": [
+          0.7342816851630948,
+          0.8358712900206838
+        ],
+        "estimate": 0.7925531861012137,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "damage",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "persistent_full_frame",
+          "start_layer": 24
+        },
+        "mean_error_bits": 0.4395711582115428,
+        "mean_gap_bits": 2.118958348649358
+      },
+      {
+        "ci95": [
+          -0.01625558103298539,
+          0.051577438123603034
+        ],
+        "estimate": 0.01861701699139995,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "damage",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "complement_once",
+          "start_layer": 24
+        },
+        "mean_error_bits": 2.079509665068484,
+        "mean_gap_bits": 2.118958348649358
+      },
+      {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "estimate": 1.0,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "damage",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "full_sequence_once",
+          "start_layer": 24
+        },
+        "mean_error_bits": 0.0,
+        "mean_gap_bits": 2.118958348649358
+      },
+      {
+        "ci95": [
+          0.5534432837708946,
+          0.6772062946851338
+        ],
+        "estimate": 0.6218085071744852,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "damage",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "single_full_frame",
+          "start_layer": 28
+        },
+        "mean_error_bits": 0.8013720211107884,
+        "mean_gap_bits": 2.118958348649358
+      },
+      {
+        "ci95": [
+          0.5538000067595091,
+          0.6773058688043967
+        ],
+        "estimate": 0.6218085071744852,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "damage",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "persistent_full_frame",
+          "start_layer": 28
+        },
+        "mean_error_bits": 0.8013720211107884,
+        "mean_gap_bits": 2.118958348649358
+      },
+      {
+        "ci95": [
+          0.21324376223286876,
+          0.3667259825816158
+        ],
+        "estimate": 0.29042553149787076,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "damage",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "complement_once",
+          "start_layer": 28
+        },
+        "mean_error_bits": 1.5035587440210176,
+        "mean_gap_bits": 2.118958348649358
+      },
+      {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "estimate": 1.0,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "damage",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "full_sequence_once",
+          "start_layer": 28
+        },
+        "mean_error_bits": 0.0,
+        "mean_gap_bits": 2.118958348649358
+      },
+      {
+        "ci95": [
+          0.3780031938647593,
+          0.49720508951354075
+        ],
+        "estimate": 0.4425531937660976,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "damage",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "single_full_frame",
+          "start_layer": 32
+        },
+        "mean_error_bits": 1.1812065639972484,
+        "mean_gap_bits": 2.118958348649358
+      },
+      {
+        "ci95": [
+          0.37829582209918106,
+          0.4974837970979457
+        ],
+        "estimate": 0.4425531937660976,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "damage",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "persistent_full_frame",
+          "start_layer": 32
+        },
+        "mean_error_bits": 1.1812065639972484,
+        "mean_gap_bits": 2.118958348649358
+      },
+      {
+        "ci95": [
+          0.3580720660585171,
+          0.5125507218084426
+        ],
+        "estimate": 0.43936169658739277,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "damage",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "complement_once",
+          "start_layer": 32
+        },
+        "mean_error_bits": 1.1879692135887558,
+        "mean_gap_bits": 2.118958348649358
+      },
+      {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "estimate": 1.0,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "damage",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "full_sequence_once",
+          "start_layer": 32
+        },
+        "mean_error_bits": 0.0,
+        "mean_gap_bits": 2.118958348649358
+      },
+      {
+        "ci95": [
+          0.18299819285918317,
+          0.2955197069263526
+        ],
+        "estimate": 0.23936170474795815,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "damage",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "single_full_frame",
+          "start_layer": 36
+        },
+        "mean_error_bits": 1.6117608660267293,
+        "mean_gap_bits": 2.118958348649358
+      },
+      {
+        "ci95": [
+          0.18513172769667102,
+          0.29451878537279647
+        ],
+        "estimate": 0.23936170474795815,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "damage",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "persistent_full_frame",
+          "start_layer": 36
+        },
+        "mean_error_bits": 1.6117608660267293,
+        "mean_gap_bits": 2.118958348649358
+      },
+      {
+        "ci95": [
+          0.49419400823485005,
+          0.6210960101425588
+        ],
+        "estimate": 0.5643617082841603,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "damage",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "complement_once",
+          "start_layer": 36
+        },
+        "mean_error_bits": 0.923099395222623,
+        "mean_gap_bits": 2.118958348649358
+      },
+      {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "estimate": 1.0,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "damage",
+          "model_key": "qwen35_27b_hf_bf16",
+          "operator": "full_sequence_once",
+          "start_layer": 36
+        },
+        "mean_error_bits": 0.0,
+        "mean_gap_bits": 2.118958348649358
+      },
+      {
+        "ci95": [
+          0.6028475003903794,
+          0.773590772035177
+        ],
+        "estimate": 0.6947232525424795,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "rescue",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "single_full_frame",
+          "start_layer": 22
+        },
+        "mean_error_bits": 5.714143060515503,
+        "mean_gap_bits": 18.717911233349437
+      },
+      {
+        "ci95": [
+          0.6019053670654423,
+          0.770755171899312
+        ],
+        "estimate": 0.6947232525424795,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "rescue",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "persistent_full_frame",
+          "start_layer": 22
+        },
+        "mean_error_bits": 5.714143060515503,
+        "mean_gap_bits": 18.717911233349437
+      },
+      {
+        "ci95": [
+          -0.003348295311266663,
+          0.0845100784836247
+        ],
+        "estimate": 0.039139978236907735,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "rescue",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "complement_once",
+          "start_layer": 22
+        },
+        "mean_error_bits": 17.98529259503577,
+        "mean_gap_bits": 18.717911233349437
+      },
+      {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "estimate": 1.0,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "rescue",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "full_sequence_once",
+          "start_layer": 22
+        },
+        "mean_error_bits": 0.0,
+        "mean_gap_bits": 18.717911233349437
+      },
+      {
+        "ci95": [
+          0.1931770785156224,
+          0.3218929111390968
+        ],
+        "estimate": 0.25867759956455605,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "rescue",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "single_full_frame",
+          "start_layer": 26
+        },
+        "mean_error_bits": 13.876006886644166,
+        "mean_gap_bits": 18.717911233349437
+      },
+      {
+        "ci95": [
+          0.19380976926709648,
+          0.32259058961616305
+        ],
+        "estimate": 0.25867759956455605,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "rescue",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "persistent_full_frame",
+          "start_layer": 26
+        },
+        "mean_error_bits": 13.876006886644166,
+        "mean_gap_bits": 18.717911233349437
+      },
+      {
+        "ci95": [
+          0.1455364654431474,
+          0.30654235592335316
+        ],
+        "estimate": 0.22476883016552995,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "rescue",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "complement_once",
+          "start_layer": 26
+        },
+        "mean_error_bits": 14.510708222287253,
+        "mean_gap_bits": 18.717911233349437
+      },
+      {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "estimate": 1.0,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "rescue",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "full_sequence_once",
+          "start_layer": 26
+        },
+        "mean_error_bits": 0.0,
+        "mean_gap_bits": 18.717911233349437
+      },
+      {
+        "ci95": [
+          0.006770554247908173,
+          0.041913292504260444
+        ],
+        "estimate": 0.02393560174314624,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "rescue",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "single_full_frame",
+          "start_layer": 30
+        },
+        "mean_error_bits": 18.269886764604422,
+        "mean_gap_bits": 18.717911233349437
+      },
+      {
+        "ci95": [
+          0.006308937698319182,
+          0.041451120062080724
+        ],
+        "estimate": 0.02393560174314624,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "rescue",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "persistent_full_frame",
+          "start_layer": 30
+        },
+        "mean_error_bits": 18.269886764604422,
+        "mean_gap_bits": 18.717911233349437
+      },
+      {
+        "ci95": [
+          0.8604609459876134,
+          0.9292864979187417
+        ],
+        "estimate": 0.8996925261208863,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "rescue",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "complement_once",
+          "start_layer": 30
+        },
+        "mean_error_bits": 1.8775463921107658,
+        "mean_gap_bits": 18.717911233349437
+      },
+      {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "estimate": 1.0,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "rescue",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "full_sequence_once",
+          "start_layer": 30
+        },
+        "mean_error_bits": 0.0,
+        "mean_gap_bits": 18.717911233349437
+      },
+      {
+        "ci95": [
+          0.013783164731030459,
+          0.04580665479032236
+        ],
+        "estimate": 0.02908401378841574,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "rescue",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "single_full_frame",
+          "start_layer": 34
+        },
+        "mean_error_bits": 18.17351924494836,
+        "mean_gap_bits": 18.717911233349437
+      },
+      {
+        "ci95": [
+          0.013700901005904315,
+          0.04646066899796254
+        ],
+        "estimate": 0.02908401378841574,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "rescue",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "persistent_full_frame",
+          "start_layer": 34
+        },
+        "mean_error_bits": 18.17351924494836,
+        "mean_gap_bits": 18.717911233349437
+      },
+      {
+        "ci95": [
+          0.9341160793806101,
+          0.967787274807897
+        ],
+        "estimate": 0.953671818664892,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "rescue",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "complement_once",
+          "start_layer": 34
+        },
+        "mean_error_bits": 0.8671667858330672,
+        "mean_gap_bits": 18.717911233349437
+      },
+      {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "estimate": 1.0,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "rescue",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "full_sequence_once",
+          "start_layer": 34
+        },
+        "mean_error_bits": 0.0,
+        "mean_gap_bits": 18.717911233349437
+      },
+      {
+        "ci95": [
+          0.7486016540653402,
+          0.843953570330342
+        ],
+        "estimate": 0.8009882818318206,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "damage",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "single_full_frame",
+          "start_layer": 22
+        },
+        "mean_error_bits": 3.725083675068337,
+        "mean_gap_bits": 18.717911233349437
+      },
+      {
+        "ci95": [
+          0.7475505384187636,
+          0.8436913494474214
+        ],
+        "estimate": 0.8009882818318206,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "damage",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "persistent_full_frame",
+          "start_layer": 22
+        },
+        "mean_error_bits": 3.725083675068337,
+        "mean_gap_bits": 18.717911233349437
+      },
+      {
+        "ci95": [
+          0.075958384109555,
+          0.19305174307689846
+        ],
+        "estimate": 0.13370817083956366,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "damage",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "complement_once",
+          "start_layer": 22
+        },
+        "mean_error_bits": 16.215173560400963,
+        "mean_gap_bits": 18.717911233349437
+      },
+      {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "estimate": 1.0,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "damage",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "full_sequence_once",
+          "start_layer": 22
+        },
+        "mean_error_bits": 0.0,
+        "mean_gap_bits": 18.717911233349437
+      },
+      {
+        "ci95": [
+          0.5056051486112593,
+          0.646557289479811
+        ],
+        "estimate": 0.5803140974537168,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "damage",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "single_full_frame",
+          "start_layer": 26
+        },
+        "mean_error_bits": 7.855643469749472,
+        "mean_gap_bits": 18.717911233349437
+      },
+      {
+        "ci95": [
+          0.5039707940113141,
+          0.6467421284807083
+        ],
+        "estimate": 0.5803140974537168,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "damage",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "persistent_full_frame",
+          "start_layer": 26
+        },
+        "mean_error_bits": 7.855643469749472,
+        "mean_gap_bits": 18.717911233349437
+      },
+      {
+        "ci95": [
+          0.5181392223847833,
+          0.6371847877345184
+        ],
+        "estimate": 0.5814431319373542,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "damage",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "complement_once",
+          "start_layer": 26
+        },
+        "mean_error_bits": 7.834510302505356,
+        "mean_gap_bits": 18.717911233349437
+      },
+      {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "estimate": 1.0,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "damage",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "full_sequence_once",
+          "start_layer": 26
+        },
+        "mean_error_bits": 0.0,
+        "mean_gap_bits": 18.717911233349437
+      },
+      {
+        "ci95": [
+          -0.022712330844772626,
+          0.034827374808227285
+        ],
+        "estimate": 0.0072973447406737835,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "damage",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "single_full_frame",
+          "start_layer": 30
+        },
+        "mean_error_bits": 18.581320182254355,
+        "mean_gap_bits": 18.717911233349437
+      },
+      {
+        "ci95": [
+          -0.022787695735418056,
+          0.03545559229522297
+        ],
+        "estimate": 0.0072973447406737835,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "damage",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "persistent_full_frame",
+          "start_layer": 30
+        },
+        "mean_error_bits": 18.581320182254355,
+        "mean_gap_bits": 18.717911233349437
+      },
+      {
+        "ci95": [
+          0.8777828680923482,
+          0.9139748891072916
+        ],
+        "estimate": 0.8976038093062698,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "damage",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "complement_once",
+          "start_layer": 30
+        },
+        "mean_error_bits": 1.9166428080383633,
+        "mean_gap_bits": 18.717911233349437
+      },
+      {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "estimate": 1.0,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "damage",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "full_sequence_once",
+          "start_layer": 30
+        },
+        "mean_error_bits": 0.0,
+        "mean_gap_bits": 18.717911233349437
+      },
+      {
+        "ci95": [
+          -0.024670060332807765,
+          0.00514431847476575
+        ],
+        "estimate": -0.007760250135316005,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "damage",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "single_full_frame",
+          "start_layer": 34
+        },
+        "mean_error_bits": 18.86316690653087,
+        "mean_gap_bits": 18.717911233349437
+      },
+      {
+        "ci95": [
+          -0.02460543789866601,
+          0.005345233888003308
+        ],
+        "estimate": -0.007760250135316005,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "damage",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "persistent_full_frame",
+          "start_layer": 34
+        },
+        "mean_error_bits": 18.86316690653087,
+        "mean_gap_bits": 18.717911233349437
+      },
+      {
+        "ci95": [
+          0.8998659788263662,
+          0.9319031044947319
+        ],
+        "estimate": 0.9172039029794341,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "damage",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "complement_once",
+          "start_layer": 34
+        },
+        "mean_error_bits": 1.5497699944987393,
+        "mean_gap_bits": 18.717911233349437
+      },
+      {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "estimate": 1.0,
+        "label": {
+          "corruption": "blank_full",
+          "direction": "damage",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "full_sequence_once",
+          "start_layer": 34
+        },
+        "mean_error_bits": 0.0,
+        "mean_gap_bits": 18.717911233349437
+      },
+      {
+        "ci95": [
+          0.7808691302025635,
+          0.8798583957248209
+        ],
+        "estimate": 0.836609697320102,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "rescue",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "single_full_frame",
+          "start_layer": 22
+        },
+        "mean_error_bits": 3.029377818570533,
+        "mean_gap_bits": 18.54074427235418
+      },
+      {
+        "ci95": [
+          0.7822184760309919,
+          0.8808711835627382
+        ],
+        "estimate": 0.836609697320102,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "rescue",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "persistent_full_frame",
+          "start_layer": 22
+        },
+        "mean_error_bits": 3.029377818570533,
+        "mean_gap_bits": 18.54074427235418
+      },
+      {
+        "ci95": [
+          -0.025651547528311173,
+          0.06746478814526194
+        ],
+        "estimate": 0.020991798011781415,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "rescue",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "complement_once",
+          "start_layer": 22
+        },
+        "mean_error_bits": 18.151540713600827,
+        "mean_gap_bits": 18.54074427235418
+      },
+      {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "estimate": 1.0,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "rescue",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "full_sequence_once",
+          "start_layer": 22
+        },
+        "mean_error_bits": 0.0,
+        "mean_gap_bits": 18.54074427235418
+      },
+      {
+        "ci95": [
+          0.6002212087202412,
+          0.7524020998655957
+        ],
+        "estimate": 0.6820758476448506,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "rescue",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "single_full_frame",
+          "start_layer": 26
+        },
+        "mean_error_bits": 5.894550406821793,
+        "mean_gap_bits": 18.54074427235418
+      },
+      {
+        "ci95": [
+          0.5978534480983722,
+          0.7543409161673102
+        ],
+        "estimate": 0.6820758476448506,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "rescue",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "persistent_full_frame",
+          "start_layer": 26
+        },
+        "mean_error_bits": 5.894550406821793,
+        "mean_gap_bits": 18.54074427235418
+      },
+      {
+        "ci95": [
+          0.10337081502039368,
+          0.2583230249405226
+        ],
+        "estimate": 0.17951124402832574,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "rescue",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "complement_once",
+          "start_layer": 26
+        },
+        "mean_error_bits": 15.212472202812824,
+        "mean_gap_bits": 18.54074427235418
+      },
+      {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "estimate": 1.0,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "rescue",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "full_sequence_once",
+          "start_layer": 26
+        },
+        "mean_error_bits": 0.0,
+        "mean_gap_bits": 18.54074427235418
+      },
+      {
+        "ci95": [
+          0.07124925112422624,
+          0.18683052919184082
+        ],
+        "estimate": 0.1273071929902828,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "rescue",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "single_full_frame",
+          "start_layer": 30
+        },
+        "mean_error_bits": 16.180374163090104,
+        "mean_gap_bits": 18.54074427235418
+      },
+      {
+        "ci95": [
+          0.07077497955669827,
+          0.1854031976267611
+        ],
+        "estimate": 0.1273071929902828,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "rescue",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "persistent_full_frame",
+          "start_layer": 30
+        },
+        "mean_error_bits": 16.180374163090104,
+        "mean_gap_bits": 18.54074427235418
+      },
+      {
+        "ci95": [
+          0.8429931974921044,
+          0.9131880036175809
+        ],
+        "estimate": 0.881442865115136,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "rescue",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "complement_once",
+          "start_layer": 30
+        },
+        "mean_error_bits": 2.1981375195632644,
+        "mean_gap_bits": 18.54074427235418
+      },
+      {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "estimate": 1.0,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "rescue",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "full_sequence_once",
+          "start_layer": 30
+        },
+        "mean_error_bits": 0.0,
+        "mean_gap_bits": 18.54074427235418
+      },
+      {
+        "ci95": [
+          0.03525531922053369,
+          0.09020469052820393
+        ],
+        "estimate": 0.061018701879974935,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "rescue",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "single_full_frame",
+          "start_layer": 34
+        },
+        "mean_error_bits": 17.409412124966547,
+        "mean_gap_bits": 18.54074427235418
+      },
+      {
+        "ci95": [
+          0.035013250071344884,
+          0.09126548548350795
+        ],
+        "estimate": 0.061018701879974935,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "rescue",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "persistent_full_frame",
+          "start_layer": 34
+        },
+        "mean_error_bits": 17.409412124966547,
+        "mean_gap_bits": 18.54074427235418
+      },
+      {
+        "ci95": [
+          0.9186572781608553,
+          0.9626412793779634
+        ],
+        "estimate": 0.9436431878415523,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "rescue",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "complement_once",
+          "start_layer": 34
+        },
+        "mean_error_bits": 1.0448972422348786,
+        "mean_gap_bits": 18.54074427235418
+      },
+      {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "estimate": 1.0,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "rescue",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "full_sequence_once",
+          "start_layer": 34
+        },
+        "mean_error_bits": 0.0,
+        "mean_gap_bits": 18.54074427235418
+      },
+      {
+        "ci95": [
+          0.7317929896792512,
+          0.8318113039831394
+        ],
+        "estimate": 0.7887028037170989,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "damage",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "single_full_frame",
+          "start_layer": 22
+        },
+        "mean_error_bits": 3.917607281746696,
+        "mean_gap_bits": 18.54074427235418
+      },
+      {
+        "ci95": [
+          0.7324525292858214,
+          0.8320393660093806
+        ],
+        "estimate": 0.7887028037170989,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "damage",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "persistent_full_frame",
+          "start_layer": 22
+        },
+        "mean_error_bits": 3.917607281746696,
+        "mean_gap_bits": 18.54074427235418
+      },
+      {
+        "ci95": [
+          -0.02684673867946482,
+          0.06157985585816153
+        ],
+        "estimate": 0.01844998918219043,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "damage",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "complement_once",
+          "start_layer": 22
+        },
+        "mean_error_bits": 18.198667741099484,
+        "mean_gap_bits": 18.54074427235418
+      },
+      {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "estimate": 1.0,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "damage",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "full_sequence_once",
+          "start_layer": 22
+        },
+        "mean_error_bits": 0.0,
+        "mean_gap_bits": 18.54074427235418
+      },
+      {
+        "ci95": [
+          0.5439581108225767,
+          0.6977002775651452
+        ],
+        "estimate": 0.6263231493589982,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "damage",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "single_full_frame",
+          "start_layer": 26
+        },
+        "mean_error_bits": 6.9282469282335,
+        "mean_gap_bits": 18.54074427235418
+      },
+      {
+        "ci95": [
+          0.5422050821651316,
+          0.6963941984934797
+        ],
+        "estimate": 0.6263231493589982,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "damage",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "persistent_full_frame",
+          "start_layer": 26
+        },
+        "mean_error_bits": 6.9282469282335,
+        "mean_gap_bits": 18.54074427235418
+      },
+      {
+        "ci95": [
+          0.09550138406296144,
+          0.23755711524864415
+        ],
+        "estimate": 0.16474669569442513,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "damage",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "complement_once",
+          "start_layer": 26
+        },
+        "mean_error_bits": 15.486217917768489,
+        "mean_gap_bits": 18.54074427235418
+      },
+      {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "estimate": 1.0,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "damage",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "full_sequence_once",
+          "start_layer": 26
+        },
+        "mean_error_bits": 0.0,
+        "mean_gap_bits": 18.54074427235418
+      },
+      {
+        "ci95": [
+          0.020571238731913296,
+          0.09617671786996772
+        ],
+        "estimate": 0.057188887082953443,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "damage",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "single_full_frame",
+          "start_layer": 30
+        },
+        "mean_error_bits": 17.4804197417286,
+        "mean_gap_bits": 18.54074427235418
+      },
+      {
+        "ci95": [
+          0.01980520096293861,
+          0.09715392125220855
+        ],
+        "estimate": 0.057188887082953443,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "damage",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "persistent_full_frame",
+          "start_layer": 30
+        },
+        "mean_error_bits": 17.4804197417286,
+        "mean_gap_bits": 18.54074427235418
+      },
+      {
+        "ci95": [
+          0.7131456523710927,
+          0.8154731084107082
+        ],
+        "estimate": 0.768406297431436,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "damage",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "complement_once",
+          "start_layer": 30
+        },
+        "mean_error_bits": 4.293919614411401,
+        "mean_gap_bits": 18.54074427235418
+      },
+      {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "estimate": 1.0,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "damage",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "full_sequence_once",
+          "start_layer": 30
+        },
+        "mean_error_bits": 0.0,
+        "mean_gap_bits": 18.54074427235418
+      },
+      {
+        "ci95": [
+          0.001796960119649238,
+          0.048229889297753764
+        ],
+        "estimate": 0.023978145128384143,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "damage",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "single_full_frame",
+          "start_layer": 34
+        },
+        "mean_error_bits": 18.096171615403414,
+        "mean_gap_bits": 18.54074427235418
+      },
+      {
+        "ci95": [
+          0.0022613166202764185,
+          0.04772991748859428
+        ],
+        "estimate": 0.023978145128384143,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "damage",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "persistent_full_frame",
+          "start_layer": 34
+        },
+        "mean_error_bits": 18.096171615403414,
+        "mean_gap_bits": 18.54074427235418
+      },
+      {
+        "ci95": [
+          0.8700585174658501,
+          0.920680265464084
+        ],
+        "estimate": 0.897628400662401,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "damage",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "complement_once",
+          "start_layer": 34
+        },
+        "mean_error_bits": 1.8980456440703257,
+        "mean_gap_bits": 18.54074427235418
+      },
+      {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "estimate": 1.0,
+        "label": {
+          "corruption": "wrong_time",
+          "direction": "damage",
+          "model_key": "gemma4_31b_hf_bf16",
+          "operator": "full_sequence_once",
+          "start_layer": 34
+        },
+        "mean_error_bits": 0.0,
+        "mean_gap_bits": 18.54074427235418
+      }
+    ],
+    "profile_cells": [
+      {
+        "corruption": "blank_full",
+        "direction": "rescue",
+        "layer": 24,
+        "model": "qwen",
+        "operator": "single_full_frame",
+        "rho": 0.6097172391982324
+      },
+      {
+        "corruption": "blank_full",
+        "direction": "damage",
+        "layer": 24,
+        "model": "qwen",
+        "operator": "single_full_frame",
+        "rho": 0.8096375892892105
+      },
+      {
+        "corruption": "wrong_time",
+        "direction": "rescue",
+        "layer": 24,
+        "model": "qwen",
+        "operator": "single_full_frame",
+        "rho": 0.8281914788961987
+      },
+      {
+        "corruption": "wrong_time",
+        "direction": "damage",
+        "layer": 24,
+        "model": "qwen",
+        "operator": "single_full_frame",
+        "rho": 0.7925531861012137
+      },
+      {
+        "corruption": "blank_full",
+        "direction": "rescue",
+        "layer": 28,
+        "model": "qwen",
+        "operator": "single_full_frame",
+        "rho": 0.1728395041754719
+      },
+      {
+        "corruption": "blank_full",
+        "direction": "damage",
+        "layer": 28,
+        "model": "qwen",
+        "operator": "single_full_frame",
+        "rho": 0.6634806842517699
+      },
+      {
+        "corruption": "wrong_time",
+        "direction": "rescue",
+        "layer": 28,
+        "model": "qwen",
+        "operator": "single_full_frame",
+        "rho": 0.4946808512903258
+      },
+      {
+        "corruption": "wrong_time",
+        "direction": "damage",
+        "layer": 28,
+        "model": "qwen",
+        "operator": "single_full_frame",
+        "rho": 0.6218085071744852
+      },
+      {
+        "corruption": "blank_full",
+        "direction": "rescue",
+        "layer": 32,
+        "model": "qwen",
+        "operator": "single_full_frame",
+        "rho": 0.12106729998514265
+      },
+      {
+        "corruption": "blank_full",
+        "direction": "damage",
+        "layer": 32,
+        "model": "qwen",
+        "operator": "single_full_frame",
+        "rho": 0.3942652347319284
+      },
+      {
+        "corruption": "wrong_time",
+        "direction": "rescue",
+        "layer": 32,
+        "model": "qwen",
+        "operator": "single_full_frame",
+        "rho": 0.24574468392183757
+      },
+      {
+        "corruption": "wrong_time",
+        "direction": "damage",
+        "layer": 32,
+        "model": "qwen",
+        "operator": "single_full_frame",
+        "rho": 0.4425531937660976
+      },
+      {
+        "corruption": "blank_full",
+        "direction": "rescue",
+        "layer": 36,
+        "model": "qwen",
+        "operator": "single_full_frame",
+        "rho": 0.09239346653913805
+      },
+      {
+        "corruption": "blank_full",
+        "direction": "damage",
+        "layer": 36,
+        "model": "qwen",
+        "operator": "single_full_frame",
+        "rho": 0.1413779366644019
+      },
+      {
+        "corruption": "wrong_time",
+        "direction": "rescue",
+        "layer": 36,
+        "model": "qwen",
+        "operator": "single_full_frame",
+        "rho": 0.15372340897957715
+      },
+      {
+        "corruption": "wrong_time",
+        "direction": "damage",
+        "layer": 36,
+        "model": "qwen",
+        "operator": "single_full_frame",
+        "rho": 0.23936170474795815
+      },
+      {
+        "corruption": "blank_full",
+        "direction": "rescue",
+        "layer": 24,
+        "model": "qwen",
+        "operator": "complement_once",
+        "rho": 0.01274392393985957
+      },
+      {
+        "corruption": "blank_full",
+        "direction": "damage",
+        "layer": 24,
+        "model": "qwen",
+        "operator": "complement_once",
+        "rho": 0.25009955933509254
+      },
+      {
+        "corruption": "wrong_time",
+        "direction": "rescue",
+        "layer": 24,
+        "model": "qwen",
+        "operator": "complement_once",
+        "rho": -0.00957446093820491
+      },
+      {
+        "corruption": "wrong_time",
+        "direction": "damage",
+        "layer": 24,
+        "model": "qwen",
+        "operator": "complement_once",
+        "rho": 0.01861701699139995
+      },
+      {
+        "corruption": "blank_full",
+        "direction": "rescue",
+        "layer": 28,
+        "model": "qwen",
+        "operator": "complement_once",
+        "rho": 0.19713261676028926
+      },
+      {
+        "corruption": "blank_full",
+        "direction": "damage",
+        "layer": 28,
+        "model": "qwen",
+        "operator": "complement_once",
+        "rho": 0.46714456330000187
+      },
+      {
+        "corruption": "wrong_time",
+        "direction": "rescue",
+        "layer": 28,
+        "model": "qwen",
+        "operator": "complement_once",
+        "rho": 0.18563830113161006
+      },
+      {
+        "corruption": "wrong_time",
+        "direction": "damage",
+        "layer": 28,
+        "model": "qwen",
+        "operator": "complement_once",
+        "rho": 0.29042553149787076
+      },
+      {
+        "corruption": "blank_full",
+        "direction": "rescue",
+        "layer": 32,
+        "model": "qwen",
+        "operator": "complement_once",
+        "rho": 0.49900437847202395
+      },
+      {
+        "corruption": "blank_full",
+        "direction": "damage",
+        "layer": 32,
+        "model": "qwen",
+        "operator": "complement_once",
+        "rho": 0.5882118665668421
+      },
+      {
+        "corruption": "wrong_time",
+        "direction": "rescue",
+        "layer": 32,
+        "model": "qwen",
+        "operator": "complement_once",
+        "rho": 0.4074468110655842
+      },
+      {
+        "corruption": "wrong_time",
+        "direction": "damage",
+        "layer": 32,
+        "model": "qwen",
+        "operator": "complement_once",
+        "rho": 0.43936169658739277
+      },
+      {
+        "corruption": "blank_full",
+        "direction": "rescue",
+        "layer": 36,
+        "model": "qwen",
+        "operator": "complement_once",
+        "rho": 0.7574671349032187
+      },
+      {
+        "corruption": "blank_full",
+        "direction": "damage",
+        "layer": 36,
+        "model": "qwen",
+        "operator": "complement_once",
+        "rho": 0.7873357206319533
+      },
+      {
+        "corruption": "wrong_time",
+        "direction": "rescue",
+        "layer": 36,
+        "model": "qwen",
+        "operator": "complement_once",
+        "rho": 0.6542553170796315
+      },
+      {
+        "corruption": "wrong_time",
+        "direction": "damage",
+        "layer": 36,
+        "model": "qwen",
+        "operator": "complement_once",
+        "rho": 0.5643617082841603
+      },
+      {
+        "corruption": "blank_full",
+        "direction": "rescue",
+        "layer": 22,
+        "model": "gemma",
+        "operator": "single_full_frame",
+        "rho": 0.6947232525424795
+      },
+      {
+        "corruption": "blank_full",
+        "direction": "damage",
+        "layer": 22,
+        "model": "gemma",
+        "operator": "single_full_frame",
+        "rho": 0.8009882818318206
+      },
+      {
+        "corruption": "wrong_time",
+        "direction": "rescue",
+        "layer": 22,
+        "model": "gemma",
+        "operator": "single_full_frame",
+        "rho": 0.836609697320102
+      },
+      {
+        "corruption": "wrong_time",
+        "direction": "damage",
+        "layer": 22,
+        "model": "gemma",
+        "operator": "single_full_frame",
+        "rho": 0.7887028037170989
+      },
+      {
+        "corruption": "blank_full",
+        "direction": "rescue",
+        "layer": 26,
+        "model": "gemma",
+        "operator": "single_full_frame",
+        "rho": 0.25867759956455605
+      },
+      {
+        "corruption": "blank_full",
+        "direction": "damage",
+        "layer": 26,
+        "model": "gemma",
+        "operator": "single_full_frame",
+        "rho": 0.5803140974537168
+      },
+      {
+        "corruption": "wrong_time",
+        "direction": "rescue",
+        "layer": 26,
+        "model": "gemma",
+        "operator": "single_full_frame",
+        "rho": 0.6820758476448506
+      },
+      {
+        "corruption": "wrong_time",
+        "direction": "damage",
+        "layer": 26,
+        "model": "gemma",
+        "operator": "single_full_frame",
+        "rho": 0.6263231493589982
+      },
+      {
+        "corruption": "blank_full",
+        "direction": "rescue",
+        "layer": 30,
+        "model": "gemma",
+        "operator": "single_full_frame",
+        "rho": 0.02393560174314624
+      },
+      {
+        "corruption": "blank_full",
+        "direction": "damage",
+        "layer": 30,
+        "model": "gemma",
+        "operator": "single_full_frame",
+        "rho": 0.0072973447406737835
+      },
+      {
+        "corruption": "wrong_time",
+        "direction": "rescue",
+        "layer": 30,
+        "model": "gemma",
+        "operator": "single_full_frame",
+        "rho": 0.1273071929902828
+      },
+      {
+        "corruption": "wrong_time",
+        "direction": "damage",
+        "layer": 30,
+        "model": "gemma",
+        "operator": "single_full_frame",
+        "rho": 0.057188887082953443
+      },
+      {
+        "corruption": "blank_full",
+        "direction": "rescue",
+        "layer": 34,
+        "model": "gemma",
+        "operator": "single_full_frame",
+        "rho": 0.02908401378841574
+      },
+      {
+        "corruption": "blank_full",
+        "direction": "damage",
+        "layer": 34,
+        "model": "gemma",
+        "operator": "single_full_frame",
+        "rho": -0.007760250135316005
+      },
+      {
+        "corruption": "wrong_time",
+        "direction": "rescue",
+        "layer": 34,
+        "model": "gemma",
+        "operator": "single_full_frame",
+        "rho": 0.061018701879974935
+      },
+      {
+        "corruption": "wrong_time",
+        "direction": "damage",
+        "layer": 34,
+        "model": "gemma",
+        "operator": "single_full_frame",
+        "rho": 0.023978145128384143
+      },
+      {
+        "corruption": "blank_full",
+        "direction": "rescue",
+        "layer": 22,
+        "model": "gemma",
+        "operator": "complement_once",
+        "rho": 0.039139978236907735
+      },
+      {
+        "corruption": "blank_full",
+        "direction": "damage",
+        "layer": 22,
+        "model": "gemma",
+        "operator": "complement_once",
+        "rho": 0.13370817083956366
+      },
+      {
+        "corruption": "wrong_time",
+        "direction": "rescue",
+        "layer": 22,
+        "model": "gemma",
+        "operator": "complement_once",
+        "rho": 0.020991798011781415
+      },
+      {
+        "corruption": "wrong_time",
+        "direction": "damage",
+        "layer": 22,
+        "model": "gemma",
+        "operator": "complement_once",
+        "rho": 0.01844998918219043
+      },
+      {
+        "corruption": "blank_full",
+        "direction": "rescue",
+        "layer": 26,
+        "model": "gemma",
+        "operator": "complement_once",
+        "rho": 0.22476883016552995
+      },
+      {
+        "corruption": "blank_full",
+        "direction": "damage",
+        "layer": 26,
+        "model": "gemma",
+        "operator": "complement_once",
+        "rho": 0.5814431319373542
+      },
+      {
+        "corruption": "wrong_time",
+        "direction": "rescue",
+        "layer": 26,
+        "model": "gemma",
+        "operator": "complement_once",
+        "rho": 0.17951124402832574
+      },
+      {
+        "corruption": "wrong_time",
+        "direction": "damage",
+        "layer": 26,
+        "model": "gemma",
+        "operator": "complement_once",
+        "rho": 0.16474669569442513
+      },
+      {
+        "corruption": "blank_full",
+        "direction": "rescue",
+        "layer": 30,
+        "model": "gemma",
+        "operator": "complement_once",
+        "rho": 0.8996925261208863
+      },
+      {
+        "corruption": "blank_full",
+        "direction": "damage",
+        "layer": 30,
+        "model": "gemma",
+        "operator": "complement_once",
+        "rho": 0.8976038093062698
+      },
+      {
+        "corruption": "wrong_time",
+        "direction": "rescue",
+        "layer": 30,
+        "model": "gemma",
+        "operator": "complement_once",
+        "rho": 0.881442865115136
+      },
+      {
+        "corruption": "wrong_time",
+        "direction": "damage",
+        "layer": 30,
+        "model": "gemma",
+        "operator": "complement_once",
+        "rho": 0.768406297431436
+      },
+      {
+        "corruption": "blank_full",
+        "direction": "rescue",
+        "layer": 34,
+        "model": "gemma",
+        "operator": "complement_once",
+        "rho": 0.953671818664892
+      },
+      {
+        "corruption": "blank_full",
+        "direction": "damage",
+        "layer": 34,
+        "model": "gemma",
+        "operator": "complement_once",
+        "rho": 0.9172039029794341
+      },
+      {
+        "corruption": "wrong_time",
+        "direction": "rescue",
+        "layer": 34,
+        "model": "gemma",
+        "operator": "complement_once",
+        "rho": 0.9436431878415523
+      },
+      {
+        "corruption": "wrong_time",
+        "direction": "damage",
+        "layer": 34,
+        "model": "gemma",
+        "operator": "complement_once",
+        "rho": 0.897628400662401
+      }
+    ],
+    "profiles": {
+      "gemma": {
+        "complement_once": [
+          0.05307248406761081,
+          0.28761747545640876,
+          0.8617863744934321,
+          0.9280368275370698
+        ],
+        "single_full_frame": [
+          0.7802560088528752,
+          0.5368476735055304,
+          0.05393225663926407,
+          0.026580152665364704
+        ]
+      },
+      "qwen": {
+        "complement_once": [
+          0.06797150983203679,
+          0.285085253172443,
+          0.48350618817296076,
+          0.6908549702247408
+        ],
+        "single_full_frame": [
+          0.7600248733712138,
+          0.4882023867230132,
+          0.30090760310125153,
+          0.1567141292327688
+        ]
+      }
+    },
+    "screen": [
+      {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "comparator_rho": 0.38641539484648524,
+        "estimate": 0.0,
+        "holm_tail": 1.0,
+        "name": "qwen35_27b_hf_bf16:persistent_clamp_minus_single",
+        "positive": false,
+        "single_rho": 0.38641539484648524,
+        "tail": 1.0
+      },
+      {
+        "ci95": [
+          -0.04209073950667572,
+          0.052430513790329654
+        ],
+        "comparator_rho": 0.3919949890134623,
+        "estimate": 0.005579594166977064,
+        "holm_tail": 1.0,
+        "name": "qwen35_27b_hf_bf16:complement_minus_single",
+        "positive": false,
+        "single_rho": 0.38641539484648524,
+        "tail": 0.42705729427057293
+      },
+      {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "comparator_rho": 0.2950198610424718,
+        "estimate": 0.0,
+        "holm_tail": 1.0,
+        "name": "gemma4_31b_hf_bf16:persistent_clamp_minus_single",
+        "positive": false,
+        "single_rho": 0.2950198610424718,
+        "tail": 1.0
+      },
+      {
+        "ci95": [
+          0.23842705519588694,
+          0.32240887789975736
+        ],
+        "comparator_rho": 0.5750641420098812,
+        "estimate": 0.2800442809674094,
+        "holm_tail": 0.00039996000399960006,
+        "name": "gemma4_31b_hf_bf16:complement_minus_single",
+        "positive": true,
+        "single_rho": 0.2950198610424718,
+        "tail": 9.999000099990002e-05
+      }
+    ]
+  },
+  "gemma_stratified_endpoints": [
+    {
+      "ci95": [
+        0.7664255539449304,
+        0.8783354756702387
+      ],
+      "estimate": 0.8290153976884963,
+      "label": {
+        "corruption": "blank_full",
+        "direction": "rescue",
+        "model_key": "gemma4_31b_hf_bf16",
+        "operator": "F",
+        "start_layer": 22
+      },
+      "mean_error_bits": 3.646553715008044,
+      "mean_gap_bits": 21.32679589688824
+    },
+    {
+      "ci95": [
+        0.022018384717712856,
+        0.11989352958285764
+      ],
+      "estimate": 0.06994485778882265,
+      "label": {
+        "corruption": "blank_full",
+        "direction": "rescue",
+        "model_key": "gemma4_31b_hf_bf16",
+        "operator": "K",
+        "start_layer": 22
+      },
+      "mean_error_bits": 19.835096190789145,
+      "mean_gap_bits": 21.32679589688824
+    },
+    {
+      "ci95": [
+        0.766856794272986,
+        0.8469340657251837
+      ],
+      "estimate": 0.8091911735175932,
+      "label": {
+        "corruption": "blank_full",
+        "direction": "damage",
+        "model_key": "gemma4_31b_hf_bf16",
+        "operator": "F",
+        "start_layer": 22
+      },
+      "mean_error_bits": 4.069340897715055,
+      "mean_gap_bits": 21.32679589688824
+    },
+    {
+      "ci95": [
+        -0.005802603336760347,
+        0.10034940006355184
+      ],
+      "estimate": 0.05097081516644142,
+      "label": {
+        "corruption": "blank_full",
+        "direction": "damage",
+        "model_key": "gemma4_31b_hf_bf16",
+        "operator": "K",
+        "start_layer": 22
+      },
+      "mean_error_bits": 20.239751725135527,
+      "mean_gap_bits": 21.32679589688824
+    },
+    {
+      "ci95": [
+        0.8169373449143174,
+        0.9120948152894183
+      ],
+      "estimate": 0.8725749174082055,
+      "label": {
+        "corruption": "wrong_time",
+        "direction": "rescue",
+        "model_key": "gemma4_31b_hf_bf16",
+        "operator": "F",
+        "start_layer": 22
+      },
+      "mean_error_bits": 2.198345752865797,
+      "mean_gap_bits": 17.25206457121306
+    },
+    {
+      "ci95": [
+        -0.035409316931687876,
+        0.0760917429140411
+      ],
+      "estimate": 0.02511007050799996,
+      "label": {
+        "corruption": "wrong_time",
+        "direction": "rescue",
+        "model_key": "gemma4_31b_hf_bf16",
+        "operator": "K",
+        "start_layer": 22
+      },
+      "mean_error_bits": 16.818864013421333,
+      "mean_gap_bits": 17.25206457121306
+    },
+    {
+      "ci95": [
+        0.7291019400935452,
+        0.8539835517328392
+      ],
+      "estimate": 0.7998579697968087,
+      "label": {
+        "corruption": "wrong_time",
+        "direction": "damage",
+        "model_key": "gemma4_31b_hf_bf16",
+        "operator": "F",
+        "start_layer": 22
+      },
+      "mean_error_bits": 3.452863228479131,
+      "mean_gap_bits": 17.25206457121306
+    },
+    {
+      "ci95": [
+        0.0022253206137035388,
+        0.07735236720942074
+      ],
+      "estimate": 0.038048577209738976,
+      "label": {
+        "corruption": "wrong_time",
+        "direction": "damage",
+        "model_key": "gemma4_31b_hf_bf16",
+        "operator": "K",
+        "start_layer": 22
+      },
+      "mean_error_bits": 16.59564806034786,
+      "mean_gap_bits": 17.25206457121306
+    },
+    {
+      "ci95": [
+        -0.0006591255179801469,
+        0.029352258110001028
+      ],
+      "estimate": 0.01534926562443395,
+      "label": {
+        "corruption": "blank_full",
+        "direction": "rescue",
+        "model_key": "gemma4_31b_hf_bf16",
+        "operator": "F",
+        "start_layer": 34
+      },
+      "mean_error_bits": 20.999445241748813,
+      "mean_gap_bits": 21.32679589688824
+    },
+    {
+      "ci95": [
+        0.9412824518573021,
+        0.9742205962823639
+      ],
+      "estimate": 0.9601849743109576,
+      "label": {
+        "corruption": "blank_full",
+        "direction": "rescue",
+        "model_key": "gemma4_31b_hf_bf16",
+        "operator": "CQPR",
+        "start_layer": 34
+      },
+      "mean_error_bits": 0.8491269264995678,
+      "mean_gap_bits": 21.32679589688824
+    },
+    {
+      "ci95": [
+        -0.015152130527958163,
+        0.014645918052588034
+      ],
+      "estimate": -0.0003044586608187405,
+      "label": {
+        "corruption": "blank_full",
+        "direction": "damage",
+        "model_key": "gemma4_31b_hf_bf16",
+        "operator": "F",
+        "start_layer": 34
+      },
+      "mean_error_bits": 21.33328902460656,
+      "mean_gap_bits": 21.32679589688824
+    },
+    {
+      "ci95": [
+        0.906054912495038,
+        0.9457917532160074
+      ],
+      "estimate": 0.9285845570483,
+      "label": {
+        "corruption": "blank_full",
+        "direction": "damage",
+        "model_key": "gemma4_31b_hf_bf16",
+        "operator": "CQPR",
+        "start_layer": 34
+      },
+      "mean_error_bits": 1.5230625757167724,
+      "mean_gap_bits": 21.32679589688824
+    },
+    {
+      "ci95": [
+        -0.007943392969672114,
+        0.08237619234171467
+      ],
+      "estimate": 0.03989489901396692,
+      "label": {
+        "corruption": "wrong_time",
+        "direction": "rescue",
+        "model_key": "gemma4_31b_hf_bf16",
+        "operator": "F",
+        "start_layer": 34
+      },
+      "mean_error_bits": 16.56379519736208,
+      "mean_gap_bits": 17.25206457121306
+    },
+    {
+      "ci95": [
+        0.9298202191113875,
+        0.9688759310061444
+      ],
+      "estimate": 0.95263456897753,
+      "label": {
+        "corruption": "wrong_time",
+        "direction": "rescue",
+        "model_key": "gemma4_31b_hf_bf16",
+        "operator": "CQPR",
+        "start_layer": 34
+      },
+      "mean_error_bits": 0.8171514744429915,
+      "mean_gap_bits": 17.25206457121306
+    },
+    {
+      "ci95": [
+        0.006715561147296203,
+        0.0482198761119059
+      ],
+      "estimate": 0.02495384382751764,
+      "label": {
+        "corruption": "wrong_time",
+        "direction": "damage",
+        "model_key": "gemma4_31b_hf_bf16",
+        "operator": "F",
+        "start_layer": 34
+      },
+      "mean_error_bits": 16.82155924620076,
+      "mean_gap_bits": 17.25206457121306
+    },
+    {
+      "ci95": [
+        0.8352467334139592,
+        0.920711937286187
+      ],
+      "estimate": 0.8847180801972375,
+      "label": {
+        "corruption": "wrong_time",
+        "direction": "damage",
+        "model_key": "gemma4_31b_hf_bf16",
+        "operator": "CQPR",
+        "start_layer": 34
+      },
+      "mean_error_bits": 1.9888511243306637,
+      "mean_gap_bits": 17.25206457121306
+    }
+  ],
+  "gemma_windows": [
+    {
+      "ci95": [
+        0.02242534640724087,
+        0.04432246256847889
+      ],
+      "estimate": 0.033329628433390046,
+      "label": {
+        "model_key": "gemma4_31b_hf_bf16",
+        "operator": "B_Q_0",
+        "start_layer": 34
+      },
+      "mean_error_bits": 18.646520691657944,
+      "mean_gap_bits": 19.289430234050652
+    },
+    {
+      "ci95": [
+        0.02091753941797385,
+        0.04310400730818298
+      ],
+      "estimate": 0.03199428390531467,
+      "label": {
+        "model_key": "gemma4_31b_hf_bf16",
+        "operator": "B_Q_1",
+        "start_layer": 34
+      },
+      "mean_error_bits": 18.672278726770674,
+      "mean_gap_bits": 19.289430234050652
+    },
+    {
+      "ci95": [
+        0.01972652410133884,
+        0.040683070600350486
+      ],
+      "estimate": 0.030107971015987056,
+      "label": {
+        "model_key": "gemma4_31b_hf_bf16",
+        "operator": "B_Q_2",
+        "start_layer": 34
+      },
+      "mean_error_bits": 18.70866462764895,
+      "mean_gap_bits": 19.289430234050652
+    },
+    {
+      "ci95": [
+        0.01890524538914857,
+        0.03925526044324099
+      ],
+      "estimate": 0.02887742083096545,
+      "label": {
+        "model_key": "gemma4_31b_hf_bf16",
+        "operator": "B_Q_3",
+        "start_layer": 34
+      },
+      "mean_error_bits": 18.732401239592424,
+      "mean_gap_bits": 19.289430234050652
+    },
+    {
+      "ci95": [
+        -0.0020654659465116467,
+        0.0010662851969797103
+      ],
+      "estimate": -0.000552556162376705,
+      "label": {
+        "model_key": "gemma4_31b_hf_bf16",
+        "operator": "B_P_0",
+        "start_layer": 34
+      },
+      "mean_error_bits": 19.300088727595213,
+      "mean_gap_bits": 19.289430234050652
+    },
+    {
+      "ci95": [
+        -0.0016541716317582278,
+        0.0010965838412727075
+      ],
+      "estimate": -0.00032073683811084663,
+      "label": {
+        "model_key": "gemma4_31b_hf_bf16",
+        "operator": "B_P_1",
+        "start_layer": 34
+      },
+      "mean_error_bits": 19.295617064912882,
+      "mean_gap_bits": 19.289430234050652
+    },
+    {
+      "ci95": [
+        -0.00042430615677857553,
+        0.002734542579231294
+      ],
+      "estimate": 0.0011162254989995901,
+      "label": {
+        "model_key": "gemma4_31b_hf_bf16",
+        "operator": "B_P_2",
+        "start_layer": 34
+      },
+      "mean_error_bits": 19.26789888016223,
+      "mean_gap_bits": 19.289430234050652
+    },
+    {
+      "ci95": [
+        -0.00048453828572860285,
+        0.002192024857528657
+      ],
+      "estimate": 0.0008193064346310175,
+      "label": {
+        "model_key": "gemma4_31b_hf_bf16",
+        "operator": "B_P_3",
+        "start_layer": 34
+      },
+      "mean_error_bits": 19.273626279739528,
+      "mean_gap_bits": 19.289430234050652
+    },
+    {
+      "ci95": [
+        0.004715495840658277,
+        0.027395978595276295
+      ],
+      "estimate": 0.015454112645578166,
+      "label": {
+        "model_key": "gemma4_31b_hf_bf16",
+        "operator": "B_R_0",
+        "start_layer": 34
+      },
+      "mean_error_bits": 18.991329206344613,
+      "mean_gap_bits": 19.289430234050652
+    },
+    {
+      "ci95": [
+        0.005862770988247243,
+        0.027664151461467182
+      ],
+      "estimate": 0.01602413432136851,
+      "label": {
+        "model_key": "gemma4_31b_hf_bf16",
+        "operator": "B_R_1",
+        "start_layer": 34
+      },
+      "mean_error_bits": 18.980333812997557,
+      "mean_gap_bits": 19.289430234050652
+    },
+    {
+      "ci95": [
+        0.00540282737082044,
+        0.02770731179175101
+      ],
+      "estimate": 0.015957447196348507,
+      "label": {
+        "model_key": "gemma4_31b_hf_bf16",
+        "operator": "B_R_2",
+        "start_layer": 34
+      },
+      "mean_error_bits": 18.98162016964314,
+      "mean_gap_bits": 19.289430234050652
+    },
+    {
+      "ci95": [
+        0.006208706931310848,
+        0.027930868377197424
+      ],
+      "estimate": 0.016341695806738277,
+      "label": {
+        "model_key": "gemma4_31b_hf_bf16",
+        "operator": "B_R_3",
+        "start_layer": 34
+      },
+      "mean_error_bits": 18.974208232880496,
+      "mean_gap_bits": 19.289430234050652
+    }
+  ],
+  "interval_status": "historical_finite_draw_replay",
+  "metric_dependence": {
+    "cells": [
+      {
+        "cluster_equal_baseline_gap_bits": 21.32679589688824,
+        "cluster_equal_margin_bits": {
+          "C": 7.293842723291922,
+          "CQ": 16.673320477828632,
+          "Q": 7.358038625382243,
+          "empty": 0.7948543698906652
+        },
+        "cluster_margin_covariance_bits_squared": [
+          [
+            93.36189633829606,
+            66.58358414012879,
+            96.69438095452222,
+            51.29314404026894
+          ],
+          [
+            66.58358414012879,
+            85.28607244816452,
+            93.5439640399011,
+            92.98747293810486
+          ],
+          [
+            96.69438095452222,
+            93.5439640399011,
+            152.09053703897592,
+            106.14695414520362
+          ],
+          [
+            51.29314404026894,
+            92.98747293810486,
+            106.14695414520362,
+            150.12065878868498
+          ]
+        ],
+        "cluster_margin_covariance_operator_order": [
+          "empty",
+          "C",
+          "Q",
+          "CQ"
+        ],
+        "corruption": "blank_full",
+        "direction": "rescue",
+        "paired_bootstrap_covariance_raw_recovery": [
+          [
+            0.9938269054310624,
+            0.03735560728418283
+          ],
+          [
+            0.03735560728418283,
+            0.0020588429839189307
+          ]
+        ],
+        "paired_rows": 92,
+        "participant_cluster_count": 46,
+        "raw_ci95_bits": [
+          0.957022677161406,
+          4.837793875575283
+        ],
+        "raw_interaction_bits": 2.8162934990451274,
+        "recovery_ci95": [
+          0.07511690862450986,
+          0.2532038242847199
+        ],
+        "recovery_interaction": 0.1627068001892169,
+        "recovery_set_values": {
+          "C": 0.3085018444833295,
+          "CQ": 0.7846047850979173,
+          "Q": 0.3133961404253707,
+          "empty": -2.220446049250313e-16
+        },
+        "rows_per_cluster": 2
+      },
+      {
+        "cluster_equal_baseline_gap_bits": 17.25206457121306,
+        "cluster_equal_margin_bits": {
+          "C": 14.080487792881186,
+          "CQ": 18.182171661222757,
+          "Q": 10.666583267953438,
+          "empty": 7.012066258667944
+        },
+        "cluster_margin_covariance_bits_squared": [
+          [
+            277.13099973943497,
+            161.62224840833184,
+            224.32058676674612,
+            91.28611501140672
+          ],
+          [
+            161.62224840833184,
+            186.90247985132896,
+            162.48357986949074,
+            149.24138887535977
+          ],
+          [
+            224.32058676674612,
+            162.48357986949074,
+            209.76125148314944,
+            114.78472992524763
+          ],
+          [
+            91.28611501140672,
+            149.24138887535977,
+            114.78472992524763,
+            177.47296254900778
+          ]
+        ],
+        "cluster_margin_covariance_operator_order": [
+          "empty",
+          "C",
+          "Q",
+          "CQ"
+        ],
+        "corruption": "wrong_time",
+        "direction": "rescue",
+        "paired_bootstrap_covariance_raw_recovery": [
+          [
+            1.2392954525642075,
+            0.03629928959755141
+          ],
+          [
+            0.03629928959755141,
+            0.004028509083507463
+          ]
+        ],
+        "paired_rows": 92,
+        "participant_cluster_count": 46,
+        "raw_ci95_bits": [
+          -1.7659047296638077,
+          2.5970286526458897
+        ],
+        "raw_interaction_bits": 0.4471668590560763,
+        "recovery_ci95": [
+          -0.05801458080309659,
+          0.19231334634252406
+        ],
+        "recovery_interaction": 0.06554466565727612,
+        "recovery_set_values": {
+          "C": 0.4610708734617127,
+          "CQ": 0.7702030994883593,
+          "Q": 0.24358756036937068,
+          "empty": 2.220446049250313e-16
+        },
+        "rows_per_cluster": 2
+      },
+      {
+        "cluster_equal_baseline_gap_bits": 21.32679589688824,
+        "cluster_equal_margin_bits": {
+          "C": 16.11123776586907,
+          "CQ": 5.993260951864524,
+          "Q": 13.156016274969518,
+          "empty": 19.216658390104556
+        },
+        "cluster_margin_covariance_bits_squared": [
+          [
+            201.27140628478338,
+            169.72422179348288,
+            150.4981589732472,
+            83.2201064097409
+          ],
+          [
+            169.72422179348288,
+            173.93018042492503,
+            136.06984887508673,
+            95.40401847530444
+          ],
+          [
+            150.4981589732472,
+            136.06984887508673,
+            125.02991122222193,
+            81.98054302250969
+          ],
+          [
+            83.2201064097409,
+            95.40401847530444,
+            81.98054302250969,
+            96.4333432764619
+          ]
+        ],
+        "cluster_margin_covariance_operator_order": [
+          "empty",
+          "C",
+          "Q",
+          "CQ"
+        ],
+        "corruption": "blank_full",
+        "direction": "damage",
+        "paired_bootstrap_covariance_raw_recovery": [
+          [
+            0.8495695293692869,
+            -0.02085180438911019
+          ],
+          [
+            -0.02085180438911019,
+            0.0010024544662406661
+          ]
+        ],
+        "paired_rows": 92,
+        "participant_cluster_count": 46,
+        "raw_ci95_bits": [
+          -5.9161000419562,
+          -2.3104344771682
+        ],
+        "raw_interaction_bits": -4.057334698869507,
+        "recovery_ci95": [
+          0.0775463780992713,
+          0.20095304043403892
+        ],
+        "recovery_interaction": 0.14116498292700763,
+        "recovery_set_values": {
+          "C": 0.1802619472796505,
+          "CQ": 0.6351102900970476,
+          "Q": 0.3136833598903892,
+          "empty": -2.220446049250313e-16
+        },
+        "rows_per_cluster": 2
+      },
+      {
+        "cluster_equal_baseline_gap_bits": 17.25206457121306,
+        "cluster_equal_margin_bits": {
+          "C": 16.43858842055947,
+          "CQ": 10.936598553576177,
+          "Q": 16.60201875329415,
+          "empty": 19.216658390104556
+        },
+        "cluster_margin_covariance_bits_squared": [
+          [
+            201.27140628478338,
+            156.94952384920737,
+            181.4883332644622,
+            108.43036657579637
+          ],
+          [
+            156.94952384920737,
+            187.3546157881117,
+            163.77505485563015,
+            168.19648917857285
+          ],
+          [
+            181.4883332644622,
+            163.77505485563015,
+            198.54263732603005,
+            144.96868822703541
+          ],
+          [
+            108.43036657579637,
+            168.19648917857285,
+            144.96868822703541,
+            231.80904243927463
+          ]
+        ],
+        "cluster_margin_covariance_operator_order": [
+          "empty",
+          "C",
+          "Q",
+          "CQ"
+        ],
+        "corruption": "wrong_time",
+        "direction": "damage",
+        "paired_bootstrap_covariance_raw_recovery": [
+          [
+            1.2689991788001815,
+            -0.027791694528502827
+          ],
+          [
+            -0.027791694528502827,
+            0.003383018376454907
+          ]
+        ],
+        "paired_rows": 92,
+        "participant_cluster_count": 46,
+        "raw_ci95_bits": [
+          -5.198072715859599,
+          -0.7921531361904317
+        ],
+        "raw_interaction_bits": -2.8873502301728804,
+        "recovery_ci95": [
+          0.015512587450307832,
+          0.24562502513732956
+        ],
+        "recovery_interaction": 0.13705439686303666,
+        "recovery_set_values": {
+          "C": 0.2762107643116323,
+          "CQ": 0.587828430857116,
+          "Q": 0.1745632696824473,
+          "empty": 2.220446049250313e-16
+        },
+        "rows_per_cluster": 2
+      },
+      {
+        "cluster_equal_baseline_gap_bits": 19.289430234050652,
+        "cluster_equal_margin_bits": {
+          "C": 10.687165258086557,
+          "CQ": 17.427746069525693,
+          "Q": 9.012310946667844,
+          "empty": 3.9034603142793047
+        },
+        "cluster_margin_covariance_bits_squared": [
+          [
+            95.3949734898086,
+            67.75141513168343,
+            91.75568219017514,
+            57.35479250360413
+          ],
+          [
+            67.75141513168343,
+            94.83837505156134,
+            90.20831850383665,
+            106.49134282602559
+          ],
+          [
+            91.75568219017514,
+            90.20831850383665,
+            116.59959421410223,
+            98.32845740311944
+          ],
+          [
+            57.35479250360413,
+            106.49134282602559,
+            98.32845740311944,
+            155.86937509563404
+          ]
+        ],
+        "cluster_margin_covariance_operator_order": [
+          "empty",
+          "C",
+          "Q",
+          "CQ"
+        ],
+        "corruption": "all",
+        "direction": "rescue",
+        "paired_bootstrap_covariance_raw_recovery": [
+          [
+            0.6222521280892421,
+            0.01625978096771408
+          ],
+          [
+            0.01625978096771408,
+            0.001478273154965438
+          ]
+        ],
+        "paired_rows": 184,
+        "participant_cluster_count": 46,
+        "raw_ci95_bits": [
+          0.05779770446515393,
+          3.170360802915211
+        ],
+        "raw_interaction_bits": 1.6317301790506018,
+        "recovery_ci95": [
+          0.04460874458837567,
+          0.19654229957996888
+        ],
+        "recovery_interaction": 0.11925690564896974,
+        "recovery_set_values": {
+          "C": 0.37672912511228174,
+          "CQ": 0.7781645012985594,
+          "Q": 0.28217847053730816,
+          "empty": 2.220446049250313e-16
+        },
+        "rows_per_cluster": 4
+      },
+      {
+        "cluster_equal_baseline_gap_bits": 19.289430234050652,
+        "cluster_equal_margin_bits": {
+          "C": 16.274913093214273,
+          "CQ": 8.464929752720353,
+          "Q": 14.879017514131828,
+          "empty": 19.216658390104556
+        },
+        "cluster_margin_covariance_bits_squared": [
+          [
+            201.27140628478338,
+            163.33687282134514,
+            165.9932461188547,
+            95.82523649276864
+          ],
+          [
+            163.33687282134514,
+            164.77408726072693,
+            143.08661234471361,
+            107.60255449305252
+          ],
+          [
+            165.9932461188547,
+            143.08661234471361,
+            150.8106959621813,
+            97.28291773201339
+          ],
+          [
+            95.82523649276864,
+            107.60255449305252,
+            97.28291773201339,
+            104.5737481831997
+          ]
+        ],
+        "cluster_margin_covariance_operator_order": [
+          "empty",
+          "C",
+          "Q",
+          "CQ"
+        ],
+        "corruption": "all",
+        "direction": "damage",
+        "paired_bootstrap_covariance_raw_recovery": [
+          [
+            0.648727256580445,
+            -0.015954679560131774
+          ],
+          [
+            -0.015954679560131774,
+            0.001131306244891266
+          ]
+        ],
+        "paired_rows": 184,
+        "participant_cluster_count": 46,
+        "raw_ci95_bits": [
+          -5.082179809173256,
+          -1.913730155557531
+        ],
+        "raw_interaction_bits": -3.4723424645211938,
+        "recovery_ci95": [
+          0.0699319337829116,
+          0.20162449038406222
+        ],
+        "recovery_interaction": 0.13932677165428775,
+        "recovery_set_values": {
+          "C": 0.22316925887160277,
+          "CQ": 0.613966335123863,
+          "Q": 0.2514703045979727,
+          "empty": 2.220446049250313e-16
+        },
+        "rows_per_cluster": 4
+      },
+      {
+        "cluster_equal_baseline_gap_bits": 19.289430234050652,
+        "cluster_equal_margin_bits": {
+          "C": 13.48103917565041,
+          "CQ": 12.946337911123022,
+          "Q": 11.945664230399837,
+          "empty": 11.56005935219193
+        },
+        "cluster_margin_covariance_bits_squared": [
+          [
+            99.82204518147515,
+            101.31436819130575,
+            103.31810167125296,
+            101.90458646160592
+          ],
+          [
+            101.31436819130575,
+            115.21322127195404,
+            111.6511789319006,
+            110.69615565462195
+          ],
+          [
+            103.31810167125296,
+            111.6511789319006,
+            114.06261926302463,
+            110.76578058853164
+          ],
+          [
+            101.90458646160592,
+            110.69615565462195,
+            110.76578058853164,
+            110.79765059674939
+          ]
+        ],
+        "cluster_margin_covariance_operator_order": [
+          "empty",
+          "C",
+          "Q",
+          "CQ"
+        ],
+        "corruption": "all",
+        "direction": "all",
+        "paired_bootstrap_covariance_raw_recovery": [
+          [
+            0.3149233771668811,
+            0.0007618964146462866
+          ],
+          [
+            0.0007618964146462866,
+            0.0005742403817872479
+          ]
+        ],
+        "paired_rows": 368,
+        "participant_cluster_count": 46,
+        "raw_ci95_bits": [
+          -2.04898434860308,
+          0.16191272874761267
+        ],
+        "raw_interaction_bits": -0.9203061427352957,
+        "recovery_ci95": [
+          0.08389129999810238,
+          0.17763415469758062
+        ],
+        "recovery_interaction": 0.12929183865162863,
+        "recovery_set_values": {
+          "C": 0.29994919199194214,
+          "CQ": 0.6960654182112113,
+          "Q": 0.2668243875676407,
+          "empty": 2.220446049250313e-16
+        },
+        "rows_per_cluster": 8
+      }
+    ],
+    "saved_index_and_paired_draw_hashes_match": true
+  },
+  "schema_version": 1,
+  "sensitivity": {
+    "family_A": {
+      "cells": {
+        "early22_F_over_K_materiality": {
+          "basic_one_sided_lower_95": 11.12670502709752,
+          "basic_one_sided_lower_97_5": 10.721574894397534,
+          "centered_upper_tail_count": 0,
+          "cluster_count": 46,
+          "descriptive_percentile_ci95": [
+            10.827684185889309,
+            15.481667256605261
+          ],
+          "draws": 10000,
+          "estimate": 13.101621075501397,
+          "null": 0.0,
+          "observed_effect_above_null": 13.101621075501397,
+          "one_sided_centered_add_one_p": 9.999000099990002e-05,
+          "posthoc_holm_below_0_05": true,
+          "posthoc_holm_p": 0.00019998000199980003
+        },
+        "late34_K_over_F_materiality": {
+          "basic_one_sided_lower_95": 13.735926100566981,
+          "basic_one_sided_lower_97_5": 13.299758956722137,
+          "centered_upper_tail_count": 0,
+          "cluster_count": 46,
+          "descriptive_percentile_ci95": [
+            13.439966579908042,
+            18.11230330093183
+          ],
+          "draws": 10000,
+          "estimate": 15.706031128826984,
+          "null": 0.0,
+          "observed_effect_above_null": 15.706031128826984,
+          "one_sided_centered_add_one_p": 9.999000099990002e-05,
+          "posthoc_holm_below_0_05": true,
+          "posthoc_holm_p": 0.00019998000199980003
+        }
+      },
+      "draw_indices_sha256": "29185b9eec4672991940b3743e12e8ff138adc6195b5dea5096aec4f661b42f8",
+      "family_size": 2,
+      "multiplicity": "Holm within this family only",
+      "status": "POSTHOC"
+    },
+    "loco": [
+      {
+        "early_F": 0.8213084102381986,
+        "early_F_minus_K": 0.7722887674065786,
+        "early_K": 0.04901964283161997,
+        "late_F": 0.017093832360716155,
+        "late_K": 0.9321326730852926,
+        "late_K_minus_F": 0.9150388407245764,
+        "omitted_ordinal": 0
+      },
+      {
+        "early_F": 0.82801960401566,
+        "early_F_minus_K": 0.7819821303136552,
+        "early_K": 0.04603747370200484,
+        "late_F": 0.017730484737439434,
+        "late_K": 0.9337974998874808,
+        "late_K_minus_F": 0.9160670151500414,
+        "omitted_ordinal": 1
+      },
+      {
+        "early_F": 0.826210553909199,
+        "early_F_minus_K": 0.7793361562185502,
+        "early_K": 0.04687439769064872,
+        "late_F": 0.01892660628649978,
+        "late_K": 0.932631847056729,
+        "late_K_minus_F": 0.9137052407702292,
+        "omitted_ordinal": 2
+      },
+      {
+        "early_F": 0.8252889366872962,
+        "early_F_minus_K": 0.7783348774979928,
+        "early_K": 0.0469540591893034,
+        "late_F": 0.01952455976661438,
+        "late_K": 0.9315586309883784,
+        "late_K_minus_F": 0.912034071221764,
+        "omitted_ordinal": 3
+      },
+      {
+        "early_F": 0.830256910282006,
+        "early_F_minus_K": 0.7811084706797641,
+        "early_K": 0.04914843960224191,
+        "late_F": 0.020346077466965262,
+        "late_K": 0.9343848229007142,
+        "late_K_minus_F": 0.914038745433749,
+        "omitted_ordinal": 4
+      },
+      {
+        "early_F": 0.8273197529922154,
+        "early_F_minus_K": 0.7825082627396567,
+        "early_K": 0.044811490252558706,
+        "late_F": 0.018636001818596926,
+        "late_K": 0.9332381126264224,
+        "late_K_minus_F": 0.9146021108078255,
+        "omitted_ordinal": 5
+      },
+      {
+        "early_F": 0.8277136829530769,
+        "early_F_minus_K": 0.7805057492477305,
+        "early_K": 0.04720793370534637,
+        "late_F": 0.01838823410912105,
+        "late_K": 0.9338711432193418,
+        "late_K_minus_F": 0.9154829091102208,
+        "omitted_ordinal": 6
+      },
+      {
+        "early_F": 0.8255056579247492,
+        "early_F_minus_K": 0.7772198699903633,
+        "early_K": 0.04828578793438587,
+        "late_F": 0.01890662872902693,
+        "late_K": 0.9344721679484362,
+        "late_K_minus_F": 0.9155655392194093,
+        "omitted_ordinal": 7
+      },
+      {
+        "early_F": 0.824469854848763,
+        "early_F_minus_K": 0.7780512617457592,
+        "early_K": 0.04641859310300378,
+        "late_F": 0.018860255883362154,
+        "late_K": 0.9328392073692098,
+        "late_K_minus_F": 0.9139789514858476,
+        "omitted_ordinal": 8
+      },
+      {
+        "early_F": 0.8224645615857915,
+        "early_F_minus_K": 0.7738817048727902,
+        "early_K": 0.04858285671300133,
+        "late_F": 0.01928587564330775,
+        "late_K": 0.9307832696307516,
+        "late_K_minus_F": 0.9114973939874439,
+        "omitted_ordinal": 9
+      },
+      {
+        "early_F": 0.8281463376891077,
+        "early_F_minus_K": 0.7830794812217199,
+        "early_K": 0.04506685646738784,
+        "late_F": 0.018949247524131407,
+        "late_K": 0.9326590405445767,
+        "late_K_minus_F": 0.9137097930204453,
+        "omitted_ordinal": 10
+      },
+      {
+        "early_F": 0.8246665559024804,
+        "early_F_minus_K": 0.7742595582699381,
+        "early_K": 0.050406997632542305,
+        "late_F": 0.018514220065713793,
+        "late_K": 0.932077476366633,
+        "late_K_minus_F": 0.9135632563009192,
+        "omitted_ordinal": 11
+      },
+      {
+        "early_F": 0.8304115691457311,
+        "early_F_minus_K": 0.7816200235879349,
+        "early_K": 0.04879154555779619,
+        "late_F": 0.018805971346572137,
+        "late_K": 0.9323163757100497,
+        "late_K_minus_F": 0.9135104043634775,
+        "omitted_ordinal": 12
+      },
+      {
+        "early_F": 0.8288691232016927,
+        "early_F_minus_K": 0.7849690053295338,
+        "early_K": 0.04390011787215886,
+        "late_F": 0.018331934489021817,
+        "late_K": 0.9325913610402257,
+        "late_K_minus_F": 0.9142594265512038,
+        "omitted_ordinal": 13
+      },
+      {
+        "early_F": 0.829026425362661,
+        "early_F_minus_K": 0.782344643761337,
+        "early_K": 0.04668178160132397,
+        "late_F": 0.017499806145210406,
+        "late_K": 0.9335983992147012,
+        "late_K_minus_F": 0.9160985930694908,
+        "omitted_ordinal": 14
+      },
+      {
+        "early_F": 0.8247144180944788,
+        "early_F_minus_K": 0.777579002953073,
+        "early_K": 0.047135415141405734,
+        "late_F": 0.019078271063840968,
+        "late_K": 0.9322429448742484,
+        "late_K_minus_F": 0.9131646738104074,
+        "omitted_ordinal": 15
+      },
+      {
+        "early_F": 0.8260607289573332,
+        "early_F_minus_K": 0.7766483232443946,
+        "early_K": 0.04941240571293859,
+        "late_F": 0.022071448173993646,
+        "late_K": 0.9348684984761673,
+        "late_K_minus_F": 0.9127970503021736,
+        "omitted_ordinal": 16
+      },
+      {
+        "early_F": 0.8260286872996914,
+        "early_F_minus_K": 0.7796453027222071,
+        "early_K": 0.046383384577484255,
+        "late_F": 0.017733059440221965,
+        "late_K": 0.9328678195264718,
+        "late_K_minus_F": 0.9151347600862498,
+        "omitted_ordinal": 17
+      },
+      {
+        "early_F": 0.8273054443200116,
+        "early_F_minus_K": 0.7788430620914124,
+        "early_K": 0.04846238222859922,
+        "late_F": 0.018732668377887562,
+        "late_K": 0.9317822752225177,
+        "late_K_minus_F": 0.9130496068446301,
+        "omitted_ordinal": 18
+      },
+      {
+        "early_F": 0.8253245267698955,
+        "early_F_minus_K": 0.7790809343235684,
+        "early_K": 0.04624359244632714,
+        "late_F": 0.01850295287428838,
+        "late_K": 0.9324219510780448,
+        "late_K_minus_F": 0.9139189982037564,
+        "omitted_ordinal": 19
+      },
+      {
+        "early_F": 0.8259247364792321,
+        "early_F_minus_K": 0.78010420001848,
+        "early_K": 0.045820536460752126,
+        "late_F": 0.017171157462607,
+        "late_K": 0.9341683193042352,
+        "late_K_minus_F": 0.9169971618416282,
+        "omitted_ordinal": 20
+      },
+      {
+        "early_F": 0.8258218694093529,
+        "early_F_minus_K": 0.7796717716756064,
+        "early_K": 0.046150097733746454,
+        "late_F": 0.01774450005293826,
+        "late_K": 0.9329105102342209,
+        "late_K_minus_F": 0.9151660101812826,
+        "omitted_ordinal": 21
+      },
+      {
+        "early_F": 0.8272424104335587,
+        "early_F_minus_K": 0.782519187289611,
+        "early_K": 0.04472322314394772,
+        "late_F": 0.02005214727333149,
+        "late_K": 0.9332617898876313,
+        "late_K_minus_F": 0.9132096426142998,
+        "omitted_ordinal": 22
+      },
+      {
+        "early_F": 0.8220485981476536,
+        "early_F_minus_K": 0.7735166966922742,
+        "early_K": 0.048531901455379445,
+        "late_F": 0.01924919701696226,
+        "late_K": 0.9311400495892842,
+        "late_K_minus_F": 0.9118908525723219,
+        "omitted_ordinal": 23
+      },
+      {
+        "early_F": 0.8293709340454114,
+        "early_F_minus_K": 0.7790448051873069,
+        "early_K": 0.0503261288581045,
+        "late_F": 0.017885890882334055,
+        "late_K": 0.9338626113274855,
+        "late_K_minus_F": 0.9159767204451514,
+        "omitted_ordinal": 24
+      },
+      {
+        "early_F": 0.8267440413640267,
+        "early_F_minus_K": 0.7797085718559268,
+        "early_K": 0.04703546950809989,
+        "late_F": 0.01824165161109903,
+        "late_K": 0.9328868752552313,
+        "late_K_minus_F": 0.9146452236441323,
+        "omitted_ordinal": 25
+      },
+      {
+        "early_F": 0.8264522346074648,
+        "early_F_minus_K": 0.7791781036130354,
+        "early_K": 0.04727413099442934,
+        "late_F": 0.01804071739928248,
+        "late_K": 0.9325168842314181,
+        "late_K_minus_F": 0.9144761668321356,
+        "omitted_ordinal": 26
+      },
+      {
+        "early_F": 0.8291039746011768,
+        "early_F_minus_K": 0.7839106189487326,
+        "early_K": 0.0451933556524442,
+        "late_F": 0.018616748561629093,
+        "late_K": 0.9332559708028805,
+        "late_K_minus_F": 0.9146392222412514,
+        "omitted_ordinal": 27
+      },
+      {
+        "early_F": 0.8268924672966453,
+        "early_F_minus_K": 0.7804640088830456,
+        "early_K": 0.04642845841359977,
+        "late_F": 0.0189920738316135,
+        "late_K": 0.9327134743443407,
+        "late_K_minus_F": 0.9137214005127272,
+        "omitted_ordinal": 28
+      },
+      {
+        "early_F": 0.8268140572323006,
+        "early_F_minus_K": 0.7796501427161961,
+        "early_K": 0.047163914516104466,
+        "late_F": 0.017594751882326842,
+        "late_K": 0.9332377714590414,
+        "late_K_minus_F": 0.9156430195767146,
+        "omitted_ordinal": 29
+      },
+      {
+        "early_F": 0.8266332373123437,
+        "early_F_minus_K": 0.7802627633561763,
+        "early_K": 0.046370473956167446,
+        "late_F": 0.0191239605736071,
+        "late_K": 0.932001719983961,
+        "late_K_minus_F": 0.9128777594103539,
+        "omitted_ordinal": 30
+      },
+      {
+        "early_F": 0.8248638613634731,
+        "early_F_minus_K": 0.7745274255200054,
+        "early_K": 0.0503364358434677,
+        "late_F": 0.0180153334286437,
+        "late_K": 0.9338287021029219,
+        "late_K_minus_F": 0.9158133686742782,
+        "omitted_ordinal": 31
+      },
+      {
+        "early_F": 0.8239030046045486,
+        "early_F_minus_K": 0.7741866126908792,
+        "early_K": 0.04971639191366939,
+        "late_F": 0.018535582991653365,
+        "late_K": 0.9318343146423644,
+        "late_K_minus_F": 0.9132987316507111,
+        "omitted_ordinal": 32
+      },
+      {
+        "early_F": 0.8299232764578675,
+        "early_F_minus_K": 0.7812423981221519,
+        "early_K": 0.04868087833571555,
+        "late_F": 0.01768483090350914,
+        "late_K": 0.9345733243955098,
+        "late_K_minus_F": 0.9168884934920006,
+        "omitted_ordinal": 33
+      },
+      {
+        "early_F": 0.8271210238623459,
+        "early_F_minus_K": 0.7794558211933467,
+        "early_K": 0.04766520266899921,
+        "late_F": 0.017511797718091526,
+        "late_K": 0.9342106114226871,
+        "late_K_minus_F": 0.9166988137045956,
+        "omitted_ordinal": 34
+      },
+      {
+        "early_F": 0.8275003557600819,
+        "early_F_minus_K": 0.7793722116258682,
+        "early_K": 0.048128144134213624,
+        "late_F": 0.017369005692048245,
+        "late_K": 0.934761072857764,
+        "late_K_minus_F": 0.9173920671657158,
+        "omitted_ordinal": 35
+      },
+      {
+        "early_F": 0.827805479085848,
+        "early_F_minus_K": 0.7820704659275014,
+        "early_K": 0.045735013158346605,
+        "late_F": 0.019583209622148545,
+        "late_K": 0.9327771616382984,
+        "late_K_minus_F": 0.9131939520161498,
+        "omitted_ordinal": 36
+      },
+      {
+        "early_F": 0.8279658755536193,
+        "early_F_minus_K": 0.7776433408972366,
+        "early_K": 0.0503225346563827,
+        "late_F": 0.017855756443317605,
+        "late_K": 0.9334828995270174,
+        "late_K_minus_F": 0.9156271430836997,
+        "omitted_ordinal": 37
+      },
+      {
+        "early_F": 0.8276651468922885,
+        "early_F_minus_K": 0.7821607522474657,
+        "early_K": 0.04550439464482281,
+        "late_F": 0.019705499473876786,
+        "late_K": 0.9322307192553188,
+        "late_K_minus_F": 0.912525219781442,
+        "omitted_ordinal": 38
+      },
+      {
+        "early_F": 0.8302116830270216,
+        "early_F_minus_K": 0.7798987089970834,
+        "early_K": 0.050312974029938284,
+        "late_F": 0.019526052178265085,
+        "late_K": 0.932717401427773,
+        "late_K_minus_F": 0.913191349249508,
+        "omitted_ordinal": 39
+      },
+      {
+        "early_F": 0.8325968969826842,
+        "early_F_minus_K": 0.7816629242823067,
+        "early_K": 0.05093397270037758,
+        "late_F": 0.01874910824381204,
+        "late_K": 0.9320723704145276,
+        "late_K_minus_F": 0.9133232621707156,
+        "omitted_ordinal": 40
+      },
+      {
+        "early_F": 0.8258296094957721,
+        "early_F_minus_K": 0.7777329878389022,
+        "early_K": 0.0480966216568699,
+        "late_F": 0.02108057554183207,
+        "late_K": 0.9320700296627897,
+        "late_K_minus_F": 0.9109894541209577,
+        "omitted_ordinal": 41
+      },
+      {
+        "early_F": 0.8269661701938607,
+        "early_F_minus_K": 0.7799407584122089,
+        "early_K": 0.04702541178165176,
+        "late_F": 0.01908199839606084,
+        "late_K": 0.9321956557686216,
+        "late_K_minus_F": 0.9131136573725608,
+        "omitted_ordinal": 42
+      },
+      {
+        "early_F": 0.8207893696693433,
+        "early_F_minus_K": 0.7730691334136532,
+        "early_K": 0.04772023625569011,
+        "late_F": 0.018180812610039454,
+        "late_K": 0.9310858549065291,
+        "late_K_minus_F": 0.9129050422964896,
+        "omitted_ordinal": 43
+      },
+      {
+        "early_F": 0.8290913310932025,
+        "early_F_minus_K": 0.7813851674261818,
+        "early_K": 0.04770616366702074,
+        "late_F": 0.018397598720412356,
+        "late_K": 0.9332375310825687,
+        "late_K_minus_F": 0.9148399323621563,
+        "omitted_ordinal": 44
+      },
+      {
+        "early_F": 0.8255288026658703,
+        "early_F_minus_K": 0.7771272613850496,
+        "early_K": 0.04840154128082064,
+        "late_F": 0.01842185799088103,
+        "late_K": 0.9323772095305718,
+        "late_K_minus_F": 0.9139553515396908,
+        "omitted_ordinal": 45
+      }
+    ],
+    "loco_min_median_max": {
+      "early_F": [
+        0.8207893696693433,
+        0.826853262264473,
+        0.8325968969826842
+      ],
+      "early_F_minus_K": [
+        0.7722887674065786,
+        0.7796477227192016,
+        0.7849690053295338
+      ],
+      "early_K": [
+        0.04390011787215886,
+        0.04724103234988786,
+        0.05093397270037758
+      ],
+      "late_F": [
+        0.017093832360716155,
+        0.01857616577664123,
+        0.022071448173993646
+      ],
+      "late_K": [
+        0.9307832696307516,
+        0.9327472815330358,
+        0.9348684984761673
+      ],
+      "late_K_minus_F": [
+        0.9109894541209577,
+        0.9139671515127692,
+        0.9173920671657158
+      ]
+    },
+    "loco_reference_scope": "saved_min_median_max_only_not_historical_per_omission_rows"
+  },
+  "status": "pass"
+}

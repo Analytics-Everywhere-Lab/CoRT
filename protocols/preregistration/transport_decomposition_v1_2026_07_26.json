@@ -1,0 +1,157 @@
+{
+  "analysis_status": "prospectively_frozen_before_any_new_transport_decomposition_outcome",
+  "claim_scope": {
+    "allowed": [
+      "within_cohort_operator_decomposition",
+      "persistent_clamp_increment_consistent_with_downstream_recontamination_or_repeated_native_donor_reinjection",
+      "complement_increment_consistent_with_visual_influence_outside_the_full_frame_span"
+    ],
+    "disallowed": [
+      "independent_held_out_confirmation",
+      "unique_mechanistic_localization",
+      "historical_information_handoff_layer",
+      "universal_vlm_depth_boundary"
+    ],
+    "cohort_reuse": "The 80-participant-cluster cohort was used in the source Job C-R depth-profile analysis. This is a prespecified follow-up on reused data, not an independent confirmation cohort."
+  },
+  "corruptions": [
+    "blank_full",
+    "wrong_time"
+  ],
+  "data": {
+    "frame_count": 80,
+    "hidden_evaluator_index_sha256": "7a764586ac27a05fbe0d02151a632e91674d4b6c5721f4adba6bdae79a9725f1",
+    "mechanism_manifest_sha256": "c219a8f6746382edbb3e6a304fe85e750755e719874cf5775a2a6ef48a3fca88",
+    "participant_cluster_count": 80,
+    "public_requests_sha256": "a6b9d166597efae8a26a65e2c654367da99fddef7ccaab6698a1646930083ced",
+    "selection_already_frozen": true,
+    "trial_count": 160
+  },
+  "decision_rule": {
+    "family_size": 4,
+    "materiality_threshold_rho": 0.1,
+    "model_level_cells": [
+      "qwen35_27b_hf_bf16:persistent_clamp_minus_single",
+      "qwen35_27b_hf_bf16:complement_minus_single",
+      "gemma4_31b_hf_bf16:persistent_clamp_minus_single",
+      "gemma4_31b_hf_bf16:complement_minus_single"
+    ],
+    "multiplicity": "Holm adjustment over four one-sided model-by-mechanism bootstrap p-values",
+    "positive_cell": "Holm-adjusted one-sided p < 0.05 against delta rho <= 0 and point estimate >= 0.10 rho units. The 0.10 condition is a point-estimate screen, not a test that delta rho exceeds 0.10.",
+    "taxonomy": {
+      "both_operator_increments_supported": "both cells satisfy the frozen support rule; both proposed explanations remain consistent with the observations",
+      "clamp_increment_supported_complement_unresolved": "the clamp cell satisfies the frozen support rule and the complement cell does not; this does not establish that complement-mediated influence is absent",
+      "complement_increment_supported_clamp_unresolved": "the complement cell satisfies the frozen support rule and the clamp cell does not; this does not establish that clamp-sensitive downstream influence is absent",
+      "no_operator_increment_resolved": "neither cell satisfies the frozen support rule; this is unresolved rather than evidence that both mechanisms are absent"
+    }
+  },
+  "depth_plan": {
+    "gemma4_31b_hf_bf16": {
+      "central_primary_post_block_indexes": [
+        26,
+        30
+      ],
+      "descriptive_outer_post_block_indexes": [
+        22,
+        34
+      ],
+      "last_post_block_index": 59,
+      "ordered_post_block_indexes": [
+        22,
+        26,
+        30,
+        34
+      ]
+    },
+    "qwen35_27b_hf_bf16": {
+      "central_primary_post_block_indexes": [
+        28,
+        32
+      ],
+      "descriptive_outer_post_block_indexes": [
+        24,
+        36
+      ],
+      "last_post_block_index": 63,
+      "ordered_post_block_indexes": [
+        24,
+        28,
+        32,
+        36
+      ]
+    }
+  },
+  "directions": {
+    "damage": "corrupt_native_source_into_clean_recipient",
+    "rescue": "clean_native_source_into_corrupt_recipient"
+  },
+  "kind": "patchaudit_transport_decomposition_preregistration",
+  "models": [
+    {
+      "model_id": "Qwen/Qwen3.5-27B",
+      "model_key": "qwen35_27b_hf_bf16",
+      "revision": "fc05daec18b0a78c049392ed2e771dde82bdf654"
+    },
+    {
+      "model_id": "google/gemma-4-31B-it",
+      "model_key": "gemma4_31b_hf_bf16",
+      "revision": "3548789868c5356dbf307c98e6f609007b82b3eb"
+    }
+  ],
+  "operators": {
+    "complement_once": {
+      "purpose": "test whether donor-consistent visual influence is available outside the original full-frame visual-token span",
+      "semantics": "At post-block L, replace every active sequence position except the full-frame image-token positions with the corresponding native donor state. Padding is excluded. The full-frame positions remain recipient-derived."
+    },
+    "full_sequence_once": {
+      "inferential_role": "architecture-predicted positive contract control, excluded from the four-cell mechanism family",
+      "purpose": "verify that the complete donor residual state at L deterministically closes the measured answer margin",
+      "semantics": "At post-block L, replace every active non-padding sequence position with the corresponding native donor state."
+    },
+    "persistent_full_frame": {
+      "inferential_limit": "An increment over a one-shot patch is consistent with downstream recontamination, but it can also arise because later native donor states repeatedly reintroduce donor information. The operator does not identify those explanations separately.",
+      "purpose": "test whether repeated native-donor full-frame replacement improves donor consistency beyond a one-time full-frame transplant",
+      "semantics": "Starting at post-block L and continuing through the architecture-specific final post-block, replace the complete full-frame visual-token span after every block with that block's state captured from one native, unpatched donor forward. Donor states are never recursively generated from a hybrid run."
+    },
+    "single_full_frame": {
+      "purpose": "exact replication anchor for the source depth profile",
+      "semantics": "At post-block L only, replace the complete full-frame visual-token span with the corresponding native donor state."
+    }
+  },
+  "outcome": {
+    "candidate_shared_prefix": "{\"answer\":\"",
+    "primary_score": "teacher_forced_correct_minus_incorrect_answer_token_log_likelihood_margin_bits",
+    "recovery": "rho = 1 - participant_cluster_equal_mean_abs(patched_minus_donor_margin) / participant_cluster_equal_mean_abs(recipient_minus_donor_margin)",
+    "row_unit": "counterbalanced request",
+    "statistical_unit": "participant cluster after averaging its two counterbalanced orders"
+  },
+  "primary_estimands": {
+    "conditions": "equal weight over the two central depths, two corruptions, and two directions within each participant cluster",
+    "egress": "rho(complement_once) - rho(single_full_frame)",
+    "recontamination": "rho(persistent_full_frame) - rho(single_full_frame)"
+  },
+  "source_discovery": {
+    "job_id": 381579,
+    "job_name": "reanchored-jobCR-token-patch",
+    "source_aggregate_summary_sha256": "f6ff6155b0cf419cd398d8ebb6b605f77b13de1ccdbba22aea94e77310aee77a",
+    "source_analysis_sha256": "48cff55aac096e951f2d05e630674171e3fa345be0480b47a2c0766818d5db95",
+    "source_prespec_sha256": "21dfd51486c95e370dac2e5c9cc297dd897a136ad7772286467525ee06047703"
+  },
+  "statistics": {
+    "bootstrap_replicates": 10000,
+    "bootstrap_seed": 20260726,
+    "interval": "participant-cluster percentile bootstrap 95 percent descriptive interval",
+    "one_sided_p_value": "(1 + count(delta_bootstrap <= 0)) / (B + 1)"
+  },
+  "technical_gates": {
+    "answer_token_equivalence_tolerance_bits": 0.001,
+    "complement_partition": "selected complement and preserved full-frame sets must be disjoint and partition all active positions",
+    "full_sequence_closure_max_abs_error_bits": 0.001,
+    "gpu_memory": "each model/operator canary must remain below 76 GiB peak CUDA allocation on an 80 GiB H100",
+    "hook_contract": "every expected hook fires exactly once, changes only its selected positions, receives shape-compatible finite donor state, and is removed",
+    "model_cache": "exact pinned offline revisions and weight files must exist before workers launch",
+    "self_patch": "canary self-patches for every operator must preserve the native answer margin within 0.001 bits",
+    "self_patch_max_abs_error_bits": 0.001
+  },
+  "version": 1
+}

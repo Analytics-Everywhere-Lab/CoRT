@@ -1,0 +1,11 @@
+{
+  "manuscript_title": "CoRT: Counterfactual Role Tracing of Scene, Object, and Event-History Evidence Across Decoder Depth in Egocentric Video-Language Models",
+  "reviewed_version_date": "2026-11-01",
+  "pdf_sha256": "79849305475a3c1a1f5d29bde3acbae1a5499c001b504cfd3b2128c924be68fc",
+  "pdf_sha256_status": "verified_against_reviewed_pdf",
+  "text_sha256": "28a345c310b6650e857ba75f9d18aa34933f4705cfafe3186fe86a5bc559879c",
+  "main_tables": [1, 2, 3, 4, 5, 6],
+  "numeric_figures": [3, 4, 5, 6, 7, 8],
+  "numbering_basis": "Main Tables 1-6 and numeric Figures 3-8 in the reviewed manuscript; supplemental table labels follow its cross-references.",
+  "paper_text_or_media_included": false
+}

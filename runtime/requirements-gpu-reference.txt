@@ -1,0 +1,5 @@
+# Historical upstream runtime pins, NOT a complete environment lock or a tested
+# installation recipe. Requires the exact upstream container and model pins.
+# No GPU runtime was installed or executed for this public export.
+torch==2.12.1+cu126
+transformers==5.13.0

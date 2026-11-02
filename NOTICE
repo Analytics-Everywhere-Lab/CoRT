@@ -1,0 +1,10 @@
+CoRT: Counterfactual Role Tracing
+Copyright 2026 the CoRT contributors.
+
+This release contains research code, documentation, derived numerical records,
+and the CoRT activation-correction weights. Source datasets and third-party
+base-model checkpoints are not included.
+Their licenses and access conditions are independent of the software license.
+
+The source manifest records the provenance of exported experiment modules.
+Dependency packages are not vendored and retain their respective licenses.

@@ -1,0 +1,255 @@
+{
+  "bootstrap": {
+    "draws": 10000,
+    "seed": 20261019
+  },
+  "cut": 34,
+  "decision": {
+    "accuracy_floor": 0,
+    "bounds": 4,
+    "co_primaries": {
+      "E1": "Fhalf_Chalf_L34_prune__readout_fused_seed_mean",
+      "E2": "F0_L30_prune__CQ_fused_seed_mean"
+    },
+    "family_alpha": 0.05,
+    "speedup_floor": 1
+  },
+  "experiment_id": "role-aware-policy-2026-10-19-v2",
+  "measurement": {
+    "batch_size": 1,
+    "benchmark_requests": 128,
+    "canary_frames": 16,
+    "canary_timing_repeats": 2,
+    "timing_repeats": 5,
+    "warmups": 2
+  },
+  "model": {
+    "id": "google/gemma-4-31B-it",
+    "key": "gemma4_31b_hf_bf16",
+    "revision": "3548789868c5356dbf307c98e6f609007b82b3eb",
+    "torch": "2.12.1+cu126",
+    "transformers": "5.13.0"
+  },
+  "primary_compression": "F0_L30_prune",
+  "reference_cases": [
+    "native__correct_L34_readout",
+    "native__correct_L34_CQ"
+  ],
+  "saved_bias_bits": 5.806289363588375,
+  "schema_version": 2,
+  "scope": "Two co-primary accuracy>0 and speedup>1 hypotheses, four one-sided Bonferroni bounds alpha .05/4. No winner selection. REUSED/descriptive development evaluation, not fresh confirmation. Source-equal unit-weighted estimand; batch-one next-answer timing only, no generation/KV-cache claim. Optimized wrappers are not a single-kernel claim.",
+  "secondary_compression": "Fhalf_Chalf_L34_prune",
+  "seeds": [
+    17,
+    29
+  ],
+  "status": "adapters_frozen",
+  "training": {
+    "canary_steps": 2,
+    "checkpoint_selection": "fixed_final_step",
+    "gradient_accumulation": 4,
+    "learning_rate": 0.001,
+    "rank": 4,
+    "steps": 256
+  },
+  "training_cases": [
+    "Fhalf_Chalf_L34_prune__correct_L34_readout",
+    "F0_L30_prune__correct_L34_CQ",
+    "F0_L30_prune__correct_L34_readout"
+  ],
+  "variants": [
+    {
+      "compression_id": "native",
+      "id": "native",
+      "path": "native"
+    },
+    {
+      "compression_id": "F0_L30_prune",
+      "id": "F0_L30_prune",
+      "path": "matrix"
+    },
+    {
+      "compression_id": "Fhalf_Chalf_L34_prune",
+      "id": "Fhalf_Chalf_L34_prune",
+      "path": "matrix"
+    },
+    {
+      "compression_id": "Fhalf_Chalf_L34_prune",
+      "id": "Fhalf_Chalf_L34_prune__readout_fused_zero",
+      "path": "fused_zero",
+      "target": "readout"
+    },
+    {
+      "compression_id": "F0_L30_prune",
+      "id": "F0_L30_prune__CQ_fused_zero",
+      "path": "fused_zero",
+      "target": "CQ"
+    },
+    {
+      "compression_id": "F0_L30_prune",
+      "id": "F0_L30_prune__readout_fused_zero",
+      "path": "fused_zero",
+      "target": "readout"
+    },
+    {
+      "case_id": "Fhalf_Chalf_L34_prune__correct_L34_readout",
+      "compression_id": "Fhalf_Chalf_L34_prune",
+      "id": "Fhalf_Chalf_L34_prune__readout_legacy_seed17",
+      "path": "legacy",
+      "seed": 17,
+      "target": "readout"
+    },
+    {
+      "case_id": "Fhalf_Chalf_L34_prune__correct_L34_readout",
+      "compression_id": "Fhalf_Chalf_L34_prune",
+      "id": "Fhalf_Chalf_L34_prune__readout_fused_seed17",
+      "path": "fused",
+      "seed": 17,
+      "target": "readout"
+    },
+    {
+      "case_id": "F0_L30_prune__correct_L34_CQ",
+      "compression_id": "F0_L30_prune",
+      "id": "F0_L30_prune__CQ_legacy_seed17",
+      "path": "legacy",
+      "seed": 17,
+      "target": "CQ"
+    },
+    {
+      "case_id": "F0_L30_prune__correct_L34_CQ",
+      "compression_id": "F0_L30_prune",
+      "id": "F0_L30_prune__CQ_fused_seed17",
+      "path": "fused",
+      "seed": 17,
+      "target": "CQ"
+    },
+    {
+      "case_id": "F0_L30_prune__correct_L34_readout",
+      "compression_id": "F0_L30_prune",
+      "id": "F0_L30_prune__readout_legacy_seed17",
+      "path": "legacy",
+      "seed": 17,
+      "target": "readout"
+    },
+    {
+      "case_id": "F0_L30_prune__correct_L34_readout",
+      "compression_id": "F0_L30_prune",
+      "id": "F0_L30_prune__readout_fused_seed17",
+      "path": "fused",
+      "seed": 17,
+      "target": "readout"
+    },
+    {
+      "case_id": "native__correct_L34_readout",
+      "compression_id": "native",
+      "id": "native__readout_legacy_seed17",
+      "path": "legacy",
+      "seed": 17,
+      "target": "readout"
+    },
+    {
+      "case_id": "native__correct_L34_readout",
+      "compression_id": "native",
+      "id": "native__readout_fused_seed17",
+      "path": "fused",
+      "seed": 17,
+      "target": "readout"
+    },
+    {
+      "case_id": "native__correct_L34_CQ",
+      "compression_id": "native",
+      "id": "native__CQ_legacy_seed17",
+      "path": "legacy",
+      "seed": 17,
+      "target": "CQ"
+    },
+    {
+      "case_id": "native__correct_L34_CQ",
+      "compression_id": "native",
+      "id": "native__CQ_fused_seed17",
+      "path": "fused",
+      "seed": 17,
+      "target": "CQ"
+    },
+    {
+      "case_id": "Fhalf_Chalf_L34_prune__correct_L34_readout",
+      "compression_id": "Fhalf_Chalf_L34_prune",
+      "id": "Fhalf_Chalf_L34_prune__readout_legacy_seed29",
+      "path": "legacy",
+      "seed": 29,
+      "target": "readout"
+    },
+    {
+      "case_id": "Fhalf_Chalf_L34_prune__correct_L34_readout",
+      "compression_id": "Fhalf_Chalf_L34_prune",
+      "id": "Fhalf_Chalf_L34_prune__readout_fused_seed29",
+      "path": "fused",
+      "seed": 29,
+      "target": "readout"
+    },
+    {
+      "case_id": "F0_L30_prune__correct_L34_CQ",
+      "compression_id": "F0_L30_prune",
+      "id": "F0_L30_prune__CQ_legacy_seed29",
+      "path": "legacy",
+      "seed": 29,
+      "target": "CQ"
+    },
+    {
+      "case_id": "F0_L30_prune__correct_L34_CQ",
+      "compression_id": "F0_L30_prune",
+      "id": "F0_L30_prune__CQ_fused_seed29",
+      "path": "fused",
+      "seed": 29,
+      "target": "CQ"
+    },
+    {
+      "case_id": "F0_L30_prune__correct_L34_readout",
+      "compression_id": "F0_L30_prune",
+      "id": "F0_L30_prune__readout_legacy_seed29",
+      "path": "legacy",
+      "seed": 29,
+      "target": "readout"
+    },
+    {
+      "case_id": "F0_L30_prune__correct_L34_readout",
+      "compression_id": "F0_L30_prune",
+      "id": "F0_L30_prune__readout_fused_seed29",
+      "path": "fused",
+      "seed": 29,
+      "target": "readout"
+    },
+    {
+      "case_id": "native__correct_L34_readout",
+      "compression_id": "native",
+      "id": "native__readout_legacy_seed29",
+      "path": "legacy",
+      "seed": 29,
+      "target": "readout"
+    },
+    {
+      "case_id": "native__correct_L34_readout",
+      "compression_id": "native",
+      "id": "native__readout_fused_seed29",
+      "path": "fused",
+      "seed": 29,
+      "target": "readout"
+    },
+    {
+      "case_id": "native__correct_L34_CQ",
+      "compression_id": "native",
+      "id": "native__CQ_legacy_seed29",
+      "path": "legacy",
+      "seed": 29,
+      "target": "CQ"
+    },
+    {
+      "case_id": "native__correct_L34_CQ",
+      "compression_id": "native",
+      "id": "native__CQ_fused_seed29",
+      "path": "fused",
+      "seed": 29,
+      "target": "CQ"
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "analysis_status": "prospectively_frozen_before_any_jobE_component_patch_outcome",
+  "claim_scope": {
+    "allowed": [
+      "jobD_disjoint_replication_of_the_descriptive_endpoint_reversal",
+      "model_and_hook_tensor_specific_position_set_decomposition",
+      "prespecified_component_shapley_and_interaction_description",
+      "gemma_endpoint_ordering_reversal_confirmation"
+    ],
+    "cohort_terminology": "Job-D-disjoint, prospectively frozen replication cohort drawn outcome-blindly from a previously constructed battery. It is participant/video/frame/donor disjoint relative to Job D but must not be described as globally untouched, independently held out, or study-wide held out.",
+    "disallowed": [
+      "unique_mechanistic_mediation_from_shapley_values",
+      "universal_vlm_transport_boundary",
+      "semantic_equivalence_of_position_groups_across_architectures",
+      "absence_of_information_from_a_nonpositive_component_effect",
+      "new_layer_selection_from_jobE_outcomes"
+    ]
+  },
+  "corruptions": [
+    "blank_full",
+    "wrong_time"
+  ],
+  "data": {
+    "exclusion_jobD_mechanism_hidden_sha256": "7a764586ac27a05fbe0d02151a632e91674d4b6c5721f4adba6bdae79a9725f1",
+    "exclusion_jobD_mechanism_manifest_sha256": "c219a8f6746382edbb3e6a304fe85e750755e719874cf5775a2a6ef48a3fca88",
+    "exclusion_jobD_public_sha256": "a6b9d166597efae8a26a65e2c654367da99fddef7ccaab6698a1646930083ced",
+    "frame_count": 46,
+    "participant_cluster_count": 46,
+    "public_requests_sha256": "2b0e31236a0ea531a4a9849b00356e2fabfa153084dd12487511b2523d50635f",
+    "request_count": 92,
+    "selected_hidden_evaluator_sha256": "40ad815b8114416c29e088f0eb54ac22b7c34db13ddc50ee46e016b94759f6d8",
+    "selection_manifest_sha256": "73ee030a8369f05ba11f439fa8b83ecfb5e694ff3eecb1d47c032c9807cef2de",
+    "selection_rule": "retain every source frame pair whose participant cluster, source video, source frame, and donor identities are all absent from the complete Job D cohort",
+    "selection_uses_correct_choice": false,
+    "selection_uses_model_outputs": false,
+    "source_mechanism_hidden_sha256": "7ca499317bf2eb6b7e88a2b851fe467d72c603abd2ddee4c825b8443228f3011",
+    "source_mechanism_manifest_sha256": "a87aa16daa4d944882b0ba1a3891b639c71a83ec090aa29b0f5ac6c3f26586be",
+    "source_public_sha256": "d8c92857c0f2bbb11de41b1b92853bf208b816d4640d21fadbfb9e6cf9be6d97",
+    "source_video_count": 46
+  },
+  "decision_rule": {
+    "family_size": 2,
+    "holm_family": [
+      "G1_gemma_late_complete_complement_minus_full_frame_at_least_0.10",
+      "G2_gemma_early_full_frame_minus_complete_complement_at_least_0.10"
+    ],
+    "materiality_threshold_rho": 0.1,
+    "multiplicity": "Holm adjustment over exactly two one-sided participant-cluster bootstrap p-values",
+    "positive_cell": "Late p=(1+count(delta_late_bootstrap<=0.10))/(B+1); early p=(1+count(delta_early_bootstrap>=-0.10))/(B+1). Each elementary test passes at Holm-adjusted p<0.05. The 0.10 recovery-unit threshold is inside the null, not a post-hoc point-estimate screen.",
+    "terminal_taxonomy": {
+      "gemma_late_superiority_only": "G1 passes but G2 does not; the late component-complement advantage replicates at the registered materiality threshold, while an endpoint reversal does not.",
+      "gemma_reversal_confirmed_component_concentrated": "G1 and G2 pass; early and late point estimates have the registered opposite signs; one component has at least half of total positive Shapley allocation and a positive descriptive 95 percent interval. If that component is Q, P, or R, its single-component recovery must also exceed all four registered same-size crop controls. This is position-set concentration, not unique mediation.",
+      "gemma_reversal_confirmed_distributed_or_interactive": "G1 and G2 pass with the registered opposite endpoint signs, but no component satisfies the frozen concentration rule.",
+      "not_replicated": "G1 does not pass. Report estimates and intervals without an automatic follow-up experiment.",
+      "no_scientific_result": "Any mandatory token partition, hook, closure, cache, label-firewall, telemetry, or exact-inventory gate fails. This is a technical failure requiring repair, not a terminal scientific category."
+    }
+  },
+  "depth_plan": {
+    "gemma4_31b_hf_bf16": {
+      "early_post_block_index": 22,
+      "late_post_block_index": 34,
+      "ordered_post_block_indexes": [
+        22,
+        34
+      ]
+    },
+    "qwen35_27b_hf_bf16": {
+      "early_post_block_index": 24,
+      "late_post_block_index": 36,
+      "ordered_post_block_indexes": [
+        24,
+        36
+      ]
+    }
+  },
+  "directions": {
+    "damage": "corrupt_native_source_into_clean_recipient",
+    "rescue": "clean_native_source_into_corrupt_recipient"
+  },
+  "factorial": {
+    "component_codes": {
+      "C": "two candidate reference-crop image-slot positions",
+      "P": "exact appended shared answer-prefix positions",
+      "Q": "exact literal user-prompt token subsequence positions",
+      "R": "every active non-frame position not assigned to C, Q, or P"
+    },
+    "cardinality_benchmarks": "At Gemma L34 only, for each nonempty nonvisual group Q/P/R, four deterministic same-cardinality samples are drawn without replacement within each sample from C using SHA-256 ordering keyed by seed, model, group, replicate, and the frozen position map. They are descriptive crop-token cardinality benchmarks, not negative controls or specificity tests.",
+    "gemma_early_operators": "At L22 run only full-frame F, complete non-frame complement K=C union Q union P union R, and full active sequence A.",
+    "gemma_late_operators": "At L34 run all 15 nonempty unions of C/Q/P/R, full-frame F, full active sequence A, and the 12 descriptive cardinality benchmarks.",
+    "qwen_operators": "At both L24 and L36 run full-frame F, actual complete non-frame complement K=active minus F, and full active sequence A. Record whether K equals C as a technical geometry result; never substitute C for K.",
+    "shapley": "For Gemma at L34, v(S) is recovery for the union S of C/Q/P/R and v(empty)=0 by the unpatched-recipient definition. Four-component Shapley values are computed exactly from all 16 set values and sum to v(CQPR). All 15 nonempty Mobius coefficients are also frozen descriptive outputs.",
+    "structurally_absent_groups": "The all-request canary must prove nonempty, invariant C/Q/P/R position maps for Gemma. Qwen does not require separate C/Q/P/R cells because its registered operator is the actual complete complement K."
+  },
+  "kind": "patchaudit_heldout_component_closure_preregistration",
+  "models": [
+    {
+      "model_id": "Qwen/Qwen3.5-27B",
+      "model_key": "qwen35_27b_hf_bf16",
+      "revision": "fc05daec18b0a78c049392ed2e771dde82bdf654"
+    },
+    {
+      "model_id": "google/gemma-4-31B-it",
+      "model_key": "gemma4_31b_hf_bf16",
+      "revision": "3548789868c5356dbf307c98e6f609007b82b3eb"
+    }
+  ],
+  "outcome": {
+    "candidate_shared_prefix": "{\"answer\":\"",
+    "primary_score": "teacher_forced_correct_minus_incorrect_answer_token_log_likelihood_margin_bits",
+    "recovery": "rho = 1 - participant_cluster_equal_mean_abs(patched_minus_donor_margin) / participant_cluster_equal_mean_abs(recipient_minus_donor_margin)",
+    "row_unit": "counterbalanced request",
+    "statistical_unit": "participant cluster after averaging its two counterbalanced orders"
+  },
+  "primary_estimands": {
+    "G1_gemma_late_complete_complement_minus_full_frame_at_least_0.10": "At Gemma L34, delta_late=rho(K)-rho(F), with equal weight over corruptions and directions inside each participant cluster; test H0: delta_late<=0.10.",
+    "G2_gemma_early_full_frame_minus_complete_complement_at_least_0.10": "At Gemma L22, delta_early=rho(K)-rho(F), with equal weight over corruptions and directions inside each participant cluster; test H0: delta_early>=-0.10.",
+    "ordering_reversal": "Confirmed only when both Holm-controlled elementary tests pass. The depth interaction delta_late-delta_early is reported descriptively with its participant bootstrap interval.",
+    "qwen_secondary": "At Qwen L24 and L36 report rho(K)-rho(F) and the endpoint interaction descriptively; these are outside the two-test primary family."
+  },
+  "source_discovery": {
+    "jobD_aggregate_sha256": "0748745cd3bd67715a27548f0ce4cf8fdade1915bbf916c8f101da5d26077a22",
+    "jobD_analysis_sha256": "1ae94584f6042530ed73245d50e6752426d1459699a1c86e08a2feec7537f957",
+    "jobD_job_id": 383819
+  },
+  "statistics": {
+    "bootstrap_replicates": 10000,
+    "bootstrap_seed": 20260727,
+    "factorial_interaction_summary": "At Gemma L34, exact Mobius coefficients for all nonempty C/Q/P/R subsets and exact four-player Shapley values are recomputed jointly inside every participant-cluster bootstrap resample.",
+    "interval": "participant-cluster percentile bootstrap 95 percent interval",
+    "one_sided_p_value": "registered thresholded formulas in decision_rule.positive_cell",
+    "shapley_interpretation": "descriptive allocation of the measured set function, not proof of semantic or mechanistic mediation"
+  },
+  "technical_gates": {
+    "answer_token_equivalence_tolerance_bits": 0.001,
+    "all_request_geometry_preflight": "Before any production outcome, every one of 92 public requests is prepared for both models and all three arms. Active masks, input and position IDs where present, image-slot spans, exact literal Q and appended P boundaries, next scored answer token, donor-recipient alignment, component fingerprints, and empty-group status must pass. Gemma C/Q/P/R hashes and counts must be invariant across all rows.",
+    "component_partition": "F/C/Q/P/R must be disjoint and exactly partition every active position; K is active minus F and equals C union Q union P union R",
+    "full_sequence_closure_max_abs_error_bits": 0.001,
+    "gpu_memory": "every model/operator canary remains below 76 GiB peak allocated CUDA memory on an 80 GiB H100",
+    "hook_contract": "every expected hook fires exactly once, changes only its selected positions, receives shape-compatible finite donor state, and is removed",
+    "label_firewall": "worker-visible trees contain no evaluator row or hidden artifact; selected hidden rows are staged only after all worker and technical gates pass",
+    "cardinality_benchmark_contract": "same-cardinality crop benchmarks are deterministic, unique by position hash within group, subsets of C, satisfy group size <= C size, and never replace a factorial cell",
+    "model_cache": "exact pinned offline revisions and weight files exist before workers launch",
+    "self_patch_max_abs_error_bits": 0.001,
+    "source_identity_disjointness": "selected participant, video, frame, and donor identity overlap counts against Job D are all exactly zero"
+  },
+  "version": 1
+}

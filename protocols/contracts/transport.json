@@ -1,0 +1,65 @@
+{
+  "canary": {
+    "answer_token_equivalence_tolerance_bits": 0.001,
+    "full_sequence_closure_max_abs_error_bits": 0.001,
+    "maximum_peak_cuda_allocated_bytes": 81604378624,
+    "minimum_telemetry_samples_per_gpu": 4,
+    "mode": "one_request_per_rank_all_depths_all_operators_both_corruptions_both_directions",
+    "self_patch_max_abs_error_bits": 0.001,
+    "walltime": "00:20:00"
+  },
+  "completion": {
+    "exact_cartesian_inventory_required": true,
+    "expected_full_outcome_rows": 20480,
+    "expected_models": 2,
+    "expected_operators": 4,
+    "expected_outcomes_per_request": 64,
+    "expected_requests_per_model": 160,
+    "expected_worker_count": 4,
+    "outcome_and_receipt_file_hashes_required": true,
+    "partial_request_rows_are_discarded_on_resume": true
+  },
+  "execution": {
+    "account": "__DEPLOYMENT_ACCOUNT__",
+    "container": "__CONTAINER_IMAGE_PATH__",
+    "default_full_chunk_walltime": "02:55:00",
+    "gpu": "h100",
+    "gpu_count": 4,
+    "host_memory": "480G",
+    "maximum_full_chunk_walltime": "02:55:00",
+    "nodes": 1,
+    "tasks": 4,
+    "tasks_per_model": 2
+  },
+  "kind": "patchaudit_transport_decomposition_job_contract",
+  "outputs": {
+    "aggregate": "aggregate_summary.json",
+    "analysis": "transport_analysis.json",
+    "paper_table": "paper_transport_table.tex",
+    "paper_values": "paper_transport_values.json",
+    "plot_data": "transport_profile_plot.csv",
+    "worker_rows": "rank_*/outcomes.jsonl"
+  },
+  "prespec": {
+    "path": "docs/research/lifecycle_memory/phase 2 research/preregistration/patchaudit_transport_decomposition_v1_2026_07_26.json",
+    "sha256": "3b362fcf45668a1c693d3f6ae6c0ce4bc9420dd95620eaa2c2d97db84ff91b3b"
+  },
+  "resume": {
+    "binding_fields": [
+      "release_manifest_sha256",
+      "code_snapshot_sha256",
+      "contract_sha256",
+      "prespec_sha256",
+      "mechanism_manifest_sha256",
+      "public_manifest_sha256",
+      "model_plan_sha256",
+      "sif_sha256",
+      "model_key",
+      "rank",
+      "world_size"
+    ],
+    "signal_seconds_before_timeout": 300,
+    "write_granularity": "one_complete_request"
+  },
+  "version": 1
+}

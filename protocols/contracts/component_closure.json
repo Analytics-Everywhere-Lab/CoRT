@@ -1,0 +1,88 @@
+{
+  "canary": {
+    "answer_token_equivalence_tolerance_bits": 0.001,
+    "expected_outcome_rows": 408,
+    "full_sequence_closure_max_abs_error_bits": 0.001,
+    "geometry_mode": "every_public_request_prepared_across_all_three_arms_for_each_model_before_any_jobE_outcome",
+    "maximum_peak_cuda_allocated_bytes": 81604378624,
+    "minimum_telemetry_samples_per_gpu": 4,
+    "mode": "one_outcome_request_per_rank_after_complete_model_specific_geometry_preflight",
+    "self_patch_max_abs_error_bits": 0.001,
+    "walltime": "00:20:00"
+  },
+  "completion": {
+    "exact_cartesian_inventory_required": true,
+    "expected_full_outcome_rows": 13984,
+    "expected_models": 2,
+    "expected_outcomes_per_request_by_model": {
+      "gemma4_31b_hf_bf16": 128,
+      "qwen35_27b_hf_bf16": 24
+    },
+    "expected_outcomes_per_request_by_model_and_layer": {
+      "gemma4_31b_hf_bf16": {
+        "22": 12,
+        "34": 116
+      },
+      "qwen35_27b_hf_bf16": {
+        "24": 12,
+        "36": 12
+      }
+    },
+    "expected_requests_per_model": 92,
+    "expected_worker_count": 4,
+    "outcome_and_receipt_file_hashes_required": true,
+    "partial_request_rows_are_discarded_on_resume": true
+  },
+  "execution": {
+    "account": "__DEPLOYMENT_ACCOUNT__",
+    "container": "__CONTAINER_IMAGE_PATH__",
+    "default_full_chunk_walltime": "01:00:00",
+    "gpu": "h100",
+    "gpu_count": 4,
+    "host_memory": "480G",
+    "maximum_full_chunk_walltime": "02:55:00",
+    "nodes": 1,
+    "rank_allocation": {
+      "gemma4_31b_hf_bf16": [
+        1,
+        2,
+        3
+      ],
+      "qwen35_27b_hf_bf16": [
+        0
+      ]
+    },
+    "tasks": 4
+  },
+  "kind": "patchaudit_heldout_component_closure_job_contract",
+  "outputs": {
+    "aggregate": "aggregate_summary.json",
+    "analysis": "component_closure_analysis.json",
+    "factorial_table": "factorial_component_table.tex",
+    "paper_values": "paper_component_closure_values.json",
+    "plot_data": "component_closure_plot.csv",
+    "worker_rows": "rank_*/outcomes.jsonl"
+  },
+  "prespec": {
+    "path": "docs/research/lifecycle_memory/phase 2 research/preregistration/patchaudit_heldout_component_closure_v1_2026_07_26.json",
+    "sha256": "9ba19acaf8f50a19c1526c07ac9bbefc7fa4064a9a01079129fdccb22fc6c5a1"
+  },
+  "resume": {
+    "binding_fields": [
+      "release_manifest_sha256",
+      "code_snapshot_sha256",
+      "contract_sha256",
+      "prespec_sha256",
+      "selection_manifest_sha256",
+      "public_manifest_sha256",
+      "model_plan_sha256",
+      "sif_sha256",
+      "model_key",
+      "rank",
+      "world_size"
+    ],
+    "signal_seconds_before_timeout": 300,
+    "write_granularity": "one_complete_request"
+  },
+  "version": 1
+}

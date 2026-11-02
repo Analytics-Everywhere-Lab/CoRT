@@ -1,0 +1,22 @@
+{
+  "add_generation_prompt": true,
+  "appended_answer_prefix": "{\"answer\":\"",
+  "content_order": [
+    "leading_text",
+    "scene_image",
+    "candidate_A_image",
+    "candidate_B_image",
+    "question"
+  ],
+  "leading_text": "Answer the first-versus-second-order target question using only the provided RGB inputs. Return exactly one JSON object with keys: answer, abstain, abstention_reason, confidence. The answer value must be A or B.",
+  "message_role": "user",
+  "prefix_add_special_tokens": false,
+  "question": "Input 1 is a full frame. Inputs 2 and 3 are unmarked target-only reference crops A and B. Which referenced target is the first-order interacting object, meaning the object directly manipulated by a visible hand rather than a second-order object interacting through it? Return exactly one JSON object with answer A or B plus the frozen abstention and confidence keys.",
+  "readout": "last prefix position; answer tokens are outside the scored input",
+  "schema_version": 1,
+  "scored_continuations": [
+    "A",
+    "B"
+  ],
+  "template": "Native chat template from the exact model/processor snapshot; no separately saved fully decoded template stream."
+}

@@ -1,0 +1,263 @@
+{
+  "schema_version": 2,
+  "experiment_id": "role-aware-policy-2026-10-19-v2",
+  "status": "awaiting_training",
+  "adapters": [],
+  "cut": 34,
+  "primary_compression": "F0_L30_prune",
+  "secondary_compression": "Fhalf_Chalf_L34_prune",
+  "training_cases": [
+    "Fhalf_Chalf_L34_prune__correct_L34_readout",
+    "F0_L30_prune__correct_L34_CQ",
+    "F0_L30_prune__correct_L34_readout"
+  ],
+  "reference_cases": [
+    "native__correct_L34_readout",
+    "native__correct_L34_CQ"
+  ],
+  "seeds": [
+    17,
+    29
+  ],
+  "training": {
+    "rank": 4,
+    "steps": 256,
+    "gradient_accumulation": 4,
+    "learning_rate": 0.001,
+    "checkpoint_selection": "fixed_final_step",
+    "canary_steps": 2
+  },
+  "measurement": {
+    "batch_size": 1,
+    "canary_frames": 16,
+    "benchmark_requests": 128,
+    "timing_repeats": 5,
+    "canary_timing_repeats": 2,
+    "warmups": 2
+  },
+  "bootstrap": {
+    "draws": 10000,
+    "seed": 20261019
+  },
+  "decision": {
+    "family_alpha": 0.05,
+    "bounds": 4,
+    "accuracy_floor": 0,
+    "speedup_floor": 1,
+    "co_primaries": {
+      "E1": "Fhalf_Chalf_L34_prune__readout_fused_seed_mean",
+      "E2": "F0_L30_prune__CQ_fused_seed_mean"
+    }
+  },
+  "model": {
+    "id": "google/gemma-4-31B-it",
+    "key": "gemma4_31b_hf_bf16",
+    "revision": "3548789868c5356dbf307c98e6f609007b82b3eb",
+    "torch": "2.12.1+cu126",
+    "transformers": "5.13.0"
+  },
+  "saved_bias_bits": 5.806289363588375,
+  "data": {
+    "training": "Existing job-620395 train split only: 1010 rows, 505 frames, 88 clusters; fixed final checkpoint.",
+    "training_manifest_sha256": "a5e21649d4f18fc7af0c6d44b71432e6a6c05b9c73eb3e90603e0a1ce438d904",
+    "evaluation": "REUSED/descriptive development: existing 447 frames, 894 requests from job 621156; NOT fresh confirmation.",
+    "evaluation_manifest_sha256": "e8807ff5f26a65191cb6714866ca1338825c01a60df9d3ea0ade9be87bd7343f",
+    "evaluation_contract": "docs/research/lifecycle_memory/phase 2 research/jobs/decoder_cached_validation/config.json"
+  },
+  "scope": "Two co-primary accuracy>0 and speedup>1 hypotheses, four one-sided Bonferroni bounds alpha .05/4. No winner selection. REUSED/descriptive development evaluation, not fresh confirmation. Source-equal unit-weighted estimand; batch-one next-answer timing only, no generation/KV-cache claim. Optimized wrappers are not a single-kernel claim.",
+  "variants": [
+    {
+      "id": "native",
+      "compression_id": "native",
+      "path": "native"
+    },
+    {
+      "id": "F0_L30_prune",
+      "compression_id": "F0_L30_prune",
+      "path": "matrix"
+    },
+    {
+      "id": "Fhalf_Chalf_L34_prune",
+      "compression_id": "Fhalf_Chalf_L34_prune",
+      "path": "matrix"
+    },
+    {
+      "id": "Fhalf_Chalf_L34_prune__readout_fused_zero",
+      "compression_id": "Fhalf_Chalf_L34_prune",
+      "target": "readout",
+      "path": "fused_zero"
+    },
+    {
+      "id": "F0_L30_prune__CQ_fused_zero",
+      "compression_id": "F0_L30_prune",
+      "target": "CQ",
+      "path": "fused_zero"
+    },
+    {
+      "id": "F0_L30_prune__readout_fused_zero",
+      "compression_id": "F0_L30_prune",
+      "target": "readout",
+      "path": "fused_zero"
+    },
+    {
+      "id": "Fhalf_Chalf_L34_prune__readout_legacy_seed17",
+      "compression_id": "Fhalf_Chalf_L34_prune",
+      "target": "readout",
+      "path": "legacy",
+      "case_id": "Fhalf_Chalf_L34_prune__correct_L34_readout",
+      "seed": 17
+    },
+    {
+      "id": "Fhalf_Chalf_L34_prune__readout_fused_seed17",
+      "compression_id": "Fhalf_Chalf_L34_prune",
+      "target": "readout",
+      "path": "fused",
+      "case_id": "Fhalf_Chalf_L34_prune__correct_L34_readout",
+      "seed": 17
+    },
+    {
+      "id": "F0_L30_prune__CQ_legacy_seed17",
+      "compression_id": "F0_L30_prune",
+      "target": "CQ",
+      "path": "legacy",
+      "case_id": "F0_L30_prune__correct_L34_CQ",
+      "seed": 17
+    },
+    {
+      "id": "F0_L30_prune__CQ_fused_seed17",
+      "compression_id": "F0_L30_prune",
+      "target": "CQ",
+      "path": "fused",
+      "case_id": "F0_L30_prune__correct_L34_CQ",
+      "seed": 17
+    },
+    {
+      "id": "F0_L30_prune__readout_legacy_seed17",
+      "compression_id": "F0_L30_prune",
+      "target": "readout",
+      "path": "legacy",
+      "case_id": "F0_L30_prune__correct_L34_readout",
+      "seed": 17
+    },
+    {
+      "id": "F0_L30_prune__readout_fused_seed17",
+      "compression_id": "F0_L30_prune",
+      "target": "readout",
+      "path": "fused",
+      "case_id": "F0_L30_prune__correct_L34_readout",
+      "seed": 17
+    },
+    {
+      "id": "native__readout_legacy_seed17",
+      "compression_id": "native",
+      "target": "readout",
+      "path": "legacy",
+      "case_id": "native__correct_L34_readout",
+      "seed": 17
+    },
+    {
+      "id": "native__readout_fused_seed17",
+      "compression_id": "native",
+      "target": "readout",
+      "path": "fused",
+      "case_id": "native__correct_L34_readout",
+      "seed": 17
+    },
+    {
+      "id": "native__CQ_legacy_seed17",
+      "compression_id": "native",
+      "target": "CQ",
+      "path": "legacy",
+      "case_id": "native__correct_L34_CQ",
+      "seed": 17
+    },
+    {
+      "id": "native__CQ_fused_seed17",
+      "compression_id": "native",
+      "target": "CQ",
+      "path": "fused",
+      "case_id": "native__correct_L34_CQ",
+      "seed": 17
+    },
+    {
+      "id": "Fhalf_Chalf_L34_prune__readout_legacy_seed29",
+      "compression_id": "Fhalf_Chalf_L34_prune",
+      "target": "readout",
+      "path": "legacy",
+      "case_id": "Fhalf_Chalf_L34_prune__correct_L34_readout",
+      "seed": 29
+    },
+    {
+      "id": "Fhalf_Chalf_L34_prune__readout_fused_seed29",
+      "compression_id": "Fhalf_Chalf_L34_prune",
+      "target": "readout",
+      "path": "fused",
+      "case_id": "Fhalf_Chalf_L34_prune__correct_L34_readout",
+      "seed": 29
+    },
+    {
+      "id": "F0_L30_prune__CQ_legacy_seed29",
+      "compression_id": "F0_L30_prune",
+      "target": "CQ",
+      "path": "legacy",
+      "case_id": "F0_L30_prune__correct_L34_CQ",
+      "seed": 29
+    },
+    {
+      "id": "F0_L30_prune__CQ_fused_seed29",
+      "compression_id": "F0_L30_prune",
+      "target": "CQ",
+      "path": "fused",
+      "case_id": "F0_L30_prune__correct_L34_CQ",
+      "seed": 29
+    },
+    {
+      "id": "F0_L30_prune__readout_legacy_seed29",
+      "compression_id": "F0_L30_prune",
+      "target": "readout",
+      "path": "legacy",
+      "case_id": "F0_L30_prune__correct_L34_readout",
+      "seed": 29
+    },
+    {
+      "id": "F0_L30_prune__readout_fused_seed29",
+      "compression_id": "F0_L30_prune",
+      "target": "readout",
+      "path": "fused",
+      "case_id": "F0_L30_prune__correct_L34_readout",
+      "seed": 29
+    },
+    {
+      "id": "native__readout_legacy_seed29",
+      "compression_id": "native",
+      "target": "readout",
+      "path": "legacy",
+      "case_id": "native__correct_L34_readout",
+      "seed": 29
+    },
+    {
+      "id": "native__readout_fused_seed29",
+      "compression_id": "native",
+      "target": "readout",
+      "path": "fused",
+      "case_id": "native__correct_L34_readout",
+      "seed": 29
+    },
+    {
+      "id": "native__CQ_legacy_seed29",
+      "compression_id": "native",
+      "target": "CQ",
+      "path": "legacy",
+      "case_id": "native__correct_L34_CQ",
+      "seed": 29
+    },
+    {
+      "id": "native__CQ_fused_seed29",
+      "compression_id": "native",
+      "target": "CQ",
+      "path": "fused",
+      "case_id": "native__correct_L34_CQ",
+      "seed": 29
+    }
+  ]
+}

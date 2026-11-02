@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "sessions": {
+    "621156": {
+      "data_sha256": "ebcb0f98d5668f086446e95c018b1bed8b819578fe2c16768ce86e181caf5178",
+      "expected_sha256": "eea605b4f7dd93c6aa3a4bd01a219eb87fcbd0002addb58e3fd132add111ec66"
+    },
+    "6469516": {
+      "data_sha256": "d2869ca1799f7795cf092b78d0b5ee30671d624f96244a8429b9ea239b5aa491",
+      "expected_sha256": "7b14b218d7ceceb8c909c9d27b1bf8a0ed2a55d9c62d37b31c11a66d429a15f0"
+    },
+    "6478505": {
+      "data_sha256": "62e2f0434ae875222736d179fd840a966ab36455ab37ca17d326c42acd5b7465",
+      "expected_sha256": "63243a02b5443d6196c861e764801dfc2d08f4a541bce4db289153bcdeca5998"
+    }
+  }
+}

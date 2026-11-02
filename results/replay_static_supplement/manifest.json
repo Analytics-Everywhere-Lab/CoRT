@@ -1,0 +1,47 @@
+{
+  "counts": {
+    "endpoint_cluster_records": 736,
+    "exploratory_clusters": 80,
+    "exploratory_outcomes": 20480,
+    "metric_rows": 322,
+    "metric_strata": 7,
+    "window_cluster_records": 552
+  },
+  "existing_files": {
+    "behavior.json": "80c0399dc39c7b751da2d0f79d689bd7be5dd8946a270c60be7b9b19f83d12db",
+    "exploratory_depth.json": "a2e6515688565e3bea0e0668e92abcf63b2aea877a479e983409e8815ca6701b",
+    "exploratory_endpoints.json": "fdd6d15929edc5299339ecb43fc6b2e48d97764cd557453a3a526e830bb0a594",
+    "gemma_cutpair.json": "ef3fe656a753b009ba423a0af7fd0f469b544c1219c6f00ed9cc3e505cc7fdc6",
+    "gemma_supplementary.json": "7266b1b0c429dd141988a493ce3d54963a1561ae9db372f4137d2c2f5c21bea3",
+    "static_endpoints.json": "eacda8497edd32c718c5b9d3ce39177afb75d382f923130f982f7d00961069f1"
+  },
+  "files": {
+    "behavior_reference.json": "115ffa1f3dcaadef7729f5d25fa093fda58c4ace344ecb85b631f52442646132",
+    "exploratory.json": "5aaa159d030ccd2b47bf3c99ab5ef3e74610bd8713720e392b48a5f11a0eb34e",
+    "gemma_controls.json": "886d2d2c6d31e2858a8858305cec7fe68b16c938c8d6df3a97232c429c166ffc",
+    "metric_cells.csv": "85223383e54e6ea97ab6069fe3bf24f247570ec17fccb69ee9b4ac0836b09539",
+    "metric_reference.json": "570447f76ef7e630a7a0c998d1ae8f33cec788993683b69c49c12212bd3edc20",
+    "sensitivity_reference.json": "568e1e3f95ea5b8598a453933e55f44a0a001af4e04d60b9508539e2fc033ad7"
+  },
+  "ordering": "Historical analysis order before anonymous ordinal assignment; no identity mapping exported.",
+  "schema_version": 1,
+  "source_receipts": {
+    "behavior_analysis_sha256": "8ebee5db19e8d123789cfb73bd6d6f5a7cd55a0f9473af8d01dfd6e3ef23a9c2",
+    "exploratory_analysis_sha256": "1ae94584f6042530ed73245d50e6752426d1459699a1c86e08a2feec7537f957",
+    "exploratory_outcome_sha256": [
+      "2a0f543b77e9858541f0bf2ed8bd42c8fac47a0484f1432243ed23ba9f5515fe",
+      "40a71cae873237f0b04b28275ee046a2672d0fc221b384e38a97841b9e14b0d2",
+      "4e3ba82d89bf0ff3940c990a34e2696b2b48b06b6a993426e085802ae82dc55a",
+      "fa4f74489422d6f115c2515df91fa316cf4a793a12599f4f043b496720e102c4"
+    ],
+    "gemma_analysis_sha256": "054ec59d991c59bcb8ba9501fb489eeca65703b188e69550ba6d9415d55e05fd",
+    "gemma_outcome_sha256": [
+      "f3d3facd1689b95b307c26944d6cde7a1f24b5f9428558e6b4ea7a7b0604c608",
+      "8fe2b671d9c530c2f1fe5bfb2aaeaa44eeba065cb691b94226fd09e2fd96511f",
+      "3854d1b685eff0b7f536cd7f1d6215481d3404d056ec3c96abc4785778aec1e1",
+      "00d4aa08ea4201adfeffaabe9fbe7d8a199feb27c0506b45f80eed797bc888fa"
+    ],
+    "loco_saved_audit_sha256": "50e0c91488cf49edef245003482c3da8c3b3d11ac139891042c3c2522ff84b63",
+    "metric_archive_sha256": "4c630bed2046e8591dfa8ef9761996a5777d42817bcadb4d7627c6049cd2abfd"
+  }
+}

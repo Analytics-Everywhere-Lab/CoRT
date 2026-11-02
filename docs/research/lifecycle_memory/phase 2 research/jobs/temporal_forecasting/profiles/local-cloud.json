@@ -1,0 +1,6 @@
+{
+  "name": "local-cloud",
+  "scheduler": "command",
+  "resources": {},
+  "provenance": {"as_of": "2026-10-23", "basis": "Command-only project proposal, no scheduler or provider integration. All resource fields must be explicit, including GPU count and H100 >=80GB. Actual visible devices checked inside supplied pinned runtime; no claim of other GPU support. No automatic execution or provisioning; single-node only."}
+}

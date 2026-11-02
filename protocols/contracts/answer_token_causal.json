@@ -1,0 +1,101 @@
+{
+  "answer_token_scoring": {
+    "candidate_choices": [
+      "A",
+      "B"
+    ],
+    "candidate_shared_prefix": "{\"answer\":\"",
+    "canary_equivalence_tolerance_bits": 0.001,
+    "construction": "one_shared_prefix_forward_next_token_score",
+    "primary_outcome": "correct_answer_A_minus_B_log_likelihood_margin_bits"
+  },
+  "behavioral_eligibility": {
+    "analysis_manifest_sha256": "cb0d5b8d6f1871758b5c90469b1c8198e812ce170d970f61ac971c643c26a482",
+    "analysis_summary_sha256": "8ebee5db19e8d123789cfb73bd6d6f5a7cd55a0f9473af8d01dfd6e3ef23a9c2",
+    "job_id": 380145,
+    "required_frame_count": 320,
+    "required_models": [
+      "qwen35_27b_hf_bf16",
+      "gemma4_31b_hf_bf16"
+    ],
+    "required_promotion_status": "pass",
+    "source_preregistration_sha256": "920f441efc5faf4de0070a61cbf64132de7b1ebe2828bea9781e3b8cfa9715ba"
+  },
+  "claim": "intervention_specific_bidirectional_causal_bottleneck_not_earliest_unique_or_historical_failure_origin",
+  "coarse_decoder_layer_fractions": [
+    0.0,
+    0.125,
+    0.25,
+    0.375,
+    0.5,
+    0.625,
+    0.75,
+    0.875,
+    1.0
+  ],
+  "confirmatory_family": {
+    "configuration_count": 12,
+    "configurations": "2_models_x_2_corruptions_x_3_primary_stage_families",
+    "decoder_selection_adjustment": "bonferroni_over_all_nine_frozen_coarse_sites_before_global_Holm_12",
+    "global_multiplicity": "Holm_over_12_configuration_level_intersection_union_pvalues",
+    "per_configuration_components": [
+      "rescue_positive",
+      "damage_positive",
+      "rescue_specificity_vs_unrelated",
+      "rescue_specificity_vs_random",
+      "damage_specificity_vs_unrelated",
+      "damage_specificity_vs_random"
+    ],
+    "primary_stage_families": [
+      "vision_tower_final",
+      "projector_or_merger_output",
+      "decoder_visual_token_residual"
+    ]
+  },
+  "controls": [
+    "clean_to_clean_self_patch",
+    "corrupt_to_corrupt_self_patch",
+    "direction_matched_unrelated_same_label_donor",
+    "direction_matched_post_quantization_norm_random"
+  ],
+  "corruptions": [
+    "blank_full",
+    "wrong_time"
+  ],
+  "directions": {
+    "damage": "corrupt_to_clean",
+    "rescue": "clean_to_corrupt"
+  },
+  "governing_prespec": "docs/research/lifecycle_memory/phase 2 research/preregistration/reanchored_answer_token_causal_intervention_v1_2026_07_23.json",
+  "governing_prespec_sha256": "21dfd51486c95e370dac2e5c9cc297dd897a136ad7772286467525ee06047703",
+  "kind": "phase2_reanchored_answer_token_causal_patch_contract",
+  "mechanism_subset": {
+    "frame_count": 80,
+    "manifest": "mechanism/manifest.json",
+    "manifest_sha256": "c219a8f6746382edbb3e6a304fe85e750755e719874cf5775a2a6ef48a3fca88",
+    "participant_cluster_count": 80,
+    "public_requests": "mechanism/public/mechanism_requests.jsonl",
+    "public_requests_sha256": "a6b9d166597efae8a26a65e2c654367da99fddef7ccaab6698a1646930083ced",
+    "selection_already_frozen": true,
+    "trial_count": 160
+  },
+  "models": [
+    {
+      "model_id": "Qwen/Qwen3.5-27B",
+      "model_key": "qwen35_27b_hf_bf16",
+      "revision": "fc05daec18b0a78c049392ed2e771dde82bdf654"
+    },
+    {
+      "model_id": "google/gemma-4-31B-it",
+      "model_key": "gemma4_31b_hf_bf16",
+      "revision": "3548789868c5356dbf307c98e6f609007b82b3eb"
+    }
+  ],
+  "secondary_diagnostic": {
+    "family": "decoder_final_question_token_residual",
+    "scope": "downstream_diagnostic_only_no_primary_causal_bottleneck_call"
+  },
+  "statistical_unit": "counterbalanced_orders_within_frame_then_frames_within_participant_then_participant_equal",
+  "version": 1,
+  "worker_topology": "four_H100_ranks_two_static_shards_per_anchor_model"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "fir",
+  "scheduler": "slurm",
+  "resources": {"gpu_type": "h100", "gpu_memory_gb": 80, "gpus_per_node": 4, "cpus_per_task": 12, "memory_gb": 480, "node_cpu_limit": 48, "node_memory_gb": 1125},
+  "provenance": {"as_of": "2026-10-23", "source": "https://docs.alliancecan.ca/mediawiki/index.php?title=Fir&oldid=207144", "basis": "Official wiki inspected via browser during preparation on 2026-10-23; no network verification by this adapter. 160 GPU nodes, each with four H100 80GB GPUs, 48 CPUs and 1125G usable RAM. Full GPUs use --gpus-per-node=h100:1..4; whole-node allocation is not required and MIG is unsupported by this suite. Project default: four workers, 12 CPUs each, 480G host memory. Test jobs (suite canaries) require at least five minutes; non-canary jobs require at least one hour. The 23h maximum is project policy, not a site limit. Compute internet is available, but the suite retains its offline contract. Deployment must supply an account; no partition or account is assumed. Single-node only."}
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "kind": "qwen_role_factorial",
+  "model": {
+    "model_key": "qwen35_27b_hf_bf16",
+    "model_id": "Qwen/Qwen3.5-27B",
+    "revision": "fc05daec18b0a78c049392ed2e771dde82bdf654",
+    "processor_revision": "fc05daec18b0a78c049392ed2e771dde82bdf654",
+    "dtype": "bfloat16"
+  },
+  "post_block_index": 36,
+  "prompt": "Input 1 is a full frame. Inputs 2 and 3 are unmarked target-only reference crops A and B. Which referenced target is the first-order interacting object, meaning the object directly manipulated by a visible hand rather than a second-order object interacting through it? Return exactly one JSON object with answer A or B plus the frozen abstention and confidence keys.",
+  "public_requests": {
+    "path": "docs/research/lifecycle_memory/phase 2 research/jobs/patchaudit_jobE_heldout_component_closure/heldout_public_requests.jsonl",
+    "sha256": "2b0e31236a0ea531a4a9849b00356e2fabfa153084dd12487511b2523d50635f"
+  },
+  "source_files": {},
+  "data_files": {},
+  "model_manifest": {"path": "model_inventory.json", "sha256": null},
+  "technical_gates": {
+    "self_patch_max_abs_error_bits": 0.001,
+    "full_sequence_closure_max_abs_error_bits": 0.001,
+    "answer_token_equivalence_tolerance_bits": 0.001
+  },
+  "analysis": {
+    "bootstrap_draws": 20000,
+    "seed": 20261014,
+    "min_donor_gap_bits": 1e-12,
+    "min_k_recovery": 0.1,
+    "min_fraction_denominator": 0.1
+  },
+  "provenance": {
+    "sif_sha256": "6ee3e881a0fd3feaa6a5b19a5e0f3c104cf2250c3468f8d6254a04164adfb905",
+    "slurm_script_sha256": null
+  }
+}

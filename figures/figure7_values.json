@@ -1,0 +1,66 @@
+{
+  "interval_status": "historical_participant_vector_replay",
+  "plotted": [
+    {
+      "ci_high": 0.443537598104159,
+      "ci_low": 0.16434838619317246,
+      "cut": 34,
+      "direction": "B0->B4",
+      "estimate": 0.28681387628640287,
+      "interval_status": "historical_participant_vector_replay",
+      "position_set": "C+Q+R",
+      "task": "interaction_order"
+    },
+    {
+      "ci_high": 0.4504392002767136,
+      "ci_low": 0.14860926473825764,
+      "cut": 34,
+      "direction": "B0->B4",
+      "estimate": 0.2966862523062199,
+      "interval_status": "historical_participant_vector_replay",
+      "position_set": "Q+P+R",
+      "task": "interaction_order"
+    },
+    {
+      "ci_high": 0.6982184475828422,
+      "ci_low": 0.46309400865725014,
+      "cut": 34,
+      "direction": "B0->B4",
+      "estimate": 0.5866986699303365,
+      "interval_status": "historical_participant_vector_replay",
+      "position_set": "C+Q+P+R",
+      "task": "interaction_order"
+    },
+    {
+      "ci_high": 0.49564954084682944,
+      "ci_low": 0.2256044598918807,
+      "cut": 34,
+      "direction": "B0->B4",
+      "estimate": 0.3754067817225226,
+      "interval_status": "historical_participant_vector_replay",
+      "position_set": "C+Q+R",
+      "task": "new_interaction"
+    },
+    {
+      "ci_high": 0.4110588647382516,
+      "ci_low": 0.21327124811194217,
+      "cut": 34,
+      "direction": "B0->B4",
+      "estimate": 0.3167494743894233,
+      "interval_status": "historical_participant_vector_replay",
+      "position_set": "Q+P+R",
+      "task": "new_interaction"
+    },
+    {
+      "ci_high": 0.6411934829615513,
+      "ci_low": 0.2975989614885354,
+      "cut": 34,
+      "direction": "B0->B4",
+      "estimate": 0.4812168478901339,
+      "interval_status": "historical_participant_vector_replay",
+      "position_set": "C+Q+P+R",
+      "task": "new_interaction"
+    }
+  ],
+  "source_sha256": "1110ee0308dc3762d36a9bd30b058c21da553aa4937c23edd636f855d7dce08e"
+}

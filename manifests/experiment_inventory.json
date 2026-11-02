@@ -1,0 +1,184 @@
+{
+  "date": "2026-11-01",
+  "excluded_from_total": [
+    "separate canaries",
+    "retries",
+    "training steps",
+    "timing repetitions",
+    "historical generated-JSON studies",
+    "earlier causal audits",
+    "initial 71-condition compression matrix",
+    "early pilots"
+  ],
+  "listed_row_total": 100398,
+  "runs": [
+    {
+      "count_basis": "trial_count x 3 conditions x 2 models; source summary and frozen plan",
+      "family": "static",
+      "id": "E0",
+      "rows": 3840,
+      "source": {
+        "source_path": "runs/tamia/reanchored-jobAR-token-full/380145/analysis/analysis_summary.json",
+        "source_sha256": "8ebee5db19e8d123789cfb73bd6d6f5a7cd55a0f9473af8d01dfd6e3ef23a9c2"
+      }
+    },
+    {
+      "family": "static",
+      "full_active_max_abs_error_bits": 0.0,
+      "full_active_rows_included": 5120,
+      "id": "E1",
+      "rows": 20480,
+      "source": {
+        "source_path": "runs/tamia/patchaudit-jobD-transport/383819/aggregate_summary.json",
+        "source_sha256": "0748745cd3bd67715a27548f0ce4cf8fdade1915bbf916c8f101da5d26077a22"
+      }
+    },
+    {
+      "family": "static",
+      "full_active_max_abs_error_bits": 0.0,
+      "full_active_rows_included": 1472,
+      "id": "E2_E3_original",
+      "rows": 13984,
+      "source": {
+        "source_path": "runs/tamia/patchaudit-jobE-component-closure/383933/aggregate_summary.json",
+        "source_sha256": "6eb90bced1d23721d58541950aec3a7d6b7015ea6d5b65db71ab85252d5bfb46"
+      }
+    },
+    {
+      "family": "static",
+      "id": "E3_Qwen",
+      "rows": 6256,
+      "source": {
+        "source_path": "runs/tamia/qwen-role-factorial/618777/technical_aggregate.json",
+        "source_sha256": "62d784ecf20278fcece0a79765b2002dbd4bb317aad8f04a5c4f286aaebc6755"
+      }
+    },
+    {
+      "family": "practical",
+      "id": "cross_source",
+      "rows": 16092,
+      "source": {
+        "source_path": "runs/tamia/decoder-cross-source-validation/full/621156/aggregate_receipt.json",
+        "source_sha256": "872b3664462813f6ec1dbae1c6a672302e6873f4dbedd16368a6c8338a442518"
+      },
+      "timing_rows_separate": 11520,
+      "variants": 18
+    },
+    {
+      "family": "practical",
+      "id": "removal_trained",
+      "rows": 23244,
+      "source": {
+        "source_path": "runs/killarney/role-aware-combined/full/6469516/technical_summary.json",
+        "source_sha256": "3aa87f31b3f20b10353cd870beaa252419746794c7bf83acd4cd337289ba8880"
+      },
+      "timing_rows_separate": 16640,
+      "variants": 26
+    },
+    {
+      "family": "practical",
+      "id": "scene_only",
+      "rows": 4470,
+      "source": {
+        "source_path": "runs/killarney/role-aware-transfer/full/6478505/technical_summary.json",
+        "source_sha256": "c6ffc8be797cad1d6c15b433f6b6bb8a3ee905c2f8faa252476ff8c3db5079f3"
+      },
+      "timing_rows_separate": 3200,
+      "variants": 5
+    },
+    {
+      "clips": 96,
+      "counts_by_kind": {
+        "behavior": 768,
+        "patch": 3072,
+        "self": 384
+      },
+      "family": "temporal",
+      "id": "T1_dense",
+      "passing_technical_checks": 3456,
+      "rows": 4224,
+      "source": {
+        "source_path": "runs/temporal_current/fir_full_439956_2026_10_25/results_bundle/analysis.json",
+        "source_sha256": "d65b1565e98db022f0d2c007b2bfd14e98e53729d99a74e6ed9d690e19d584e8"
+      },
+      "wearers": 96
+    },
+    {
+      "clips": 37,
+      "counts_by_kind": {
+        "behavior": 296,
+        "patch": 1184,
+        "self": 148
+      },
+      "family": "temporal",
+      "id": "T1_new",
+      "passing_technical_checks": 1332,
+      "rows": 1628,
+      "source": {
+        "source_path": "runs/temporal_recognition/fir_results_2026_10_25_v1/new_interaction/run-v2/full/analysis.json",
+        "source_sha256": "36258b4a03531422d7f3a5bf88f50376d6a1e369aac932a344ae5d5aa02824dc"
+      },
+      "wearers": 20
+    },
+    {
+      "clips": 27,
+      "counts_by_kind": {
+        "behavior": 216,
+        "patch": 864,
+        "self": 108
+      },
+      "family": "temporal",
+      "id": "T1_order",
+      "passing_technical_checks": 972,
+      "rows": 1188,
+      "source": {
+        "source_path": "runs/temporal_recognition/fir_results_2026_10_25_v1/interaction_order/run-v2/full/analysis.json",
+        "source_sha256": "72a9643ab3b30c7fdd57d3e96a3354272aa1677e46bf4a1db590ec1fa689a934"
+      },
+      "wearers": 14
+    },
+    {
+      "clips": 37,
+      "counts_by_kind": {
+        "behavior": 370,
+        "patch": 2368,
+        "self": 148
+      },
+      "family": "temporal",
+      "id": "T2_new",
+      "passing_technical_checks": 7770,
+      "rows": 2886,
+      "source": {
+        "source_path": "runs/temporal_recognition/followup_fir_results_2026_10_25_v1/new_interaction/run-v1/full/analysis.json",
+        "source_sha256": "a2527c76aadaaf91a8189ec913d2936c16a53b9b4be0eb8855c9fa4133f1b7fe"
+      },
+      "wearers": 20
+    },
+    {
+      "clips": 27,
+      "counts_by_kind": {
+        "behavior": 270,
+        "patch": 1728,
+        "self": 108
+      },
+      "family": "temporal",
+      "id": "T2_order",
+      "passing_technical_checks": 5670,
+      "rows": 2106,
+      "source": {
+        "source_path": "runs/temporal_recognition/followup_fir_results_2026_10_25_v1/interaction_order/run-v1/full/analysis.json",
+        "source_sha256": "925e2b70fbc2992b54902dc0ad899bf3e9d20475cd3bf5ab5107d5c1f1309097"
+      },
+      "wearers": 14
+    }
+  ],
+  "schema_version": 1,
+  "scope": "Listed completed manuscript run inventories, including their embedded controls. Not unique observations or a complete study-wide compute ledger.",
+  "temporal_reference_overlap_cells": 768,
+  "temporal_reference_overlap_note": "These repeated cells are included separately in T1 and T2 inventories, not independent observations.",
+  "totals": {
+    "practical": 43806,
+    "static": 44560,
+    "temporal": 12032
+  }
+}

@@ -1,0 +1,467 @@
+{
+  "additional_replay": {
+    "packages": {
+      "practical": {
+        "data": "results/replay_practical",
+        "guide": "docs/practical_replay.md",
+        "report": "results/rebuilt/practical_replay.json",
+        "script": "analysis/replay_practical.py"
+      },
+      "static_supplement": {
+        "data": "results/replay_static_supplement",
+        "guide": "docs/static_supplement_replay.md",
+        "report": "results/rebuilt/static_supplement_replay.json",
+        "script": "analysis/replay_static_supplement.py"
+      },
+      "temporal": {
+        "data": "results/replay_temporal",
+        "guide": "docs/temporal_replay.md",
+        "report": "results/rebuilt/temporal_replay.json",
+        "script": "analysis/replay_temporal.py"
+      }
+    },
+    "receipt": "manifests/replay_verification.json",
+    "scope": "Selected historical numerical statistics; package reports identify exact coverage and exclusions. Aggregate source files remain unchanged.",
+    "status": "verified"
+  },
+  "additional_static_diagnostics": "LOCO and raw components derived from preserved vectors; not among the 252 historical reference scalars.",
+  "aggregate_exports": [
+    {
+      "ci_status": "aggregate_only_not_exact_ci_replay",
+      "family": "behavioral",
+      "file": "results/aggregate/behavior.json",
+      "name": "behavior",
+      "numeric_scalars": 732,
+      "point_status": "saved_aggregate_exact_projection",
+      "sha256": "80c0399dc39c7b751da2d0f79d689bd7be5dd8946a270c60be7b9b19f83d12db",
+      "sources": [
+        {
+          "destination": "",
+          "json_pointer": "",
+          "selected_keys": [
+            "*"
+          ],
+          "sha256": "5d7adf72ce09ed6a35627e2cad8c6a5603bdda8afaf0b4bceb651bd5eda89a90"
+        }
+      ],
+      "verification": "selected values copied without rounding; source bytes unchanged"
+    },
+    {
+      "ci_status": "aggregate_only_not_exact_ci_replay",
+      "family": "exploratory_depth",
+      "file": "results/aggregate/exploratory_depth.json",
+      "name": "exploratory_depth",
+      "numeric_scalars": 261,
+      "point_status": "saved_aggregate_exact_projection",
+      "sha256": "a2e6515688565e3bea0e0668e92abcf63b2aea877a479e983409e8815ca6701b",
+      "sources": [
+        {
+          "destination": "",
+          "json_pointer": "",
+          "selected_keys": [
+            "gemma",
+            "qwen",
+            "primary",
+            "screen",
+            "profiles",
+            "profile_cells",
+            "sensitivity",
+            "joint_fraction"
+          ],
+          "sha256": "5cfa809b5366dd4ae42a9d3176e9e335f3e98c9c2178c6c8239a375180f65fa2"
+        }
+      ],
+      "verification": "selected values copied without rounding; source bytes unchanged"
+    },
+    {
+      "ci_status": "aggregate_only_not_exact_ci_replay",
+      "family": "gemma_factorial",
+      "file": "results/aggregate/gemma_supplementary.json",
+      "name": "gemma_supplementary",
+      "numeric_scalars": 411,
+      "point_status": "saved_aggregate_exact_projection",
+      "sha256": "7266b1b0c429dd141988a493ce3d54963a1561ae9db372f4137d2c2f5c21bea3",
+      "sources": [
+        {
+          "destination": "",
+          "json_pointer": "",
+          "selected_keys": [
+            "game",
+            "ratio",
+            "benchmarks",
+            "metric_cells",
+            "geometry_counts"
+          ],
+          "sha256": "04c8b7f2d35544df4d1728a8bff5b89ec3ff6f75ae6bff6406fbe8ddc2eac28c"
+        }
+      ],
+      "verification": "selected values copied without rounding; source bytes unchanged"
+    },
+    {
+      "ci_status": "aggregate_only_not_exact_ci_replay",
+      "family": "cutpair",
+      "file": "results/aggregate/static_endpoints.json",
+      "name": "static_endpoints",
+      "numeric_scalars": 1514,
+      "point_status": "saved_aggregate_exact_projection",
+      "sha256": "eacda8497edd32c718c5b9d3ce39177afb75d382f923130f982f7d00961069f1",
+      "sources": [
+        {
+          "destination": "",
+          "json_pointer": "",
+          "selected_keys": [
+            "endpoint_summaries",
+            "cardinality_benchmarks",
+            "primary_gemma_holm_family",
+            "qwen_descriptive",
+            "positive_contract_control",
+            "participant_cluster_count",
+            "bootstrap"
+          ],
+          "sha256": "054ec59d991c59bcb8ba9501fb489eeca65703b188e69550ba6d9415d55e05fd"
+        }
+      ],
+      "verification": "selected values copied without rounding; source bytes unchanged"
+    },
+    {
+      "ci_status": "aggregate_only_not_exact_ci_replay",
+      "family": "exploratory_depth",
+      "file": "results/aggregate/exploratory_endpoints.json",
+      "name": "exploratory_endpoints",
+      "numeric_scalars": 1213,
+      "point_status": "saved_aggregate_exact_projection",
+      "sha256": "fdd6d15929edc5299339ecb43fc6b2e48d97764cd557453a3a526e830bb0a594",
+      "sources": [
+        {
+          "destination": "",
+          "json_pointer": "",
+          "selected_keys": [
+            "endpoint_summaries",
+            "primary_holm_family",
+            "bootstrap",
+            "positive_contract_control",
+            "participant_cluster_count"
+          ],
+          "sha256": "1ae94584f6042530ed73245d50e6752426d1459699a1c86e08a2feec7537f957"
+        }
+      ],
+      "verification": "selected values copied without rounding; source bytes unchanged"
+    },
+    {
+      "ci_status": "aggregate_only_not_exact_ci_replay",
+      "family": "temporal_current",
+      "file": "results/aggregate/temporal_current.json",
+      "name": "temporal_current",
+      "numeric_scalars": 1050,
+      "point_status": "saved_aggregate_exact_projection",
+      "sha256": "dc6a1fc93fdd4a24c361218e08be5c9cdb7b2b9354dc4076296d9adc37d3097e",
+      "sources": [
+        {
+          "destination": "",
+          "json_pointer": "",
+          "selected_keys": [
+            "behavior",
+            "bootstrap",
+            "claim_boundary",
+            "coverage",
+            "descriptive_only",
+            "design",
+            "history_contrasts",
+            "metric_definitions",
+            "patch_profiles",
+            "status",
+            "technical_controls",
+            "warnings"
+          ],
+          "sha256": "bc912b69d35b156d68ea3e8bdcd4623b49dc5a250cee60f8303952eead534116"
+        }
+      ],
+      "verification": "selected values copied without rounding; source bytes unchanged"
+    },
+    {
+      "ci_status": "aggregate_only_not_exact_ci_replay",
+      "family": "temporal_onset_order",
+      "file": "results/aggregate/temporal_recognition.json",
+      "name": "temporal_recognition",
+      "numeric_scalars": 2111,
+      "point_status": "saved_aggregate_exact_projection",
+      "sha256": "2916ba064cf3e8b7189d95ad58dbce21e46b59cfe54687c328fb20e449e26840",
+      "sources": [
+        {
+          "destination": "",
+          "json_pointer": "",
+          "selected_keys": [
+            "*"
+          ],
+          "sha256": "dc4eedcd62b11b292b9b9088393f03957c5da8402befdba5d05cea2a19620328"
+        }
+      ],
+      "verification": "selected values copied without rounding; source bytes unchanged"
+    },
+    {
+      "ci_status": "aggregate_only_not_exact_ci_replay",
+      "family": "temporal_followup",
+      "file": "results/aggregate/temporal_followup.json",
+      "name": "temporal_followup",
+      "numeric_scalars": 4760,
+      "point_status": "saved_aggregate_exact_projection",
+      "sha256": "e3702329a314b6c8cc767fc4e6038789b94b0bf6c6bfb4181ecf1f5461d9defd",
+      "sources": [
+        {
+          "destination": "",
+          "json_pointer": "",
+          "selected_keys": [
+            "*"
+          ],
+          "sha256": "1110ee0308dc3762d36a9bd30b058c21da553aa4937c23edd636f855d7dce08e"
+        }
+      ],
+      "verification": "selected values copied without rounding; source bytes unchanged"
+    },
+    {
+      "ci_status": "aggregate_only_not_exact_ci_replay",
+      "family": "practical_final_and_transfer",
+      "file": "results/aggregate/practical_final.json",
+      "name": "practical_final",
+      "numeric_scalars": 1527,
+      "point_status": "saved_aggregate_exact_projection",
+      "sha256": "568dad9529692c0b68ca5cc0d5d97ebcf5243b6f46478038e92a3e55562348ff",
+      "sources": [
+        {
+          "destination": "",
+          "json_pointer": "",
+          "selected_keys": [
+            "*"
+          ],
+          "sha256": "1ef2be8a24b5b114ddeeab48355e04bdd058f203f9d5f58751003acae0a32bdc"
+        }
+      ],
+      "upstream_verified_sources": [
+        {
+          "export_pointer": "/benchmarks/combined",
+          "selected_keys": [
+            "accuracy_differences_vs_native",
+            "counts",
+            "decision",
+            "metrics",
+            "per_source",
+            "timing"
+          ],
+          "sha256": "1f61e6b58120df3588a904ba84fc907d0d41658aa31799154c694b97a844d541"
+        },
+        {
+          "export_pointer": "/benchmarks/followup",
+          "selected_keys": [
+            "accuracy_differences_vs_native",
+            "counts",
+            "decision",
+            "metrics",
+            "per_source",
+            "retention_diagnostics",
+            "timing"
+          ],
+          "sha256": "cd85793f1f9724c2cecd41f370b9f66ab5e57d4fc76d65adfbc3d731a7e40075"
+        }
+      ],
+      "verification": "selected values copied without rounding; source bytes unchanged"
+    },
+    {
+      "ci_status": "aggregate_only_not_exact_ci_replay",
+      "family": "practical_earlier_transfer",
+      "file": "results/aggregate/practical_compression.json",
+      "name": "practical_compression",
+      "numeric_scalars": 560,
+      "point_status": "saved_aggregate_exact_projection",
+      "sha256": "00c9bae200a3c27c01048e3d4b4451201bda595a0fc132bed0de197d5fcbf9e7",
+      "sources": [
+        {
+          "destination": "",
+          "json_pointer": "",
+          "selected_keys": [
+            "*"
+          ],
+          "sha256": "f7ced956476fad63fc570c27e216a2c33079956e03cd17745961fabe3f74a0b7"
+        }
+      ],
+      "verification": "selected values copied without rounding; source bytes unchanged"
+    },
+    {
+      "ci_status": "aggregate_only_not_exact_ci_replay",
+      "family": "practical_earlier_transfer",
+      "file": "results/aggregate/practical_followup_public.json",
+      "name": "practical_followup_public",
+      "numeric_scalars": 1400,
+      "point_status": "saved_aggregate_exact_projection",
+      "sha256": "cb0561944f2e08f7aab2a156a33729e1d671475b382fe4bc5d153798e5ef4068",
+      "sources": [
+        {
+          "destination": "",
+          "json_pointer": "",
+          "selected_keys": [
+            "*"
+          ],
+          "sha256": "cb0561944f2e08f7aab2a156a33729e1d671475b382fe4bc5d153798e5ef4068"
+        }
+      ],
+      "verification": "selected values copied without rounding; source bytes unchanged"
+    },
+    {
+      "ci_status": "aggregate_only_not_exact_ci_replay",
+      "family": "reporting_intervals",
+      "file": "results/aggregate/reporting_intervals.json",
+      "name": "reporting_intervals",
+      "numeric_scalars": 247,
+      "point_status": "saved_aggregate_exact_projection",
+      "sha256": "bc025eb60218ced8c58706c593e4181ef9cdf82f8e3bc95990a8879f76e942b2",
+      "sources": [
+        {
+          "destination": "",
+          "json_pointer": "",
+          "selected_keys": [
+            "*"
+          ],
+          "sha256": "cbec2ae9ef4358bcdf5fb04de21319aa33a27e70cc0c19852ae6360cf8885a8a"
+        }
+      ],
+      "verification": "selected values copied without rounding; source bytes unchanged"
+    },
+    {
+      "ci_status": "aggregate_only_not_exact_ci_replay",
+      "family": "practical_earlier_transfer",
+      "file": "results/aggregate/bias_baseline.json",
+      "name": "bias_baseline",
+      "numeric_scalars": 1096,
+      "point_status": "saved_aggregate_exact_projection",
+      "sha256": "5afb567b255d8708e9d47a8fe2c59929d1bf5830b5b33f6dbbc35ce047e98cd9",
+      "sources": [
+        {
+          "destination": "",
+          "json_pointer": "",
+          "selected_keys": [
+            "*"
+          ],
+          "sha256": "5afb567b255d8708e9d47a8fe2c59929d1bf5830b5b33f6dbbc35ce047e98cd9"
+        }
+      ],
+      "verification": "selected values copied without rounding; source bytes unchanged"
+    }
+  ],
+  "aggregate_policy": {
+    "ci_status": "aggregate_only_not_exact_ci_replay",
+    "limits": "Aggregate files alone do not support paired bootstrap replay. Separate anonymous input packages provide the statistics identified in additional_replay.",
+    "numeric_values": "Exact JSON scalar projection from original saved summaries; paths and identity metadata removed; no rounded manuscript transcription."
+  },
+  "commands": {
+    "all_replays": "python analysis/reproduce_all.py",
+    "figures_optional": "python analysis/render_public_figures.py",
+    "rebuild": "python analysis/rebuild_public_results.py",
+    "replay_only": "python analysis/replay_cluster_sufficient_stats.py",
+    "tests": "python -m unittest discover -s tests -p test_results.py -v"
+  },
+  "current_paper_reference": {
+    "main_tables": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "manuscript_title": "CoRT: Counterfactual Role Tracing of Scene, Object, and Event-History Evidence Across Decoder Depth in Egocentric Video-Language Models",
+    "numbering_basis": "Main Tables 1-6 and numeric Figures 3-8 in the reviewed manuscript; supplemental table labels follow its cross-references.",
+    "numeric_figures": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "paper_text_or_media_included": false,
+    "pdf_sha256": "79849305475a3c1a1f5d29bde3acbae1a5499c001b504cfd3b2128c924be68fc",
+    "pdf_sha256_status": "verified_against_reviewed_pdf",
+    "reviewed_version_date": "2026-11-01",
+    "text_sha256": "28a345c310b6650e857ba75f9d18aa34933f4705cfafe3186fe86a5bc559879c"
+  },
+  "exclusions": [
+    "Source media and manuscript media/PDFs",
+    "Base-model weights/checkpoints and activation tensors",
+    "Subject/video/trial/frame/recording identifiers, identity lists and original filesystem paths",
+    "Raw trial outcomes and timing records",
+    "GPU inference and retraining",
+    "Non-numeric conceptual Figures 1-2; documentary Tables S11, S22, S29 are not numeric result reconstructions"
+  ],
+  "families": {
+    "behavioral": [
+      "Table 1",
+      "Section 5.1; Table S21",
+      "Tables S17-S18; S20; S23"
+    ],
+    "cutpair": [
+      "Table 2; Figure 4",
+      "Tables S14-S16",
+      "Table S22",
+      "Table S13"
+    ],
+    "exploratory_depth": [
+      "Figure 3",
+      "Table S12",
+      "Table S24"
+    ],
+    "gemma_factorial": [
+      "Table 4; Figure 6; Table S1",
+      "Table 5; Table S2; Table S3",
+      "Table S19; Section 5.3"
+    ],
+    "practical_earlier_benchmark": [
+      "Tables S30-S32",
+      "Tables S33-S34",
+      "Table S29; Section S14.2",
+      "Table S35; Section S14.4"
+    ],
+    "practical_removal_trained_and_scene_only": [
+      "Table 6; Figure 8; Tables S25-S28"
+    ],
+    "qwen_factorial": [
+      "Table 4; Figure 6; Table S4",
+      "Table 5; Tables S5-S7"
+    ],
+    "reporting_intervals": [
+      "Table S36"
+    ],
+    "temporal_current": [
+      "Table 3; Table S8",
+      "Figure 5; Table S9"
+    ],
+    "temporal_followup": [
+      "Figure 7; Table S10"
+    ],
+    "temporal_onset_order": [
+      "Table 3; Table S8",
+      "Figure 5; Table S9"
+    ]
+  },
+  "paper_numbering": "Main and supplemental numbering follows the reviewed manuscript reference.",
+  "replay": {
+    "anonymous_clusters_per_dataset": 46,
+    "ci_status": "historical_finite_draw_replay_252_reference_values",
+    "datasets": [
+      "gemma_cutpair",
+      "qwen_cutpair",
+      "gemma_factorial",
+      "qwen_factorial"
+    ],
+    "discrepancies": [],
+    "expected_sha256": "e634598bf6c08d39848fa4826837dccae91b45f0efd2c5b1d1cc754802a02baf",
+    "numeric_reference_scalars": 252,
+    "scope_note": "These four original static datasets retain the 252-value reference check. Additional anonymous inputs and replay coverage are listed separately.",
+    "tolerance": 2e-12
+  },
+  "resource_limits": {
+    "network_required": false,
+    "numeric_threads": 1,
+    "wall_seconds": 180
+  },
+  "schema_version": 2,
+  "scope": "all_current_numeric_experiment_families; not every manuscript claim"
+}

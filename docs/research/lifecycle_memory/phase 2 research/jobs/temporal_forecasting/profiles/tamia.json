@@ -1,0 +1,6 @@
+{
+  "name": "tamia",
+  "scheduler": "slurm",
+  "resources": {"gpu_type": "h100", "gpu_memory_gb": 80, "gpus_per_node": 4, "cpus_per_task": 12, "memory_gb": 480, "node_cpu_limit": 48, "node_memory_gb": 512},
+  "provenance": {"as_of": "2026-10-23", "source": "https://docs.alliancecan.ca/wiki/TamIA/en", "basis": "Local tamia-slurm skill and references; not live-verified. Four H100 whole-node proposal. Single-node --gpus; future tested multinode must use --gpus-per-node. No concrete partition. 23h is adapter policy, not a statement of current site limits."}
+}

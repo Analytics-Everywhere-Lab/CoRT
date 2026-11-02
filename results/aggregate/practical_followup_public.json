@@ -1,0 +1,3833 @@
+{
+  "cold_start_receipts": {
+    "rank_000": {
+      "amortization_scope": "cold_setup_s charged once per worker, separate from warm request timings",
+      "cold_setup_ms_per_full_prediction_cell": 20.768688708307714,
+      "cold_setup_s": 83.7393528718967,
+      "fresh_validation_s": 6.044891201192513,
+      "fresh_validation_scope": "pre-seal setup only; independent prepare and rebuild for every variant/geometry; included in warmup_and_gates_s",
+      "full_prediction_cells": 4032,
+      "load_and_preflight_s": 41.030190605903044,
+      "observed_prediction_cells": 4032,
+      "plan_build_s": 0.46853772609028965,
+      "plan_build_scope": "subset of warmup_and_gates_s; never add twice",
+      "status": "pass",
+      "warmup_and_gates_s": 42.709162265993655,
+      "warmups": 2
+    },
+    "rank_001": {
+      "amortization_scope": "cold_setup_s charged once per worker, separate from warm request timings",
+      "cold_setup_ms_per_full_prediction_cell": 20.78800344841309,
+      "cold_setup_s": 83.81722990400158,
+      "fresh_validation_s": 6.2397554299095646,
+      "fresh_validation_scope": "pre-seal setup only; independent prepare and rebuild for every variant/geometry; included in warmup_and_gates_s",
+      "full_prediction_cells": 4032,
+      "load_and_preflight_s": 43.075909523060545,
+      "observed_prediction_cells": 4032,
+      "plan_build_s": 0.29702362790703773,
+      "plan_build_scope": "subset of warmup_and_gates_s; never add twice",
+      "status": "pass",
+      "warmup_and_gates_s": 40.74132038094103,
+      "warmups": 2
+    },
+    "rank_002": {
+      "amortization_scope": "cold_setup_s charged once per worker, separate from warm request timings",
+      "cold_setup_ms_per_full_prediction_cell": 20.742036824404273,
+      "cold_setup_s": 83.63189247599803,
+      "fresh_validation_s": 6.15759317507036,
+      "fresh_validation_scope": "pre-seal setup only; independent prepare and rebuild for every variant/geometry; included in warmup_and_gates_s",
+      "full_prediction_cells": 4032,
+      "load_and_preflight_s": 41.03656063997187,
+      "observed_prediction_cells": 4032,
+      "plan_build_s": 0.30388189596123993,
+      "plan_build_scope": "subset of warmup_and_gates_s; never add twice",
+      "status": "pass",
+      "warmup_and_gates_s": 42.59533183602616,
+      "warmups": 2
+    },
+    "rank_003": {
+      "amortization_scope": "cold_setup_s charged once per worker, separate from warm request timings",
+      "cold_setup_ms_per_full_prediction_cell": 20.706959563540295,
+      "cold_setup_s": 82.74501041590702,
+      "fresh_validation_s": 6.182268757023849,
+      "fresh_validation_scope": "pre-seal setup only; independent prepare and rebuild for every variant/geometry; included in warmup_and_gates_s",
+      "full_prediction_cells": 3996,
+      "load_and_preflight_s": 42.21972710592672,
+      "observed_prediction_cells": 3996,
+      "plan_build_s": 0.2949843881651759,
+      "plan_build_scope": "subset of warmup_and_gates_s; never add twice",
+      "status": "pass",
+      "warmup_and_gates_s": 40.525283309980296,
+      "warmups": 2
+    }
+  },
+  "counts": {
+    "conditions": 18,
+    "correct_A": 447,
+    "correct_B": 447,
+    "frames": 447,
+    "requests_per_condition": 894,
+    "units": 50
+  },
+  "native_bias_ties": {
+    "A": 0,
+    "B": 0
+  },
+  "results": {
+    "escape": {
+      "paired_accuracy_differences": {
+        "CQ_minus_FQ": {
+          "ci95": [
+            -0.011130952380952385,
+            0.006060606060606055
+          ],
+          "estimate": -0.002532467532467534
+        },
+        "CQ_minus_readout": {
+          "ci95": [
+            -0.02770116341991344,
+            0.013247429653679652
+          ],
+          "estimate": -0.005622294372294378
+        }
+      },
+      "tie_sensitivity": {
+        "C379_L22_merge": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.9276823593073594,
+                0.9778138528138528
+              ],
+              "estimate": 0.9541233766233767
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8806060606060606,
+                0.9645454545454545
+              ],
+              "estimate": 0.925974025974026
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.9276823593073594,
+                0.9778138528138528
+              ],
+              "estimate": 0.9541233766233767
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8806060606060606,
+                0.9645454545454545
+              ],
+              "estimate": 0.925974025974026
+            }
+          }
+        },
+        "C379_L22_merge__correct_L34_FQ_seed17": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.8483333333333333,
+                0.983939393939394
+              ],
+              "estimate": 0.926969696969697
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8406060606060606,
+                0.9789393939393938
+              ],
+              "estimate": 0.9189393939393941
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.8483333333333333,
+                0.983939393939394
+              ],
+              "estimate": 0.926969696969697
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8406060606060606,
+                0.9789393939393938
+              ],
+              "estimate": 0.9189393939393941
+            }
+          }
+        },
+        "C379_L22_merge__correct_L34_FQ_seed29": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.9515560064935065,
+                0.9858441558441557
+              ],
+              "estimate": 0.9694155844155844
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.9062765151515153,
+                0.9742857142857143
+              ],
+              "estimate": 0.9421645021645022
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.9515560064935065,
+                0.9858441558441557
+              ],
+              "estimate": 0.9694155844155844
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.9062765151515153,
+                0.9742857142857143
+              ],
+              "estimate": 0.9421645021645022
+            }
+          }
+        },
+        "C384_L22_merge__F67_L34_merge": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.9191558441558442,
+                0.9742435064935064
+              ],
+              "estimate": 0.9480627705627707
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8727472943722945,
+                0.9606060606060606
+              ],
+              "estimate": 0.9199134199134199
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.9191558441558442,
+                0.9742435064935064
+              ],
+              "estimate": 0.9480627705627707
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8727472943722945,
+                0.9606060606060606
+              ],
+              "estimate": 0.9199134199134199
+            }
+          }
+        },
+        "F0_L22_prune": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.5469044913419913,
+                0.7400436507936508
+              ],
+              "estimate": 0.643293650793651
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.29207647907647905,
+                0.5573748196248195
+              ],
+              "estimate": 0.4208080808080808
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                -0.0125,
+                0.0
+              ],
+              "estimate": -0.004166666666666667
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.542256764069264,
+                0.7367497294372294
+              ],
+              "estimate": 0.6391269841269842
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.29207647907647905,
+                0.5573748196248195
+              ],
+              "estimate": 0.4208080808080808
+            }
+          }
+        },
+        "F0_L30_prune": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.916135551948052,
+                0.9821428571428572
+              ],
+              "estimate": 0.9527705627705628
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8773982683982682,
+                0.9695454545454545
+              ],
+              "estimate": 0.9271861471861471
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.916135551948052,
+                0.9821428571428572
+              ],
+              "estimate": 0.9527705627705628
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8773982683982682,
+                0.9695454545454545
+              ],
+              "estimate": 0.9271861471861471
+            }
+          }
+        },
+        "F0_L34_prune": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.9076082251082253,
+                0.9770562770562771
+              ],
+              "estimate": 0.9452705627705629
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8707316017316017,
+                0.9638095238095238
+              ],
+              "estimate": 0.9205194805194805
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.9076082251082253,
+                0.9770562770562771
+              ],
+              "estimate": 0.9452705627705629
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8707316017316017,
+                0.9638095238095238
+              ],
+              "estimate": 0.9205194805194805
+            }
+          }
+        },
+        "F67_L34_merge": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.9076082251082253,
+                0.9770562770562771
+              ],
+              "estimate": 0.9452705627705629
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8707316017316017,
+                0.9638095238095238
+              ],
+              "estimate": 0.9205194805194805
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.9076082251082253,
+                0.9770562770562771
+              ],
+              "estimate": 0.9452705627705629
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8707316017316017,
+                0.9638095238095238
+              ],
+              "estimate": 0.9205194805194805
+            }
+          }
+        },
+        "F67_L34_merge__correct_L34_readout_seed17": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.8501948051948053,
+                0.9754761904761905
+              ],
+              "estimate": 0.9235281385281386
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8464242424242425,
+                0.9754761904761905
+              ],
+              "estimate": 0.9204978354978356
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.8501948051948053,
+                0.9754761904761905
+              ],
+              "estimate": 0.9235281385281386
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8464242424242425,
+                0.9754761904761905
+              ],
+              "estimate": 0.9204978354978356
+            }
+          }
+        },
+        "F67_L34_merge__correct_L34_readout_seed29": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.8933956529581529,
+                0.9705526695526696
+              ],
+              "estimate": 0.9343109668109669
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.7983037518037518,
+                0.9466883116883117
+              ],
+              "estimate": 0.8781457431457432
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.8933956529581529,
+                0.9705526695526696
+              ],
+              "estimate": 0.9343109668109669
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.7983037518037518,
+                0.9466883116883117
+              ],
+              "estimate": 0.8781457431457432
+            }
+          }
+        },
+        "Fhalf_Chalf_L34_prune": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.8859740259740259,
+                0.9663744588744588
+              ],
+              "estimate": 0.9293614718614719
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8044155844155845,
+                0.9451515151515151
+              ],
+              "estimate": 0.8809740259740261
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.8859740259740259,
+                0.9663744588744588
+              ],
+              "estimate": 0.9293614718614719
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8044155844155845,
+                0.9451515151515151
+              ],
+              "estimate": 0.8809740259740261
+            }
+          }
+        },
+        "native": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.9151834415584417,
+                0.9811471861471862
+              ],
+              "estimate": 0.951331168831169
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8782445887445886,
+                0.9677489177489178
+              ],
+              "estimate": 0.9265800865800865
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.9151834415584417,
+                0.9811471861471862
+              ],
+              "estimate": 0.951331168831169
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8782445887445886,
+                0.9677489177489178
+              ],
+              "estimate": 0.9265800865800865
+            }
+          }
+        },
+        "native__correct_L34_CQ_seed17": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.8728896103896103,
+                0.9904761904761905
+              ],
+              "estimate": 0.9450108225108226
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8553030303030303,
+                0.9838095238095239
+              ],
+              "estimate": 0.9300216450216451
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.8728896103896103,
+                0.9904761904761905
+              ],
+              "estimate": 0.9450108225108226
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8553030303030303,
+                0.9838095238095239
+              ],
+              "estimate": 0.9300216450216451
+            }
+          }
+        },
+        "native__correct_L34_CQ_seed29": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.9058658008658009,
+                0.9783333333333334
+              ],
+              "estimate": 0.9455519480519481
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8281379870129869,
+                0.9642857142857142
+              ],
+              "estimate": 0.903831168831169
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.9058658008658009,
+                0.9783333333333334
+              ],
+              "estimate": 0.9455519480519481
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8281379870129869,
+                0.9642857142857142
+              ],
+              "estimate": 0.903831168831169
+            }
+          }
+        },
+        "native__correct_L34_FQ_seed17": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.9266774891774892,
+                0.9916666666666667
+              ],
+              "estimate": 0.9641774891774892
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8594155844155844,
+                0.9856060606060606
+              ],
+              "estimate": 0.9344155844155845
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.9266774891774892,
+                0.9916666666666667
+              ],
+              "estimate": 0.9641774891774892
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8594155844155844,
+                0.9856060606060606
+              ],
+              "estimate": 0.9344155844155845
+            }
+          }
+        },
+        "native__correct_L34_FQ_seed29": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.8574242424242424,
+                0.9833333333333333
+              ],
+              "estimate": 0.9314502164502164
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.831965909090909,
+                0.9726190476190477
+              ],
+              "estimate": 0.908961038961039
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.8574242424242424,
+                0.9833333333333333
+              ],
+              "estimate": 0.9314502164502164
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.831965909090909,
+                0.9726190476190477
+              ],
+              "estimate": 0.908961038961039
+            }
+          }
+        },
+        "native__correct_L34_readout_seed17": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.9502486471861472,
+                0.9936363636363637
+              ],
+              "estimate": 0.9749458874458875
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.9372943722943723,
+                0.9904761904761905
+              ],
+              "estimate": 0.9660822510822512
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.9502486471861472,
+                0.9936363636363637
+              ],
+              "estimate": 0.9749458874458875
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.9372943722943723,
+                0.9904761904761905
+              ],
+              "estimate": 0.9660822510822512
+            }
+          }
+        },
+        "native__correct_L34_readout_seed29": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.8544372294372294,
+                0.9780519480519481
+              ],
+              "estimate": 0.9268614718614718
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8392857142857143,
+                0.9671428571428572
+              ],
+              "estimate": 0.9121645021645023
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.8544372294372294,
+                0.9780519480519481
+              ],
+              "estimate": 0.9268614718614718
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8392857142857143,
+                0.9671428571428572
+              ],
+              "estimate": 0.9121645021645023
+            }
+          }
+        }
+      }
+    },
+    "pooled": {
+      "paired_accuracy_differences": {
+        "CQ_minus_FQ": {
+          "ci95": [
+            -0.015327479158157253,
+            0.005666725648070956
+          ],
+          "estimate": -0.004700244381616928
+        },
+        "CQ_minus_readout": {
+          "ci95": [
+            -0.016524963847880523,
+            0.012120155856811617
+          ],
+          "estimate": -0.0017490255044721355
+        }
+      },
+      "tie_sensitivity": {
+        "C379_L22_merge": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.87062085967873,
+                0.9396913527145008
+              ],
+              "estimate": 0.9084917243250578
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8411768329407219,
+                0.9164676581991396
+              ],
+              "estimate": 0.8812859636933711
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.87062085967873,
+                0.9396913527145008
+              ],
+              "estimate": 0.9084917243250578
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8411768329407219,
+                0.9164676581991396
+              ],
+              "estimate": 0.8812859636933711
+            }
+          }
+        },
+        "C379_L22_merge__correct_L34_FQ_seed17": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.9102137045053712,
+                0.9749981845143882
+              ],
+              "estimate": 0.9452966820559414
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8992108764006912,
+                0.9672677079436339
+              ],
+              "estimate": 0.9354161956013808
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                -0.005681818181818177,
+                0.0
+              ],
+              "estimate": -0.0018939393939393923
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                -0.011363636363636367,
+                0.0
+              ],
+              "estimate": -0.0037878787878787893
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.9088861726408021,
+                0.9728504867046533
+              ],
+              "estimate": 0.943402742662002
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8963185446241001,
+                0.9631415677943457
+              ],
+              "estimate": 0.931628316813502
+            }
+          }
+        },
+        "C379_L22_merge__correct_L34_FQ_seed29": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.9378516659951845,
+                0.9731214751469381
+              ],
+              "estimate": 0.9561167951309564
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.908236000292373,
+                0.9578682573377562
+              ],
+              "estimate": 0.9339709564219368
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.9378516659951845,
+                0.9731214751469381
+              ],
+              "estimate": 0.9561167951309564
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.908236000292373,
+                0.9578682573377562
+              ],
+              "estimate": 0.9339709564219368
+            }
+          }
+        },
+        "C384_L22_merge__F67_L34_merge": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.8656260890172927,
+                0.9378022891888632
+              ],
+              "estimate": 0.9042101519879298
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8276762385419794,
+                0.9109132780799447
+              ],
+              "estimate": 0.8706790123456791
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.8656260890172927,
+                0.9378022891888632
+              ],
+              "estimate": 0.9042101519879298
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8276762385419794,
+                0.9109132780799447
+              ],
+              "estimate": 0.8706790123456791
+            }
+          }
+        },
+        "F0_L22_prune": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.5692358160743578,
+                0.6863135313546193
+              ],
+              "estimate": 0.6275439829375015
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.36662734405109126,
+                0.5106213683032855
+              ],
+              "estimate": 0.4370555851193106
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                -0.004641500474833809,
+                0.0
+              ],
+              "estimate": -0.00162630579297246
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.567573084580029,
+                0.6846844553123489
+              ],
+              "estimate": 0.6259176771445291
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.36662734405109126,
+                0.5106213683032855
+              ],
+              "estimate": 0.4370555851193106
+            }
+          }
+        },
+        "F0_L30_prune": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.8745931742297484,
+                0.946478185394852
+              ],
+              "estimate": 0.9133966616374024
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8416002108316923,
+                0.9223633986041394
+              ],
+              "estimate": 0.8835829671014857
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.8745931742297484,
+                0.946478185394852
+              ],
+              "estimate": 0.9133966616374024
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8416002108316923,
+                0.9223633986041394
+              ],
+              "estimate": 0.8835829671014857
+            }
+          }
+        },
+        "F0_L34_prune": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.87126721349638,
+                0.9437001677163716
+              ],
+              "estimate": 0.9104706301928526
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8378114263993893,
+                0.9192849701738591
+              ],
+              "estimate": 0.8801261769780288
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                -0.0007122507122507097,
+                0.0
+              ],
+              "estimate": -0.0002374169040835699
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                -0.0014245014245014235,
+                0.0
+              ],
+              "estimate": -0.00047483380816714114
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.8711671485236301,
+                0.9434503796957501
+              ],
+              "estimate": 0.9102332132887688
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.837166178471734,
+                0.9189775692414581
+              ],
+              "estimate": 0.8796513431698617
+            }
+          }
+        },
+        "F67_L34_merge": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.8703063769221177,
+                0.9428751271876271
+              ],
+              "estimate": 0.9095887959776849
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8378114263993893,
+                0.9192849701738591
+              ],
+              "estimate": 0.8801261769780288
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.8703063769221177,
+                0.9428751271876271
+              ],
+              "estimate": 0.9095887959776849
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8378114263993893,
+                0.9192849701738591
+              ],
+              "estimate": 0.8801261769780288
+            }
+          }
+        },
+        "F67_L34_merge__correct_L34_readout_seed17": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.9158424332768014,
+                0.9706503855168069
+              ],
+              "estimate": 0.9456832290601355
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.9049822052090571,
+                0.9630872159592203
+              ],
+              "estimate": 0.9359500952529275
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.9158424332768014,
+                0.9706503855168069
+              ],
+              "estimate": 0.9456832290601355
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.9049822052090571,
+                0.9630872159592203
+              ],
+              "estimate": 0.9359500952529275
+            }
+          }
+        },
+        "F67_L34_merge__correct_L34_readout_seed29": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.9207232695338631,
+                0.9608181330792985
+              ],
+              "estimate": 0.9411236582750745
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8574951905896894,
+                0.9291557052041801
+              ],
+              "estimate": 0.8939463856566254
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                -0.0018518518518518493,
+                0.0
+              ],
+              "estimate": -0.0006172839506172831
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.92002855888967,
+                0.9602391960949967
+              ],
+              "estimate": 0.9405063743244572
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8574951905896894,
+                0.9291557052041801
+              ],
+              "estimate": 0.8939463856566254
+            }
+          }
+        },
+        "Fhalf_Chalf_L34_prune": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.8577826688914651,
+                0.9331085290738067
+              ],
+              "estimate": 0.8979377755303681
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8097328395198764,
+                0.9029324314231721
+              ],
+              "estimate": 0.8580976499495018
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                -0.002057613168724281,
+                0.0
+              ],
+              "estimate": -0.000685871056241427
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.8569584799631096,
+                0.9323620952949657
+              ],
+              "estimate": 0.8972519044741268
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8097328395198764,
+                0.9029324314231721
+              ],
+              "estimate": 0.8580976499495018
+            }
+          }
+        },
+        "native": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.8731749014874015,
+                0.9453247900076605
+              ],
+              "estimate": 0.9122780991299511
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8427205030908735,
+                0.9231183172109098
+              ],
+              "estimate": 0.8849241567760086
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.8731749014874015,
+                0.9453247900076605
+              ],
+              "estimate": 0.9122780991299511
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8427205030908735,
+                0.9231183172109098
+              ],
+              "estimate": 0.8849241567760086
+            }
+          }
+        },
+        "native__correct_L34_CQ_seed17": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.921638570116239,
+                0.9737966322590506
+              ],
+              "estimate": 0.9507358934537584
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.885001453349765,
+                0.9571132496568227
+              ],
+              "estimate": 0.9232605899708296
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                -0.0007122507122507097,
+                0.0
+              ],
+              "estimate": -0.0002374169040835699
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                -0.0014245014245014235,
+                0.0
+              ],
+              "estimate": -0.00047483380816714114
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.9212425019001818,
+                0.9735682424571315
+              ],
+              "estimate": 0.9504984765496749
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8844748941246763,
+                0.9566381053889225
+              ],
+              "estimate": 0.9227857561626625
+            }
+          }
+        },
+        "native__correct_L34_CQ_seed29": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.9290269590562347,
+                0.9694905729961557
+              ],
+              "estimate": 0.950095725302697
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8856591449581647,
+                0.9512590358785893
+              ],
+              "estimate": 0.9197355847573713
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.9290269590562347,
+                0.9694905729961557
+              ],
+              "estimate": 0.950095725302697
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8856591449581647,
+                0.9512590358785893
+              ],
+              "estimate": 0.9197355847573713
+            }
+          }
+        },
+        "native__correct_L34_FQ_seed17": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.9413325460547681,
+                0.9790729049756827
+              ],
+              "estimate": 0.9615680766824557
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.9059454200685138,
+                0.9672651414086599
+              ],
+              "estimate": 0.9394760226459574
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.9413325460547681,
+                0.9790729049756827
+              ],
+              "estimate": 0.9615680766824557
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.9059454200685138,
+                0.9672651414086599
+              ],
+              "estimate": 0.9394760226459574
+            }
+          }
+        },
+        "native__correct_L34_FQ_seed29": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.9182397603354846,
+                0.9737647894044953
+              ],
+              "estimate": 0.9486640308372335
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8937864529261588,
+                0.9614193861391573
+              ],
+              "estimate": 0.9296455356150345
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.9182397603354846,
+                0.9737647894044953
+              ],
+              "estimate": 0.9486640308372335
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8937864529261588,
+                0.9614193861391573
+              ],
+              "estimate": 0.9296455356150345
+            }
+          }
+        },
+        "native__correct_L34_readout_seed17": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.9360450823534975,
+                0.9730165761072623
+              ],
+              "estimate": 0.9548235352156921
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.9058777364610698,
+                0.9614481129295945
+              ],
+              "estimate": 0.9339620167615811
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                -0.0007122507122507097,
+                0.0
+              ],
+              "estimate": -0.0002374169040835699
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                -0.0014245014245014235,
+                0.0
+              ],
+              "estimate": -0.00047483380816714114
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.9358635665452114,
+                0.9728865802860901
+              ],
+              "estimate": 0.9545861183116084
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.9054289639896937,
+                0.9611153577218391
+              ],
+              "estimate": 0.933487182953414
+            }
+          }
+        },
+        "native__correct_L34_readout_seed29": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.9195029756917013,
+                0.9740416694880203
+              ],
+              "estimate": 0.9495061345497074
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.906541395061003,
+                0.9635099800445661
+              ],
+              "estimate": 0.9373560623996354
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.9195029756917013,
+                0.9740416694880203
+              ],
+              "estimate": 0.9495061345497074
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.906541395061003,
+                0.9635099800445661
+              ],
+              "estimate": 0.9373560623996354
+            }
+          }
+        }
+      }
+    },
+    "thu_read": {
+      "paired_accuracy_differences": {
+        "CQ_minus_FQ": {
+          "ci95": [
+            -0.03530844155844154,
+            0.020343137254901972
+          ],
+          "estimate": -0.007279730073847704
+        },
+        "CQ_minus_readout": {
+          "ci95": [
+            -0.0379689754689755,
+            0.030618686868686837
+          ],
+          "estimate": -0.0017692683133859743
+        }
+      },
+      "tie_sensitivity": {
+        "C379_L22_merge": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.7915237193362192,
+                0.9772727272727273
+              ],
+              "estimate": 0.8973124098124099
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.786002886002886,
+                0.9772727272727273
+              ],
+              "estimate": 0.8931457431457432
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.7915237193362192,
+                0.9772727272727273
+              ],
+              "estimate": 0.8973124098124099
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.786002886002886,
+                0.9772727272727273
+              ],
+              "estimate": 0.8931457431457432
+            }
+          }
+        },
+        "C379_L22_merge__correct_L34_FQ_seed17": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.860094246031746,
+                0.9930555555555556
+              ],
+              "estimate": 0.9365079365079365
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8503968253968255,
+                0.9861111111111112
+              ],
+              "estimate": 0.9253968253968253
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                -0.01704545454545453,
+                0.0
+              ],
+              "estimate": -0.005681818181818177
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                -0.0340909090909091,
+                0.0
+              ],
+              "estimate": -0.011363636363636367
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.8591269841269841,
+                0.9886363636363638
+              ],
+              "estimate": 0.9308261183261183
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8415214646464646,
+                0.9772727272727273
+              ],
+              "estimate": 0.914033189033189
+            }
+          }
+        },
+        "C379_L22_merge__correct_L34_FQ_seed29": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.8805014430014431,
+                0.9750816993464053
+              ],
+              "estimate": 0.9301141668788728
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8423484848484848,
+                0.9686274509803922
+              ],
+              "estimate": 0.9076606400135812
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.8805014430014431,
+                0.9750816993464053
+              ],
+              "estimate": 0.9301141668788728
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8423484848484848,
+                0.9686274509803922
+              ],
+              "estimate": 0.9076606400135812
+            }
+          }
+        },
+        "C384_L22_merge__F67_L34_merge": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.77754329004329,
+                0.9750000000000001
+              ],
+              "estimate": 0.8846861471861471
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.758008658008658,
+                0.9666666666666668
+              ],
+              "estimate": 0.8678932178932179
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.77754329004329,
+                0.9750000000000001
+              ],
+              "estimate": 0.8846861471861471
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.758008658008658,
+                0.9666666666666668
+              ],
+              "estimate": 0.8678932178932179
+            }
+          }
+        },
+        "F0_L22_prune": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.47452651515151517,
+                0.7367559523809524
+              ],
+              "estimate": 0.6080582611832611
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.2756042568542569,
+                0.5588792335115864
+              ],
+              "estimate": 0.4149599991511756
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.47452651515151517,
+                0.7367559523809524
+              ],
+              "estimate": 0.6080582611832611
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.2756042568542569,
+                0.5588792335115864
+              ],
+              "estimate": 0.4149599991511756
+            }
+          }
+        },
+        "F0_L30_prune": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.7851190476190475,
+                0.9772727272727273
+              ],
+              "estimate": 0.8903679653679654
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.7721139971139971,
+                0.9722222222222222
+              ],
+              "estimate": 0.8792568542568542
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.7851190476190475,
+                0.9772727272727273
+              ],
+              "estimate": 0.8903679653679654
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.7721139971139971,
+                0.9722222222222222
+              ],
+              "estimate": 0.8792568542568542
+            }
+          }
+        },
+        "F0_L34_prune": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.7851190476190475,
+                0.9772727272727273
+              ],
+              "estimate": 0.8903679653679654
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.7721139971139971,
+                0.9722222222222222
+              ],
+              "estimate": 0.8792568542568542
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.7851190476190475,
+                0.9772727272727273
+              ],
+              "estimate": 0.8903679653679654
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.7721139971139971,
+                0.9722222222222222
+              ],
+              "estimate": 0.8792568542568542
+            }
+          }
+        },
+        "F67_L34_merge": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.7851190476190475,
+                0.9772727272727273
+              ],
+              "estimate": 0.8903679653679654
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.7721139971139971,
+                0.9722222222222222
+              ],
+              "estimate": 0.8792568542568542
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.7851190476190475,
+                0.9772727272727273
+              ],
+              "estimate": 0.8903679653679654
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.7721139971139971,
+                0.9722222222222222
+              ],
+              "estimate": 0.8792568542568542
+            }
+          }
+        },
+        "F67_L34_merge__correct_L34_readout_seed17": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.8944211017740429,
+                0.9861111111111112
+              ],
+              "estimate": 0.9444211017740429
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8753968253968253,
+                0.9821428571428571
+              ],
+              "estimate": 0.928548085901027
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.8944211017740429,
+                0.9861111111111112
+              ],
+              "estimate": 0.9444211017740429
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8753968253968253,
+                0.9821428571428571
+              ],
+              "estimate": 0.928548085901027
+            }
+          }
+        },
+        "F67_L34_merge__correct_L34_readout_seed29": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.8979500891265597,
+                0.9763655462184875
+              ],
+              "estimate": 0.9376326288090995
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8315911212970036,
+                0.9558823529411764
+              ],
+              "estimate": 0.8919319242848655
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.8979500891265597,
+                0.9763655462184875
+              ],
+              "estimate": 0.9376326288090995
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8315911212970036,
+                0.9558823529411764
+              ],
+              "estimate": 0.8919319242848655
+            }
+          }
+        },
+        "Fhalf_Chalf_L34_prune": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.7762806637806637,
+                0.9750000000000001
+              ],
+              "estimate": 0.8834235209235209
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.7511904761904762,
+                0.9666666666666668
+              ],
+              "estimate": 0.8653679653679653
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.7762806637806637,
+                0.9750000000000001
+              ],
+              "estimate": 0.8834235209235209
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.7511904761904762,
+                0.9666666666666668
+              ],
+              "estimate": 0.8653679653679653
+            }
+          }
+        },
+        "native": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.7851190476190475,
+                0.9772727272727273
+              ],
+              "estimate": 0.8903679653679654
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.7721139971139971,
+                0.9722222222222222
+              ],
+              "estimate": 0.8792568542568542
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.7851190476190475,
+                0.9772727272727273
+              ],
+              "estimate": 0.8903679653679654
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.7721139971139971,
+                0.9722222222222222
+              ],
+              "estimate": 0.8792568542568542
+            }
+          }
+        },
+        "native__correct_L34_CQ_seed17": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.8960285894660894,
+                0.9750816993464053
+              ],
+              "estimate": 0.9348760716407776
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8116522366522367,
+                0.9592245989304813
+              ],
+              "estimate": 0.885438417791359
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.8960285894660894,
+                0.9750816993464053
+              ],
+              "estimate": 0.9348760716407776
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8116522366522367,
+                0.9592245989304813
+              ],
+              "estimate": 0.885438417791359
+            }
+          }
+        },
+        "native__correct_L34_CQ_seed29": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.8850487012987014,
+                0.9787581699346405
+              ],
+              "estimate": 0.9350532637297344
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.834409748747984,
+                0.9686274509803922
+              ],
+              "estimate": 0.9036499448264155
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.8850487012987014,
+                0.9787581699346405
+              ],
+              "estimate": 0.9350532637297344
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.834409748747984,
+                0.9686274509803922
+              ],
+              "estimate": 0.9036499448264155
+            }
+          }
+        },
+        "native__correct_L34_FQ_seed17": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.9069108893557422,
+                0.9861111111111112
+              ],
+              "estimate": 0.9489962651727358
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.882516339869281,
+                0.9852941176470589
+              ],
+              "estimate": 0.9359010270774976
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.9069108893557422,
+                0.9861111111111112
+              ],
+              "estimate": 0.9489962651727358
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.882516339869281,
+                0.9852941176470589
+              ],
+              "estimate": 0.9359010270774976
+            }
+          }
+        },
+        "native__correct_L34_FQ_seed29": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.8821145541549953,
+                0.9852941176470589
+              ],
+              "estimate": 0.9354925303454715
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8388655462184874,
+                0.975
+              ],
+              "estimate": 0.9106909430438842
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.8821145541549953,
+                0.9852941176470589
+              ],
+              "estimate": 0.9354925303454715
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8388655462184874,
+                0.975
+              ],
+              "estimate": 0.9106909430438842
+            }
+          }
+        },
+        "native__correct_L34_readout_seed17": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.8690656565656566,
+                0.9682539682539683
+              ],
+              "estimate": 0.918855572532043
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8081935956200663,
+                0.9633838383838385
+              ],
+              "estimate": 0.8869832781597488
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.8690656565656566,
+                0.9682539682539683
+              ],
+              "estimate": 0.918855572532043
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8081935956200663,
+                0.9633838383838385
+              ],
+              "estimate": 0.8869832781597488
+            }
+          }
+        },
+        "native__correct_L34_readout_seed29": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.9014388368983958,
+                0.9943181818181819
+              ],
+              "estimate": 0.9546122994652407
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8978609625668449,
+                0.9886363636363636
+              ],
+              "estimate": 0.9489304812834225
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.9014388368983958,
+                0.9943181818181819
+              ],
+              "estimate": 0.9546122994652407
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8978609625668449,
+                0.9886363636363636
+              ],
+              "estimate": 0.9489304812834225
+            }
+          }
+        }
+      }
+    },
+    "youtube": {
+      "paired_accuracy_differences": {
+        "CQ_minus_FQ": {
+          "ci95": [
+            -0.013919034925979379,
+            0.004343386808664574
+          ],
+          "estimate": -0.0042885355385355465
+        },
+        "CQ_minus_readout": {
+          "ci95": [
+            -0.013826252194307756,
+            0.016629826577743236
+          ],
+          "estimate": 0.0021444861722639467
+        }
+      },
+      "tie_sensitivity": {
+        "C379_L22_merge": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.8431439599495155,
+                0.9025534316506537
+              ],
+              "estimate": 0.8740393865393864
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.7793698868004422,
+                0.866874270277048
+              ],
+              "estimate": 0.8247381219603442
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.8431439599495155,
+                0.9025534316506537
+              ],
+              "estimate": 0.8740393865393864
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.7793698868004422,
+                0.866874270277048
+              ],
+              "estimate": 0.8247381219603442
+            }
+          }
+        },
+        "C379_L22_merge__correct_L34_FQ_seed17": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.9568844979608867,
+                0.9864284211159211
+              ],
+              "estimate": 0.9724124126901905
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.9423208067652512,
+                0.9810220258136925
+              ],
+              "estimate": 0.9619123674679231
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.9568844979608867,
+                0.9864284211159211
+              ],
+              "estimate": 0.9724124126901905
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.9423208067652512,
+                0.9810220258136925
+              ],
+              "estimate": 0.9619123674679231
+            }
+          }
+        },
+        "C379_L22_merge__correct_L34_FQ_seed29": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.9537151467359801,
+                0.9828915875790876
+              ],
+              "estimate": 0.9688206340984119
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.9289267008711453,
+                0.9737204564982342
+              ],
+              "estimate": 0.9520877270877272
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.9537151467359801,
+                0.9828915875790876
+              ],
+              "estimate": 0.9688206340984119
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.9289267008711453,
+                0.9737204564982342
+              ],
+              "estimate": 0.9520877270877272
+            }
+          }
+        },
+        "C384_L22_merge__F67_L34_merge": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.8458379313587646,
+                0.9107410606368939
+              ],
+              "estimate": 0.8798815382148713
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.7755505348560902,
+                0.870071404932516
+              ],
+              "estimate": 0.8242303992303993
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.8458379313587646,
+                0.9107410606368939
+              ],
+              "estimate": 0.8798815382148713
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.7755505348560902,
+                0.870071404932516
+              ],
+              "estimate": 0.8242303992303993
+            }
+          }
+        },
+        "F0_L22_prune": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.5659816829261273,
+                0.6965828410272855
+              ],
+              "estimate": 0.6312800368355923
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.382985525277192,
+                0.5683155065099508
+              ],
+              "estimate": 0.4753986753986754
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                -0.0021367521367521413,
+                0.0
+              ],
+              "estimate": -0.0007122507122507138
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.5651916165110611,
+                0.695912469731914
+              ],
+              "estimate": 0.6305677861233415
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.382985525277192,
+                0.5683155065099508
+              ],
+              "estimate": 0.4753986753986754
+            }
+          }
+        },
+        "F0_L30_prune": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.8645079778760334,
+                0.927255866561422
+              ],
+              "estimate": 0.8970514567736791
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.7936621994260884,
+                0.8895037652676542
+              ],
+              "estimate": 0.8443058998614554
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.8645079778760334,
+                0.927255866561422
+              ],
+              "estimate": 0.8970514567736791
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.7936621994260884,
+                0.8895037652676542
+              ],
+              "estimate": 0.8443058998614554
+            }
+          }
+        },
+        "F0_L34_prune": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.8628661410605856,
+                0.9258635269051935
+              ],
+              "estimate": 0.8957733624400291
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.7864964253853145,
+                0.8884681779126223
+              ],
+              "estimate": 0.8406021961577517
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                -0.002136752136752129,
+                0.0
+              ],
+              "estimate": -0.0007122507122507097
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                -0.0042735042735042705,
+                0.0
+              ],
+              "estimate": -0.0014245014245014235
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.8622363618891395,
+                0.9250881602964935
+              ],
+              "estimate": 0.8950611117277784
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.7852850518822743,
+                0.8868876750821196
+              ],
+              "estimate": 0.8391776947332503
+            }
+          }
+        },
+        "F67_L34_merge": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.8604721461665906,
+                0.9234287240537239
+              ],
+              "estimate": 0.8931278597945265
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.7864964253853145,
+                0.8884681779126223
+              ],
+              "estimate": 0.8406021961577517
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.8604721461665906,
+                0.9234287240537239
+              ],
+              "estimate": 0.8931278597945265
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.7864964253853145,
+                0.8884681779126223
+              ],
+              "estimate": 0.8406021961577517
+            }
+          }
+        },
+        "F67_L34_merge__correct_L34_readout_seed17": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.9522355293883069,
+                0.9838649673371896
+              ],
+              "estimate": 0.9691004468782246
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.9378447504141949,
+                0.9780454293648736
+              ],
+              "estimate": 0.9588043643599199
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.9522355293883069,
+                0.9838649673371896
+              ],
+              "estimate": 0.9691004468782246
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.9378447504141949,
+                0.9780454293648736
+              ],
+              "estimate": 0.9588043643599199
+            }
+          }
+        },
+        "F67_L34_merge__correct_L34_readout_seed29": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.9274361492417047,
+                0.9721880126046792
+              ],
+              "estimate": 0.9514273792051569
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8658831189386745,
+                0.9503099369766038
+              ],
+              "estimate": 0.9117614895392675
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                -0.005555555555555548,
+                0.0
+              ],
+              "estimate": -0.0018518518518518493
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.9254825678436788,
+                0.9708144119255228
+              ],
+              "estimate": 0.9495755273533051
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.8658831189386745,
+                0.9503099369766038
+              ],
+              "estimate": 0.9117614895392675
+            }
+          }
+        },
+        "Fhalf_Chalf_L34_prune": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.8511684303350968,
+                0.9098079119954121
+              ],
+              "estimate": 0.8810283338061117
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.7798964538547871,
+                0.8721801809301809
+              ],
+              "estimate": 0.827950958506514
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                -0.006172839506172843,
+                0.0
+              ],
+              "estimate": -0.002057613168724281
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.8482344828525384,
+                0.908510027780861
+              ],
+              "estimate": 0.8789707206373875
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.7798964538547871,
+                0.8721801809301809
+              ],
+              "estimate": 0.827950958506514
+            }
+          }
+        },
+        "native": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.8627877035515925,
+                0.9252986840834061
+              ],
+              "estimate": 0.8951351631907188
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.7987297938686828,
+                0.8935102680241569
+              ],
+              "estimate": 0.8489355294910851
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.8627877035515925,
+                0.9252986840834061
+              ],
+              "estimate": 0.8951351631907188
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.7987297938686828,
+                0.8935102680241569
+              ],
+              "estimate": 0.8489355294910851
+            }
+          }
+        },
+        "native__correct_L34_CQ_seed17": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.9491713430602319,
+                0.9898343477510144
+              ],
+              "estimate": 0.972320786209675
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.9109650637428416,
+                0.9838642838642836
+              ],
+              "estimate": 0.9543217070994849
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                -0.002136752136752129,
+                0.0
+              ],
+              "estimate": -0.0007122507122507097
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                -0.0042735042735042705,
+                0.0
+              ],
+              "estimate": -0.0014245014245014235
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.9485818836513281,
+                0.9891417378917379
+              ],
+              "estimate": 0.9716085354974244
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.9096268237934906,
+                0.9827793605571382
+              ],
+              "estimate": 0.9528972056749836
+            }
+          }
+        },
+        "native__correct_L34_CQ_seed29": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.95227916116805,
+                0.9848269374658264
+              ],
+              "estimate": 0.9696819641264085
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.9268975468975469,
+                0.9746345424123202
+              ],
+              "estimate": 0.9517256406145295
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.95227916116805,
+                0.9848269374658264
+              ],
+              "estimate": 0.9696819641264085
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.9268975468975469,
+                0.9746345424123202
+              ],
+              "estimate": 0.9517256406145295
+            }
+          }
+        },
+        "native__correct_L34_FQ_seed17": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.9494697059627614,
+                0.9883511036288813
+              ],
+              "estimate": 0.9715304756971422
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.9047845261734151,
+                0.979425666925667
+              ],
+              "estimate": 0.9481114564447899
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.9494697059627614,
+                0.9883511036288813
+              ],
+              "estimate": 0.9715304756971422
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.9047845261734151,
+                0.979425666925667
+              ],
+              "estimate": 0.9481114564447899
+            }
+          }
+        },
+        "native__correct_L34_FQ_seed29": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.9655250099694543,
+                0.9905187405187404
+              ],
+              "estimate": 0.9790493457160124
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.9522674856008189,
+                0.98490083990084
+              ],
+              "estimate": 0.9692846248401805
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.9655250099694543,
+                0.9905187405187404
+              ],
+              "estimate": 0.9790493457160124
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.9522674856008189,
+                0.98490083990084
+              ],
+              "estimate": 0.9692846248401805
+            }
+          }
+        },
+        "native__correct_L34_readout_seed17": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.9573100844628624,
+                0.9829813126688125
+              ],
+              "estimate": 0.9706691456691457
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.9264453627648073,
+                0.9697549980883313
+              ],
+              "estimate": 0.9488205210427433
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                -0.002136752136752129,
+                0.0
+              ],
+              "estimate": -0.0007122507122507097
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                -0.0042735042735042705,
+                0.0
+              ],
+              "estimate": -0.0014245014245014235
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.956193494005994,
+                0.9826064894467671
+              ],
+              "estimate": 0.9699568949568951
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.9242140164362386,
+                0.9689737243209466
+              ],
+              "estimate": 0.9473960196182419
+            }
+          }
+        },
+        "native__correct_L34_readout_seed29": {
+          "A_on_tie": {
+            "accuracy": {
+              "ci95": [
+                0.9509801181328957,
+                0.9821304814013148
+              ],
+              "estimate": 0.9670446323224101
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.9259556569973237,
+                0.9740345045900601
+              ],
+              "estimate": 0.9509732037509815
+            }
+          },
+          "strict_minus_original": {
+            "accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "estimate": 0.0
+            }
+          },
+          "strict_ties_incorrect": {
+            "accuracy": {
+              "ci95": [
+                0.9509801181328957,
+                0.9821304814013148
+              ],
+              "estimate": 0.9670446323224101
+            },
+            "both_orders_accuracy": {
+              "ci95": [
+                0.9259556569973237,
+                0.9740345045900601
+              ],
+              "estimate": 0.9509732037509815
+            }
+          }
+        }
+      }
+    }
+  },
+  "scope": "Post hoc/descriptive saved-output checks",
+  "ties": {
+    "C379_L22_merge": {
+      "A": 0,
+      "B": 2
+    },
+    "C379_L22_merge__correct_L34_FQ_seed17": {
+      "A": 1,
+      "B": 2
+    },
+    "C379_L22_merge__correct_L34_FQ_seed29": {
+      "A": 0,
+      "B": 1
+    },
+    "C384_L22_merge__F67_L34_merge": {
+      "A": 0,
+      "B": 0
+    },
+    "F0_L22_prune": {
+      "A": 2,
+      "B": 1
+    },
+    "F0_L30_prune": {
+      "A": 0,
+      "B": 0
+    },
+    "F0_L34_prune": {
+      "A": 1,
+      "B": 2
+    },
+    "F67_L34_merge": {
+      "A": 0,
+      "B": 0
+    },
+    "F67_L34_merge__correct_L34_readout_seed17": {
+      "A": 0,
+      "B": 2
+    },
+    "F67_L34_merge__correct_L34_readout_seed29": {
+      "A": 1,
+      "B": 1
+    },
+    "Fhalf_Chalf_L34_prune": {
+      "A": 1,
+      "B": 0
+    },
+    "native": {
+      "A": 0,
+      "B": 0
+    },
+    "native__correct_L34_CQ_seed17": {
+      "A": 1,
+      "B": 0
+    },
+    "native__correct_L34_CQ_seed29": {
+      "A": 0,
+      "B": 0
+    },
+    "native__correct_L34_FQ_seed17": {
+      "A": 0,
+      "B": 1
+    },
+    "native__correct_L34_FQ_seed29": {
+      "A": 0,
+      "B": 0
+    },
+    "native__correct_L34_readout_seed17": {
+      "A": 1,
+      "B": 1
+    },
+    "native__correct_L34_readout_seed29": {
+      "A": 0,
+      "B": 0
+    }
+  }
+}
